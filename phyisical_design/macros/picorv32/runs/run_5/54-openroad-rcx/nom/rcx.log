@@ -1,0 +1,36 @@
+Reading technology LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Reading cell LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+Reading gpio pad LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0127] Reading DEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_5/53-odb-cellfrequencytables/picorv32_macro.def
+[INFO ODB-0128] Design: picorv32_macro
+[INFO ODB-0130]     Created 153 pins.
+[INFO ODB-0131]     Created 35815 components and 108646 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 71630 connections.
+[INFO ODB-0133]     Created 11058 nets and 36943 connections.
+[INFO ODB-0134] Finished DEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_5/53-odb-cellfrequencytables/picorv32_macro.def
+Using RCX ruleset '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules -lef_res
+[INFO RCX-0435] Reading extraction model file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation picorv32_macro (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 57175 rc segments
+[INFO RCX-0439] Coupling Cap extraction picorv32_macro ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 47% of 88841 wires extracted
+[INFO RCX-0442] 100% of 88841 wires extracted
+[INFO RCX-0045] Extract 11058 nets, 68233 rsegs, 68233 caps, 112539 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                             24690  244308.96
+  Antenna cell                             33     179.63
+  Standard cell                         11092  194959.09
+  Total                                 35815  439447.68
+Writing extracted parasitics to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_5/54-openroad-rcx/nom/picorv32_macro.nom.spef'…
+[INFO RCX-0443] 11058 nets finished

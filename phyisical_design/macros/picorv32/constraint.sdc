@@ -108,7 +108,7 @@ set_false_path -from [get_ports rst_ni]
 # ------------------------------------------------------------
 # Design Rules (Overrides JSON if conflicting)
 # ------------------------------------------------------------
-set_max_fanout 16 [current_design]
+set_max_fanout 24 [current_design]
 set_max_transition 1.0 [current_design]
 set_max_capacitance 0.2 [current_design]
 
