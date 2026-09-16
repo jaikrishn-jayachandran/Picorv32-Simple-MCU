@@ -1,0 +1,36 @@
+[WARNING ORD-0039] .openroad ignored with -python
+[WARNING] Overriding minimum distance 0.5 with 0.61 for pins on side W to avoid overlap.
+[WARNING] Overriding minimum distance 0.5 with 0.61 for pins on side S to avoid overlap.
+[WARNING] Overriding minimum distance 0.5 with 0.61 for pins on side N to avoid overlap.
+[WARNING] Overriding minimum distance 0.5 with 0.61 for pins on side E to avoid overlap.
+Top-level design name: picorv32_macro
+Block boundaries: 0 0 605750 624470
+Horizontal Tracks Origin: 420, Count: 1486, Step: 420
+Vertical Tracks Origin: 480, Count: 1261, Step: 480
+Placement details for the N side
+Virtual pin count:  0
+Actual pin count:  71
+Total pin count:  71
+Tracks count:  631
+Tracks per pin:  8
+Used tracks count:  561
+Unused track count:  70
+Starting track index:  35
+Placement details for the W side
+Virtual pin count:  0
+Actual pin count:  3
+Total pin count:  3
+Tracks count:  743
+Tracks per pin:  247
+Used tracks count:  495
+Unused track count:  248
+Starting track index:  124
+Placement details for the S side
+Virtual pin count:  0
+Actual pin count:  77
+Total pin count:  77
+Tracks count:  631
+Tracks per pin:  8
+Used tracks count:  609
+Unused track count:  22
+Starting track index:  11

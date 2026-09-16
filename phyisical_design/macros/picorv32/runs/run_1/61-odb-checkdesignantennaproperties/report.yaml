@@ -1,0 +1,8 @@
+- cell: picorv32_macro
+  inout: []
+  input:
+  - mem_axi_bresp[0]
+  - mem_axi_bresp[1]
+  - mem_axi_rresp[0]
+  - mem_axi_rresp[1]
+  output: []

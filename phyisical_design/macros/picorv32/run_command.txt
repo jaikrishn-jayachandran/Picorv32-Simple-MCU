@@ -1,0 +1,8 @@
+librelane --pdk ihp-sg13g2 --scl sg13g2_stdcell --manual-pdk --pdk-root $PDK_ROOT config.json 
+
+For Openroad
+openroad -gui -d odb/*.odb
+
+
+for kaylayout
+kaylayout .gds

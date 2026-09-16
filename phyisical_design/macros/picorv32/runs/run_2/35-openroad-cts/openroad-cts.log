@@ -1,0 +1,147 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/34-openroad-detailedplacement/picorv32_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Configuring cts characterization…
++ configure_cts_characterization 
+[INFO] Performing clock tree synthesis…
+[INFO] Looking for the following net(s): clk_i
+[INFO] Running Clock Tree Synthesis…
++ clock_tree_synthesis -buf_list sg13g2_buf_8 sg13g2_buf_4 sg13g2_buf_2 -root_buf sg13g2_buf_16 -sink_clustering_enable -apply_ndr half
+[INFO CTS-0050] Root buffer is sg13g2_buf_16.
+[INFO CTS-0051] Sink buffer is sg13g2_buf_8.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sg13g2_buf_2
+                    sg13g2_buf_4
+                    sg13g2_buf_8
+[INFO CTS-0049] Characterization buffer is sg13g2_buf_8.
+[INFO CTS-0007] Net "clk_i" found for clock "clk_i".
+[INFO CTS-0010]  Clock net "clk_i" has 1594 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0201] 0 blockages from hard placement blockages and placed macros will be used.
+[INFO CTS-0027] Generating H-Tree topology for net clk_i.
+[INFO CTS-0028]  Total number of sinks: 1594.
+[INFO CTS-0090]  Sinks will be clustered based on buffer max cap.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 18900  dbu (18 um).
+[INFO CTS-0206] Best clustering solution was found from clustering size of 8 and clustering diameter of 50.
+[INFO CTS-0019]  Total number of sinks after clustering: 128.
+[INFO CTS-0024]  Normalized sink region: [(1.54921, 1.68254), (31.0232, 31.1815)].
+[INFO CTS-0025]     Width:  29.4740.
+[INFO CTS-0026]     Height: 29.4989.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 64
+    Sub-region size: 29.4740 X 14.7495
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 32
+    Sub-region size: 14.7370 X 14.7495
+[INFO CTS-0034]     Segment length (rounded): 8.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 16
+    Sub-region size: 14.7370 X 7.3747
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 4
+    Direction: Horizontal
+    Sinks per sub-region: 8
+    Sub-region size: 7.3685 X 7.3747
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 5
+    Direction: Vertical
+    Sinks per sub-region: 4
+    Sub-region size: 7.3685 X 3.6874
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 8.
+[INFO CTS-0035]  Number of sinks covered: 128.
+[INFO CTS-0018]     Created 177 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 4.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[INFO CTS-0015]     Created 177 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 4:32, 6:1, 10:5, 11:17, 12:38, 13:45, 14:20, 15:2..
+[INFO CTS-0017]     Max level of the clock tree: 5.
+[INFO CTS-0098] Clock net "clk_i"
+[INFO CTS-0099]  Sinks 1678
+[INFO CTS-0100]  Leaf buffers 128
+[INFO CTS-0101]  Average sink wire length 929.45 um
+[INFO CTS-0102]  Path depth 4 - 4
+[INFO CTS-0207]  Dummy loads inserted 84
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 2960um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 522 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                   63     457.23
+  Clock buffer                            182    5011.37
+  Timing Repair Buffer                   1799   15377.04
+  Inverter                                 71     386.47
+  Clock inverter                           79     506.22
+  Sequential cell                        1594   78088.15
+  Multi-Input combinational cell         7545   97692.74
+  Total                                 11333  197519.21
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.sdc'…
+[INFO] Legalizing…
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       2156.7 u
+average displacement        0.2 u
+max displacement           11.0 u
+original HPWL          496215.5 u
+legalized HPWL         505841.3 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 5180 instances
+[INFO DPL-0021] HPWL before          505841.3 u
+[INFO DPL-0022] HPWL after           497230.7 u
+[INFO DPL-0023] HPWL delta               -1.7 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                   63     457.23
+  Clock buffer                            182    5011.37
+  Timing Repair Buffer                   1799   15377.04
+  Inverter                                 71     386.47
+  Clock inverter                           79     506.22
+  Sequential cell                        1594   78088.15
+  Multi-Input combinational cell         7545   97692.74
+  Total                                 11333  197519.21
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/35-openroad-cts/picorv32_macro.sdc'…
+%OL_CREATE_REPORT cts.rpt
+Total number of Clock Roots: 1.
+Total number of Buffers Inserted: 177.
+Total number of Clock Subnets: 177.
+Total number of Sinks: 1594.
+Cells used:
+  sg13g2_buf_16: 33
+  sg13g2_buf_8: 144
+Dummys used:
+  sg13g2_buf_8: 5
+  sg13g2_inv_1: 47
+  sg13g2_inv_2: 29
+  sg13g2_inv_4: 2
+  sg13g2_inv_8: 1
+%OL_END_REPORT

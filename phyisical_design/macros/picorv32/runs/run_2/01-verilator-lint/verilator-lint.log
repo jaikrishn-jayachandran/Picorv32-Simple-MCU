@@ -1,0 +1,920 @@
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_valid'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2572:16: ... Location of port declaration
+ 2572 |  output        pcpi_valid,
+      |                ^~~~~~~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.044
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_insn'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2573:16: ... Location of port declaration
+ 2573 |  output [31:0] pcpi_insn,
+      |                ^~~~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_rs1'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2574:16: ... Location of port declaration
+ 2574 |  output [31:0] pcpi_rs1,
+      |                ^~~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_rs2'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2575:16: ... Location of port declaration
+ 2575 |  output [31:0] pcpi_rs2,
+      |                ^~~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_wr'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2576:16: ... Location of port declaration
+ 2576 |  input         pcpi_wr,
+      |                ^~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_rd'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2577:16: ... Location of port declaration
+ 2577 |  input  [31:0] pcpi_rd,
+      |                ^~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_wait'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2578:16: ... Location of port declaration
+ 2578 |  input         pcpi_wait,
+      |                ^~~~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'pcpi_ready'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2579:16: ... Location of port declaration
+ 2579 |  input         pcpi_ready,
+      |                ^~~~~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'irq'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2582:16: ... Location of port declaration
+ 2582 |  input  [31:0] irq,
+      |                ^~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'eoi'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2583:16: ... Location of port declaration
+ 2583 |  output [31:0] eoi,
+      |                ^~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'trace_valid'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2608:16: ... Location of port declaration
+ 2608 |  output        trace_valid,
+      |                ^~~~~~~~~~~
+%Warning-PINMISSING: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:38:7: Instance has missing pin: 'trace_data'
+   38 |     ) u_picorv32 (
+      |       ^~~~~~~~~~
+                     /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2609:16: ... Location of port declaration
+ 2609 |  output [35:0] trace_data
+      |                ^~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module sg13g2_a21o_1(X, A1, A2, B1);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.044
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:14:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   14 | module sg13g2_a21o_2(X, A1, A2, B1);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:25:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   25 | module sg13g2_a21oi_1(Y, A1, A2, B1);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:36:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   36 | module sg13g2_a21oi_2(Y, A1, A2, B1);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:47:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   47 | module sg13g2_a221oi_1(Y, A1, A2, B1, B2, C1);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:62:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   62 | module sg13g2_a22oi_1(Y, A1, A2, B1, B2);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:75:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   75 | module sg13g2_and2_1(X, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:84:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   84 | module sg13g2_and2_2(X, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:93:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   93 | module sg13g2_and3_1(X, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:104:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  104 | module sg13g2_and3_2(X, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:115:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  115 | module sg13g2_and4_1(X, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:128:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  128 | module sg13g2_and4_2(X, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:141:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  141 | module sg13g2_antennanp(A);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:146:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  146 | module sg13g2_buf_1(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:153:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  153 | module sg13g2_buf_16(X, A);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:160:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  160 | module sg13g2_buf_2(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:167:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  167 | module sg13g2_buf_4(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:174:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  174 | module sg13g2_buf_8(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:181:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  181 | module sg13g2_decap_4();
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:184:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  184 | module sg13g2_decap_8();
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:187:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  187 | module sg13g2_dfrbp_1(Q, Q_N, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:200:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  200 | module sg13g2_dfrbp_2(Q, Q_N, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:213:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  213 | module sg13g2_dfrbpq_1(Q, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:224:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  224 | module sg13g2_dfrbpq_2(Q, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:235:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  235 | module sg13g2_dlhq_1(Q, D, GATE);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:244:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  244 | module sg13g2_dlhr_1(Q, Q_N, D, GATE, RESET_B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:257:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  257 | module sg13g2_dlhrq_1(Q, D, GATE, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:268:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  268 | module sg13g2_dllr_1(Q, Q_N, D, GATE_N, RESET_B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:281:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  281 | module sg13g2_dllrq_1(Q, D, GATE_N, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:292:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  292 | module sg13g2_dlygate4sd1_1(X, A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:299:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  299 | module sg13g2_dlygate4sd2_1(X, A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:306:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  306 | module sg13g2_dlygate4sd3_1(X, A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:313:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  313 | module sg13g2_ebufn_2(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:322:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  322 | module sg13g2_ebufn_4(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:331:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  331 | module sg13g2_ebufn_8(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:340:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  340 | module sg13g2_einvn_2(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:349:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  349 | module sg13g2_einvn_4(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:358:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  358 | module sg13g2_einvn_8(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:367:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  367 | module sg13g2_fill_1();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:370:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  370 | module sg13g2_fill_2();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:373:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  373 | module sg13g2_fill_4();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:376:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  376 | module sg13g2_fill_8();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:379:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  379 | module sg13g2_inv_1(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:386:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  386 | module sg13g2_inv_16(Y, A);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:393:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  393 | module sg13g2_inv_2(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:400:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  400 | module sg13g2_inv_4(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:407:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  407 | module sg13g2_inv_8(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:414:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  414 | module sg13g2_lgcp_1(GCLK, CLK, GATE);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:423:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  423 | module sg13g2_mux2_1(X, A0, A1, S);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:434:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  434 | module sg13g2_mux2_2(X, A0, A1, S);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:445:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  445 | module sg13g2_mux4_1(X, A0, A1, A2, A3, S0, S1);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:462:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  462 | module sg13g2_nand2_1(Y, A, B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:471:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  471 | module sg13g2_nand2_2(Y, A, B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:480:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  480 | module sg13g2_nand2b_1(Y, A_N, B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:489:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  489 | module sg13g2_nand2b_2(Y, A_N, B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:498:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  498 | module sg13g2_nand3_1(Y, A, B, C);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:509:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  509 | module sg13g2_nand3b_1(Y, A_N, B, C);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:520:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  520 | module sg13g2_nand4_1(Y, A, B, C, D);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:533:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  533 | module sg13g2_nor2_1(Y, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:542:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  542 | module sg13g2_nor2_2(Y, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:551:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  551 | module sg13g2_nor2b_1(Y, A, B_N);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:560:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  560 | module sg13g2_nor2b_2(Y, A, B_N);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:569:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  569 | module sg13g2_nor3_1(Y, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:580:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  580 | module sg13g2_nor3_2(Y, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:591:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  591 | module sg13g2_nor4_1(Y, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:604:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  604 | module sg13g2_nor4_2(Y, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:617:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  617 | module sg13g2_o21ai_1(Y, A1, A2, B1);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:628:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  628 | module sg13g2_or2_1(X, A, B);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:637:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  637 | module sg13g2_or2_2(X, A, B);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:646:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  646 | module sg13g2_or3_1(X, A, B, C);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:657:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  657 | module sg13g2_or3_2(X, A, B, C);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:668:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  668 | module sg13g2_or4_1(X, A, B, C, D);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:681:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  681 | module sg13g2_or4_2(X, A, B, C, D);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:694:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  694 | module sg13g2_sdfbbp_1(Q, Q_N, CLK, D, RESET_B, SCD, SCE, SET_B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:713:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  713 | module sg13g2_sdfrbp_1(Q, Q_N, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:730:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  730 | module sg13g2_sdfrbp_2(Q, Q_N, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:747:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  747 | module sg13g2_sdfrbpq_1(Q, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:762:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  762 | module sg13g2_sdfrbpq_2(Q, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:777:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  777 | module sg13g2_sighold(SH);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:782:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  782 | module sg13g2_slgcp_1(GCLK, GATE, CLK, SCE);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:793:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  793 | module sg13g2_tiehi(L_HI);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:798:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  798 | module sg13g2_tielo(L_LO);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:803:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  803 | module sg13g2_xnor2_1(Y, A, B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/7896132add9646dfa0b634b6a5192cc3.bb.v:812:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  812 | module sg13g2_xor2_1(X, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module sg13g2_Corner(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:14:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   14 | module sg13g2_Filler1000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:25:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   25 | module sg13g2_Filler10000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:36:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   36 | module sg13g2_Filler200(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:47:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   47 | module sg13g2_Filler2000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:58:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   58 | module sg13g2_Filler400(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:69:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   69 | module sg13g2_Filler4000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:80:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   80 | module sg13g2_IOPadAnalog(pad, padres, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:95:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   95 | module sg13g2_IOPadIOVdd(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:106:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  106 | module sg13g2_IOPadIOVss(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:117:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  117 | module sg13g2_IOPadIn(pad, p2c, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:132:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  132 | module sg13g2_IOPadInOut16mA(pad, c2p, p2c, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:151:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  151 | module sg13g2_IOPadInOut30mA(pad, c2p, p2c, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:170:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  170 | module sg13g2_IOPadInOut4mA(pad, c2p, p2c, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:189:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  189 | module sg13g2_IOPadOut16mA(pad, c2p, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:204:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  204 | module sg13g2_IOPadOut30mA(pad, c2p, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:219:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  219 | module sg13g2_IOPadOut4mA(pad, c2p, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:234:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  234 | module sg13g2_IOPadTriOut16mA(pad, c2p, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:251:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  251 | module sg13g2_IOPadTriOut30mA(pad, c2p, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:268:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  268 | module sg13g2_IOPadTriOut4mA(pad, c2p, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:285:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  285 | module sg13g2_IOPadVdd(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_2/tmp/0cf49ca40b5d43e39757edacc0b1d695.bb.v:296:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  296 | module sg13g2_IOPadVss(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv:1:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    1 | module picorv32_macro (
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:62:8: ... Location of module with timescale
+   62 | module picorv32 #(
+      |        ^~~~~~~~
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:272:32: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                    : ... Suggest assign a label with 'begin : gen_<label_name>'
+  272 |  generate if (ENABLE_FAST_MUL) begin
+      |                                ^~~~~
+                     ... For warning description see https://verilator.org/warn/GENUNNAMED?v=5.044
+                     ... Use "/* verilator lint_off GENUNNAMED */" and lint_on around source to disable this message.
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:285:27: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                    : ... Suggest assign a label with 'begin : gen_<label_name>'
+  285 |  end else if (ENABLE_MUL) begin
+      |                           ^~~~~
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:298:11: Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)
+                                                                                                    : ... Suggest assign a label with 'begin : gen_<label_name>'
+  298 |  end else begin
+      |           ^~~~~
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:305:27: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                    : ... Suggest assign a label with 'begin : gen_<label_name>'
+  305 |  generate if (ENABLE_DIV) begin
+      |                           ^~~~~
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:318:11: Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)
+                                                                                                    : ... Suggest assign a label with 'begin : gen_<label_name>'
+  318 |  end else begin
+      |           ^~~~~
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1229:30: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                     : ... Suggest assign a label with 'begin : gen_<label_name>'
+ 1229 |  generate if (TWO_CYCLE_ALU) begin
+      |                              ^~~~~
+%Warning-GENUNNAMED: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1238:11: Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)
+                                                                                                     : ... Suggest assign a label with 'begin : gen_<label_name>'
+ 1238 |  end else begin
+      |           ^~~~~
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1406:20: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1406 |   set_mem_do_rinst = 0;
+      |                    ^
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.044
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1407:20: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1407 |   set_mem_do_rdata = 0;
+      |                    ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1408:20: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1408 |   set_mem_do_wdata = 0;
+      |                    ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1440:20: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1440 |   next_irq_pending = ENABLE_IRQ ? irq_pending & LATCHED_IRQ : 'bx;
+      |                    ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1474:21: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1474 |    next_irq_pending = 0;
+      |                     ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1495:16: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1495 |     current_pc = reg_next_pc;
+      |                ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1500:18: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1500 |       current_pc = latched_store ? (latched_stalu ? alu_out_q : reg_out) & ~1 : reg_next_pc;
+      |                  ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1507:18: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1507 |       current_pc = PROGADDR_IRQ;
+      |                  ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1513:24: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1513 |       next_irq_pending = next_irq_pending & irq_mask;
+      |                        ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1609:40: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1609 |           next_irq_pending[irq_ebreak] = 1;
+      |                                        ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1620:38: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1620 |         next_irq_pending[irq_ebreak] = 1;
+      |                                      ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1781:38: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1781 |         next_irq_pending[irq_ebreak] = 1;
+      |                                      ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1819:24: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1819 |       set_mem_do_rinst = 1;
+      |                        ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1870:24: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1870 |       set_mem_do_wdata = 1;
+      |                        ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1898:24: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1898 |       set_mem_do_rdata = 1;
+      |                        ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1916:21: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1916 |    next_irq_pending = next_irq_pending | irq;
+      |                     ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1919:34: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1919 |      next_irq_pending[irq_timer] = 1;
+      |                                  ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1926:37: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1926 |      next_irq_pending[irq_buserror] = 1;
+      |                                     ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1933:37: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1933 |      next_irq_pending[irq_buserror] = 1;
+      |                                     ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1941:36: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1941 |     next_irq_pending[irq_buserror] = 1;
+      |                                    ^
+%Warning-BLKSEQ: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1974:14: Blocking assignment '=' in sequential logic process
+                                                                                                 : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+                                                                                                 : ... Suggest using delayed assignment '<='
+ 1974 |   current_pc = 'bx;
+      |              ^
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:181:13: Signal is not used: 'dbg_insn_addr'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  181 |  reg [31:0] dbg_insn_addr;
+      |             ^~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.044
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:183:7: Signal is not used: 'dbg_mem_valid'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  183 |  wire dbg_mem_valid = mem_valid;
+      |       ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:184:7: Signal is not used: 'dbg_mem_instr'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  184 |  wire dbg_mem_instr = mem_instr;
+      |       ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:185:7: Signal is not used: 'dbg_mem_ready'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  185 |  wire dbg_mem_ready = mem_ready;
+      |       ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:186:14: Signal is not used: 'dbg_mem_addr'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  186 |  wire [31:0] dbg_mem_addr  = mem_addr;
+      |              ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:187:14: Signal is not used: 'dbg_mem_wdata'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  187 |  wire [31:0] dbg_mem_wdata = mem_wdata;
+      |              ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:188:14: Signal is not used: 'dbg_mem_wstrb'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  188 |  wire [ 3:0] dbg_mem_wstrb = mem_wstrb;
+      |              ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:189:14: Signal is not used: 'dbg_mem_rdata'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  189 |  wire [31:0] dbg_mem_rdata = mem_rdata;
+      |              ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:375:7: Signal is not used: 'mem_busy'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  375 |  wire mem_busy = |{mem_do_prefetch, mem_do_rinst, mem_do_rdata, mem_do_wdata};
+      |       ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:696:14: Signal is not used: 'dbg_rs1val'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  696 |   reg [31:0] dbg_rs1val;
+      |              ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:697:14: Signal is not used: 'dbg_rs2val'
+                                                                                                      : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  697 |   reg [31:0] dbg_rs2val;
+      |              ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:698:7: Signal is not used: 'dbg_rs1val_valid'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  698 |   reg dbg_rs1val_valid;
+      |       ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:699:7: Signal is not used: 'dbg_rs2val_valid'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  699 |   reg dbg_rs2val_valid;
+      |       ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:769:6: Signal is not used: 'dbg_valid_insn'
+                                                                                                     : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+  769 |  reg dbg_valid_insn;
+      |      ^~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1184:15: Signal is not used: 'dbg_ascii_state'
+                                                                                                       : ... note: In instance 'picorv32_macro.u_picorv32.picorv32_core'
+ 1184 |   reg [127:0] dbg_ascii_state;
+      |               ^~~~~~~~~~~~~~~
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 0.319 MB sources in 116 modules, into 0.153 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.182 s (elab=0.092, cvt=0.075, bld=0.000); cpu 0.050 s on 1 threads; alloced 26.219 MB

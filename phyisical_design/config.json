@@ -1,0 +1,43 @@
+{
+  "DESIGN_NAME": "soc_top",
+  "PDK": "ihp-sg13g2",
+  "STD_CELL_LIBRARY": "sg13g2_stdcell",
+
+  "VERILOG_FILES": [
+    "dir::../rtl/soc_top.sv",
+    "dir::../rtl/axil_interconnect.sv",
+    "dir::../rtl/gpio_bank.sv",
+    "dir::../rtl/axi_ram.sv",
+    "dir::../rtl/picorv32.v",
+    "dir::../rtl/boot_ctrl.sv",
+    "dir::../rtl/spi_master.sv"
+  ],
+
+  "VERILOG_DEFINES": ["SYNTHESIS"],
+
+  "CLOCK_PORT": "clk_i",
+  "CLOCK_PERIOD": 20.0,
+
+  "DIE_AREA": [0, 0, 2000, 2000],
+
+  "FP_CORE_UTIL": 30,
+  "PL_TARGET_DENSITY_PCT": 45,
+
+  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+
+  "SYNTH_STRATEGY": "DELAY 1",
+  "MAX_FANOUT_CONSTRAINT": 12,
+
+  "VDD_NETS": ["VDD"],
+  "GND_NETS": ["VSS"],
+
+  "RT_MIN_LAYER": "Metal2",
+  "RT_MAX_LAYER": "Metal5",
+
+  "GRT_LAYER_ADJUSTMENTS": [0.26, 0.26, 0.26, 0.26],
+
+  "DRT_OPT_ITERS": 64,
+  "DRT_THREADS": 8,
+
+  "FALLBACK_SDC_FILE": "dir::constraint.sdc"
+}
