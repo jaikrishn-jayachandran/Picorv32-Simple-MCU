@@ -1,0 +1,333 @@
+// DESCRIPTION: Verilator output: Waivers generated with --waiver-output
+
+`verilator_config
+
+// Below are suggested waivers. You have three options:
+//   1. Fix the reason for the linter warning in the Verilog sources
+//   2. Keep the waiver permanently if you are sure it is okay
+//   3. Keep the waiver temporarily to suppress the output
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_valid'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_insn'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_rs1'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_rs2'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_wr'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_rd'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_wait'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'pcpi_ready'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'irq'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'eoi'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'trace_valid'*"
+
+// lint_off -rule PINMISSING -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Instance has missing pin: 'trace_data'*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/7273708578814c5fb5cab6a5333f8a99.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_6/tmp/212e1d5d0b1b4de6b7f7fab82ba311ca.bb.v" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule TIMESCALEMOD -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv" -match "Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk1' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk2' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule GENUNNAMED -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Unnamed generate block 'genblk3' (IEEE 1800-2023 27.6)*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule BLKSEQ -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Blocking assignment '=' in sequential logic process*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_insn_addr'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_valid'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_instr'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_ready'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_addr'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_wdata'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_wstrb'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_mem_rdata'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'mem_busy'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_rs1val'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_rs2val'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_rs1val_valid'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_rs2val_valid'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_valid_insn'*"
+
+// lint_off -rule UNUSEDSIGNAL -file "*/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v" -match "Signal is not used: 'dbg_ascii_state'*"
+

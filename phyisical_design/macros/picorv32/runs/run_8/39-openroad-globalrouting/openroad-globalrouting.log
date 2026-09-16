@@ -1,0 +1,79 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_8/37-openroad-resizertimingpostcts/picorv32_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: TopMetal2 and clock max routing layer to TopMetal2. 
++ global_route -congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: TopMetal2
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.4200  line-2-Via Pitch: 0.3650
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.4200  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4150
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 0.4200  line-2-Via Pitch: 0.6200
+[INFO GRT-0088] Layer TopMetal1 Track-Pitch = 3.2800  line-2-Via Pitch: 3.4100
+[INFO GRT-0088] Layer TopMetal2 Track-Pitch = 4.0000  line-2-Via Pitch: 3.9500
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 0
+[INFO GRT-0019] Found 184 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 17
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Horizontal          0             0          0.00%
+Metal2     Vertical       143813         95562          33.55%
+Metal3     Horizontal     172518        112849          34.59%
+Metal4     Vertical       143813         95562          33.55%
+Metal5     Horizontal     170578        111454          34.66%
+TopMetal1    Vertical        19760         11432          42.15%
+TopMetal2    Horizontal      15444          9306          39.74%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0102] Start extra iteration 1/50
+[INFO GRT-0102] Start extra iteration 2/50
+[INFO GRT-0197] Via related to pin nodes: 62547
+[INFO GRT-0198] Via related Steiner nodes: 1637
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 79016
+[INFO GRT-0112] Final usage 3D: 322225
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2           95562         39353           41.18%             0 /  0 /  0
+Metal3          112849         40312           35.72%             0 /  0 /  0
+Metal4           95562          4473            4.68%             0 /  0 /  0
+Metal5          111454          1039            0.93%             0 /  0 /  0
+TopMetal1          11432             0            0.00%             0 /  0 /  0
+TopMetal2           9306             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           436165         85177           19.53%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 832312 um
+[INFO GRT-0014] Routed nets: 11052
+[INFO GRT-0303] Global routing runtime = 00:00:00
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                   63     457.23
+  Clock buffer                            202    5483.12
+  Timing Repair Buffer                   1557   12706.24
+  Inverter                                 71     386.47
+  Clock inverter                           73     477.19
+  Sequential cell                        1594   78088.15
+  Multi-Input combinational cell         7545   97621.98
+  Total                                 11105  195220.37
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_8/39-openroad-globalrouting/picorv32_macro.odb'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_8/39-openroad-globalrouting/picorv32_macro.def'…

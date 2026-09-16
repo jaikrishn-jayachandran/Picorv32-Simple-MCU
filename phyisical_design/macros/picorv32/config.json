@@ -4,7 +4,7 @@
   "PDK": "ihp-sg13g2",
   "STD_CELL_LIBRARY": "sg13g2_stdcell",
 
-  "PDN_MULTILAYER": true, 
+  "PDN_MULTILAYER": true,
 
   "VERILOG_FILES": [
     "dir::../../../rtl/macros/picorv32_macro.sv",
@@ -16,24 +16,22 @@
   ],
 
   "CLOCK_PORT": "clk_i",
-  
-  "CLOCK_PERIOD": 10.0, 
+  "CLOCK_PERIOD": 10.0,
 
-  
-  "FP_CORE_UTIL": 40, 
-  
-  
-  "PL_TARGET_DENSITY_PCT": 55, 
+  "FP_CORE_UTIL": 35,
+  "PL_TARGET_DENSITY_PCT": 45,
 
   "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
 
   "SYNTH_STRATEGY": "DELAY 1",
-  
+  "SYNTH_MAX_FANOUT": 32,
 
-  "MAX_FANOUT_CONSTRAINT": 24, 
-
-  "VDD_NETS": ["VDD"],
-  "GND_NETS": ["VSS"],
+  "VDD_NETS": [
+    "VDD"
+  ],
+  "GND_NETS": [
+    "VSS"
+  ],
 
   "DRT_OPT_ITERS": 64,
   "DRT_THREADS": 8,

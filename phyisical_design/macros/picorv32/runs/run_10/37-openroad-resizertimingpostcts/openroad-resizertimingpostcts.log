@@ -1,0 +1,74 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_10/35-openroad-cts/picorv32_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50.0
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
++ repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1000000000000000055511151231257827021181583404541015625 -max_buffer_percent 50.0
+[INFO RSZ-0046] Found 191 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -0.319 | -13.467 | _14764_/D
+       10 |       0 |      22 |            0 |    +0.2% |  -0.277 | -10.582 | _15178_/D
+       20 |       0 |      44 |            0 |    +0.4% |  -0.166 |  -5.810 | _15197_/D
+       30 |       0 |      62 |            0 |    +0.5% |  -0.153 |  -3.217 | _15195_/D
+       40 |       0 |      72 |            0 |    +0.6% |  -0.146 |  -0.888 | _15192_/D
+       50 |       0 |      76 |            0 |    +0.6% |  -0.068 |  -0.068 | _14763_/D
+       60 |       0 |      76 |            0 |    +0.6% |  -0.068 |  -0.068 | _14763_/D
+       70 |       0 |      77 |            0 |    +0.7% |  -0.068 |  -0.068 | _14763_/D
+       80 |       0 |      77 |            0 |    +0.7% |  -0.068 |  -0.068 | _14763_/D
+       90 |       0 |      77 |            0 |    +0.7% |  -0.068 |  -0.068 | _14763_/D
+      100 |       0 |      79 |            0 |    +0.7% |   0.082 |   0.000 | _13726_/D
+      110 |       0 |      79 |            0 |    +0.7% |   0.082 |   0.000 | _13726_/D
+      120 |       0 |      85 |            0 |    +0.7% |   0.083 |   0.000 | _13732_/D
+      130 |       0 |      95 |            0 |    +0.8% |   0.084 |   0.000 | _13735_/D
+      140 |       0 |     105 |            0 |    +0.9% |   0.085 |   0.000 | _13743_/D
+      150 |       0 |     114 |            0 |    +1.0% |   0.088 |   0.000 | _14954_/D
+      160 |       0 |     123 |            0 |    +1.0% |   0.093 |   0.000 | _15165_/D
+      170 |       0 |     133 |            0 |    +1.1% |   0.096 |   0.000 | _15145_/D
+      180 |       0 |     143 |            0 |    +1.2% |   0.097 |   0.000 | _14939_/D
+      190 |       0 |     153 |            0 |    +1.3% |   0.100 |   0.000 | _14928_/D
+    final |       0 |     155 |            0 |    +1.3% |   0.100 |   0.000 | _15146_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 155 hold buffers.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       1196.5 u
+average displacement        0.1 u
+max displacement           13.8 u
+original HPWL          538354.7 u
+legalized HPWL         547193.0 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 5178 instances
+[INFO DPL-0021] HPWL before          547193.0 u
+[INFO DPL-0022] HPWL after           538436.0 u
+[INFO DPL-0023] HPWL delta               -1.6 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 310 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                   63     457.23
+  Clock buffer                            202    5483.12
+  Timing Repair Buffer                   1557   12706.24
+  Inverter                                 71     386.47
+  Clock inverter                           73     477.19
+  Sequential cell                        1594   78088.15
+  Multi-Input combinational cell         7545   97621.98
+  Total                                 11105  195220.37
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_10/37-openroad-resizertimingpostcts/picorv32_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_10/37-openroad-resizertimingpostcts/picorv32_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_10/37-openroad-resizertimingpostcts/picorv32_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_10/37-openroad-resizertimingpostcts/picorv32_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_10/37-openroad-resizertimingpostcts/picorv32_macro.sdc'…

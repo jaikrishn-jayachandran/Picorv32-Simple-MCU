@@ -1,0 +1,989 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_7/tmp/142a2cc390124c599338e6f8eea40b8f.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_7/tmp/142a2cc390124c599338e6f8eea40b8f.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_a21o_1'.
+Generating RTLIL representation for module `\sg13g2_a21o_2'.
+Generating RTLIL representation for module `\sg13g2_a21oi_1'.
+Generating RTLIL representation for module `\sg13g2_a21oi_2'.
+Generating RTLIL representation for module `\sg13g2_a221oi_1'.
+Generating RTLIL representation for module `\sg13g2_a22oi_1'.
+Generating RTLIL representation for module `\sg13g2_and2_1'.
+Generating RTLIL representation for module `\sg13g2_and2_2'.
+Generating RTLIL representation for module `\sg13g2_and3_1'.
+Generating RTLIL representation for module `\sg13g2_and3_2'.
+Generating RTLIL representation for module `\sg13g2_and4_1'.
+Generating RTLIL representation for module `\sg13g2_and4_2'.
+Generating RTLIL representation for module `\sg13g2_antennanp'.
+Generating RTLIL representation for module `\sg13g2_buf_1'.
+Generating RTLIL representation for module `\sg13g2_buf_16'.
+Generating RTLIL representation for module `\sg13g2_buf_2'.
+Generating RTLIL representation for module `\sg13g2_buf_4'.
+Generating RTLIL representation for module `\sg13g2_buf_8'.
+Generating RTLIL representation for module `\sg13g2_decap_4'.
+Generating RTLIL representation for module `\sg13g2_decap_8'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_dlhq_1'.
+Generating RTLIL representation for module `\sg13g2_dlhr_1'.
+Generating RTLIL representation for module `\sg13g2_dlhrq_1'.
+Generating RTLIL representation for module `\sg13g2_dllr_1'.
+Generating RTLIL representation for module `\sg13g2_dllrq_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd1_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd2_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd3_1'.
+Generating RTLIL representation for module `\sg13g2_ebufn_2'.
+Generating RTLIL representation for module `\sg13g2_ebufn_4'.
+Generating RTLIL representation for module `\sg13g2_ebufn_8'.
+Generating RTLIL representation for module `\sg13g2_einvn_2'.
+Generating RTLIL representation for module `\sg13g2_einvn_4'.
+Generating RTLIL representation for module `\sg13g2_einvn_8'.
+Generating RTLIL representation for module `\sg13g2_fill_1'.
+Generating RTLIL representation for module `\sg13g2_fill_2'.
+Generating RTLIL representation for module `\sg13g2_fill_4'.
+Generating RTLIL representation for module `\sg13g2_fill_8'.
+Generating RTLIL representation for module `\sg13g2_inv_1'.
+Generating RTLIL representation for module `\sg13g2_inv_16'.
+Generating RTLIL representation for module `\sg13g2_inv_2'.
+Generating RTLIL representation for module `\sg13g2_inv_4'.
+Generating RTLIL representation for module `\sg13g2_inv_8'.
+Generating RTLIL representation for module `\sg13g2_lgcp_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_2'.
+Generating RTLIL representation for module `\sg13g2_mux4_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_2'.
+Generating RTLIL representation for module `\sg13g2_nand2b_1'.
+Generating RTLIL representation for module `\sg13g2_nand2b_2'.
+Generating RTLIL representation for module `\sg13g2_nand3_1'.
+Generating RTLIL representation for module `\sg13g2_nand3b_1'.
+Generating RTLIL representation for module `\sg13g2_nand4_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_2'.
+Generating RTLIL representation for module `\sg13g2_nor2b_1'.
+Generating RTLIL representation for module `\sg13g2_nor2b_2'.
+Generating RTLIL representation for module `\sg13g2_nor3_1'.
+Generating RTLIL representation for module `\sg13g2_nor3_2'.
+Generating RTLIL representation for module `\sg13g2_nor4_1'.
+Generating RTLIL representation for module `\sg13g2_nor4_2'.
+Generating RTLIL representation for module `\sg13g2_o21ai_1'.
+Generating RTLIL representation for module `\sg13g2_or2_1'.
+Generating RTLIL representation for module `\sg13g2_or2_2'.
+Generating RTLIL representation for module `\sg13g2_or3_1'.
+Generating RTLIL representation for module `\sg13g2_or3_2'.
+Generating RTLIL representation for module `\sg13g2_or4_1'.
+Generating RTLIL representation for module `\sg13g2_or4_2'.
+Generating RTLIL representation for module `\sg13g2_sdfbbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_sighold'.
+Generating RTLIL representation for module `\sg13g2_slgcp_1'.
+Generating RTLIL representation for module `\sg13g2_tiehi'.
+Generating RTLIL representation for module `\sg13g2_tielo'.
+Generating RTLIL representation for module `\sg13g2_xnor2_1'.
+Generating RTLIL representation for module `\sg13g2_xor2_1'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_7/tmp/2aa05c285bfe4c63a5499c4c523eee2f.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_7/tmp/2aa05c285bfe4c63a5499c4c523eee2f.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_Corner'.
+Generating RTLIL representation for module `\sg13g2_Filler1000'.
+Generating RTLIL representation for module `\sg13g2_Filler10000'.
+Generating RTLIL representation for module `\sg13g2_Filler200'.
+Generating RTLIL representation for module `\sg13g2_Filler2000'.
+Generating RTLIL representation for module `\sg13g2_Filler400'.
+Generating RTLIL representation for module `\sg13g2_Filler4000'.
+Generating RTLIL representation for module `\sg13g2_IOPadAnalog'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVss'.
+Generating RTLIL representation for module `\sg13g2_IOPadIn'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadVss'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/picorv32_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\picorv32_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v' to AST representation.
+Storing AST representation for module `$abstract\picorv32'.
+Storing AST representation for module `$abstract\picorv32_regs'.
+Storing AST representation for module `$abstract\picorv32_pcpi_mul'.
+Storing AST representation for module `$abstract\picorv32_pcpi_fast_mul'.
+Storing AST representation for module `$abstract\picorv32_pcpi_div'.
+Storing AST representation for module `$abstract\picorv32_axi'.
+Storing AST representation for module `$abstract\picorv32_axi_adapter'.
+Storing AST representation for module `$abstract\picorv32_wb'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\picorv32_macro'.
+Generating RTLIL representation for module `\picorv32_macro'.
+
+6.1. Analyzing design hierarchy..
+Top module:  \picorv32_macro
+Parameter \ENABLE_COUNTERS = 1
+Parameter \BARREL_SHIFTER = 1
+Parameter \COMPRESSED_ISA = 0
+Parameter \PROGADDR_RESET = 0
+Parameter \STACKADDR = 4096
+
+6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\picorv32_axi'.
+Parameter \ENABLE_COUNTERS = 1
+Parameter \BARREL_SHIFTER = 1
+Parameter \COMPRESSED_ISA = 0
+Parameter \PROGADDR_RESET = 0
+Parameter \STACKADDR = 4096
+Generating RTLIL representation for module `$paramod$01e3903972568d8dfc09d98197d71934d7cb4abe\picorv32_axi'.
+
+6.3. Analyzing design hierarchy..
+Top module:  \picorv32_macro
+Used module:     $paramod$01e3903972568d8dfc09d98197d71934d7cb4abe\picorv32_axi
+Parameter \ENABLE_COUNTERS = 1'1
+Parameter \ENABLE_COUNTERS64 = 1'1
+Parameter \ENABLE_REGS_16_31 = 1'1
+Parameter \ENABLE_REGS_DUALPORT = 1'1
+Parameter \TWO_STAGE_SHIFT = 1'1
+Parameter \BARREL_SHIFTER = 1'1
+Parameter \TWO_CYCLE_COMPARE = 1'0
+Parameter \TWO_CYCLE_ALU = 1'0
+Parameter \COMPRESSED_ISA = 1'0
+Parameter \CATCH_MISALIGN = 1'1
+Parameter \CATCH_ILLINSN = 1'1
+Parameter \ENABLE_PCPI = 1'0
+Parameter \ENABLE_MUL = 1'0
+Parameter \ENABLE_FAST_MUL = 1'0
+Parameter \ENABLE_DIV = 1'0
+Parameter \ENABLE_IRQ = 1'0
+Parameter \ENABLE_IRQ_QREGS = 1'1
+Parameter \ENABLE_IRQ_TIMER = 1'1
+Parameter \ENABLE_TRACE = 1'0
+Parameter \REGS_INIT_ZERO = 1'0
+Parameter \MASKED_IRQ = 0
+Parameter \LATCHED_IRQ = 32'11111111111111111111111111111111
+Parameter \PROGADDR_RESET = 0
+Parameter \PROGADDR_IRQ = 16
+Parameter \STACKADDR = 4096
+
+6.4. Executing AST frontend in derive mode using pre-parsed AST for module `\picorv32'.
+Parameter \ENABLE_COUNTERS = 1'1
+Parameter \ENABLE_COUNTERS64 = 1'1
+Parameter \ENABLE_REGS_16_31 = 1'1
+Parameter \ENABLE_REGS_DUALPORT = 1'1
+Parameter \TWO_STAGE_SHIFT = 1'1
+Parameter \BARREL_SHIFTER = 1'1
+Parameter \TWO_CYCLE_COMPARE = 1'0
+Parameter \TWO_CYCLE_ALU = 1'0
+Parameter \COMPRESSED_ISA = 1'0
+Parameter \CATCH_MISALIGN = 1'1
+Parameter \CATCH_ILLINSN = 1'1
+Parameter \ENABLE_PCPI = 1'0
+Parameter \ENABLE_MUL = 1'0
+Parameter \ENABLE_FAST_MUL = 1'0
+Parameter \ENABLE_DIV = 1'0
+Parameter \ENABLE_IRQ = 1'0
+Parameter \ENABLE_IRQ_QREGS = 1'1
+Parameter \ENABLE_IRQ_TIMER = 1'1
+Parameter \ENABLE_TRACE = 1'0
+Parameter \REGS_INIT_ZERO = 1'0
+Parameter \MASKED_IRQ = 0
+Parameter \LATCHED_IRQ = 32'11111111111111111111111111111111
+Parameter \PROGADDR_RESET = 0
+Parameter \PROGADDR_IRQ = 16
+Parameter \STACKADDR = 4096
+Generating RTLIL representation for module `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32'.
+
+6.5. Executing AST frontend in derive mode using pre-parsed AST for module `\picorv32_axi_adapter'.
+Generating RTLIL representation for module `\picorv32_axi_adapter'.
+
+6.6. Analyzing design hierarchy..
+Top module:  \picorv32_macro
+Used module:     $paramod$01e3903972568d8dfc09d98197d71934d7cb4abe\picorv32_axi
+Used module:         $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32
+Used module:         \picorv32_axi_adapter
+
+6.7. Analyzing design hierarchy..
+Top module:  \picorv32_macro
+Used module:     $paramod$01e3903972568d8dfc09d98197d71934d7cb4abe\picorv32_axi
+Used module:         $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32
+Used module:         \picorv32_axi_adapter
+Removing unused module `$abstract\picorv32_wb'.
+Removing unused module `$abstract\picorv32_axi_adapter'.
+Removing unused module `$abstract\picorv32_axi'.
+Removing unused module `$abstract\picorv32_pcpi_div'.
+Removing unused module `$abstract\picorv32_pcpi_fast_mul'.
+Removing unused module `$abstract\picorv32_pcpi_mul'.
+Removing unused module `$abstract\picorv32_regs'.
+Removing unused module `$abstract\picorv32'.
+Removing unused module `$abstract\picorv32_macro'.
+Removed 9 unused modules.
+Renaming module picorv32_macro to picorv32_macro.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:206$688'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:206$688'.
+Found and cleaned up 17 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+Found and cleaned up 1 empty switch in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1348$493'.
+Found and cleaned up 6 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:546$129'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:546$129'.
+Cleaned up 25 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 34 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 1 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 2 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1309$472 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 2 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1295$467 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 8 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1186$432 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 2 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 48 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:701$162 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 1 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:430$100 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Removed 2 dead cases from process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 2 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 1 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:390$92 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 1 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18 in module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Marked 1 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707 in module picorv32_axi_adapter.
+Removed a total of 2 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 57 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~192 debug messages>
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+     1/78: $17\next_irq_pending[2:2]
+     2/78: $16\next_irq_pending[2:2]
+     3/78: $15\next_irq_pending[2:2]
+     4/78: $14\next_irq_pending[2:2]
+     5/78: $13\next_irq_pending[2:2]
+     6/78: $12\next_irq_pending[2:2]
+     7/78: $11\next_irq_pending[2:2]
+     8/78: $2\next_irq_pending[31:0] [31:2]
+     9/78: $3\set_mem_do_rdata[0:0]
+    10/78: $2\next_irq_pending[31:0] [1]
+    11/78: $3\set_mem_do_wdata[0:0]
+    12/78: $2\next_irq_pending[31:0] [0]
+    13/78: $4\set_mem_do_rinst[0:0]
+    14/78: $3\set_mem_do_rinst[0:0]
+    15/78: $4\set_mem_do_wdata[0:0]
+    16/78: $9\next_irq_pending[1:1]
+    17/78: $8\next_irq_pending[1:1]
+    18/78: $7\next_irq_pending[1:1]
+    19/78: $4\set_mem_do_rdata[0:0]
+    20/78: $5\next_irq_pending[1:1]
+    21/78: $4\next_irq_pending[1:1]
+    22/78: $10\next_irq_pending[1:1]
+    23/78: $5\set_mem_do_rinst[0:0]
+    24/78: $6\next_irq_pending[1:1]
+    25/78: $3\next_irq_pending[31:0]
+    26/78: $3\current_pc[31:0]
+    27/78: $2\current_pc[31:0]
+    28/78: $2\set_mem_do_wdata[0:0]
+    29/78: $2\set_mem_do_rdata[0:0]
+    30/78: $2\set_mem_do_rinst[0:0]
+    31/78: $1\next_irq_pending[31:0]
+    32/78: $1\current_pc[31:0]
+    33/78: $1\set_mem_do_wdata[0:0]
+    34/78: $1\set_mem_do_rdata[0:0]
+    35/78: $1\set_mem_do_rinst[0:0]
+    36/78: $0\trace_data[35:0]
+    37/78: $0\count_cycle[63:0]
+    38/78: $0\trace_valid[0:0]
+    39/78: $0\do_waitirq[0:0]
+    40/78: $0\decoder_pseudo_trigger[0:0]
+    41/78: $0\decoder_trigger[0:0]
+    42/78: $0\alu_wait_2[0:0]
+    43/78: $0\alu_wait[0:0]
+    44/78: $0\reg_out[31:0]
+    45/78: $0\reg_sh[4:0]
+    46/78: $0\trap[0:0]
+    47/78: $0\pcpi_timeout[0:0]
+    48/78: $0\latched_rd[4:0]
+    49/78: $0\latched_is_lb[0:0]
+    50/78: $0\latched_is_lh[0:0]
+    51/78: $0\latched_is_lu[0:0]
+    52/78: $0\latched_trace[0:0]
+    53/78: $0\latched_compr[0:0]
+    54/78: $0\latched_branch[0:0]
+    55/78: $0\latched_stalu[0:0]
+    56/78: $0\latched_store[0:0]
+    57/78: $0\irq_state[1:0]
+    58/78: $0\cpu_state[7:0]
+    59/78: $0\dbg_rs2val_valid[0:0]
+    60/78: $0\dbg_rs1val_valid[0:0]
+    61/78: $0\dbg_rs2val[31:0]
+    62/78: $0\dbg_rs1val[31:0]
+    63/78: $0\mem_do_wdata[0:0]
+    64/78: $0\mem_do_rdata[0:0]
+    65/78: $0\mem_do_rinst[0:0]
+    66/78: $0\mem_do_prefetch[0:0]
+    67/78: $0\mem_wordsize[1:0]
+    68/78: $0\timer[31:0]
+    69/78: $0\irq_mask[31:0]
+    70/78: $0\irq_active[0:0]
+    71/78: $0\irq_delay[0:0]
+    72/78: $0\reg_op2[31:0]
+    73/78: $0\reg_op1[31:0]
+    74/78: $0\reg_next_pc[31:0]
+    75/78: $0\reg_pc[31:0]
+    76/78: $0\count_instr[63:0]
+    77/78: $0\eoi[31:0]
+    78/78: $0\pcpi_valid[0:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1348$493'.
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484'.
+     1/3: $1$memwr$\cpuregs$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1344$17_EN[31:0]$492
+     2/3: $1$memwr$\cpuregs$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1344$17_DATA[31:0]$491
+     3/3: $1$memwr$\cpuregs$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1344$17_ADDR[4:0]$490
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1309$472'.
+     1/4: $2\cpuregs_write[0:0]
+     2/4: $2\cpuregs_wrdata[31:0]
+     3/4: $1\cpuregs_wrdata[31:0]
+     4/4: $1\cpuregs_write[0:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1295$467'.
+     1/2: $2\clear_prefetched_high_word[0:0]
+     2/2: $1\clear_prefetched_high_word[0:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1293$466'.
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1249$444'.
+     1/2: $1\alu_out[31:0]
+     2/2: $1\alu_out_0[0:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1186$432'.
+     1/8: $8\dbg_ascii_state[127:0]
+     2/8: $7\dbg_ascii_state[127:0]
+     3/8: $6\dbg_ascii_state[127:0]
+     4/8: $5\dbg_ascii_state[127:0]
+     5/8: $4\dbg_ascii_state[127:0]
+     6/8: $3\dbg_ascii_state[127:0]
+     7/8: $2\dbg_ascii_state[127:0]
+     8/8: $1\dbg_ascii_state[127:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+     1/77: $0\decoded_rs1[4:0] [4]
+     2/77: $0\decoded_imm_j[31:0] [10]
+     3/77: $0\decoded_imm_j[31:0] [7]
+     4/77: $0\decoded_imm_j[31:0] [6]
+     5/77: $0\decoded_imm_j[31:0] [3:1]
+     6/77: $0\decoded_imm_j[31:0] [5]
+     7/77: $0\decoded_imm_j[31:0] [9:8]
+     8/77: $0\decoded_imm_j[31:0] [31:20]
+     9/77: $0\decoded_imm_j[31:0] [4]
+    10/77: $0\decoded_imm_j[31:0] [11]
+    11/77: $0\decoded_imm_j[31:0] [0]
+    12/77: $0\decoded_rs1[4:0] [3:0]
+    13/77: $0\is_lui_auipc_jal_jalr_addi_add_sub[0:0]
+    14/77: $0\is_alu_reg_reg[0:0]
+    15/77: $0\is_alu_reg_imm[0:0]
+    16/77: $0\is_beq_bne_blt_bge_bltu_bgeu[0:0]
+    17/77: $0\is_sll_srl_sra[0:0]
+    18/77: $0\is_sb_sh_sw[0:0]
+    19/77: $0\is_jalr_addi_slti_sltiu_xori_ori_andi[0:0]
+    20/77: $0\is_slli_srli_srai[0:0]
+    21/77: $0\is_lb_lh_lw_lbu_lhu[0:0]
+    22/77: $0\compressed_instr[0:0]
+    23/77: $0\is_compare[0:0]
+    24/77: $0\decoded_imm[31:0]
+    25/77: $0\decoded_rs2[4:0]
+    26/77: $0\decoded_imm_j[31:0] [19:12]
+    27/77: $0\decoded_rd[4:0]
+    28/77: $0\instr_timer[0:0]
+    29/77: $0\instr_waitirq[0:0]
+    30/77: $0\instr_maskirq[0:0]
+    31/77: $0\instr_retirq[0:0]
+    32/77: $0\instr_setq[0:0]
+    33/77: $0\instr_getq[0:0]
+    34/77: $0\instr_fence[0:0]
+    35/77: $0\instr_ecall_ebreak[0:0]
+    36/77: $0\instr_rdinstrh[0:0]
+    37/77: $0\instr_rdinstr[0:0]
+    38/77: $0\instr_rdcycleh[0:0]
+    39/77: $0\instr_rdcycle[0:0]
+    40/77: $0\instr_and[0:0]
+    41/77: $0\instr_or[0:0]
+    42/77: $0\instr_sra[0:0]
+    43/77: $0\instr_srl[0:0]
+    44/77: $0\instr_xor[0:0]
+    45/77: $0\instr_sltu[0:0]
+    46/77: $0\instr_slt[0:0]
+    47/77: $0\instr_sll[0:0]
+    48/77: $0\instr_sub[0:0]
+    49/77: $0\instr_add[0:0]
+    50/77: $0\instr_srai[0:0]
+    51/77: $0\instr_srli[0:0]
+    52/77: $0\instr_slli[0:0]
+    53/77: $0\instr_andi[0:0]
+    54/77: $0\instr_ori[0:0]
+    55/77: $0\instr_xori[0:0]
+    56/77: $0\instr_sltiu[0:0]
+    57/77: $0\instr_slti[0:0]
+    58/77: $0\instr_addi[0:0]
+    59/77: $0\instr_sw[0:0]
+    60/77: $0\instr_sh[0:0]
+    61/77: $0\instr_sb[0:0]
+    62/77: $0\instr_lhu[0:0]
+    63/77: $0\instr_lbu[0:0]
+    64/77: $0\instr_lw[0:0]
+    65/77: $0\instr_lh[0:0]
+    66/77: $0\instr_lb[0:0]
+    67/77: $0\instr_bgeu[0:0]
+    68/77: $0\instr_bltu[0:0]
+    69/77: $0\instr_bge[0:0]
+    70/77: $0\instr_blt[0:0]
+    71/77: $0\instr_bne[0:0]
+    72/77: $0\instr_beq[0:0]
+    73/77: $0\instr_jalr[0:0]
+    74/77: $0\instr_jal[0:0]
+    75/77: $0\instr_auipc[0:0]
+    76/77: $0\instr_lui[0:0]
+    77/77: $0\pcpi_insn[31:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+     1/13: $3\dbg_insn_opcode[31:0]
+     2/13: $2\dbg_insn_rd[4:0]
+     3/13: $2\dbg_insn_rs2[4:0]
+     4/13: $2\dbg_insn_rs1[4:0]
+     5/13: $2\dbg_insn_opcode[31:0]
+     6/13: $2\dbg_insn_imm[31:0]
+     7/13: $2\dbg_ascii_instr[63:0]
+     8/13: $1\dbg_insn_rd[4:0]
+     9/13: $1\dbg_insn_rs2[4:0]
+    10/13: $1\dbg_insn_rs1[4:0]
+    11/13: $1\dbg_insn_imm[31:0]
+    12/13: $1\dbg_ascii_instr[63:0]
+    13/13: $1\dbg_insn_opcode[31:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+     1/8: $0\cached_insn_rd[4:0]
+     2/8: $0\cached_insn_rs2[4:0]
+     3/8: $0\cached_insn_rs1[4:0]
+     4/8: $0\cached_insn_opcode[31:0]
+     5/8: $0\cached_insn_imm[31:0]
+     6/8: $0\cached_ascii_instr[63:0]
+     7/8: $0\dbg_valid_insn[0:0]
+     8/8: $0\dbg_insn_addr[31:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:701$162'.
+     1/48: $48\new_ascii_instr[63:0]
+     2/48: $47\new_ascii_instr[63:0]
+     3/48: $46\new_ascii_instr[63:0]
+     4/48: $45\new_ascii_instr[63:0]
+     5/48: $44\new_ascii_instr[63:0]
+     6/48: $43\new_ascii_instr[63:0]
+     7/48: $42\new_ascii_instr[63:0]
+     8/48: $41\new_ascii_instr[63:0]
+     9/48: $40\new_ascii_instr[63:0]
+    10/48: $39\new_ascii_instr[63:0]
+    11/48: $38\new_ascii_instr[63:0]
+    12/48: $37\new_ascii_instr[63:0]
+    13/48: $36\new_ascii_instr[63:0]
+    14/48: $35\new_ascii_instr[63:0]
+    15/48: $34\new_ascii_instr[63:0]
+    16/48: $33\new_ascii_instr[63:0]
+    17/48: $32\new_ascii_instr[63:0]
+    18/48: $31\new_ascii_instr[63:0]
+    19/48: $30\new_ascii_instr[63:0]
+    20/48: $29\new_ascii_instr[63:0]
+    21/48: $28\new_ascii_instr[63:0]
+    22/48: $27\new_ascii_instr[63:0]
+    23/48: $26\new_ascii_instr[63:0]
+    24/48: $25\new_ascii_instr[63:0]
+    25/48: $24\new_ascii_instr[63:0]
+    26/48: $23\new_ascii_instr[63:0]
+    27/48: $22\new_ascii_instr[63:0]
+    28/48: $21\new_ascii_instr[63:0]
+    29/48: $20\new_ascii_instr[63:0]
+    30/48: $19\new_ascii_instr[63:0]
+    31/48: $18\new_ascii_instr[63:0]
+    32/48: $17\new_ascii_instr[63:0]
+    33/48: $16\new_ascii_instr[63:0]
+    34/48: $15\new_ascii_instr[63:0]
+    35/48: $14\new_ascii_instr[63:0]
+    36/48: $13\new_ascii_instr[63:0]
+    37/48: $12\new_ascii_instr[63:0]
+    38/48: $11\new_ascii_instr[63:0]
+    39/48: $10\new_ascii_instr[63:0]
+    40/48: $9\new_ascii_instr[63:0]
+    41/48: $8\new_ascii_instr[63:0]
+    42/48: $7\new_ascii_instr[63:0]
+    43/48: $6\new_ascii_instr[63:0]
+    44/48: $5\new_ascii_instr[63:0]
+    45/48: $4\new_ascii_instr[63:0]
+    46/48: $3\new_ascii_instr[63:0]
+    47/48: $2\new_ascii_instr[63:0]
+    48/48: $1\new_ascii_instr[63:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+     1/9: $0\mem_16bit_buffer[15:0]
+     2/9: $0\prefetched_high_word[0:0]
+     3/9: $0\mem_la_secondword[0:0]
+     4/9: $0\mem_state[1:0]
+     5/9: $0\mem_instr[0:0]
+     6/9: $0\mem_wstrb[3:0]
+     7/9: $0\mem_wdata[31:0]
+     8/9: $0\mem_addr[31:0]
+     9/9: $0\mem_valid[0:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:430$100'.
+     1/9: $0\mem_rdata_q[31:0] [31]
+     2/9: $0\mem_rdata_q[31:0] [7]
+     3/9: $0\mem_rdata_q[31:0] [24:20]
+     4/9: $0\mem_rdata_q[31:0] [19:15]
+     5/9: $0\mem_rdata_q[31:0] [6:0]
+     6/9: $0\mem_rdata_q[31:0] [14:12]
+     7/9: $0\mem_rdata_q[31:0] [11:8]
+     8/9: $0\mem_rdata_q[31:0] [30:25]
+     9/9: $0\next_insn_opcode[31:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97'.
+     1/5: $3\mem_rdata_word[31:0]
+     2/5: $2\mem_rdata_word[31:0]
+     3/5: $1\mem_rdata_word[31:0]
+     4/5: $1\mem_la_wstrb[3:0]
+     5/5: $1\mem_la_wdata[31:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:390$92'.
+     1/2: $0\last_mem_valid[0:0]
+     2/2: $0\mem_la_firstword_reg[0:0]
+Creating decoders for process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+     1/2: $1\pcpi_int_rd[31:0]
+     2/2: $1\pcpi_int_wr[0:0]
+Creating decoders for process `\picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+     1/4: $0\xfer_done[0:0]
+     2/4: $0\ack_wvalid[0:0]
+     3/4: $0\ack_arvalid[0:0]
+     4/4: $0\ack_awvalid[0:0]
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cpuregs_rs1' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1348$493'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cpuregs_rs2' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1348$493'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoded_rs' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1348$493'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cpuregs_write' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1309$472'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cpuregs_wrdata' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1309$472'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\clear_prefetched_high_word' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1295$467'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_out' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1249$444'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_out_0' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1249$444'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_ascii_state' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1186$432'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_insn_opcode' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_ascii_instr' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_insn_imm' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_insn_rs1' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_insn_rs2' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_insn_rd' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\new_ascii_instr' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:701$162'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_add_sub' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_shl' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_shr' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_eq' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_ltu' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_lts' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_la_wdata' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_la_wstrb' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_rdata_word' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_int_wr' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_int_rd' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_int_wait' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+No latch inferred for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_int_ready' from process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\trap' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3464' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_valid' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3465' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\eoi' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3466' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\trace_valid' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3467' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\trace_data' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3468' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\count_cycle' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3469' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\count_instr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3470' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\reg_pc' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3471' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\reg_next_pc' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3472' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\reg_op1' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3473' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\reg_op2' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3474' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\reg_out' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3475' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\reg_sh' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3476' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\irq_delay' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3477' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\irq_active' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3478' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\irq_mask' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3479' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\irq_pending' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3480' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\timer' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3481' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_wordsize' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3482' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_do_prefetch' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3483' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_do_rinst' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3484' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_do_rdata' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3485' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_do_wdata' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3486' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoder_trigger' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3487' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoder_trigger_q' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3488' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoder_pseudo_trigger' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3489' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoder_pseudo_trigger_q' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3490' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_rs1val' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3491' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_rs2val' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3492' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_rs1val_valid' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3493' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_rs2val_valid' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3494' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cpu_state' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3495' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\irq_state' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3496' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\set_mem_do_rinst' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3497' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\set_mem_do_rdata' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3498' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\set_mem_do_wdata' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3499' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_store' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3500' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_stalu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3501' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_branch' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3502' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_compr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3503' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_trace' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3504' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_is_lu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3505' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_is_lh' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3506' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_is_lb' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3507' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\latched_rd' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3508' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\current_pc' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3509' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_timeout' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3510' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\next_irq_pending' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3511' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\do_waitirq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3512' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_out_q' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3513' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_out_0_q' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3514' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_wait' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3515' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\alu_wait_2' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+  created $dff cell `$procdff$3516' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$memwr$\cpuregs$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1344$17_ADDR' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484'.
+  created $dff cell `$procdff$3517' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$memwr$\cpuregs$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1344$17_DATA' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484'.
+  created $dff cell `$procdff$3518' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$memwr$\cpuregs$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1344$17_EN' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484'.
+  created $dff cell `$procdff$3519' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\clear_prefetched_high_word_q' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1293$466'.
+  created $dff cell `$procdff$3520' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\pcpi_insn' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3521' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_lui' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3522' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_auipc' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3523' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_jal' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3524' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_jalr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3525' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_beq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3526' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_bne' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3527' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_blt' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3528' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_bge' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3529' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_bltu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3530' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_bgeu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3531' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_lb' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3532' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_lh' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3533' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_lw' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3534' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_lbu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3535' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_lhu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3536' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sb' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3537' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sh' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3538' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sw' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3539' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_addi' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3540' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_slti' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3541' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sltiu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3542' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_xori' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3543' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_ori' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3544' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_andi' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3545' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_slli' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3546' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_srli' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3547' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_srai' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3548' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_add' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3549' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sub' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3550' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sll' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3551' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_slt' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3552' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sltu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3553' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_xor' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3554' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_srl' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3555' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_sra' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3556' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_or' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3557' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_and' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3558' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_rdcycle' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3559' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_rdcycleh' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3560' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_rdinstr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3561' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_rdinstrh' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3562' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_ecall_ebreak' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3563' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_fence' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3564' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_getq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3565' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_setq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3566' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_retirq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3567' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_maskirq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3568' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_waitirq' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3569' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\instr_timer' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3570' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoded_rd' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3571' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoded_rs1' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3572' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoded_rs2' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3573' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoded_imm' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3574' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\decoded_imm_j' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3575' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\compressed_instr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3576' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_lui_auipc_jal' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3577' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_lb_lh_lw_lbu_lhu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3578' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_slli_srli_srai' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3579' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_jalr_addi_slti_sltiu_xori_ori_andi' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3580' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_sb_sh_sw' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3581' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_sll_srl_sra' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3582' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_lui_auipc_jal_jalr_addi_add_sub' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3583' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_slti_blt_slt' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3584' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_sltiu_bltu_sltu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3585' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_beq_bne_blt_bge_bltu_bgeu' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3586' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_lbu_lhu_lw' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3587' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_alu_reg_imm' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3588' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_alu_reg_reg' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3589' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\is_compare' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+  created $dff cell `$procdff$3590' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_insn_addr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3591' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\q_ascii_instr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3592' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\q_insn_imm' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3593' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\q_insn_opcode' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3594' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\q_insn_rs1' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3595' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\q_insn_rs2' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3596' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\q_insn_rd' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3597' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_next' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3598' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\dbg_valid_insn' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3599' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cached_ascii_instr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3600' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cached_insn_imm' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3601' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cached_insn_opcode' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3602' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cached_insn_rs1' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3603' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cached_insn_rs2' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3604' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\cached_insn_rd' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+  created $dff cell `$procdff$3605' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_valid' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3606' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_addr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3607' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_wdata' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3608' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_wstrb' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3609' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_instr' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3610' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_state' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3611' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_la_secondword' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3612' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\prefetched_high_word' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3613' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_16bit_buffer' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+  created $dff cell `$procdff$3614' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\next_insn_opcode' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:430$100'.
+  created $dff cell `$procdff$3615' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_rdata_q' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:430$100'.
+  created $dff cell `$procdff$3616' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\mem_la_firstword_reg' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:390$92'.
+  created $dff cell `$procdff$3617' with positive edge clock.
+Creating register for signal `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.\last_mem_valid' using process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:390$92'.
+  created $dff cell `$procdff$3618' with positive edge clock.
+Creating register for signal `\picorv32_axi_adapter.\ack_awvalid' using process `\picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+  created $dff cell `$procdff$3619' with positive edge clock.
+Creating register for signal `\picorv32_axi_adapter.\ack_arvalid' using process `\picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+  created $dff cell `$procdff$3620' with positive edge clock.
+Creating register for signal `\picorv32_axi_adapter.\ack_wvalid' using process `\picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+  created $dff cell `$procdff$3621' with positive edge clock.
+Creating register for signal `\picorv32_axi_adapter.\xfer_done' using process `\picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+  created $dff cell `$procdff$3622' with positive edge clock.
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 53 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1402$509'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1348$493'.
+Found and cleaned up 1 empty switch in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1337$484'.
+Found and cleaned up 2 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1309$472'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1309$472'.
+Found and cleaned up 2 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1295$467'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1295$467'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1293$466'.
+Found and cleaned up 2 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1249$444'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1249$444'.
+Found and cleaned up 8 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1186$432'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1186$432'.
+Found and cleaned up 22 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:858$169'.
+Found and cleaned up 3 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:809$167'.
+Found and cleaned up 5 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:778$163'.
+Found and cleaned up 48 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:701$162'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:701$162'.
+Found and cleaned up 16 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:565$138'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:1239$677'.
+Found and cleaned up 19 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:430$100'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:430$100'.
+Found and cleaned up 3 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:401$97'.
+Found and cleaned up 2 empty switches in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:390$92'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:390$92'.
+Found and cleaned up 1 empty switch in `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+Removing empty process `$paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:325$18'.
+Found and cleaned up 5 empty switches in `\picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+Removing empty process `picorv32_axi_adapter.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/picorv32.v:2790$707'.
+Cleaned up 192 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module picorv32_macro.
+Optimizing module $paramod$01e3903972568d8dfc09d98197d71934d7cb4abe\picorv32_axi.
+Optimizing module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+<suppressed ~824 debug messages>
+Optimizing module picorv32_axi_adapter.
+<suppressed ~4 debug messages>
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$01e3903972568d8dfc09d98197d71934d7cb4abe\picorv32_axi.
+Deleting now unused module $paramod$f0d574d89fe7988f7c94dd68572519451a6fe5f0\picorv32.
+Deleting now unused module picorv32_axi_adapter.
+<suppressed ~3 debug messages>
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \picorv32_macro..
+Removed 747 unused cells and 2338 unused wires.
+<suppressed ~911 debug messages>
