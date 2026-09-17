@@ -1,0 +1,64 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_11/28-openroad-globalplacement/picorv32_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO RSZ-0027] Inserted 38 sg13g2_buf_1 input buffers.
+[INFO RSZ-0028] Inserted 103 sg13g2_buf_1 output buffers.
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 20.0 -cap_margin 20.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      9453
+     1000 |     +0.1% |       0 |      35 |             7 |      8453
+     2000 |     +0.4% |       0 |     108 |            24 |      7453
+     3000 |     +1.0% |       0 |     234 |            50 |      6453
+     4000 |     +1.5% |       0 |     368 |            81 |      5453
+     5000 |     +1.7% |       0 |     428 |           100 |      4453
+     6000 |     +2.0% |       0 |     490 |           114 |      3453
+     7000 |     +4.3% |       0 |    1056 |           249 |      2453
+     8000 |     +5.2% |       0 |    1261 |           261 |      1453
+     9000 |     +5.2% |       0 |    1261 |           261 |       453
+    final |     +5.2% |       0 |    1261 |           261 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 57 slew violations.
+[INFO RSZ-0035] Found 261 fanout violations.
+[INFO RSZ-0038] Inserted 1261 buffers in 261 nets.
+[INFO RSZ-0042] Inserted 9 tie sg13g2_tielo instances.
+[INFO RSZ-0042] Inserted 1594 tie sg13g2_tiehi instances.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement      33106.1 u
+average displacement        3.1 u
+max displacement           22.1 u
+original HPWL          499536.6 u
+legalized HPWL         521752.9 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 4991 instances
+[INFO DPL-0021] HPWL before          521752.9 u
+[INFO DPL-0022] HPWL after           513675.9 u
+[INFO DPL-0023] HPWL delta               -1.5 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 6010 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                   63     457.23
+  Timing Repair Buffer                   1402   10175.16
+  Inverter                                 71     386.47
+  Sequential cell                        1594   78088.15
+  Multi-Input combinational cell         7545   97621.98
+  Total                                 10675  186728.98
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_11/32-openroad-repairdesignpostgpl/picorv32_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_11/32-openroad-repairdesignpostgpl/picorv32_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_11/32-openroad-repairdesignpostgpl/picorv32_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_11/32-openroad-repairdesignpostgpl/picorv32_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_11/32-openroad-repairdesignpostgpl/picorv32_macro.sdc'…

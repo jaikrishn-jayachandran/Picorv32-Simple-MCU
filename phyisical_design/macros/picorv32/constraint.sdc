@@ -81,4 +81,4 @@ set_load 0.05 [get_ports {
 
 set_false_path -from [get_ports rst_ni]
 
-set_max_fanout 32 [current_design]
+# set_max_fanout 32 [current_design]
