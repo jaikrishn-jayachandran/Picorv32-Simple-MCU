@@ -8,7 +8,9 @@ set_clock_uncertainty -hold  0.1 [get_clocks clk_i]
 set_clock_transition 0.2 [get_clocks clk_i]
 
 
-# AXI4-Lite inputs
+# ============================================================
+# AXI4-Lite INPUTS
+# ============================================================
 
 set_input_delay -clock clk_i -max 2.0 [get_ports {
     s_axil_awaddr[*]
@@ -47,7 +49,26 @@ set_driving_cell -lib_cell sg13g2_buf_4 -pin X [get_ports {
 }]
 
 
-# AXI4-Lite outputs
+# ============================================================
+# GPIO INPUT
+# ============================================================
+
+set_input_delay -clock clk_i -max 2.0 [get_ports {
+    gpio_in[*]
+}]
+
+set_input_delay -clock clk_i -min 0.0 [get_ports {
+    gpio_in[*]
+}]
+
+set_driving_cell -lib_cell sg13g2_buf_4 -pin X [get_ports {
+    gpio_in[*]
+}]
+
+
+# ============================================================
+# AXI4-Lite OUTPUTS
+# ============================================================
 
 set_output_delay -clock clk_i -max 2.0 [get_ports {
     s_axil_awready
@@ -83,7 +104,29 @@ set_load 0.05 [get_ports {
 }]
 
 
-# Reset
+# ============================================================
+# GPIO OUTPUTS
+# ============================================================
+
+set_output_delay -clock clk_i -max 2.0 [get_ports {
+    gpio_out[*]
+    gpio_dir[*]
+}]
+
+set_output_delay -clock clk_i -min 0.0 [get_ports {
+    gpio_out[*]
+    gpio_dir[*]
+}]
+
+set_load 0.05 [get_ports {
+    gpio_out[*]
+    gpio_dir[*]
+}]
+
+
+# ============================================================
+# RESET
+# ============================================================
 
 set_false_path -from [get_ports rst_ni]
 

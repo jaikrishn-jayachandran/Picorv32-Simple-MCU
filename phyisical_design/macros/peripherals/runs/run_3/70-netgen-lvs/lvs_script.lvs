@@ -1,0 +1,9 @@
+set circuit1 [readnet spice /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/68-magic-spiceextraction/peripherals_macro.spice]
+set circuit2 [readnet verilog /dev/null]
+puts "Reading SPICE netlist file '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice'..."
+readnet spice /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice $circuit2
+puts "Reading SPICE netlist file '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice'..."
+readnet spice /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice $circuit2
+puts "Reading Verilog netlist file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/52-openroad-fillinsertion/peripherals_macro.pnl.v'..."
+readnet verilog /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/52-openroad-fillinsertion/peripherals_macro.pnl.v $circuit2
+lvs "$circuit1 peripherals_macro" "$circuit2 peripherals_macro" /nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/70-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

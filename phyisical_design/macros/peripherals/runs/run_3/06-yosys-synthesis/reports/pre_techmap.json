@@ -1,0 +1,61 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/22fb6885dac74e2a936bc18fc4fbd4cc.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/615bbc51ee7648e58823278a138eca73.lib ",
+   "modules": {
+      "\\peripherals_macro": {
+         "num_wires":         223,
+         "num_wire_bits":     476,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         332,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 2,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "$_SDFFE_PN0P_": 97,
+            "$_SDFFE_PP0P_": 1,
+            "$_SDFF_PN0_": 2,
+            "$_SDFF_PN1_": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         223,
+         "num_wire_bits":     476,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         332,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 2,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "$_SDFFE_PN0P_": 97,
+            "$_SDFFE_PP0P_": 1,
+            "$_SDFF_PN0_": 2,
+            "$_SDFF_PN1_": 1
+         }
+      }
+}
+

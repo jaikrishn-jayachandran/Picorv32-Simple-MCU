@@ -1,0 +1,40 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold in-reg] gpio_in[1] -> _1003_/D : -0.071202
+[hold in-reg] s_axil_bready -> _1101_/D : -0.066256
+[hold in-reg] gpio_in[7] -> _1009_/D : -0.065814
+[hold in-reg] gpio_in[12] -> _1014_/D : -0.063659
+[hold in-reg] gpio_in[0] -> _1002_/D : -0.058226
+[hold in-reg] gpio_in[2] -> _1004_/D : -0.057167
+[hold in-reg] gpio_in[3] -> _1005_/D : -0.056993
+[hold in-reg] gpio_in[25] -> _1027_/D : -0.055666
+[hold in-reg] gpio_in[13] -> _1015_/D : -0.053265
+[hold in-reg] gpio_in[6] -> _1008_/D : -0.051966
+[hold in-reg] gpio_in[30] -> _1032_/D : -0.045893
+[hold in-reg] gpio_in[15] -> _1017_/D : -0.045234
+[hold in-reg] s_axil_bready -> _1036_/D : -0.044731
+[hold in-reg] gpio_in[11] -> _1013_/D : -0.038541
+[hold in-reg] gpio_in[28] -> _1030_/D : -0.037824
+[hold in-reg] gpio_in[14] -> _1016_/D : -0.037749
+[hold in-reg] gpio_in[18] -> _1020_/D : -0.037688
+[hold in-reg] gpio_in[22] -> _1024_/D : -0.037381
+[hold in-reg] gpio_in[8] -> _1010_/D : -0.037194
+[hold in-reg] gpio_in[24] -> _1026_/D : -0.033477
+[hold in-reg] gpio_in[26] -> _1028_/D : -0.033114
+[hold in-reg] gpio_in[4] -> _1006_/D : -0.032675
+[hold in-reg] gpio_in[5] -> _1007_/D : -0.030455
+[hold in-reg] gpio_in[9] -> _1011_/D : -0.025835
+[hold in-reg] gpio_in[31] -> _1033_/D : -0.022745
+[hold in-reg] gpio_in[29] -> _1031_/D : -0.021624
+[hold in-reg] gpio_in[17] -> _1019_/D : -0.021312
+[hold in-reg] gpio_in[27] -> _1029_/D : -0.015358
+[hold in-reg] gpio_in[10] -> _1012_/D : -0.013394
+[hold in-reg] gpio_in[23] -> _1025_/D : -0.006796
+Writing metric timing__hold_vio__count__corner:nom_typ_1p20V_25C: 30
+Writing metric timing__hold_r2r__ws__corner:nom_typ_1p20V_25C: 0.211931
+Writing metric timing__hold_r2r_vio__count__corner:nom_typ_1p20V_25C: 0
+Writing metric timing__setup_vio__count__corner:nom_typ_1p20V_25C: 0
+Writing metric timing__setup_r2r__ws__corner:nom_typ_1p20V_25C: 1e30
+Writing metric timing__setup_r2r_vio__count__corner:nom_typ_1p20V_25C: 0

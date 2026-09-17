@@ -1,0 +1,660 @@
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module sg13g2_a21o_1(X, A1, A2, B1);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/TIMESCALEMOD?v=5.044
+                       ... Use "/* verilator lint_off TIMESCALEMOD */" and lint_on around source to disable this message.
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:14:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   14 | module sg13g2_a21o_2(X, A1, A2, B1);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:25:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   25 | module sg13g2_a21oi_1(Y, A1, A2, B1);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:36:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   36 | module sg13g2_a21oi_2(Y, A1, A2, B1);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:47:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   47 | module sg13g2_a221oi_1(Y, A1, A2, B1, B2, C1);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:62:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   62 | module sg13g2_a22oi_1(Y, A1, A2, B1, B2);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:75:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   75 | module sg13g2_and2_1(X, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:84:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   84 | module sg13g2_and2_2(X, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:93:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   93 | module sg13g2_and3_1(X, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:104:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  104 | module sg13g2_and3_2(X, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:115:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  115 | module sg13g2_and4_1(X, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:128:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  128 | module sg13g2_and4_2(X, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:141:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  141 | module sg13g2_antennanp(A);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:146:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  146 | module sg13g2_buf_1(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:153:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  153 | module sg13g2_buf_16(X, A);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:160:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  160 | module sg13g2_buf_2(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:167:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  167 | module sg13g2_buf_4(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:174:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  174 | module sg13g2_buf_8(X, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:181:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  181 | module sg13g2_decap_4();
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:184:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  184 | module sg13g2_decap_8();
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:187:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  187 | module sg13g2_dfrbp_1(Q, Q_N, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:200:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  200 | module sg13g2_dfrbp_2(Q, Q_N, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:213:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  213 | module sg13g2_dfrbpq_1(Q, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:224:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  224 | module sg13g2_dfrbpq_2(Q, CLK, D, RESET_B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:235:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  235 | module sg13g2_dlhq_1(Q, D, GATE);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:244:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  244 | module sg13g2_dlhr_1(Q, Q_N, D, GATE, RESET_B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:257:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  257 | module sg13g2_dlhrq_1(Q, D, GATE, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:268:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  268 | module sg13g2_dllr_1(Q, Q_N, D, GATE_N, RESET_B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:281:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  281 | module sg13g2_dllrq_1(Q, D, GATE_N, RESET_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:292:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  292 | module sg13g2_dlygate4sd1_1(X, A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:299:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  299 | module sg13g2_dlygate4sd2_1(X, A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:306:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  306 | module sg13g2_dlygate4sd3_1(X, A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:313:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  313 | module sg13g2_ebufn_2(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:322:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  322 | module sg13g2_ebufn_4(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:331:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  331 | module sg13g2_ebufn_8(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:340:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  340 | module sg13g2_einvn_2(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:349:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  349 | module sg13g2_einvn_4(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:358:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  358 | module sg13g2_einvn_8(Z, A, TE_B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:367:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  367 | module sg13g2_fill_1();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:370:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  370 | module sg13g2_fill_2();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:373:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  373 | module sg13g2_fill_4();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:376:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  376 | module sg13g2_fill_8();
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:379:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  379 | module sg13g2_inv_1(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:386:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  386 | module sg13g2_inv_16(Y, A);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:393:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  393 | module sg13g2_inv_2(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:400:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  400 | module sg13g2_inv_4(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:407:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  407 | module sg13g2_inv_8(Y, A);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:414:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  414 | module sg13g2_lgcp_1(GCLK, CLK, GATE);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:423:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  423 | module sg13g2_mux2_1(X, A0, A1, S);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:434:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  434 | module sg13g2_mux2_2(X, A0, A1, S);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:445:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  445 | module sg13g2_mux4_1(X, A0, A1, A2, A3, S0, S1);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:462:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  462 | module sg13g2_nand2_1(Y, A, B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:471:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  471 | module sg13g2_nand2_2(Y, A, B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:480:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  480 | module sg13g2_nand2b_1(Y, A_N, B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:489:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  489 | module sg13g2_nand2b_2(Y, A_N, B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:498:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  498 | module sg13g2_nand3_1(Y, A, B, C);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:509:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  509 | module sg13g2_nand3b_1(Y, A_N, B, C);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:520:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  520 | module sg13g2_nand4_1(Y, A, B, C, D);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:533:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  533 | module sg13g2_nor2_1(Y, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:542:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  542 | module sg13g2_nor2_2(Y, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:551:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  551 | module sg13g2_nor2b_1(Y, A, B_N);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:560:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  560 | module sg13g2_nor2b_2(Y, A, B_N);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:569:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  569 | module sg13g2_nor3_1(Y, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:580:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  580 | module sg13g2_nor3_2(Y, A, B, C);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:591:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  591 | module sg13g2_nor4_1(Y, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:604:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  604 | module sg13g2_nor4_2(Y, A, B, C, D);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:617:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  617 | module sg13g2_o21ai_1(Y, A1, A2, B1);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:628:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  628 | module sg13g2_or2_1(X, A, B);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:637:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  637 | module sg13g2_or2_2(X, A, B);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:646:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  646 | module sg13g2_or3_1(X, A, B, C);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:657:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  657 | module sg13g2_or3_2(X, A, B, C);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:668:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  668 | module sg13g2_or4_1(X, A, B, C, D);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:681:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  681 | module sg13g2_or4_2(X, A, B, C, D);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:694:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  694 | module sg13g2_sdfbbp_1(Q, Q_N, CLK, D, RESET_B, SCD, SCE, SET_B);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:713:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  713 | module sg13g2_sdfrbp_1(Q, Q_N, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:730:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  730 | module sg13g2_sdfrbp_2(Q, Q_N, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:747:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  747 | module sg13g2_sdfrbpq_1(Q, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:762:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  762 | module sg13g2_sdfrbpq_2(Q, CLK, D, RESET_B, SCD, SCE);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:777:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  777 | module sg13g2_sighold(SH);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:782:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  782 | module sg13g2_slgcp_1(GCLK, GATE, CLK, SCE);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:793:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  793 | module sg13g2_tiehi(L_HI);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:798:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  798 | module sg13g2_tielo(L_LO);
+      |        ^~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:803:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  803 | module sg13g2_xnor2_1(Y, A, B);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/47f5b9cb577f4017813e520ddd4f009d.bb.v:812:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  812 | module sg13g2_xor2_1(X, A, B);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:3:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+    3 | module sg13g2_Corner(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:14:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   14 | module sg13g2_Filler1000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:25:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   25 | module sg13g2_Filler10000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:36:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   36 | module sg13g2_Filler200(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:47:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   47 | module sg13g2_Filler2000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:58:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   58 | module sg13g2_Filler400(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:69:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   69 | module sg13g2_Filler4000(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:80:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   80 | module sg13g2_IOPadAnalog(pad, padres, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:95:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+   95 | module sg13g2_IOPadIOVdd(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:106:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  106 | module sg13g2_IOPadIOVss(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:117:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  117 | module sg13g2_IOPadIn(pad, p2c, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:132:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  132 | module sg13g2_IOPadInOut16mA(pad, c2p, p2c, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:151:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  151 | module sg13g2_IOPadInOut30mA(pad, c2p, p2c, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:170:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  170 | module sg13g2_IOPadInOut4mA(pad, c2p, p2c, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:189:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  189 | module sg13g2_IOPadOut16mA(pad, c2p, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:204:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  204 | module sg13g2_IOPadOut30mA(pad, c2p, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:219:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  219 | module sg13g2_IOPadOut4mA(pad, c2p, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:234:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  234 | module sg13g2_IOPadTriOut16mA(pad, c2p, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:251:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  251 | module sg13g2_IOPadTriOut30mA(pad, c2p, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:268:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  268 | module sg13g2_IOPadTriOut4mA(pad, c2p, c2p_en, vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:285:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  285 | module sg13g2_IOPadVdd(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-TIMESCALEMOD: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_3/tmp/b992865730264936a760d9f82b41cf48.bb.v:296:8: Timescale missing on this module as other modules have it (IEEE 1800-2023 3.14.2.3)
+  296 | module sg13g2_IOPadVss(vdd, vss, iovdd, iovss);
+      |        ^~~~~~~~~~~~~~~
+                       /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3:8: ... Location of module with timescale
+    3 | module peripherals_macro #(
+      |        ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:9:41: Bits of signal are not used: 's_axil_awaddr'[31:4,1:0]
+                                                                                                      : ... note: In instance 'peripherals_macro.i_gpio'
+    9 |     input  logic [ADDR_WIDTH-1:0]       s_axil_awaddr,
+      |                                         ^~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.044
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:22:41: Bits of signal are not used: 's_axil_araddr'[31:4,1:0]
+                                                                                                       : ... note: In instance 'peripherals_macro.i_gpio'
+   22 |     input  logic [ADDR_WIDTH-1:0]       s_axil_araddr,
+      |                                         ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:29:41: Signal is not used: 's_axil_rready'
+                                                                                                       : ... note: In instance 'peripherals_macro.i_gpio'
+   29 |     input  logic                        s_axil_rready,
+      |                                         ^~~~~~~~~~~~~
+%Warning-CASEINCOMPLETE: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65:17: Case values incompletely covered (example pattern 0x2)
+   65 |                 case(s_axil_awaddr[3:2])
+      |                 ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.044
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+- V e r i l a t i o n   R e p o r t: Verilator 5.044 2026-01-01 rev v5.040
+- Verilator: Built from 0.223 MB sources in 109 modules, into 0.019 MB in 3 C++ files needing 0.000 MB
+- Verilator: Walltime 0.074 s (elab=0.014, cvt=0.042, bld=0.000); cpu 0.018 s on 1 threads; alloced 21.066 MB
