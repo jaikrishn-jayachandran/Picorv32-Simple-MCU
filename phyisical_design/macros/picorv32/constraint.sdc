@@ -7,6 +7,7 @@ set_clock_uncertainty -setup 0.2 [get_clocks clk_i]
 set_clock_uncertainty -hold  0.1 [get_clocks clk_i]
 set_clock_transition 0.2 [get_clocks clk_i]
 
+
 set_input_delay -clock clk_i -max 2.0 [get_ports {
     mem_axi_awready
     mem_axi_wready
@@ -33,6 +34,7 @@ set_driving_cell -lib_cell sg13g2_buf_4 -pin X [get_ports {
     mem_axi_rvalid
     mem_axi_rdata[*]
 }]
+
 
 set_output_delay -clock clk_i -max 2.0 [get_ports {
     mem_axi_awvalid
@@ -79,6 +81,8 @@ set_load 0.05 [get_ports {
     trap
 }]
 
+
 set_false_path -from [get_ports rst_ni]
 
-# set_max_fanout 32 [current_design]
+set_input_delay -clock clk_i -min 0.0 [get_ports rst_ni]
+set_input_delay -clock clk_i -max 0.0 [get_ports rst_ni]

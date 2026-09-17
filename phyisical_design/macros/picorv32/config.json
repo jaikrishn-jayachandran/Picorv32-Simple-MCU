@@ -25,9 +25,15 @@
 
   "SYNTH_STRATEGY": "DELAY 1",
 
+  "SYNTH_MAX_FANOUT": 8,
+
+  "CTS_SINK_CLUSTERING_ENABLE": true,
+  "CTS_SINK_CLUSTERING_SIZE": 8,
+
   "VDD_NETS": [
     "VDD"
   ],
+
   "GND_NETS": [
     "VSS"
   ],
