@@ -1,0 +1,2563 @@
+{
+  "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+  "modules": {
+    "peripherals_macro": {
+      "attributes": {
+        "hdlname": "peripherals_macro",
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:3.1-73.10"
+      },
+      "parameter_default_values": {
+        "ADDR_WIDTH": "00000000000000000000000000100000",
+        "DATA_WIDTH": "00000000000000000000000000100000"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_ni": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "s_axil_awaddr": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ]
+        },
+        "s_axil_awvalid": {
+          "direction": "input",
+          "bits": [ 36 ]
+        },
+        "s_axil_awready": {
+          "direction": "output",
+          "bits": [ 37 ]
+        },
+        "s_axil_wdata": {
+          "direction": "input",
+          "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ]
+        },
+        "s_axil_wstrb": {
+          "direction": "input",
+          "bits": [ 70, 71, 72, 73 ]
+        },
+        "s_axil_wvalid": {
+          "direction": "input",
+          "bits": [ 74 ]
+        },
+        "s_axil_wready": {
+          "direction": "output",
+          "bits": [ 75 ]
+        },
+        "s_axil_bresp": {
+          "direction": "output",
+          "bits": [ "0", "0" ]
+        },
+        "s_axil_bvalid": {
+          "direction": "output",
+          "bits": [ 76 ]
+        },
+        "s_axil_bready": {
+          "direction": "input",
+          "bits": [ 77 ]
+        },
+        "s_axil_araddr": {
+          "direction": "input",
+          "bits": [ 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109 ]
+        },
+        "s_axil_arvalid": {
+          "direction": "input",
+          "bits": [ 110 ]
+        },
+        "s_axil_arready": {
+          "direction": "output",
+          "bits": [ 111 ]
+        },
+        "s_axil_rdata": {
+          "direction": "output",
+          "bits": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143 ]
+        },
+        "s_axil_rresp": {
+          "direction": "output",
+          "bits": [ "0", "0" ]
+        },
+        "s_axil_rvalid": {
+          "direction": "output",
+          "bits": [ 144 ]
+        },
+        "s_axil_rready": {
+          "direction": "input",
+          "bits": [ 145 ]
+        },
+        "gpio_in": {
+          "direction": "input",
+          "bits": [ 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177 ]
+        },
+        "gpio_out": {
+          "direction": "output",
+          "bits": [ 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209 ]
+        },
+        "gpio_dir": {
+          "direction": "output",
+          "bits": [ 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241 ]
+        }
+      },
+      "cells": {
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105$26": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 242 ],
+            "B": [ 110 ],
+            "Y": [ 243 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:119$27": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:119.16-119.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 144 ],
+            "B": [ 111 ],
+            "Y": [ 244 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$12": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 245 ],
+            "B": [ 74 ],
+            "Y": [ 246 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$13": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.66"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 246 ],
+            "B": [ 36 ],
+            "Y": [ 247 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$14": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 247 ],
+            "B": [ 248 ],
+            "Y": [ 249 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88$19": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.16-88.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 74 ],
+            "Y": [ 250 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88$21": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.16-88.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 250 ],
+            "B": [ 251 ],
+            "Y": [ 252 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90$22": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90.25-90.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "B": [ 77 ],
+            "Y": [ 253 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105$25": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "Y": [ 242 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$11": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "Y": [ 245 ]
+          }
+        },
+        "$flatten\\i_gpio.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88$20": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.51-88.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "Y": [ 251 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$213": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99.5-123.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 254 ],
+            "Q": [ 111 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$214": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99.5-123.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286 ],
+            "Q": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$215": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99.5-123.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 287 ],
+            "Q": [ 144 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$216": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 288 ],
+            "Q": [ 37 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$217": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 289 ],
+            "Q": [ 75 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$218": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 290 ],
+            "Q": [ 76 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$219": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322 ],
+            "Q": [ 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$220": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354 ],
+            "Q": [ 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241 ]
+          }
+        },
+        "$flatten\\i_gpio.$procdff$221": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 355 ],
+            "Q": [ 248 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$100": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.32-68.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.29-70.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 194, 195, 196, 197, 198, 199, 200, 201 ],
+            "B": [ 54, 55, 56, 57, 58, 59, 60, 61 ],
+            "S": [ 72 ],
+            "Y": [ 356, 357, 358, 359, 360, 361, 362, 363 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$102": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 194, 195, 196, 197, 198, 199, 200, 201 ],
+            "B": [ 356, 357, 358, 359, 360, 361, 362, 363 ],
+            "S": [ 364 ],
+            "Y": [ 365, 366, 367, 368, 369, 370, 371, 372 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$103_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "Y": [ 364 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$104": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 194, 195, 196, 197, 198, 199, 200, 201 ],
+            "B": [ 365, 366, 367, 368, 369, 370, 371, 372 ],
+            "S": [ 249 ],
+            "Y": [ 373, 374, 375, 376, 377, 378, 379, 380 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$107": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 373, 374, 375, 376, 377, 378, 379, 380 ],
+            "S": [ 3 ],
+            "Y": [ 307, 308, 309, 310, 311, 312, 313, 314 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$112": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.32-68.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.29-70.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 186, 187, 188, 189, 190, 191, 192, 193 ],
+            "B": [ 46, 47, 48, 49, 50, 51, 52, 53 ],
+            "S": [ 71 ],
+            "Y": [ 381, 382, 383, 384, 385, 386, 387, 388 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$114": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 186, 187, 188, 189, 190, 191, 192, 193 ],
+            "B": [ 381, 382, 383, 384, 385, 386, 387, 388 ],
+            "S": [ 389 ],
+            "Y": [ 390, 391, 392, 393, 394, 395, 396, 397 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$115_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "Y": [ 389 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$116": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 186, 187, 188, 189, 190, 191, 192, 193 ],
+            "B": [ 390, 391, 392, 393, 394, 395, 396, 397 ],
+            "S": [ 249 ],
+            "Y": [ 398, 399, 400, 401, 402, 403, 404, 405 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$119": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 398, 399, 400, 401, 402, 403, 404, 405 ],
+            "S": [ 3 ],
+            "Y": [ 299, 300, 301, 302, 303, 304, 305, 306 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$124": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.32-68.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.29-70.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 178, 179, 180, 181, 182, 183, 184, 185 ],
+            "B": [ 38, 39, 40, 41, 42, 43, 44, 45 ],
+            "S": [ 70 ],
+            "Y": [ 406, 407, 408, 409, 410, 411, 412, 413 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$126": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 178, 179, 180, 181, 182, 183, 184, 185 ],
+            "B": [ 406, 407, 408, 409, 410, 411, 412, 413 ],
+            "S": [ 414 ],
+            "Y": [ 415, 416, 417, 418, 419, 420, 421, 422 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$127_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "Y": [ 414 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$128": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 178, 179, 180, 181, 182, 183, 184, 185 ],
+            "B": [ 415, 416, 417, 418, 419, 420, 421, 422 ],
+            "S": [ 249 ],
+            "Y": [ 423, 424, 425, 426, 427, 428, 429, 430 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$131": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 423, 424, 425, 426, 427, 428, 429, 430 ],
+            "S": [ 3 ],
+            "Y": [ 291, 292, 293, 294, 295, 296, 297, 298 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$155": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 249 ],
+            "Y": [ 431 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$158": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 431 ],
+            "S": [ 3 ],
+            "Y": [ 289 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$161": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 249 ],
+            "Y": [ 432 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$164": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 432 ],
+            "S": [ 3 ],
+            "Y": [ 288 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$173": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 248 ],
+            "B": [ "0" ],
+            "S": [ 249 ],
+            "Y": [ 433 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$175": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90.25-90.55|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90.22-93.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 433 ],
+            "B": [ "1" ],
+            "S": [ 253 ],
+            "Y": [ 434 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$178": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.16-88.65|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.13-93.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 434 ],
+            "B": [ 433 ],
+            "S": [ 252 ],
+            "Y": [ 435 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$181": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 435 ],
+            "S": [ 3 ],
+            "Y": [ 355 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$186": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.32-68.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:68.29-70.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 202, 203, 204, 205, 206, 207, 208, 209 ],
+            "B": [ 62, 63, 64, 65, 66, 67, 68, 69 ],
+            "S": [ 73 ],
+            "Y": [ 436, 437, 438, 439, 440, 441, 442, 443 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$188": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 202, 203, 204, 205, 206, 207, 208, 209 ],
+            "B": [ 436, 437, 438, 439, 440, 441, 442, 443 ],
+            "S": [ 444 ],
+            "Y": [ 445, 446, 447, 448, 449, 450, 451, 452 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$189_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.41-65.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "Y": [ 444 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$190": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 202, 203, 204, 205, 206, 207, 208, 209 ],
+            "B": [ 445, 446, 447, 448, 449, 450, 451, 452 ],
+            "S": [ 249 ],
+            "Y": [ 453, 454, 455, 456, 457, 458, 459, 460 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$193": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 453, 454, 455, 456, 457, 458, 459, 460 ],
+            "S": [ 3 ],
+            "Y": [ 315, 316, 317, 318, 319, 320, 321, 322 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$205": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90.25-90.55|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90.22-93.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "B": [ "0" ],
+            "S": [ 253 ],
+            "Y": [ 461 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$208": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.16-88.65|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.13-93.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 461 ],
+            "B": [ "1" ],
+            "S": [ 252 ],
+            "Y": [ 462 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$211": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 462 ],
+            "S": [ 3 ],
+            "Y": [ 290 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$29": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.49|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.13-117.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 243 ],
+            "Y": [ 463 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$32": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:100.12-100.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:100.9-122.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 463 ],
+            "S": [ 3 ],
+            "Y": [ 254 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$35": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.49|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.13-117.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 144 ],
+            "B": [ "1" ],
+            "S": [ 243 ],
+            "Y": [ 464 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$37": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:119.16-119.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:119.13-121.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 464 ],
+            "B": [ "0" ],
+            "S": [ 244 ],
+            "Y": [ 465 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$40": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:100.12-100.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:100.9-122.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 465 ],
+            "S": [ 3 ],
+            "Y": [ 287 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$44": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:111.52-111.52|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:109.17-114.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209 ],
+            "S": [ 466, 467, 468 ],
+            "Y": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$45_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:111.52-111.52|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:109.17-114.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 80, 81 ],
+            "B": [ "0", "1" ],
+            "Y": [ 466 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$46_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:110.53-110.53|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:109.17-114.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 80, 81 ],
+            "B": [ "1", "0" ],
+            "Y": [ 467 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$47_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:109.41-109.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:109.17-114.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 80, 81 ],
+            "Y": [ 468 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$48": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.49|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.13-117.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143 ],
+            "B": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500 ],
+            "S": [ 243 ],
+            "Y": [ 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$51": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:100.12-100.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:100.9-122.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532 ],
+            "S": [ 3 ],
+            "Y": [ 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$55": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.32-76.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.29-78.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 234, 235, 236, 237, 238, 239, 240, 241 ],
+            "B": [ 62, 63, 64, 65, 66, 67, 68, 69 ],
+            "S": [ 73 ],
+            "Y": [ 533, 534, 535, 536, 537, 538, 539, 540 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 234, 235, 236, 237, 238, 239, 240, 241 ],
+            "B": [ 533, 534, 535, 536, 537, 538, 539, 540 ],
+            "S": [ 541 ],
+            "Y": [ 542, 543, 544, 545, 546, 547, 548, 549 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$58_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "B": [ "1", "0" ],
+            "Y": [ 541 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$59": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 234, 235, 236, 237, 238, 239, 240, 241 ],
+            "B": [ 542, 543, 544, 545, 546, 547, 548, 549 ],
+            "S": [ 249 ],
+            "Y": [ 550, 551, 552, 553, 554, 555, 556, 557 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$62": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 550, 551, 552, 553, 554, 555, 556, 557 ],
+            "S": [ 3 ],
+            "Y": [ 347, 348, 349, 350, 351, 352, 353, 354 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$66": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.32-76.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.29-78.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 226, 227, 228, 229, 230, 231, 232, 233 ],
+            "B": [ 54, 55, 56, 57, 58, 59, 60, 61 ],
+            "S": [ 72 ],
+            "Y": [ 558, 559, 560, 561, 562, 563, 564, 565 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$68": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 226, 227, 228, 229, 230, 231, 232, 233 ],
+            "B": [ 558, 559, 560, 561, 562, 563, 564, 565 ],
+            "S": [ 566 ],
+            "Y": [ 567, 568, 569, 570, 571, 572, 573, 574 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$69_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "B": [ "1", "0" ],
+            "Y": [ 566 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$70": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 226, 227, 228, 229, 230, 231, 232, 233 ],
+            "B": [ 567, 568, 569, 570, 571, 572, 573, 574 ],
+            "S": [ 249 ],
+            "Y": [ 575, 576, 577, 578, 579, 580, 581, 582 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$73": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 575, 576, 577, 578, 579, 580, 581, 582 ],
+            "S": [ 3 ],
+            "Y": [ 339, 340, 341, 342, 343, 344, 345, 346 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$77": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.32-76.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.29-78.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 218, 219, 220, 221, 222, 223, 224, 225 ],
+            "B": [ 46, 47, 48, 49, 50, 51, 52, 53 ],
+            "S": [ 71 ],
+            "Y": [ 583, 584, 585, 586, 587, 588, 589, 590 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$79": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 218, 219, 220, 221, 222, 223, 224, 225 ],
+            "B": [ 583, 584, 585, 586, 587, 588, 589, 590 ],
+            "S": [ 591 ],
+            "Y": [ 592, 593, 594, 595, 596, 597, 598, 599 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$80_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "B": [ "1", "0" ],
+            "Y": [ 591 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$81": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 218, 219, 220, 221, 222, 223, 224, 225 ],
+            "B": [ 592, 593, 594, 595, 596, 597, 598, 599 ],
+            "S": [ 249 ],
+            "Y": [ 600, 601, 602, 603, 604, 605, 606, 607 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$84": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 600, 601, 602, 603, 604, 605, 606, 607 ],
+            "S": [ 3 ],
+            "Y": [ 331, 332, 333, 334, 335, 336, 337, 338 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$88": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.32-76.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:76.29-78.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 210, 211, 212, 213, 214, 215, 216, 217 ],
+            "B": [ 38, 39, 40, 41, 42, 43, 44, 45 ],
+            "S": [ 70 ],
+            "Y": [ 608, 609, 610, 611, 612, 613, 614, 615 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$90": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 210, 211, 212, 213, 214, 215, 216, 217 ],
+            "B": [ 608, 609, 610, 611, 612, 613, 614, 615 ],
+            "S": [ 616 ],
+            "Y": [ 617, 618, 619, 620, 621, 622, 623, 624 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$91_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:73.24-73.24|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:65.17-81.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7 ],
+            "B": [ "1", "0" ],
+            "Y": [ 616 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$92": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.13-85.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 210, 211, 212, 213, 214, 215, 216, 217 ],
+            "B": [ 617, 618, 619, 620, 621, 622, 623, 624 ],
+            "S": [ 249 ],
+            "Y": [ 625, 626, 627, 628, 629, 630, 631, 632 ]
+          }
+        },
+        "$flatten\\i_gpio.$procmux$95": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.12-50.19|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:50.9-94.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 625, 626, 627, 628, 629, 630, 631, 632 ],
+            "S": [ 3 ],
+            "Y": [ 323, 324, 325, 326, 327, 328, 329, 330 ]
+          }
+        }
+      },
+      "netnames": {
+        "$flatten\\i_gpio.$0\\aw_en[0:0]": {
+          "hide_name": 1,
+          "bits": [ 355 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\reg_data[31:0]": {
+          "hide_name": 1,
+          "bits": [ 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\reg_dir[31:0]": {
+          "hide_name": 1,
+          "bits": [ 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\s_axil_arready[0:0]": {
+          "hide_name": 1,
+          "bits": [ 254 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99.5-123.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\s_axil_awready[0:0]": {
+          "hide_name": 1,
+          "bits": [ 288 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\s_axil_bvalid[0:0]": {
+          "hide_name": 1,
+          "bits": [ 290 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\s_axil_rdata[31:0]": {
+          "hide_name": 1,
+          "bits": [ 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99.5-123.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\s_axil_rvalid[0:0]": {
+          "hide_name": 1,
+          "bits": [ 287 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99.5-123.8"
+          }
+        },
+        "$flatten\\i_gpio.$0\\s_axil_wready[0:0]": {
+          "hide_name": 1,
+          "bits": [ 289 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49.5-95.8"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105$26_Y": {
+          "hide_name": 1,
+          "bits": [ 243 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.49"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:119$27_Y": {
+          "hide_name": 1,
+          "bits": [ 244 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:119.16-119.47"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$12_Y": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.48"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$13_Y": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.66"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$14_Y": {
+          "hide_name": 1,
+          "bits": [ 249 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.75"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88$19_Y": {
+          "hide_name": 1,
+          "bits": [ 250 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.16-88.47"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88$21_Y": {
+          "hide_name": 1,
+          "bits": [ 252 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.16-88.65"
+          }
+        },
+        "$flatten\\i_gpio.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90$22_Y": {
+          "hide_name": 1,
+          "bits": [ 253 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:90.25-90.55"
+          }
+        },
+        "$flatten\\i_gpio.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105$25_Y": {
+          "hide_name": 1,
+          "bits": [ 242 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:105.16-105.31"
+          }
+        },
+        "$flatten\\i_gpio.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59$11_Y": {
+          "hide_name": 1,
+          "bits": [ 245 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:59.16-59.31"
+          }
+        },
+        "$flatten\\i_gpio.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88$20_Y": {
+          "hide_name": 1,
+          "bits": [ 251 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:88.51-88.65"
+          }
+        },
+        "$flatten\\i_gpio.$procmux$100_Y": {
+          "hide_name": 1,
+          "bits": [ 356, 357, 358, 359, 360, 361, 362, 363 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$102_Y": {
+          "hide_name": 1,
+          "bits": [ 365, 366, 367, 368, 369, 370, 371, 372 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$103_CMP": {
+          "hide_name": 1,
+          "bits": [ 364 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$104_Y": {
+          "hide_name": 1,
+          "bits": [ 373, 374, 375, 376, 377, 378, 379, 380 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$112_Y": {
+          "hide_name": 1,
+          "bits": [ 381, 382, 383, 384, 385, 386, 387, 388 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$114_Y": {
+          "hide_name": 1,
+          "bits": [ 390, 391, 392, 393, 394, 395, 396, 397 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$115_CMP": {
+          "hide_name": 1,
+          "bits": [ 389 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$116_Y": {
+          "hide_name": 1,
+          "bits": [ 398, 399, 400, 401, 402, 403, 404, 405 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$124_Y": {
+          "hide_name": 1,
+          "bits": [ 406, 407, 408, 409, 410, 411, 412, 413 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$126_Y": {
+          "hide_name": 1,
+          "bits": [ 415, 416, 417, 418, 419, 420, 421, 422 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$127_CMP": {
+          "hide_name": 1,
+          "bits": [ 414 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$128_Y": {
+          "hide_name": 1,
+          "bits": [ 423, 424, 425, 426, 427, 428, 429, 430 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$155_Y": {
+          "hide_name": 1,
+          "bits": [ 431 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$161_Y": {
+          "hide_name": 1,
+          "bits": [ 432 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$173_Y": {
+          "hide_name": 1,
+          "bits": [ 433 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$175_Y": {
+          "hide_name": 1,
+          "bits": [ 434 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$178_Y": {
+          "hide_name": 1,
+          "bits": [ 435 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$186_Y": {
+          "hide_name": 1,
+          "bits": [ 436, 437, 438, 439, 440, 441, 442, 443 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$188_Y": {
+          "hide_name": 1,
+          "bits": [ 445, 446, 447, 448, 449, 450, 451, 452 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$189_CMP": {
+          "hide_name": 1,
+          "bits": [ 444 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$190_Y": {
+          "hide_name": 1,
+          "bits": [ 453, 454, 455, 456, 457, 458, 459, 460 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$205_Y": {
+          "hide_name": 1,
+          "bits": [ 461 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$208_Y": {
+          "hide_name": 1,
+          "bits": [ 462 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$29_Y": {
+          "hide_name": 1,
+          "bits": [ 463 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$35_Y": {
+          "hide_name": 1,
+          "bits": [ 464 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$37_Y": {
+          "hide_name": 1,
+          "bits": [ 465 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$44_Y": {
+          "hide_name": 1,
+          "bits": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$45_CMP": {
+          "hide_name": 1,
+          "bits": [ 466 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$46_CMP": {
+          "hide_name": 1,
+          "bits": [ 467 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$47_CMP": {
+          "hide_name": 1,
+          "bits": [ 468 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$48_Y": {
+          "hide_name": 1,
+          "bits": [ 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$55_Y": {
+          "hide_name": 1,
+          "bits": [ 533, 534, 535, 536, 537, 538, 539, 540 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$57_Y": {
+          "hide_name": 1,
+          "bits": [ 542, 543, 544, 545, 546, 547, 548, 549 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$58_CMP": {
+          "hide_name": 1,
+          "bits": [ 541 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$59_Y": {
+          "hide_name": 1,
+          "bits": [ 550, 551, 552, 553, 554, 555, 556, 557 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$66_Y": {
+          "hide_name": 1,
+          "bits": [ 558, 559, 560, 561, 562, 563, 564, 565 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$68_Y": {
+          "hide_name": 1,
+          "bits": [ 567, 568, 569, 570, 571, 572, 573, 574 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$69_CMP": {
+          "hide_name": 1,
+          "bits": [ 566 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$70_Y": {
+          "hide_name": 1,
+          "bits": [ 575, 576, 577, 578, 579, 580, 581, 582 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$77_Y": {
+          "hide_name": 1,
+          "bits": [ 583, 584, 585, 586, 587, 588, 589, 590 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$79_Y": {
+          "hide_name": 1,
+          "bits": [ 592, 593, 594, 595, 596, 597, 598, 599 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$80_CMP": {
+          "hide_name": 1,
+          "bits": [ 591 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$81_Y": {
+          "hide_name": 1,
+          "bits": [ 600, 601, 602, 603, 604, 605, 606, 607 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$88_Y": {
+          "hide_name": 1,
+          "bits": [ 608, 609, 610, 611, 612, 613, 614, 615 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$90_Y": {
+          "hide_name": 1,
+          "bits": [ 617, 618, 619, 620, 621, 622, 623, 624 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$91_CMP": {
+          "hide_name": 1,
+          "bits": [ 616 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\i_gpio.$procmux$92_Y": {
+          "hide_name": 1,
+          "bits": [ 625, 626, 627, 628, 629, 630, 631, 632 ],
+          "attributes": {
+          }
+        },
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:7.17-7.22"
+          }
+        },
+        "gpio_dir": {
+          "hide_name": 0,
+          "bits": [ 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:36.25-36.33"
+          }
+        },
+        "gpio_in": {
+          "hide_name": 0,
+          "bits": [ 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:34.25-34.32"
+          }
+        },
+        "gpio_out": {
+          "hide_name": 0,
+          "bits": [ 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:35.25-35.33"
+          }
+        },
+        "i_gpio.aw_en": {
+          "hide_name": 0,
+          "bits": [ 248 ],
+          "attributes": {
+            "hdlname": "i_gpio aw_en",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:46.11-46.16"
+          }
+        },
+        "rst_ni": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:8.17-8.23"
+          }
+        },
+        "s_axil_araddr": {
+          "hide_name": 0,
+          "bits": [ 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:24.35-24.48"
+          }
+        },
+        "s_axil_arready": {
+          "hide_name": 0,
+          "bits": [ 111 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:26.35-26.49"
+          }
+        },
+        "s_axil_arvalid": {
+          "hide_name": 0,
+          "bits": [ 110 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:25.35-25.49"
+          }
+        },
+        "s_axil_awaddr": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:11.35-11.48"
+          }
+        },
+        "s_axil_awready": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:13.35-13.49"
+          }
+        },
+        "s_axil_awvalid": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:12.35-12.49"
+          }
+        },
+        "s_axil_bready": {
+          "hide_name": 0,
+          "bits": [ 77 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:22.35-22.48"
+          }
+        },
+        "s_axil_bresp": {
+          "hide_name": 0,
+          "bits": [ "0", "0" ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:20.35-20.47"
+          }
+        },
+        "s_axil_bvalid": {
+          "hide_name": 0,
+          "bits": [ 76 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:21.35-21.48"
+          }
+        },
+        "s_axil_rdata": {
+          "hide_name": 0,
+          "bits": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:28.35-28.47"
+          }
+        },
+        "s_axil_rready": {
+          "hide_name": 0,
+          "bits": [ 145 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:31.35-31.48"
+          }
+        },
+        "s_axil_rresp": {
+          "hide_name": 0,
+          "bits": [ "0", "0" ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:29.35-29.47"
+          }
+        },
+        "s_axil_rvalid": {
+          "hide_name": 0,
+          "bits": [ 144 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:30.35-30.48"
+          }
+        },
+        "s_axil_wdata": {
+          "hide_name": 0,
+          "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:15.35-15.47"
+          }
+        },
+        "s_axil_wready": {
+          "hide_name": 0,
+          "bits": [ 75 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:18.35-18.48"
+          }
+        },
+        "s_axil_wstrb": {
+          "hide_name": 0,
+          "bits": [ 70, 71, 72, 73 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:16.37-16.49"
+          }
+        },
+        "s_axil_wvalid": {
+          "hide_name": 0,
+          "bits": [ 74 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv:17.35-17.48"
+          }
+        }
+      }
+    }
+  }
+}

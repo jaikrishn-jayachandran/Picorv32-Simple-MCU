@@ -1,0 +1,1193 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib
+Imported 22 cell types from liberty file.
+[INFO] Using SDC file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\peripherals_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv' to AST representation.
+Storing AST representation for module `$abstract\gpio_bank'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\peripherals_macro'.
+Generating RTLIL representation for module `\peripherals_macro'.
+
+6.1. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+
+6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\gpio_bank'.
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank'.
+
+6.3. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Used module:     $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank
+
+6.4. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Used module:     $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank
+Removing unused module `$abstract\gpio_bank'.
+Removing unused module `$abstract\peripherals_macro'.
+Removed 2 unused modules.
+Renaming module peripherals_macro to peripherals_macro.
+
+7. Executing ATTRMAP pass (move or copy attributes).
+
+8. Executing TRIBUF pass.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Used module:     $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank
+
+9.2. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Used module:     $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank
+Removed 0 unused modules.
+
+10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+11. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23 in module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5 in module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+Removed a total of 0 dead cases.
+
+12. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 2 assignments to connections.
+
+13. Executing PROC_INIT pass (extract init attributes).
+
+14. Executing PROC_ARST pass (detect async resets in processes).
+
+15. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~17 debug messages>
+
+16. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+     1/3: $0\s_axil_arready[0:0]
+     2/3: $0\s_axil_rvalid[0:0]
+     3/3: $0\s_axil_rdata[31:0]
+Creating decoders for process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+     1/18: $0\reg_dir[31:0] [31:24]
+     2/18: $0\reg_dir[31:0] [23:16]
+     3/18: $0\reg_dir[31:0] [15:8]
+     4/18: $0\reg_dir[31:0] [7:0]
+     5/18: $0\reg_data[31:0] [23:16]
+     6/18: $0\reg_data[31:0] [15:8]
+     7/18: $0\reg_data[31:0] [7:0]
+     8/18: $3$fordecl_block$3.i[31:0]$18
+     9/18: $2$fordecl_block$3.i[31:0]$16
+    10/18: $2$fordecl_block$1.i[31:0]$15
+    11/18: $0\s_axil_wready[0:0]
+    12/18: $0\s_axil_awready[0:0]
+    13/18: $1$fordecl_block$3.i[31:0]$10
+    14/18: $1$fordecl_block$1.i[31:0]$9
+    15/18: $0\aw_en[0:0]
+    16/18: $0\reg_data[31:0] [31:24]
+    17/18: $3$fordecl_block$1.i[31:0]$17
+    18/18: $0\s_axil_bvalid[0:0]
+
+17. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+18. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_arready' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+  created $dff cell `$procdff$213' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_rdata' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+  created $dff cell `$procdff$214' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_rvalid' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+  created $dff cell `$procdff$215' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_awready' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$216' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_wready' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$217' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_bvalid' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$218' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\reg_data' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$219' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\reg_dir' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$220' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\aw_en' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$221' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$fordecl_block$1.i' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$222' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$fordecl_block$3.i' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$223' with positive edge clock.
+
+19. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+20. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 4 empty switches in `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+Removing empty process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+Found and cleaned up 13 empty switches in `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+Removing empty process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+Cleaned up 17 empty switches.
+
+21. Executing CHECK pass (checking for obvious problems).
+Checking module peripherals_macro...
+Checking module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank...
+Found and reported 0 problems.
+
+22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+Optimizing module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+<suppressed ~27 debug messages>
+
+23. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+<suppressed ~1 debug messages>
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 18 unused cells and 93 unused wires.
+<suppressed ~19 debug messages>
+
+26. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+27. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 83 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Computing hashes of 77 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+28. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~69 debug messages>
+
+29. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+30. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 77 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Computing hashes of 76 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Computing hashes of 75 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Computing hashes of 74 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+31. Executing OPT_DFF pass (perform DFF optimizations).
+
+32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+34. Rerunning OPT passes. (Maybe there is more to do…)
+
+35. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~66 debug messages>
+
+36. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+37. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 74 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+38. Executing OPT_DFF pass (perform DFF optimizations).
+
+39. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+40. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+41. Executing FSM pass (extract and optimize FSM).
+
+41.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+41.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+41.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+41.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+41.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+41.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+41.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+41.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+42. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+43. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 74 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+44. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~66 debug messages>
+
+45. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+46. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 74 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+47. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\i_gpio.$procdff$221 ($dff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$178_Y, Q = \i_gpio.aw_en, rval = 1'1).
+Adding SRST signal on $flatten\i_gpio.$procdff$220 ($dff) from module peripherals_macro (D = { $flatten\i_gpio.$procmux$59_Y $flatten\i_gpio.$procmux$70_Y $flatten\i_gpio.$procmux$81_Y $flatten\i_gpio.$procmux$92_Y }, Q = \i_gpio.reg_dir, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$226 ($sdff) from module peripherals_macro (D = \s_axil_wdata [7:0], Q = \i_gpio.reg_dir [7:0]).
+Adding EN signal on $auto$ff.cc:337:slice$226 ($sdff) from module peripherals_macro (D = \s_axil_wdata [15:8], Q = \i_gpio.reg_dir [15:8]).
+Adding EN signal on $auto$ff.cc:337:slice$226 ($sdff) from module peripherals_macro (D = \s_axil_wdata [23:16], Q = \i_gpio.reg_dir [23:16]).
+Adding EN signal on $auto$ff.cc:337:slice$226 ($sdff) from module peripherals_macro (D = \s_axil_wdata [31:24], Q = \i_gpio.reg_dir [31:24]).
+Adding SRST signal on $flatten\i_gpio.$procdff$219 ($dff) from module peripherals_macro (D = { $flatten\i_gpio.$procmux$190_Y $flatten\i_gpio.$procmux$104_Y $flatten\i_gpio.$procmux$116_Y $flatten\i_gpio.$procmux$128_Y }, Q = \i_gpio.reg_data, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$239 ($sdff) from module peripherals_macro (D = \s_axil_wdata [7:0], Q = \i_gpio.reg_data [7:0]).
+Adding EN signal on $auto$ff.cc:337:slice$239 ($sdff) from module peripherals_macro (D = \s_axil_wdata [15:8], Q = \i_gpio.reg_data [15:8]).
+Adding EN signal on $auto$ff.cc:337:slice$239 ($sdff) from module peripherals_macro (D = \s_axil_wdata [23:16], Q = \i_gpio.reg_data [23:16]).
+Adding EN signal on $auto$ff.cc:337:slice$239 ($sdff) from module peripherals_macro (D = \s_axil_wdata [31:24], Q = \i_gpio.reg_data [31:24]).
+Adding SRST signal on $flatten\i_gpio.$procdff$218 ($dff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$208_Y, Q = \i_gpio.s_axil_bvalid, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$252 ($sdff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$208_Y, Q = \i_gpio.s_axil_bvalid).
+Adding SRST signal on $flatten\i_gpio.$procdff$216 ($dff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$155_Y, Q = \i_gpio.s_axil_awready, rval = 1'0).
+Adding SRST signal on $flatten\i_gpio.$procdff$215 ($dff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$35_Y, Q = \i_gpio.s_axil_rvalid, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$257 ($sdff) from module peripherals_macro (D = 1'1, Q = \i_gpio.s_axil_rvalid).
+Adding SRST signal on $flatten\i_gpio.$procdff$214 ($dff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$48_Y, Q = \i_gpio.s_axil_rdata, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$263 ($sdff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$44_Y, Q = \i_gpio.s_axil_rdata).
+Adding SRST signal on $flatten\i_gpio.$procdff$213 ($dff) from module peripherals_macro (D = $flatten\i_gpio.$procmux$29_Y, Q = \i_gpio.s_axil_arready, rval = 1'0).
+
+48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 41 unused cells and 35 unused wires.
+<suppressed ~42 debug messages>
+
+49. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+<suppressed ~1 debug messages>
+
+50. Rerunning OPT passes. (Maybe there is more to do…)
+
+51. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+52. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+53. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 50 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+54. Executing OPT_DFF pass (perform DFF optimizations).
+
+55. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+56. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+57. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell peripherals_macro.$flatten\i_gpio.$procmux$58_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell peripherals_macro.$flatten\i_gpio.$procmux$46_CMP0 ($eq).
+
+58. Executing PEEPOPT pass (run peephole optimizers).
+
+59. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+60. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module peripherals_macro:
+  created 0 $alu and 0 $macc cells.
+
+61. Executing SHARE pass (SAT-based resource sharing).
+
+62. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+63. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 50 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+64. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+65. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+66. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 50 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+67. Executing OPT_DFF pass (perform DFF optimizations).
+
+68. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+69. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+70. Executing MEMORY pass.
+
+70.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+70.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+70.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+70.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+70.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+70.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+70.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+70.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+70.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+70.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+71. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+72. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+<suppressed ~6 debug messages>
+
+73. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 46 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+74. Executing OPT_DFF pass (perform DFF optimizations).
+
+75. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+76. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+77. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+78. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 46 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+79. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+80. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+81. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 46 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+82. Executing OPT_SHARE pass.
+
+83. Executing OPT_DFF pass (perform DFF optimizations).
+
+84. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+85. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+86. Executing TECHMAP pass (map to technology primitives).
+
+86.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+86.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$54d740639e1393b22262823179ff783ea9f17a35\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~172 debug messages>
+
+87. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+<suppressed ~6 debug messages>
+
+88. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 342 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+89. Executing OPT_DFF pass (perform DFF optimizations).
+
+90. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 0 unused cells and 123 unused wires.
+<suppressed ~1 debug messages>
+
+91. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+92. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 342 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+93. Executing OPT_DFF pass (perform DFF optimizations).
+
+94. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+95. Executing ABC pass (technology mapping using ABC).
+
+95.1. Extracting gate netlist of module `\peripherals_macro' to `<abc-temp-dir>/input.blif'..
+
+95.1.1. Executed ABC.
+Extracted 240 gates and 355 wires to a netlist network with 114 inputs and 46 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library /tmp/yosys-abc-tI35ZZ/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+95.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        3
+ABC RESULTS:            ANDNOT cells:      171
+ABC RESULTS:               MUX cells:        2
+ABC RESULTS:              NAND cells:        3
+ABC RESULTS:               NOR cells:        1
+ABC RESULTS:               NOT cells:        4
+ABC RESULTS:                OR cells:       12
+ABC RESULTS:             ORNOT cells:       35
+ABC RESULTS:        internal signals:      195
+ABC RESULTS:           input signals:      114
+ABC RESULTS:          output signals:       46
+Removing temp directory.
+Removing global temp directory.
+
+96. Executing OPT pass (performing simple optimizations).
+
+96.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+96.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 333 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+96.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+96.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 0 unused cells and 226 unused wires.
+<suppressed ~1 debug messages>
+
+96.5. Finished fast OPT passes.
+
+97. Executing HIERARCHY pass (managing design hierarchy).
+
+97.1. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+
+97.2. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Removed 0 unused modules.
+
+98. Executing CHECK pass (checking for obvious problems).
+Checking module peripherals_macro...
+Found and reported 0 problems.
+
+99. Printing statistics.
+
+=== peripherals_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      247 wires
+      784 wire bits
+       47 public wires
+      553 public wire bits
+       22 ports
+      244 port bits
+      333 cells
+      171   $_ANDNOT_
+        3   $_AND_
+        2   $_MUX_
+        3   $_NAND_
+        1   $_NOR_
+        4   $_NOT_
+       35   $_ORNOT_
+       12   $_OR_
+       97   $_SDFFE_PN0P_
+        1   $_SDFFE_PP0P_
+        2   $_SDFF_PN0_
+        1   $_SDFF_PN1_
+        1   $scopeinfo
+
+100. Executing OPT pass (performing simple optimizations).
+
+100.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+100.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 333 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+100.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \peripherals_macro..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+100.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \peripherals_macro.
+Performed a total of 0 changes.
+
+100.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\peripherals_macro'.
+Computing hashes of 333 cells of `\peripherals_macro'.
+Finding duplicate cells in `\peripherals_macro'.
+Removed a total of 0 cells.
+
+100.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+100.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+
+100.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+
+100.9. Finished fast OPT passes. (There is nothing left to do.)
+
+101. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 1 unused cells and 24 unused wires.
+<suppressed ~25 debug messages>
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/6da887933a4641af89ea080861c6241f.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/dfa33f732c0445d4a0afb5cbe6d38d47.lib ",
+   "modules": {
+      "\\peripherals_macro": {
+         "num_wires":         223,
+         "num_wire_bits":     476,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         332,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 2,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "$_SDFFE_PN0P_": 97,
+            "$_SDFFE_PP0P_": 1,
+            "$_SDFF_PN0_": 2,
+            "$_SDFF_PN1_": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         223,
+         "num_wire_bits":     476,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         332,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 2,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "$_SDFFE_PN0P_": 97,
+            "$_SDFFE_PP0P_": 1,
+            "$_SDFF_PN0_": 2,
+            "$_SDFF_PN1_": 1
+         }
+      }
+}
+
+102. Printing statistics.
+
+=== peripherals_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      223 wires
+      476 wire bits
+       23 public wires
+      245 public wire bits
+       22 ports
+      244 port bits
+      332 cells
+      171   $_ANDNOT_
+        3   $_AND_
+        2   $_MUX_
+        3   $_NAND_
+        1   $_NOR_
+        4   $_NOT_
+       35   $_ORNOT_
+       12   $_OR_
+       97   $_SDFFE_PN0P_
+        1   $_SDFFE_PP0P_
+        2   $_SDFF_PN0_
+        1   $_SDFF_PN1_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_SDFFE_PN0P_ is unknown!
+   Area for cell type $_SDFFE_PP0P_ is unknown!
+   Area for cell type $_SDFF_PN0_ is unknown!
+   Area for cell type $_SDFF_PN1_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v'…
+
+103. Executing TECHMAP pass (map to technology primitives).
+
+103.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `$_TBUF_'.
+Successfully finished Verilog frontend.
+
+103.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+104. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v'…
+
+105. Executing TECHMAP pass (map to technology primitives).
+
+105.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_PN0_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_NN0_'.
+Successfully finished Verilog frontend.
+
+105.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+106. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+107. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sg13g2_dfrbpq_1 (noninv, pins=4, area=48.99) is a direct match for cell type $_DFF_PN0_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    unmapped dff cell: $_DFF_P_
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sg13g2_dfrbpq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+107.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~4 debug messages>
+Mapping DFF cells in module `\peripherals_macro':
+  mapped 101 $_DFF_PN0_ cells to \sg13g2_dfrbpq_1 cells.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/6da887933a4641af89ea080861c6241f.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/dfa33f732c0445d4a0afb5cbe6d38d47.lib ",
+   "modules": {
+      "\\peripherals_macro": {
+         "num_wires":         422,
+         "num_wire_bits":     675,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         531,
+         "num_submodules":       0,
+         "area":              4947.868800,
+         "sequential_area":    4947.868800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 201,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "sg13g2_dfrbpq_1": 101
+         }
+      }
+   },
+      "design": {
+         "num_wires":         422,
+         "num_wire_bits":     675,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         531,
+         "num_submodules":       0,
+         "area":              4947.868800,
+         "sequential_area":    4947.868800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 201,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "sg13g2_dfrbpq_1": 101
+         }
+      }
+}
+
+108. Printing statistics.
+
+=== peripherals_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      422        - wires
+      675        - wire bits
+       23        - public wires
+      245        - public wire bits
+       22        - ports
+      244        - port bits
+      531 4.95E+03 cells
+      171        -   $_ANDNOT_
+        3        -   $_AND_
+      201        -   $_MUX_
+        3        -   $_NAND_
+        1        -   $_NOR_
+        4        -   $_NOT_
+       35        -   $_ORNOT_
+       12        -   $_OR_
+      101 4.95E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+
+   Chip area for module '\peripherals_macro': 4947.868800
+     of which used for sequential elements: 4947.868800 (100.00%)
+
+[INFO] Using generated ABC script '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/06-yosys-synthesis/DELAY_1.abc'…
+
+109. Executing ABC pass (technology mapping using ABC).
+
+109.1. Extracting gate netlist of module `\peripherals_macro' to `/tmp/yosys-abc-s0LzKP/input.blif'..
+
+109.1.1. Executed ABC.
+Extracted 430 gates and 610 wires to a netlist network with 178 inputs and 101 outputs.
+Running ABC script: /tmp/yosys-abc-s0LzKP/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-s0LzKP/abc.script"
+ABC: + read_blif /tmp/yosys-abc-s0LzKP/input.blif 
+ABC: + read_lib -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/6da887933a4641af89ea080861c6241f.lib 
+ABC: Library with only 1 cell classes cannot be used.
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Corner" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler1000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler10000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler200" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler2000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler400" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler4000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadAnalog" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVss" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIn" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVss" without logic function.
+ABC: Library "sg13g2_io_typ_1p2V_3p3V_25C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/6da887933a4641af89ea080861c6241f.lib" has 3 cells (19 skipped: 0 seq; 6 tri-state; 4 no func; 9 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.00 sec
+ABC: Memory =    0.39 MB. Time =     0.00 sec
+ABC: + read_lib -m -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/dfa33f732c0445d4a0afb5cbe6d38d47.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_antennanp" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhrq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllrq_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_8".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_2".
+ABC: Library "sg13g2_stdcell_typ_1p20V_25C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/dfa33f732c0445d4a0afb5cbe6d38d47.lib" has 54 cells (25 skipped: 12 seq; 6 tri-state; 0 no func; 7 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.02 sec
+ABC: Memory =    2.64 MB. Time =     0.02 sec
+ABC: + read_constr -v /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sg13g2_buf_4/X".
+ABC: Setting output load to be 6.000000.
+ABC: + source /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/06-yosys-synthesis/DELAY_1.abc 
+ABC: Error: The network is combinational.
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: WireLoad = "none"  Gates =    450 (  9.1 %)   Cap =  7.2 ff (  0.0 %)   Area =     3994.10 (100.0 %)   Delay =  2214.98 ps  ( 44.0 %)               
+ABC: Path  0 --     144 : 0    3 pi             A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   9.1 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     457 : 2    2 sg13g2_nand2_1 A =   7.26  Df =  49.2  -14.2 ps  S =  43.3 ps  Cin =  2.9 ff  Cout =   6.5 ff  Cmax = 300.0 ff  G =  212  
+ABC: Path  2 --     458 : 3   65 sg13g2_nor3_1  A =   9.07  Df =1803.4-1314.4 ps  S =2374.9 ps  Cin =  3.0 ff  Cout = 197.2 ff  Cmax = 300.0 ff  G = 6563  
+ABC: Path  3 --     465 : 3    1 sg13g2_a21oi_1 A =   9.07  Df =2088.7-1459.5 ps  S = 267.2 ps  Cin =  3.0 ff  Cout =   3.1 ff  Cmax = 300.0 ff  G =  102  
+ABC: Path  4 --     468 : 2    1 sg13g2_nor2_1  A =   7.26  Df =2215.0  -78.5 ps  S =  95.9 ps  Cin =  3.0 ff  Cout =   6.0 ff  Cmax = 300.0 ff  G =  201  
+ABC: Start-point = pi143 (\s_axil_awvalid).  End-point = po36 ($auto$rtlil.cc:3583:MuxGate$1208).
+ABC: netlist                       : i/o =  178/  101  lat =    0  nd =   450  edge =   1291  area =1625.93  delay =416.97  lev = 4
+ABC: + write_blif /tmp/yosys-abc-s0LzKP/output.blif 
+
+109.1.2. Re-integrating ABC results.
+ABC RESULTS:     sg13g2_a21o_1 cells:        1
+ABC RESULTS:    sg13g2_a21oi_1 cells:      128
+ABC RESULTS:    sg13g2_a22oi_1 cells:       32
+ABC RESULTS:     sg13g2_and2_1 cells:        1
+ABC RESULTS:     sg13g2_and3_1 cells:        1
+ABC RESULTS:      sg13g2_inv_1 cells:       41
+ABC RESULTS:    sg13g2_nand2_1 cells:        4
+ABC RESULTS:   sg13g2_nand2b_1 cells:        1
+ABC RESULTS:    sg13g2_nand3_1 cells:        1
+ABC RESULTS:   sg13g2_nand3b_1 cells:        1
+ABC RESULTS:    sg13g2_nand4_1 cells:       65
+ABC RESULTS:     sg13g2_nor2_1 cells:       65
+ABC RESULTS:    sg13g2_nor2b_1 cells:        3
+ABC RESULTS:     sg13g2_nor3_1 cells:        9
+ABC RESULTS:    sg13g2_o21ai_1 cells:       97
+ABC RESULTS:        internal signals:      331
+ABC RESULTS:           input signals:      178
+ABC RESULTS:          output signals:      101
+Removing temp directory.
+Removing global temp directory.
+
+110. Executing SETUNDEF pass (replace undef values with defined constants).
+
+111. Executing HILOMAP pass (mapping to constant drivers).
+
+112. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+113. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 0 unused cells and 612 unused wires.
+<suppressed ~1 debug messages>
+
+114. Executing INSBUF pass (insert buffer cells for connected wires).
+Add peripherals_macro/$auto$insbuf.cc:97:execute$2124: \s_axil_awready -> \s_axil_wready
+
+115. Executing CHECK pass (checking for obvious problems).
+Checking module peripherals_macro...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/6da887933a4641af89ea080861c6241f.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/tmp/dfa33f732c0445d4a0afb5cbe6d38d47.lib ",
+   "modules": {
+      "\\peripherals_macro": {
+         "num_wires":         574,
+         "num_wire_bits":     796,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         657,
+         "num_submodules":       0,
+         "area":              9711.273600,
+         "sequential_area":    4947.868800,
+         "num_cells_by_type": {
+            "sg13g2_a21o_1": 1,
+            "sg13g2_a21oi_1": 128,
+            "sg13g2_a22oi_1": 32,
+            "sg13g2_and2_1": 1,
+            "sg13g2_and3_1": 1,
+            "sg13g2_buf_1": 1,
+            "sg13g2_dfrbpq_1": 101,
+            "sg13g2_inv_1": 41,
+            "sg13g2_nand2_1": 4,
+            "sg13g2_nand2b_1": 1,
+            "sg13g2_nand3_1": 1,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 65,
+            "sg13g2_nor2_1": 65,
+            "sg13g2_nor2b_1": 3,
+            "sg13g2_nor3_1": 9,
+            "sg13g2_o21ai_1": 97,
+            "sg13g2_tiehi": 101,
+            "sg13g2_tielo": 4
+         }
+      }
+   },
+      "design": {
+         "num_wires":         574,
+         "num_wire_bits":     796,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         657,
+         "num_submodules":       0,
+         "area":              9711.273600,
+         "sequential_area":    4947.868800,
+         "num_cells_by_type": {
+            "sg13g2_a21o_1": 1,
+            "sg13g2_a21oi_1": 128,
+            "sg13g2_a22oi_1": 32,
+            "sg13g2_and2_1": 1,
+            "sg13g2_and3_1": 1,
+            "sg13g2_buf_1": 1,
+            "sg13g2_dfrbpq_1": 101,
+            "sg13g2_inv_1": 41,
+            "sg13g2_nand2_1": 4,
+            "sg13g2_nand2b_1": 1,
+            "sg13g2_nand3_1": 1,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 65,
+            "sg13g2_nor2_1": 65,
+            "sg13g2_nor2b_1": 3,
+            "sg13g2_nor3_1": 9,
+            "sg13g2_o21ai_1": 97,
+            "sg13g2_tiehi": 101,
+            "sg13g2_tielo": 4
+         }
+      }
+}
+
+116. Printing statistics.
+
+=== peripherals_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      574        - wires
+      796        - wire bits
+       23        - public wires
+      245        - public wire bits
+       22        - ports
+      244        - port bits
+      657 9.71E+03 cells
+        1   12.701   sg13g2_a21o_1
+      128 1.16E+03   sg13g2_a21oi_1
+       32  347.155   sg13g2_a22oi_1
+        1    9.072   sg13g2_and2_1
+        1   12.701   sg13g2_and3_1
+        1    7.258   sg13g2_buf_1
+      101 4.95E+03   sg13g2_dfrbpq_1
+       41  223.171   sg13g2_inv_1
+        4    29.03   sg13g2_nand2_1
+        1    9.072   sg13g2_nand2b_1
+        1    9.072   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+       65  707.616   sg13g2_nand4_1
+       65  471.744   sg13g2_nor2_1
+        3   27.216   sg13g2_nor2b_1
+        9   81.648   sg13g2_nor3_1
+       97  879.984   sg13g2_o21ai_1
+      101  733.018   sg13g2_tiehi
+        4    29.03   sg13g2_tielo
+
+   Chip area for module '\peripherals_macro': 9711.273600
+     of which used for sequential elements: 4947.868800 (50.95%)
+
+117. Executing Verilog backend.
+Dumping module `\peripherals_macro'.
+
+118. Executing JSON backend.

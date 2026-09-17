@@ -1,0 +1,36 @@
+108. Printing statistics.
+
+=== peripherals_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      422        - wires
+      675        - wire bits
+       23        - public wires
+      245        - public wire bits
+       22        - ports
+      244        - port bits
+      531 4.95E+03 cells
+      171        -   $_ANDNOT_
+        3        -   $_AND_
+      201        -   $_MUX_
+        3        -   $_NAND_
+        1        -   $_NOR_
+        4        -   $_NOT_
+       35        -   $_ORNOT_
+       12        -   $_OR_
+      101 4.95E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+
+   Chip area for module '\peripherals_macro': 4947.868800
+     of which used for sequential elements: 4947.868800 (100.00%)
+
