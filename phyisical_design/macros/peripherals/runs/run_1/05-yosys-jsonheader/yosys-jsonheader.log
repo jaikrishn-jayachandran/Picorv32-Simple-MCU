@@ -1,0 +1,254 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_1/tmp/9c3925d470674096acf52a00d7b17de9.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_1/tmp/9c3925d470674096acf52a00d7b17de9.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_a21o_1'.
+Generating RTLIL representation for module `\sg13g2_a21o_2'.
+Generating RTLIL representation for module `\sg13g2_a21oi_1'.
+Generating RTLIL representation for module `\sg13g2_a21oi_2'.
+Generating RTLIL representation for module `\sg13g2_a221oi_1'.
+Generating RTLIL representation for module `\sg13g2_a22oi_1'.
+Generating RTLIL representation for module `\sg13g2_and2_1'.
+Generating RTLIL representation for module `\sg13g2_and2_2'.
+Generating RTLIL representation for module `\sg13g2_and3_1'.
+Generating RTLIL representation for module `\sg13g2_and3_2'.
+Generating RTLIL representation for module `\sg13g2_and4_1'.
+Generating RTLIL representation for module `\sg13g2_and4_2'.
+Generating RTLIL representation for module `\sg13g2_antennanp'.
+Generating RTLIL representation for module `\sg13g2_buf_1'.
+Generating RTLIL representation for module `\sg13g2_buf_16'.
+Generating RTLIL representation for module `\sg13g2_buf_2'.
+Generating RTLIL representation for module `\sg13g2_buf_4'.
+Generating RTLIL representation for module `\sg13g2_buf_8'.
+Generating RTLIL representation for module `\sg13g2_decap_4'.
+Generating RTLIL representation for module `\sg13g2_decap_8'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_dlhq_1'.
+Generating RTLIL representation for module `\sg13g2_dlhr_1'.
+Generating RTLIL representation for module `\sg13g2_dlhrq_1'.
+Generating RTLIL representation for module `\sg13g2_dllr_1'.
+Generating RTLIL representation for module `\sg13g2_dllrq_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd1_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd2_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd3_1'.
+Generating RTLIL representation for module `\sg13g2_ebufn_2'.
+Generating RTLIL representation for module `\sg13g2_ebufn_4'.
+Generating RTLIL representation for module `\sg13g2_ebufn_8'.
+Generating RTLIL representation for module `\sg13g2_einvn_2'.
+Generating RTLIL representation for module `\sg13g2_einvn_4'.
+Generating RTLIL representation for module `\sg13g2_einvn_8'.
+Generating RTLIL representation for module `\sg13g2_fill_1'.
+Generating RTLIL representation for module `\sg13g2_fill_2'.
+Generating RTLIL representation for module `\sg13g2_fill_4'.
+Generating RTLIL representation for module `\sg13g2_fill_8'.
+Generating RTLIL representation for module `\sg13g2_inv_1'.
+Generating RTLIL representation for module `\sg13g2_inv_16'.
+Generating RTLIL representation for module `\sg13g2_inv_2'.
+Generating RTLIL representation for module `\sg13g2_inv_4'.
+Generating RTLIL representation for module `\sg13g2_inv_8'.
+Generating RTLIL representation for module `\sg13g2_lgcp_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_2'.
+Generating RTLIL representation for module `\sg13g2_mux4_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_2'.
+Generating RTLIL representation for module `\sg13g2_nand2b_1'.
+Generating RTLIL representation for module `\sg13g2_nand2b_2'.
+Generating RTLIL representation for module `\sg13g2_nand3_1'.
+Generating RTLIL representation for module `\sg13g2_nand3b_1'.
+Generating RTLIL representation for module `\sg13g2_nand4_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_2'.
+Generating RTLIL representation for module `\sg13g2_nor2b_1'.
+Generating RTLIL representation for module `\sg13g2_nor2b_2'.
+Generating RTLIL representation for module `\sg13g2_nor3_1'.
+Generating RTLIL representation for module `\sg13g2_nor3_2'.
+Generating RTLIL representation for module `\sg13g2_nor4_1'.
+Generating RTLIL representation for module `\sg13g2_nor4_2'.
+Generating RTLIL representation for module `\sg13g2_o21ai_1'.
+Generating RTLIL representation for module `\sg13g2_or2_1'.
+Generating RTLIL representation for module `\sg13g2_or2_2'.
+Generating RTLIL representation for module `\sg13g2_or3_1'.
+Generating RTLIL representation for module `\sg13g2_or3_2'.
+Generating RTLIL representation for module `\sg13g2_or4_1'.
+Generating RTLIL representation for module `\sg13g2_or4_2'.
+Generating RTLIL representation for module `\sg13g2_sdfbbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_sighold'.
+Generating RTLIL representation for module `\sg13g2_slgcp_1'.
+Generating RTLIL representation for module `\sg13g2_tiehi'.
+Generating RTLIL representation for module `\sg13g2_tielo'.
+Generating RTLIL representation for module `\sg13g2_xnor2_1'.
+Generating RTLIL representation for module `\sg13g2_xor2_1'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_1/tmp/7ab1cc491e5242f18b605f1dcd3a1a3f.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_1/tmp/7ab1cc491e5242f18b605f1dcd3a1a3f.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_Corner'.
+Generating RTLIL representation for module `\sg13g2_Filler1000'.
+Generating RTLIL representation for module `\sg13g2_Filler10000'.
+Generating RTLIL representation for module `\sg13g2_Filler200'.
+Generating RTLIL representation for module `\sg13g2_Filler2000'.
+Generating RTLIL representation for module `\sg13g2_Filler400'.
+Generating RTLIL representation for module `\sg13g2_Filler4000'.
+Generating RTLIL representation for module `\sg13g2_IOPadAnalog'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVss'.
+Generating RTLIL representation for module `\sg13g2_IOPadIn'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadVss'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/peripherals_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\peripherals_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv' to AST representation.
+Storing AST representation for module `$abstract\gpio_bank'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\peripherals_macro'.
+Generating RTLIL representation for module `\peripherals_macro'.
+
+6.1. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+
+6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\gpio_bank'.
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank'.
+
+6.3. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Used module:     $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank
+
+6.4. Analyzing design hierarchy..
+Top module:  \peripherals_macro
+Used module:     $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank
+Removing unused module `$abstract\gpio_bank'.
+Removing unused module `$abstract\peripherals_macro'.
+Removed 2 unused modules.
+Renaming module peripherals_macro to peripherals_macro.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23 in module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5 in module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+Removed a total of 0 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 2 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~17 debug messages>
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+     1/3: $0\s_axil_arready[0:0]
+     2/3: $0\s_axil_rvalid[0:0]
+     3/3: $0\s_axil_rdata[31:0]
+Creating decoders for process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+     1/18: $0\reg_dir[31:0] [31:24]
+     2/18: $0\reg_dir[31:0] [23:16]
+     3/18: $0\reg_dir[31:0] [15:8]
+     4/18: $0\reg_dir[31:0] [7:0]
+     5/18: $0\reg_data[31:0] [23:16]
+     6/18: $0\reg_data[31:0] [15:8]
+     7/18: $0\reg_data[31:0] [7:0]
+     8/18: $3$fordecl_block$3.i[31:0]$18
+     9/18: $2$fordecl_block$3.i[31:0]$16
+    10/18: $2$fordecl_block$1.i[31:0]$15
+    11/18: $0\s_axil_wready[0:0]
+    12/18: $0\s_axil_awready[0:0]
+    13/18: $1$fordecl_block$3.i[31:0]$10
+    14/18: $1$fordecl_block$1.i[31:0]$9
+    15/18: $0\aw_en[0:0]
+    16/18: $0\reg_data[31:0] [31:24]
+    17/18: $3$fordecl_block$1.i[31:0]$17
+    18/18: $0\s_axil_bvalid[0:0]
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_arready' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+  created $dff cell `$procdff$213' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_rdata' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+  created $dff cell `$procdff$214' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_rvalid' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+  created $dff cell `$procdff$215' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_awready' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$216' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_wready' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$217' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\s_axil_bvalid' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$218' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\reg_data' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$219' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\reg_dir' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$220' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.\aw_en' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$221' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$fordecl_block$1.i' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$222' with positive edge clock.
+Creating register for signal `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$fordecl_block$3.i' using process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+  created $dff cell `$procdff$223' with positive edge clock.
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 4 empty switches in `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+Removing empty process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:99$23'.
+Found and cleaned up 13 empty switches in `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+Removing empty process `$paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/gpio_bank.sv:49$5'.
+Cleaned up 17 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module peripherals_macro.
+Optimizing module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+<suppressed ~27 debug messages>
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$c8bc0509aabc15b64a46d0e677e83bf79e882db8\gpio_bank.
+<suppressed ~1 debug messages>
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \peripherals_macro..
+Removed 19 unused cells and 117 unused wires.
+<suppressed ~44 debug messages>

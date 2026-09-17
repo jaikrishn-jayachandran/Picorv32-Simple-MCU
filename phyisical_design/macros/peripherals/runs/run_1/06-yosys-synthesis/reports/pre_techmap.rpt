@@ -1,0 +1,39 @@
+102. Printing statistics.
+
+=== peripherals_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      223 wires
+      476 wire bits
+       23 public wires
+      245 public wire bits
+       22 ports
+      244 port bits
+      332 cells
+      171   $_ANDNOT_
+        3   $_AND_
+        2   $_MUX_
+        3   $_NAND_
+        1   $_NOR_
+        4   $_NOT_
+       35   $_ORNOT_
+       12   $_OR_
+       97   $_SDFFE_PN0P_
+        1   $_SDFFE_PP0P_
+        2   $_SDFF_PN0_
+        1   $_SDFF_PN1_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_SDFFE_PN0P_ is unknown!
+   Area for cell type $_SDFFE_PP0P_ is unknown!
+   Area for cell type $_SDFF_PN0_ is unknown!
+   Area for cell type $_SDFF_PN1_ is unknown!
+
