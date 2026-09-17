@@ -1,0 +1,75 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/c0b9fe258ba5447e8cc38ec97815e065.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/9e39477b7552461ab6213bca837c6c72.lib ",
+   "modules": {
+      "\\interconnect_macro": {
+         "num_wires":         388,
+         "num_wire_bits":     1110,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         833,
+         "num_submodules":       0,
+         "area":              6842.442600,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sg13g2_a221oi_1": 2,
+            "sg13g2_a22oi_1": 39,
+            "sg13g2_and2_1": 10,
+            "sg13g2_and3_1": 3,
+            "sg13g2_and4_1": 11,
+            "sg13g2_buf_1": 424,
+            "sg13g2_inv_1": 45,
+            "sg13g2_nand2_1": 44,
+            "sg13g2_nand3_1": 45,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 86,
+            "sg13g2_nor2_1": 18,
+            "sg13g2_nor2b_1": 5,
+            "sg13g2_nor3_1": 12,
+            "sg13g2_nor4_1": 11,
+            "sg13g2_o21ai_1": 75,
+            "sg13g2_or2_1": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         388,
+         "num_wire_bits":     1110,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         833,
+         "num_submodules":       0,
+         "area":              6842.442600,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sg13g2_a221oi_1": 2,
+            "sg13g2_a22oi_1": 39,
+            "sg13g2_and2_1": 10,
+            "sg13g2_and3_1": 3,
+            "sg13g2_and4_1": 11,
+            "sg13g2_buf_1": 424,
+            "sg13g2_inv_1": 45,
+            "sg13g2_nand2_1": 44,
+            "sg13g2_nand3_1": 45,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 86,
+            "sg13g2_nor2_1": 18,
+            "sg13g2_nor2b_1": 5,
+            "sg13g2_nor3_1": 12,
+            "sg13g2_nor4_1": 11,
+            "sg13g2_o21ai_1": 75,
+            "sg13g2_or2_1": 2
+         }
+      }
+}
+

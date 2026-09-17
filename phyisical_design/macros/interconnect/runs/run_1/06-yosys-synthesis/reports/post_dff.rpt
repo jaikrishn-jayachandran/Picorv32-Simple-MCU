@@ -1,0 +1,27 @@
+101. Printing statistics.
+
+=== interconnect_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      230 wires
+      952 wire bits
+       40 public wires
+      762 public wire bits
+       40 ports
+      762 port bits
+      251 cells
+       71   $_ANDNOT_
+      123   $_MUX_
+        4   $_NOR_
+        5   $_NOT_
+        4   $_ORNOT_
+       44   $_OR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+

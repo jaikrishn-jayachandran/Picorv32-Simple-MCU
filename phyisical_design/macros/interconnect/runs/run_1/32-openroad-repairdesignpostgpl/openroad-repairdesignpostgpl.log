@@ -1,0 +1,232 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/28-openroad-globalplacement/interconnect_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO RSZ-0027] Inserted 209 sg13g2_buf_1 input buffers.
+[INFO RSZ-0028] Inserted 485 sg13g2_buf_1 output buffers.
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 20.0 -cap_margin 20.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      1804
+       10 |     +0.0% |       0 |       0 |             0 |      1794
+       20 |     +0.0% |       0 |       0 |             0 |      1784
+       30 |     +0.0% |       0 |       0 |             0 |      1774
+       40 |     +0.0% |       0 |       0 |             0 |      1764
+       50 |     +0.0% |       0 |       0 |             0 |      1754
+       60 |     +0.0% |       0 |       0 |             0 |      1744
+       70 |     +0.0% |       0 |       0 |             0 |      1734
+       80 |     +0.0% |       0 |       0 |             0 |      1724
+       90 |     +0.0% |       0 |       0 |             0 |      1714
+      100 |     +0.0% |       0 |       0 |             0 |      1704
+      110 |     +0.0% |       0 |       0 |             0 |      1694
+      120 |     +0.0% |       0 |       0 |             0 |      1684
+      130 |     +0.0% |       0 |       0 |             0 |      1674
+      140 |     +0.0% |       0 |       0 |             0 |      1664
+      150 |     +0.0% |       0 |       0 |             0 |      1654
+      160 |     +0.0% |       0 |       0 |             0 |      1644
+      170 |     +0.0% |       0 |       0 |             0 |      1634
+      180 |     +0.0% |       0 |       0 |             0 |      1624
+      190 |     +0.0% |       0 |       0 |             0 |      1614
+      200 |     +0.0% |       0 |       0 |             0 |      1604
+      210 |     +0.0% |       0 |       0 |             0 |      1594
+      220 |     +0.0% |       0 |       0 |             0 |      1584
+      230 |     +0.0% |       0 |       0 |             0 |      1574
+      240 |     +0.0% |       0 |       0 |             0 |      1564
+      250 |     +0.0% |       0 |       0 |             0 |      1554
+      260 |     +0.0% |       0 |       0 |             0 |      1544
+      270 |     +0.0% |       0 |       0 |             0 |      1534
+      280 |     +0.0% |       0 |       0 |             0 |      1524
+      290 |     +0.0% |       0 |       0 |             0 |      1514
+      300 |     +0.0% |       0 |       0 |             0 |      1504
+      310 |     +0.0% |       0 |       0 |             0 |      1494
+      320 |     +0.4% |       0 |       6 |             1 |      1484
+      330 |     +0.7% |       0 |      12 |             2 |      1474
+      340 |     +0.7% |       0 |      12 |             2 |      1464
+      350 |     +0.7% |       0 |      12 |             2 |      1454
+      360 |     +0.7% |       0 |      12 |             2 |      1444
+      370 |     +0.7% |       0 |      12 |             2 |      1434
+      380 |     +2.3% |       0 |      37 |             5 |      1424
+      390 |     +2.3% |       0 |      38 |             6 |      1414
+      400 |     +3.1% |       0 |      51 |             8 |      1404
+      410 |     +3.8% |       0 |      63 |            10 |      1394
+      420 |     +3.8% |       0 |      63 |            10 |      1384
+      430 |     +3.8% |       0 |      63 |            10 |      1374
+      440 |     +3.8% |       0 |      63 |            10 |      1364
+      450 |     +3.8% |       0 |      63 |            10 |      1354
+      460 |     +3.8% |       0 |      63 |            10 |      1344
+      470 |     +3.8% |       0 |      63 |            10 |      1334
+      480 |     +3.8% |       0 |      63 |            10 |      1324
+      490 |     +3.8% |       0 |      63 |            10 |      1314
+      500 |     +3.8% |       0 |      63 |            10 |      1304
+      510 |     +3.8% |       0 |      63 |            10 |      1294
+      520 |     +3.8% |       0 |      63 |            10 |      1284
+      530 |     +3.8% |       0 |      63 |            10 |      1274
+      540 |     +3.8% |       0 |      63 |            10 |      1264
+      550 |     +3.8% |       0 |      63 |            10 |      1254
+      560 |     +3.8% |       0 |      63 |            10 |      1244
+      570 |     +3.8% |       0 |      63 |            10 |      1234
+      580 |     +3.8% |       0 |      63 |            10 |      1224
+      590 |     +3.8% |       0 |      63 |            10 |      1214
+      600 |     +3.8% |       0 |      63 |            10 |      1204
+      610 |     +3.8% |       0 |      63 |            10 |      1194
+      620 |     +3.8% |       0 |      63 |            10 |      1184
+      630 |     +3.8% |       0 |      63 |            10 |      1174
+      640 |     +3.8% |       0 |      63 |            10 |      1164
+      650 |     +3.8% |       0 |      63 |            10 |      1154
+      660 |     +3.8% |       0 |      63 |            10 |      1144
+      670 |     +3.8% |       0 |      63 |            10 |      1134
+      680 |     +3.8% |       0 |      63 |            10 |      1124
+      690 |     +3.8% |       0 |      63 |            10 |      1114
+      700 |     +3.8% |       0 |      63 |            10 |      1104
+      710 |     +3.8% |       0 |      63 |            10 |      1094
+      720 |     +3.8% |       0 |      63 |            10 |      1084
+      730 |     +3.8% |       0 |      63 |            10 |      1074
+      740 |     +3.8% |       0 |      63 |            10 |      1064
+      750 |     +3.8% |       0 |      63 |            10 |      1054
+      760 |     +3.8% |       0 |      63 |            10 |      1044
+      770 |     +3.8% |       0 |      63 |            10 |      1034
+      780 |     +3.8% |       0 |      63 |            10 |      1024
+      790 |     +3.8% |       0 |      63 |            10 |      1014
+      800 |     +3.8% |       0 |      63 |            10 |      1004
+      810 |     +3.8% |       0 |      63 |            10 |       994
+      820 |     +3.8% |       0 |      63 |            10 |       984
+      830 |     +3.8% |       0 |      63 |            10 |       974
+      840 |     +3.8% |       0 |      63 |            10 |       964
+      850 |     +3.8% |       0 |      63 |            10 |       954
+      860 |     +3.8% |       0 |      63 |            10 |       944
+      870 |     +3.8% |       0 |      63 |            10 |       934
+      880 |     +3.8% |       0 |      63 |            10 |       924
+      890 |     +3.8% |       0 |      63 |            10 |       914
+      900 |     +3.8% |       0 |      63 |            10 |       904
+      910 |     +3.8% |       0 |      63 |            10 |       894
+      920 |     +3.8% |       0 |      63 |            10 |       884
+      930 |     +3.8% |       0 |      63 |            10 |       874
+      940 |     +3.8% |       0 |      63 |            10 |       864
+      950 |     +3.8% |       0 |      63 |            10 |       854
+      960 |     +3.8% |       0 |      63 |            10 |       844
+      970 |     +3.8% |       0 |      63 |            10 |       834
+      980 |     +3.8% |       0 |      63 |            10 |       824
+      990 |     +3.8% |       0 |      63 |            10 |       814
+     1000 |     +3.8% |       0 |      63 |            10 |       804
+     1010 |     +3.8% |       0 |      63 |            10 |       794
+     1020 |     +3.8% |       0 |      63 |            10 |       784
+     1030 |     +3.8% |       0 |      63 |            10 |       774
+     1040 |     +3.8% |       0 |      63 |            10 |       764
+     1050 |     +3.8% |       0 |      63 |            10 |       754
+     1060 |     +3.8% |       0 |      63 |            10 |       744
+     1070 |     +3.8% |       0 |      63 |            10 |       734
+     1080 |     +3.8% |       0 |      63 |            10 |       724
+     1090 |     +3.8% |       0 |      63 |            10 |       714
+     1100 |     +3.8% |       0 |      63 |            10 |       704
+     1110 |     +3.8% |       0 |      63 |            10 |       694
+     1120 |     +3.8% |       0 |      63 |            10 |       684
+     1130 |     +3.8% |       0 |      63 |            10 |       674
+     1140 |     +3.8% |       0 |      63 |            10 |       664
+     1150 |     +3.8% |       0 |      63 |            10 |       654
+     1160 |     +3.8% |       0 |      63 |            10 |       644
+     1170 |     +3.8% |       0 |      63 |            10 |       634
+     1180 |     +3.8% |       0 |      63 |            10 |       624
+     1190 |     +3.8% |       0 |      63 |            10 |       614
+     1200 |     +3.8% |       0 |      63 |            10 |       604
+     1210 |     +3.8% |       0 |      63 |            10 |       594
+     1220 |     +3.8% |       0 |      63 |            10 |       584
+     1230 |     +3.8% |       0 |      63 |            10 |       574
+     1240 |     +3.8% |       0 |      63 |            10 |       564
+     1250 |     +3.8% |       0 |      63 |            10 |       554
+     1260 |     +3.9% |       0 |      64 |            11 |       544
+     1270 |     +4.4% |       0 |      72 |            13 |       534
+     1280 |     +4.8% |       0 |      78 |            14 |       524
+     1290 |     +4.8% |       0 |      78 |            14 |       514
+     1300 |     +4.8% |       0 |      78 |            14 |       504
+     1310 |     +4.8% |       0 |      78 |            14 |       494
+     1320 |     +4.8% |       0 |      78 |            14 |       484
+     1330 |     +4.8% |       0 |      78 |            14 |       474
+     1340 |     +4.8% |       0 |      78 |            14 |       464
+     1350 |     +4.8% |       0 |      78 |            14 |       454
+     1360 |     +4.8% |       0 |      78 |            14 |       444
+     1370 |     +4.8% |       0 |      78 |            14 |       434
+     1380 |     +4.8% |       0 |      78 |            14 |       424
+     1390 |     +4.8% |       0 |      78 |            14 |       414
+     1400 |     +4.8% |       0 |      78 |            14 |       404
+     1410 |     +5.1% |       0 |      84 |            18 |       394
+     1420 |     +5.6% |       0 |      91 |            19 |       384
+     1430 |     +5.6% |       0 |      92 |            20 |       374
+     1440 |     +5.6% |       0 |      92 |            20 |       364
+     1450 |     +5.6% |       0 |      92 |            20 |       354
+     1460 |     +5.6% |       0 |      92 |            20 |       344
+     1470 |     +5.6% |       0 |      92 |            20 |       334
+     1480 |     +5.6% |       0 |      92 |            20 |       324
+     1490 |     +5.6% |       0 |      92 |            20 |       314
+     1500 |     +5.6% |       0 |      92 |            20 |       304
+     1510 |     +5.6% |       0 |      92 |            20 |       294
+     1520 |     +5.6% |       0 |      92 |            20 |       284
+     1530 |     +5.7% |       0 |      93 |            21 |       274
+     1540 |     +5.7% |       0 |      93 |            21 |       264
+     1550 |     +5.7% |       0 |      93 |            21 |       254
+     1560 |     +5.7% |       0 |      93 |            21 |       244
+     1570 |     +5.7% |       0 |      93 |            21 |       234
+     1580 |     +5.7% |       0 |      93 |            21 |       224
+     1590 |     +5.7% |       0 |      93 |            21 |       214
+     1600 |     +5.7% |       0 |      93 |            21 |       204
+     1610 |     +5.7% |       0 |      93 |            21 |       194
+     1620 |     +5.7% |       0 |      93 |            21 |       184
+     1630 |     +5.7% |       0 |      93 |            21 |       174
+     1640 |     +5.7% |       0 |      93 |            21 |       164
+     1650 |     +5.7% |       0 |      93 |            21 |       154
+     1660 |     +5.7% |       0 |      93 |            21 |       144
+     1670 |     +5.7% |       0 |      93 |            21 |       134
+     1680 |     +5.7% |       0 |      93 |            21 |       124
+     1690 |     +5.7% |       0 |      93 |            21 |       114
+     1700 |     +5.7% |       0 |      93 |            21 |       104
+     1710 |     +5.7% |       0 |      93 |            21 |        94
+     1720 |     +5.7% |       0 |      93 |            21 |        84
+     1730 |     +5.7% |       0 |      93 |            21 |        74
+     1740 |     +5.7% |       0 |      93 |            21 |        64
+     1750 |     +5.7% |       0 |      93 |            21 |        54
+     1760 |     +5.7% |       0 |      93 |            21 |        44
+     1770 |     +5.7% |       0 |      93 |            21 |        34
+     1780 |     +5.7% |       0 |      93 |            21 |        24
+     1790 |     +5.7% |       0 |      93 |            21 |        14
+     1800 |     +5.7% |       0 |      93 |            21 |         4
+    final |     +5.7% |       0 |      93 |            21 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 7 slew violations.
+[INFO RSZ-0035] Found 21 fanout violations.
+[INFO RSZ-0038] Inserted 93 buffers in 21 nets.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement      22011.4 u
+average displacement       13.6 u
+max displacement           79.8 u
+original HPWL           38439.5 u
+legalized HPWL          49493.6 u
+delta HPWL                   29 %
+
+[INFO DPL-0020] Mirrored 789 instances
+[INFO DPL-0021] HPWL before           49493.6 u
+[INFO DPL-0022] HPWL after            48754.9 u
+[INFO DPL-0023] HPWL delta               -1.5 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 1574 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                  424    3077.22
+  Timing Repair Buffer                    787    5711.73
+  Inverter                                 45     244.94
+  Multi-Input combinational cell          364    3521.75
+  Total                                  1620   12555.65
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/32-openroad-repairdesignpostgpl/interconnect_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/32-openroad-repairdesignpostgpl/interconnect_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/32-openroad-repairdesignpostgpl/interconnect_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/32-openroad-repairdesignpostgpl/interconnect_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/32-openroad-repairdesignpostgpl/interconnect_macro.sdc'…

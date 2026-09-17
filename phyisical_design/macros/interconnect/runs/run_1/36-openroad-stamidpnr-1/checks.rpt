@@ -1,0 +1,601 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: m_araddr[13] (input port clocked by clk_i)
+Endpoint: m_arready (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 v input external delay
+     1    0.009055    0.021349    0.006556    2.006556 v m_araddr[13] (in)
+                                                         m_araddr[13] (net)
+                      0.021350    0.000000    2.006556 v input2/A (sg13g2_buf_1)
+     3    0.021797    0.075552    0.104627    2.111182 v input2/X (sg13g2_buf_1)
+                                                         net2 (net)
+                      0.075552    0.000121    2.111304 v fanout782/A (sg13g2_buf_1)
+     4    0.027027    0.090036    0.140268    2.251572 v fanout782/X (sg13g2_buf_1)
+                                                         net782 (net)
+                      0.090046    0.001009    2.252582 v fanout779/A (sg13g2_buf_1)
+     8    0.036295    0.117968    0.167519    2.420101 v fanout779/X (sg13g2_buf_1)
+                                                         net779 (net)
+                      0.117976    0.001076    2.421176 v _0414_/A (sg13g2_nor2_1)
+     1    0.003687    0.059520    0.086235    2.507411 ^ _0414_/Y (sg13g2_nor2_1)
+                                                         _0066_ (net)
+                      0.059520    0.000021    2.507432 ^ _0415_/C (sg13g2_nand3b_1)
+     1    0.003284    0.060207    0.087513    2.594944 v _0415_/Y (sg13g2_nand3b_1)
+                                                         _0067_ (net)
+                      0.060207    0.000017    2.594962 v _0416_/B (sg13g2_nor2_1)
+     3    0.020803    0.187229    0.170250    2.765212 ^ _0416_/Y (sg13g2_nor2_1)
+                                                         _0068_ (net)
+                      0.187230    0.000322    2.765534 ^ fanout715/A (sg13g2_buf_1)
+     7    0.036145    0.153276    0.208500    2.974034 ^ fanout715/X (sg13g2_buf_1)
+                                                         net715 (net)
+                      0.153276    0.000102    2.974136 ^ fanout713/A (sg13g2_buf_1)
+     8    0.036857    0.155884    0.202386    3.176522 ^ fanout713/X (sg13g2_buf_1)
+                                                         net713 (net)
+                      0.155884    0.000334    3.176856 ^ _0417_/B (sg13g2_nand2_1)
+     1    0.003672    0.057809    0.084742    3.261599 v _0417_/Y (sg13g2_nand2_1)
+                                                         _0069_ (net)
+                      0.057809    0.000047    3.261645 v fanout706/A (sg13g2_buf_1)
+     5    0.035551    0.115648    0.151482    3.413127 v fanout706/X (sg13g2_buf_1)
+                                                         net706 (net)
+                      0.115651    0.000453    3.413580 v fanout705/A (sg13g2_buf_1)
+     8    0.049814    0.158939    0.205560    3.619140 v fanout705/X (sg13g2_buf_1)
+                                                         net705 (net)
+                      0.158944    0.001106    3.620246 v fanout703/A (sg13g2_buf_1)
+     8    0.040165    0.130032    0.196446    3.816692 v fanout703/X (sg13g2_buf_1)
+                                                         net703 (net)
+                      0.130033    0.000682    3.817374 v _0556_/A2 (sg13g2_a22oi_1)
+     1    0.005309    0.089777    0.126216    3.943590 ^ _0556_/Y (sg13g2_a22oi_1)
+                                                         _0176_ (net)
+                      0.089777    0.000074    3.943664 ^ _0560_/A2 (sg13g2_o21ai_1)
+     1    0.009045    0.071846    0.098144    4.041808 v _0560_/Y (sg13g2_o21ai_1)
+                                                         net210 (net)
+                      0.071846    0.000366    4.042174 v output210/A (sg13g2_buf_1)
+     1    0.050000    0.159540    0.190680    4.232854 v output210/X (sg13g2_buf_1)
+                                                         m_arready (net)
+                      0.159540    0.000000    4.232854 v m_arready (out)
+                                              4.232854   data arrival time
+
+                                 10.000000   10.000000   clock clk_i (rise edge)
+                                  0.000000   10.000000   clock network delay (propagated)
+                                 -0.200000    9.800000   clock uncertainty
+                                  0.000000    9.800000   clock reconvergence pessimism
+                                 -2.000000    7.800000   output external delay
+                                              7.800000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.800000   data required time
+                                             -4.232854   data arrival time
+---------------------------------------------------------------------------------------------
+                                              3.567146   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 2 unannotated drivers.
+ clk_i
+ rst_ni
+Found 485 partially unannotated drivers.
+ output210/X
+ output211/X
+ output212/X
+ output213/X
+ output214/X
+ output215/X
+ output216/X
+ output217/X
+ output218/X
+ output219/X
+ output220/X
+ output221/X
+ output222/X
+ output223/X
+ output224/X
+ output225/X
+ output226/X
+ output227/X
+ output228/X
+ output229/X
+ output230/X
+ output231/X
+ output232/X
+ output233/X
+ output234/X
+ output235/X
+ output236/X
+ output237/X
+ output238/X
+ output239/X
+ output240/X
+ output241/X
+ output242/X
+ output243/X
+ output244/X
+ output245/X
+ output246/X
+ output247/X
+ output248/X
+ output249/X
+ output250/X
+ output251/X
+ output252/X
+ output253/X
+ output254/X
+ output255/X
+ output256/X
+ output257/X
+ output258/X
+ output259/X
+ output260/X
+ output261/X
+ output262/X
+ output263/X
+ output264/X
+ output265/X
+ output266/X
+ output267/X
+ output268/X
+ output269/X
+ output270/X
+ output271/X
+ output272/X
+ output273/X
+ output274/X
+ output275/X
+ output276/X
+ output277/X
+ output278/X
+ output279/X
+ output280/X
+ output281/X
+ output282/X
+ output283/X
+ output284/X
+ output285/X
+ output286/X
+ output287/X
+ output288/X
+ output289/X
+ output290/X
+ output291/X
+ output292/X
+ output293/X
+ output294/X
+ output295/X
+ output296/X
+ output297/X
+ output298/X
+ output299/X
+ output300/X
+ output301/X
+ output302/X
+ output303/X
+ output304/X
+ output305/X
+ output306/X
+ output307/X
+ output308/X
+ output309/X
+ output310/X
+ output311/X
+ output312/X
+ output313/X
+ output314/X
+ output315/X
+ output316/X
+ output317/X
+ output318/X
+ output319/X
+ output320/X
+ output321/X
+ output322/X
+ output323/X
+ output324/X
+ output325/X
+ output326/X
+ output327/X
+ output328/X
+ output329/X
+ output330/X
+ output331/X
+ output332/X
+ output333/X
+ output334/X
+ output335/X
+ output336/X
+ output337/X
+ output338/X
+ output339/X
+ output340/X
+ output341/X
+ output342/X
+ output343/X
+ output344/X
+ output345/X
+ output346/X
+ output347/X
+ output348/X
+ output349/X
+ output350/X
+ output351/X
+ output352/X
+ output353/X
+ output354/X
+ output355/X
+ output356/X
+ output357/X
+ output358/X
+ output359/X
+ output360/X
+ output361/X
+ output362/X
+ output363/X
+ output364/X
+ output365/X
+ output366/X
+ output367/X
+ output368/X
+ output369/X
+ output370/X
+ output371/X
+ output372/X
+ output373/X
+ output374/X
+ output375/X
+ output376/X
+ output377/X
+ output378/X
+ output379/X
+ output380/X
+ output381/X
+ output382/X
+ output383/X
+ output384/X
+ output385/X
+ output386/X
+ output387/X
+ output388/X
+ output389/X
+ output390/X
+ output391/X
+ output392/X
+ output393/X
+ output394/X
+ output395/X
+ output396/X
+ output397/X
+ output398/X
+ output399/X
+ output400/X
+ output401/X
+ output402/X
+ output403/X
+ output404/X
+ output405/X
+ output406/X
+ output407/X
+ output408/X
+ output409/X
+ output410/X
+ output411/X
+ output412/X
+ output413/X
+ output414/X
+ output415/X
+ output416/X
+ output417/X
+ output418/X
+ output419/X
+ output420/X
+ output421/X
+ output422/X
+ output423/X
+ output424/X
+ output425/X
+ output426/X
+ output427/X
+ output428/X
+ output429/X
+ output430/X
+ output431/X
+ output432/X
+ output433/X
+ output434/X
+ output435/X
+ output436/X
+ output437/X
+ output438/X
+ output439/X
+ output440/X
+ output441/X
+ output442/X
+ output443/X
+ output444/X
+ output445/X
+ output446/X
+ output447/X
+ output448/X
+ output449/X
+ output450/X
+ output451/X
+ output452/X
+ output453/X
+ output454/X
+ output455/X
+ output456/X
+ output457/X
+ output458/X
+ output459/X
+ output460/X
+ output461/X
+ output462/X
+ output463/X
+ output464/X
+ output465/X
+ output466/X
+ output467/X
+ output468/X
+ output469/X
+ output470/X
+ output471/X
+ output472/X
+ output473/X
+ output474/X
+ output475/X
+ output476/X
+ output477/X
+ output478/X
+ output479/X
+ output480/X
+ output481/X
+ output482/X
+ output483/X
+ output484/X
+ output485/X
+ output486/X
+ output487/X
+ output488/X
+ output489/X
+ output490/X
+ output491/X
+ output492/X
+ output493/X
+ output494/X
+ output495/X
+ output496/X
+ output497/X
+ output498/X
+ output499/X
+ output500/X
+ output501/X
+ output502/X
+ output503/X
+ output504/X
+ output505/X
+ output506/X
+ output507/X
+ output508/X
+ output509/X
+ output510/X
+ output511/X
+ output512/X
+ output513/X
+ output514/X
+ output515/X
+ output516/X
+ output517/X
+ output518/X
+ output519/X
+ output520/X
+ output521/X
+ output522/X
+ output523/X
+ output524/X
+ output525/X
+ output526/X
+ output527/X
+ output528/X
+ output529/X
+ output530/X
+ output531/X
+ output532/X
+ output533/X
+ output534/X
+ output535/X
+ output536/X
+ output537/X
+ output538/X
+ output539/X
+ output540/X
+ output541/X
+ output542/X
+ output543/X
+ output544/X
+ output545/X
+ output546/X
+ output547/X
+ output548/X
+ output549/X
+ output550/X
+ output551/X
+ output552/X
+ output553/X
+ output554/X
+ output555/X
+ output556/X
+ output557/X
+ output558/X
+ output559/X
+ output560/X
+ output561/X
+ output562/X
+ output563/X
+ output564/X
+ output565/X
+ output566/X
+ output567/X
+ output568/X
+ output569/X
+ output570/X
+ output571/X
+ output572/X
+ output573/X
+ output574/X
+ output575/X
+ output576/X
+ output577/X
+ output578/X
+ output579/X
+ output580/X
+ output581/X
+ output582/X
+ output583/X
+ output584/X
+ output585/X
+ output586/X
+ output587/X
+ output588/X
+ output589/X
+ output590/X
+ output591/X
+ output592/X
+ output593/X
+ output594/X
+ output595/X
+ output596/X
+ output597/X
+ output598/X
+ output599/X
+ output600/X
+ output601/X
+ output602/X
+ output603/X
+ output604/X
+ output605/X
+ output606/X
+ output607/X
+ output608/X
+ output609/X
+ output610/X
+ output611/X
+ output612/X
+ output613/X
+ output614/X
+ output615/X
+ output616/X
+ output617/X
+ output618/X
+ output619/X
+ output620/X
+ output621/X
+ output622/X
+ output623/X
+ output624/X
+ output625/X
+ output626/X
+ output627/X
+ output628/X
+ output629/X
+ output630/X
+ output631/X
+ output632/X
+ output633/X
+ output634/X
+ output635/X
+ output636/X
+ output637/X
+ output638/X
+ output639/X
+ output640/X
+ output641/X
+ output642/X
+ output643/X
+ output644/X
+ output645/X
+ output646/X
+ output647/X
+ output648/X
+ output649/X
+ output650/X
+ output651/X
+ output652/X
+ output653/X
+ output654/X
+ output655/X
+ output656/X
+ output657/X
+ output658/X
+ output659/X
+ output660/X
+ output661/X
+ output662/X
+ output663/X
+ output664/X
+ output665/X
+ output666/X
+ output667/X
+ output668/X
+ output669/X
+ output670/X
+ output671/X
+ output672/X
+ output673/X
+ output674/X
+ output675/X
+ output676/X
+ output677/X
+ output678/X
+ output679/X
+ output680/X
+ output681/X
+ output682/X
+ output683/X
+ output684/X
+ output685/X
+ output686/X
+ output687/X
+ output688/X
+ output689/X
+ output690/X
+ output691/X
+ output692/X
+ output693/X
+ output694/X
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_typ_1p20V_25C: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_typ_1p20V_25C: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_typ_1p20V_25C: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================

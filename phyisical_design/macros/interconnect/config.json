@@ -1,0 +1,43 @@
+{
+  "DESIGN_NAME": "interconnect_macro",
+
+  "PDK": "ihp-sg13g2",
+  "STD_CELL_LIBRARY": "sg13g2_stdcell",
+
+  "PDN_MULTILAYER": true,
+
+  "VERILOG_FILES": [
+    "dir::../../../rtl/macros/interconnect_macro.sv",
+    "dir::../../../rtl/axil_interconnect.sv"
+  ],
+
+  "VERILOG_DEFINES": [
+    "SYNTHESIS"
+  ],
+
+  "CLOCK_PORT": "clk_i",
+  "CLOCK_PERIOD": 10.0,
+
+  "FP_CORE_UTIL": 25,
+  "PL_TARGET_DENSITY_PCT": 40,
+
+  "SYNTH_STRATEGY": "DELAY 1",
+  "SYNTH_MAX_FANOUT": 16,
+
+  "CTS_SINK_CLUSTERING_ENABLE": true,
+  "CTS_SINK_CLUSTERING_SIZE": 4,
+
+  "VDD_NETS": [
+    "VDD"
+  ],
+
+  "GND_NETS": [
+    "VSS"
+  ],
+
+  "DRT_OPT_ITERS": 64,
+  "DRT_THREADS": 8,
+
+  "PNR_SDC_FILE": "dir::constraint.sdc",
+  "SIGNOFF_SDC_FILE": "dir::constraint.sdc"
+}

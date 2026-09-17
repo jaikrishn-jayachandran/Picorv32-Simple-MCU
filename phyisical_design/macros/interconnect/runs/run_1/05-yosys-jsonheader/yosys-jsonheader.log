@@ -1,0 +1,296 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/749fce508928461fadfa1e0ef5f3c83f.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/749fce508928461fadfa1e0ef5f3c83f.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_a21o_1'.
+Generating RTLIL representation for module `\sg13g2_a21o_2'.
+Generating RTLIL representation for module `\sg13g2_a21oi_1'.
+Generating RTLIL representation for module `\sg13g2_a21oi_2'.
+Generating RTLIL representation for module `\sg13g2_a221oi_1'.
+Generating RTLIL representation for module `\sg13g2_a22oi_1'.
+Generating RTLIL representation for module `\sg13g2_and2_1'.
+Generating RTLIL representation for module `\sg13g2_and2_2'.
+Generating RTLIL representation for module `\sg13g2_and3_1'.
+Generating RTLIL representation for module `\sg13g2_and3_2'.
+Generating RTLIL representation for module `\sg13g2_and4_1'.
+Generating RTLIL representation for module `\sg13g2_and4_2'.
+Generating RTLIL representation for module `\sg13g2_antennanp'.
+Generating RTLIL representation for module `\sg13g2_buf_1'.
+Generating RTLIL representation for module `\sg13g2_buf_16'.
+Generating RTLIL representation for module `\sg13g2_buf_2'.
+Generating RTLIL representation for module `\sg13g2_buf_4'.
+Generating RTLIL representation for module `\sg13g2_buf_8'.
+Generating RTLIL representation for module `\sg13g2_decap_4'.
+Generating RTLIL representation for module `\sg13g2_decap_8'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_dlhq_1'.
+Generating RTLIL representation for module `\sg13g2_dlhr_1'.
+Generating RTLIL representation for module `\sg13g2_dlhrq_1'.
+Generating RTLIL representation for module `\sg13g2_dllr_1'.
+Generating RTLIL representation for module `\sg13g2_dllrq_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd1_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd2_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd3_1'.
+Generating RTLIL representation for module `\sg13g2_ebufn_2'.
+Generating RTLIL representation for module `\sg13g2_ebufn_4'.
+Generating RTLIL representation for module `\sg13g2_ebufn_8'.
+Generating RTLIL representation for module `\sg13g2_einvn_2'.
+Generating RTLIL representation for module `\sg13g2_einvn_4'.
+Generating RTLIL representation for module `\sg13g2_einvn_8'.
+Generating RTLIL representation for module `\sg13g2_fill_1'.
+Generating RTLIL representation for module `\sg13g2_fill_2'.
+Generating RTLIL representation for module `\sg13g2_fill_4'.
+Generating RTLIL representation for module `\sg13g2_fill_8'.
+Generating RTLIL representation for module `\sg13g2_inv_1'.
+Generating RTLIL representation for module `\sg13g2_inv_16'.
+Generating RTLIL representation for module `\sg13g2_inv_2'.
+Generating RTLIL representation for module `\sg13g2_inv_4'.
+Generating RTLIL representation for module `\sg13g2_inv_8'.
+Generating RTLIL representation for module `\sg13g2_lgcp_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_2'.
+Generating RTLIL representation for module `\sg13g2_mux4_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_2'.
+Generating RTLIL representation for module `\sg13g2_nand2b_1'.
+Generating RTLIL representation for module `\sg13g2_nand2b_2'.
+Generating RTLIL representation for module `\sg13g2_nand3_1'.
+Generating RTLIL representation for module `\sg13g2_nand3b_1'.
+Generating RTLIL representation for module `\sg13g2_nand4_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_2'.
+Generating RTLIL representation for module `\sg13g2_nor2b_1'.
+Generating RTLIL representation for module `\sg13g2_nor2b_2'.
+Generating RTLIL representation for module `\sg13g2_nor3_1'.
+Generating RTLIL representation for module `\sg13g2_nor3_2'.
+Generating RTLIL representation for module `\sg13g2_nor4_1'.
+Generating RTLIL representation for module `\sg13g2_nor4_2'.
+Generating RTLIL representation for module `\sg13g2_o21ai_1'.
+Generating RTLIL representation for module `\sg13g2_or2_1'.
+Generating RTLIL representation for module `\sg13g2_or2_2'.
+Generating RTLIL representation for module `\sg13g2_or3_1'.
+Generating RTLIL representation for module `\sg13g2_or3_2'.
+Generating RTLIL representation for module `\sg13g2_or4_1'.
+Generating RTLIL representation for module `\sg13g2_or4_2'.
+Generating RTLIL representation for module `\sg13g2_sdfbbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_sighold'.
+Generating RTLIL representation for module `\sg13g2_slgcp_1'.
+Generating RTLIL representation for module `\sg13g2_tiehi'.
+Generating RTLIL representation for module `\sg13g2_tielo'.
+Generating RTLIL representation for module `\sg13g2_xnor2_1'.
+Generating RTLIL representation for module `\sg13g2_xor2_1'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/b79e5367b0424806ad106eab5406838e.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/b79e5367b0424806ad106eab5406838e.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_Corner'.
+Generating RTLIL representation for module `\sg13g2_Filler1000'.
+Generating RTLIL representation for module `\sg13g2_Filler10000'.
+Generating RTLIL representation for module `\sg13g2_Filler200'.
+Generating RTLIL representation for module `\sg13g2_Filler2000'.
+Generating RTLIL representation for module `\sg13g2_Filler400'.
+Generating RTLIL representation for module `\sg13g2_Filler4000'.
+Generating RTLIL representation for module `\sg13g2_IOPadAnalog'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVss'.
+Generating RTLIL representation for module `\sg13g2_IOPadIn'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadVss'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/interconnect_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/interconnect_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\interconnect_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv' to AST representation.
+Storing AST representation for module `$abstract\axil_interconnect'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\interconnect_macro'.
+Generating RTLIL representation for module `\interconnect_macro'.
+
+6.1. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Parameter \NUM_SLAVES = 4
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+
+6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\axil_interconnect'.
+Parameter \NUM_SLAVES = 4
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect'.
+
+6.3. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Used module:     $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect
+
+6.4. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Used module:     $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect
+Removing unused module `$abstract\axil_interconnect'.
+Removing unused module `$abstract\interconnect_macro'.
+Removed 2 unused modules.
+Renaming module interconnect_macro to interconnect_macro.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43 in module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29 in module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+Removed a total of 0 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 61 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~10 debug messages>
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+     1/16: $4\m_rresp[1:0]
+     2/16: $4\m_rdata[31:0]
+     3/16: $4\m_rvalid[0:0]
+     4/16: $4\m_arready[0:0]
+     5/16: $3\m_rresp[1:0]
+     6/16: $3\m_rdata[31:0]
+     7/16: $3\m_rvalid[0:0]
+     8/16: $3\m_arready[0:0]
+     9/16: $2\m_rresp[1:0]
+    10/16: $2\m_rdata[31:0]
+    11/16: $2\m_rvalid[0:0]
+    12/16: $2\m_arready[0:0]
+    13/16: $1\m_rresp[1:0]
+    14/16: $1\m_rdata[31:0]
+    15/16: $1\m_rvalid[0:0]
+    16/16: $1\m_arready[0:0]
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+     1/16: $4\m_bresp[1:0]
+     2/16: $4\m_bvalid[0:0]
+     3/16: $4\m_wready[0:0]
+     4/16: $4\m_awready[0:0]
+     5/16: $3\m_bresp[1:0]
+     6/16: $3\m_bvalid[0:0]
+     7/16: $3\m_wready[0:0]
+     8/16: $3\m_awready[0:0]
+     9/16: $2\m_bresp[1:0]
+    10/16: $2\m_bvalid[0:0]
+    11/16: $2\m_wready[0:0]
+    12/16: $2\m_awready[0:0]
+    13/16: $1\m_bresp[1:0]
+    14/16: $1\m_bvalid[0:0]
+    15/16: $1\m_wready[0:0]
+    16/16: $1\m_awready[0:0]
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+     1/4: $1\ar_sel[3:0] [3]
+     2/4: $1\ar_sel[3:0] [1]
+     3/4: $1\ar_sel[3:0] [2]
+     4/4: $1\ar_sel[3:0] [0]
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+     1/4: $1\aw_sel[3:0] [3]
+     2/4: $1\aw_sel[3:0] [1]
+     3/4: $1\aw_sel[3:0] [2]
+     4/4: $1\aw_sel[3:0] [0]
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_rready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$13.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_arready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_rvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_rdata' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_rresp' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$11.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_arvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_araddr' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_arprot' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$9.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_bready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$7.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_awready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_wready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_bvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_bresp' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$5.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_wvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_wdata' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_wstrb' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$3.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_awvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_awaddr' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_awprot' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$1.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\ar_sel' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\aw_sel' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+Found and cleaned up 4 empty switches in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+Found and cleaned up 4 empty switches in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+Found and cleaned up 1 empty switch in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+Found and cleaned up 1 empty switch in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+Cleaned up 10 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+Optimizing module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+<suppressed ~1 debug messages>
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 1 unused cells and 177 unused wires.
+<suppressed ~42 debug messages>

@@ -1,0 +1,1552 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib
+Imported 22 cell types from liberty file.
+[INFO] Using SDC file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/interconnect_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/interconnect_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\interconnect_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv' to AST representation.
+Storing AST representation for module `$abstract\axil_interconnect'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\interconnect_macro'.
+Generating RTLIL representation for module `\interconnect_macro'.
+
+6.1. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Parameter \NUM_SLAVES = 4
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+
+6.2. Executing AST frontend in derive mode using pre-parsed AST for module `\axil_interconnect'.
+Parameter \NUM_SLAVES = 4
+Parameter \ADDR_WIDTH = 32
+Parameter \DATA_WIDTH = 32
+Generating RTLIL representation for module `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect'.
+
+6.3. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Used module:     $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect
+
+6.4. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Used module:     $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect
+Removing unused module `$abstract\axil_interconnect'.
+Removing unused module `$abstract\interconnect_macro'.
+Removed 2 unused modules.
+Renaming module interconnect_macro to interconnect_macro.
+
+7. Executing ATTRMAP pass (move or copy attributes).
+
+8. Executing TRIBUF pass.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Used module:     $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect
+
+9.2. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Used module:     $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect
+Removed 0 unused modules.
+
+10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+11. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43 in module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29 in module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+Removed a total of 0 dead cases.
+
+12. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 61 assignments to connections.
+
+13. Executing PROC_INIT pass (extract init attributes).
+
+14. Executing PROC_ARST pass (detect async resets in processes).
+
+15. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~10 debug messages>
+
+16. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+     1/16: $4\m_rresp[1:0]
+     2/16: $4\m_rdata[31:0]
+     3/16: $4\m_rvalid[0:0]
+     4/16: $4\m_arready[0:0]
+     5/16: $3\m_rresp[1:0]
+     6/16: $3\m_rdata[31:0]
+     7/16: $3\m_rvalid[0:0]
+     8/16: $3\m_arready[0:0]
+     9/16: $2\m_rresp[1:0]
+    10/16: $2\m_rdata[31:0]
+    11/16: $2\m_rvalid[0:0]
+    12/16: $2\m_arready[0:0]
+    13/16: $1\m_rresp[1:0]
+    14/16: $1\m_rdata[31:0]
+    15/16: $1\m_rvalid[0:0]
+    16/16: $1\m_arready[0:0]
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+     1/16: $4\m_bresp[1:0]
+     2/16: $4\m_bvalid[0:0]
+     3/16: $4\m_wready[0:0]
+     4/16: $4\m_awready[0:0]
+     5/16: $3\m_bresp[1:0]
+     6/16: $3\m_bvalid[0:0]
+     7/16: $3\m_wready[0:0]
+     8/16: $3\m_awready[0:0]
+     9/16: $2\m_bresp[1:0]
+    10/16: $2\m_bvalid[0:0]
+    11/16: $2\m_wready[0:0]
+    12/16: $2\m_awready[0:0]
+    13/16: $1\m_bresp[1:0]
+    14/16: $1\m_bvalid[0:0]
+    15/16: $1\m_wready[0:0]
+    16/16: $1\m_awready[0:0]
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+     1/4: $1\ar_sel[3:0] [3]
+     2/4: $1\ar_sel[3:0] [1]
+     3/4: $1\ar_sel[3:0] [2]
+     4/4: $1\ar_sel[3:0] [0]
+Creating decoders for process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+     1/4: $1\aw_sel[3:0] [3]
+     2/4: $1\aw_sel[3:0] [1]
+     3/4: $1\aw_sel[3:0] [2]
+     4/4: $1\aw_sel[3:0] [0]
+
+17. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_rready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$13.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_arready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_rvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_rdata' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_rresp' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$11.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_arvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_araddr' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_arprot' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$9.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_bready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$7.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_awready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_wready' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_bvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\m_bresp' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$5.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_wvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_wdata' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_wstrb' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$3.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_awvalid' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_awaddr' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\s_awprot' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$fordecl_block$1.i' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\ar_sel' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+No latch inferred for signal `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.\aw_sel' from process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+
+18. Executing PROC_DFF pass (convert process syncs to FFs).
+
+19. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+20. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:166$45'.
+Found and cleaned up 4 empty switches in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:151$43'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:140$37'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:132$31'.
+Found and cleaned up 4 empty switches in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:117$29'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:106$23'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:95$17'.
+Found and cleaned up 1 empty switch in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:81$16'.
+Found and cleaned up 1 empty switch in `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+Removing empty process `$paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/axil_interconnect.sv:70$15'.
+Cleaned up 10 empty switches.
+
+21. Executing CHECK pass (checking for obvious problems).
+Checking module interconnect_macro...
+Checking module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect...
+Found and reported 0 problems.
+
+22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+Optimizing module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+
+23. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$bac95cf327c3673faa08397d77e1826d7e14616b\axil_interconnect.
+<suppressed ~1 debug messages>
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 0 unused cells and 137 unused wires.
+<suppressed ~1 debug messages>
+
+26. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+27. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 73 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Computing hashes of 67 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+28. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \interconnect_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~56 debug messages>
+
+29. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \interconnect_macro.
+    New ctrl vector for $pmux cell $flatten\i_interconnect.$procmux$160: $auto$opt_reduce.cc:137:opt_pmux$183
+    New ctrl vector for $pmux cell $flatten\i_interconnect.$procmux$177: $auto$opt_reduce.cc:137:opt_pmux$185
+  Optimizing cells in module \interconnect_macro.
+Performed a total of 2 changes.
+
+30. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 69 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+31. Executing OPT_DFF pass (perform DFF optimizations).
+
+32. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+33. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+<suppressed ~8 debug messages>
+
+34. Rerunning OPT passes. (Maybe there is more to do…)
+
+35. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \interconnect_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~56 debug messages>
+
+36. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \interconnect_macro.
+Performed a total of 0 changes.
+
+37. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 69 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+38. Executing OPT_DFF pass (perform DFF optimizations).
+
+39. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+40. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+41. Executing FSM pass (extract and optimize FSM).
+
+41.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+41.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+41.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+41.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+41.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+41.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+41.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+41.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+42. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+43. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 69 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+44. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \interconnect_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~56 debug messages>
+
+45. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \interconnect_macro.
+Performed a total of 0 changes.
+
+46. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 69 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+47. Executing OPT_DFF pass (perform DFF optimizations).
+
+48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+49. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+50. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 20) from port B of cell interconnect_macro.$flatten\i_interconnect.$procmux$175_CMP0 ($eq).
+Removed top 1 bits (of 20) from port B of cell interconnect_macro.$flatten\i_interconnect.$procmux$171_CMP0 ($eq).
+Removed top 1 bits (of 20) from port B of cell interconnect_macro.$flatten\i_interconnect.$procmux$166_CMP0 ($eq).
+Removed top 1 bits (of 20) from port B of cell interconnect_macro.$flatten\i_interconnect.$procmux$158_CMP0 ($eq).
+Removed top 1 bits (of 20) from port B of cell interconnect_macro.$flatten\i_interconnect.$procmux$154_CMP0 ($eq).
+Removed top 1 bits (of 20) from port B of cell interconnect_macro.$flatten\i_interconnect.$procmux$149_CMP0 ($eq).
+
+51. Executing PEEPOPT pass (run peephole optimizers).
+
+52. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+53. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module interconnect_macro:
+  created 0 $alu and 0 $macc cells.
+
+54. Executing SHARE pass (SAT-based resource sharing).
+
+55. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+56. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 69 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+57. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \interconnect_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~56 debug messages>
+
+58. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \interconnect_macro.
+Performed a total of 0 changes.
+
+59. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 69 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+60. Executing OPT_DFF pass (perform DFF optimizations).
+
+61. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+62. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+63. Executing MEMORY pass.
+
+63.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+63.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+63.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+63.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+63.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+63.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+63.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+63.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+63.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+63.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+64. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+65. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+<suppressed ~8 debug messages>
+
+66. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 63 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+67. Executing OPT_DFF pass (perform DFF optimizations).
+
+68. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+69. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+70. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+71. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 63 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+72. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \interconnect_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~40 debug messages>
+
+73. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \interconnect_macro.
+Performed a total of 0 changes.
+
+74. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 63 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+75. Executing OPT_SHARE pass.
+
+76. Executing OPT_DFF pass (perform DFF optimizations).
+
+77. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+78. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+79. Executing TECHMAP pass (map to technology primitives).
+
+79.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+79.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~139 debug messages>
+
+80. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+<suppressed ~243 debug messages>
+
+81. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 321 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Computing hashes of 285 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Computing hashes of 269 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Computing hashes of 261 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+<suppressed ~180 debug messages>
+Removed a total of 60 cells.
+
+82. Executing OPT_DFF pass (perform DFF optimizations).
+
+83. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 0 unused cells and 18 unused wires.
+<suppressed ~1 debug messages>
+
+84. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+85. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 261 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+86. Executing OPT_DFF pass (perform DFF optimizations).
+
+87. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+88. Executing ABC pass (technology mapping using ABC).
+
+88.1. Extracting gate netlist of module `\interconnect_macro' to `<abc-temp-dir>/input.blif'..
+
+88.1.1. Executed ABC.
+Extracted 260 gates and 470 wires to a netlist network with 209 inputs and 61 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library /tmp/yosys-abc-nT4nqs/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+88.1.2. Re-integrating ABC results.
+ABC RESULTS:            ANDNOT cells:       71
+ABC RESULTS:               MUX cells:      123
+ABC RESULTS:               NOR cells:        4
+ABC RESULTS:               NOT cells:        5
+ABC RESULTS:                OR cells:       44
+ABC RESULTS:             ORNOT cells:        4
+ABC RESULTS:        internal signals:      200
+ABC RESULTS:           input signals:      209
+ABC RESULTS:          output signals:       61
+Removing temp directory.
+Removing global temp directory.
+
+89. Executing OPT pass (performing simple optimizations).
+
+89.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+89.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 252 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+89.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+89.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 0 unused cells and 336 unused wires.
+<suppressed ~3 debug messages>
+
+89.5. Finished fast OPT passes.
+
+90. Executing HIERARCHY pass (managing design hierarchy).
+
+90.1. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+
+90.2. Analyzing design hierarchy..
+Top module:  \interconnect_macro
+Removed 0 unused modules.
+
+91. Executing CHECK pass (checking for obvious problems).
+Checking module interconnect_macro...
+Found and reported 0 problems.
+
+92. Printing statistics.
+
+=== interconnect_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      270 wires
+     1714 wire bits
+       80 public wires
+     1524 public wire bits
+       40 ports
+      762 port bits
+      252 cells
+       71   $_ANDNOT_
+      123   $_MUX_
+        4   $_NOR_
+        5   $_NOT_
+        4   $_ORNOT_
+       44   $_OR_
+        1   $scopeinfo
+
+93. Executing OPT pass (performing simple optimizations).
+
+93.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+93.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 252 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+93.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \interconnect_macro..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+93.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \interconnect_macro.
+Performed a total of 0 changes.
+
+93.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\interconnect_macro'.
+Computing hashes of 252 cells of `\interconnect_macro'.
+Finding duplicate cells in `\interconnect_macro'.
+Removed a total of 0 cells.
+
+93.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+93.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+
+93.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module interconnect_macro.
+
+93.9. Finished fast OPT passes. (There is nothing left to do.)
+
+94. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 1 unused cells and 40 unused wires.
+<suppressed ~41 debug messages>
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/c0b9fe258ba5447e8cc38ec97815e065.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/9e39477b7552461ab6213bca837c6c72.lib ",
+   "modules": {
+      "\\interconnect_macro": {
+         "num_wires":         230,
+         "num_wire_bits":     952,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 71,
+            "$_MUX_": 123,
+            "$_NOR_": 4,
+            "$_NOT_": 5,
+            "$_ORNOT_": 4,
+            "$_OR_": 44
+         }
+      }
+   },
+      "design": {
+         "num_wires":         230,
+         "num_wire_bits":     952,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 71,
+            "$_MUX_": 123,
+            "$_NOR_": 4,
+            "$_NOT_": 5,
+            "$_ORNOT_": 4,
+            "$_OR_": 44
+         }
+      }
+}
+
+95. Printing statistics.
+
+=== interconnect_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      230 wires
+      952 wire bits
+       40 public wires
+      762 public wire bits
+       40 ports
+      762 port bits
+      251 cells
+       71   $_ANDNOT_
+      123   $_MUX_
+        4   $_NOR_
+        5   $_NOT_
+        4   $_ORNOT_
+       44   $_OR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v'…
+
+96. Executing TECHMAP pass (map to technology primitives).
+
+96.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `$_TBUF_'.
+Successfully finished Verilog frontend.
+
+96.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+97. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v'…
+
+98. Executing TECHMAP pass (map to technology primitives).
+
+98.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_PN0_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_NN0_'.
+Successfully finished Verilog frontend.
+
+98.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+99. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+100. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sg13g2_dfrbpq_1 (noninv, pins=4, area=48.99) is a direct match for cell type $_DFF_PN0_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    unmapped dff cell: $_DFF_P_
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sg13g2_dfrbpq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+100.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~4 debug messages>
+Mapping DFF cells in module `\interconnect_macro':
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/c0b9fe258ba5447e8cc38ec97815e065.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/9e39477b7552461ab6213bca837c6c72.lib ",
+   "modules": {
+      "\\interconnect_macro": {
+         "num_wires":         230,
+         "num_wire_bits":     952,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 71,
+            "$_MUX_": 123,
+            "$_NOR_": 4,
+            "$_NOT_": 5,
+            "$_ORNOT_": 4,
+            "$_OR_": 44
+         }
+      }
+   },
+      "design": {
+         "num_wires":         230,
+         "num_wire_bits":     952,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         251,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 71,
+            "$_MUX_": 123,
+            "$_NOR_": 4,
+            "$_NOT_": 5,
+            "$_ORNOT_": 4,
+            "$_OR_": 44
+         }
+      }
+}
+
+101. Printing statistics.
+
+=== interconnect_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      230 wires
+      952 wire bits
+       40 public wires
+      762 public wire bits
+       40 ports
+      762 port bits
+      251 cells
+       71   $_ANDNOT_
+      123   $_MUX_
+        4   $_NOR_
+        5   $_NOT_
+        4   $_ORNOT_
+       44   $_OR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+
+[INFO] Using generated ABC script '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/06-yosys-synthesis/DELAY_1.abc'…
+
+102. Executing ABC pass (technology mapping using ABC).
+
+102.1. Extracting gate netlist of module `\interconnect_macro' to `/tmp/yosys-abc-FijGlN/input.blif'..
+
+102.1.1. Executed ABC.
+Extracted 251 gates and 460 wires to a netlist network with 209 inputs and 61 outputs.
+Running ABC script: /tmp/yosys-abc-FijGlN/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-FijGlN/abc.script"
+ABC: + read_blif /tmp/yosys-abc-FijGlN/input.blif 
+ABC: + read_lib -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/c0b9fe258ba5447e8cc38ec97815e065.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_antennanp" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhrq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllrq_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_8".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_2".
+ABC: Library "sg13g2_stdcell_typ_1p20V_25C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/c0b9fe258ba5447e8cc38ec97815e065.lib" has 54 cells (25 skipped: 12 seq; 6 tri-state; 0 no func; 7 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.01 sec
+ABC: Memory =    2.64 MB. Time =     0.01 sec
+ABC: + read_lib -m -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/9e39477b7552461ab6213bca837c6c72.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Corner" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler1000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler10000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler200" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler2000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler400" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler4000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadAnalog" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVss" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIn" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVss" without logic function.
+ABC: Library "sg13g2_io_typ_1p2V_3p3V_25C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/9e39477b7552461ab6213bca837c6c72.lib" has 3 cells (19 skipped: 0 seq; 6 tri-state; 4 no func; 9 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.00 sec
+ABC: Memory =    0.39 MB. Time =     0.00 sec
+ABC: Updated library "sg13g2_stdcell_typ_1p20V_25C" with additional 3 cells from library "sg13g2_io_typ_1p2V_3p3V_25C".
+ABC: + read_constr -v /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sg13g2_buf_4/X".
+ABC: Setting output load to be 6.000000.
+ABC: + source /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/06-yosys-synthesis/DELAY_1.abc 
+ABC: Error: The network is combinational.
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: WireLoad = "none"  Gates =    409 ( 11.0 %)   Cap =  6.5 ff (  1.6 %)   Area =     3765.22 ( 96.8 %)   Delay =  3003.95 ps  ( 19.6 %)               
+ABC: Path  0 --      37 : 0    1 pi              A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   3.1 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     334 : 2    2 sg13g2_nor2_1   A =   7.26  Df =  62.9  -35.0 ps  S =  62.4 ps  Cin =  3.0 ff  Cout =   5.6 ff  Cmax = 300.0 ff  G =  183  
+ABC: Path  2 --     338 : 3    1 sg13g2_nand3b_1 A =  12.70  Df = 144.7  -80.1 ps  S =  55.7 ps  Cin =  2.7 ff  Cout =   3.0 ff  Cmax = 300.0 ff  G =  106  
+ABC: Path  3 --     339 : 2   75 sg13g2_nor2_1   A =   7.26  Df =1544.1 -972.7 ps  S =1904.2 ps  Cin =  3.0 ff  Cout = 234.7 ff  Cmax = 300.0 ff  G = 7553  
+ABC: Path  4 --     346 : 4    1 sg13g2_a22oi_1  A =  10.85  Df =2903.3 -993.4 ps  S = 252.2 ps  Cin =  3.1 ff  Cout =   3.5 ff  Cmax = 300.0 ff  G =  109  
+ABC: Path  5 --     354 : 3    1 sg13g2_o21ai_1  A =   9.07  Df =3003.9 -926.8 ps  S = 129.6 ps  Cin =  3.3 ff  Cout =   6.0 ff  Cmax = 300.0 ff  G =  181  
+ABC: Start-point = pi36 (\m_araddr [21]).  End-point = po0 (\m_rdata [27]).
+ABC: netlist                       : i/o =  209/   61  lat =    0  nd =   409  edge =   1209  area =1510.52  delay =666.57  lev = 6
+ABC: + write_blif /tmp/yosys-abc-FijGlN/output.blif 
+
+102.1.2. Re-integrating ABC results.
+ABC RESULTS:   sg13g2_a221oi_1 cells:        2
+ABC RESULTS:    sg13g2_a22oi_1 cells:       39
+ABC RESULTS:     sg13g2_and2_1 cells:       10
+ABC RESULTS:     sg13g2_and3_1 cells:        3
+ABC RESULTS:     sg13g2_and4_1 cells:       11
+ABC RESULTS:      sg13g2_inv_1 cells:       45
+ABC RESULTS:    sg13g2_nand2_1 cells:       44
+ABC RESULTS:    sg13g2_nand3_1 cells:       45
+ABC RESULTS:   sg13g2_nand3b_1 cells:        1
+ABC RESULTS:    sg13g2_nand4_1 cells:       86
+ABC RESULTS:     sg13g2_nor2_1 cells:       18
+ABC RESULTS:    sg13g2_nor2b_1 cells:        5
+ABC RESULTS:     sg13g2_nor3_1 cells:       12
+ABC RESULTS:     sg13g2_nor4_1 cells:       11
+ABC RESULTS:    sg13g2_o21ai_1 cells:       75
+ABC RESULTS:      sg13g2_or2_1 cells:        2
+ABC RESULTS:        internal signals:      190
+ABC RESULTS:           input signals:      209
+ABC RESULTS:          output signals:       61
+Removing temp directory.
+Removing global temp directory.
+
+103. Executing SETUNDEF pass (replace undef values with defined constants).
+
+104. Executing HILOMAP pass (mapping to constant drivers).
+
+105. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+106. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \interconnect_macro..
+Removed 0 unused cells and 460 unused wires.
+<suppressed ~1 debug messages>
+
+107. Executing INSBUF pass (insert buffer cells for connected wires).
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1438: \m_araddr [0] -> \s_araddr [0]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1439: \m_araddr [1] -> \s_araddr [1]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1440: \m_araddr [2] -> \s_araddr [2]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1441: \m_araddr [3] -> \s_araddr [3]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1442: \m_araddr [4] -> \s_araddr [4]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1443: \m_araddr [5] -> \s_araddr [5]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1444: \m_araddr [6] -> \s_araddr [6]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1445: \m_araddr [7] -> \s_araddr [7]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1446: \m_araddr [8] -> \s_araddr [8]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1447: \m_araddr [9] -> \s_araddr [9]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1448: \m_araddr [10] -> \s_araddr [10]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1449: \m_araddr [11] -> \s_araddr [11]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1450: \m_araddr [12] -> \s_araddr [12]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1451: \m_araddr [13] -> \s_araddr [13]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1452: \m_araddr [14] -> \s_araddr [14]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1453: \m_araddr [15] -> \s_araddr [15]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1454: \m_araddr [16] -> \s_araddr [16]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1455: \m_araddr [17] -> \s_araddr [17]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1456: \m_araddr [18] -> \s_araddr [18]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1457: \m_araddr [19] -> \s_araddr [19]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1458: \m_araddr [20] -> \s_araddr [20]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1459: \m_araddr [21] -> \s_araddr [21]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1460: \m_araddr [22] -> \s_araddr [22]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1461: \m_araddr [23] -> \s_araddr [23]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1462: \m_araddr [24] -> \s_araddr [24]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1463: \m_araddr [25] -> \s_araddr [25]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1464: \m_araddr [26] -> \s_araddr [26]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1465: \m_araddr [27] -> \s_araddr [27]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1466: \m_araddr [28] -> \s_araddr [28]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1467: \m_araddr [29] -> \s_araddr [29]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1468: \m_araddr [30] -> \s_araddr [30]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1469: \m_araddr [31] -> \s_araddr [31]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1470: \m_araddr [0] -> \s_araddr [32]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1471: \m_araddr [1] -> \s_araddr [33]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1472: \m_araddr [2] -> \s_araddr [34]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1473: \m_araddr [3] -> \s_araddr [35]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1474: \m_araddr [4] -> \s_araddr [36]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1475: \m_araddr [5] -> \s_araddr [37]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1476: \m_araddr [6] -> \s_araddr [38]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1477: \m_araddr [7] -> \s_araddr [39]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1478: \m_araddr [8] -> \s_araddr [40]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1479: \m_araddr [9] -> \s_araddr [41]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1480: \m_araddr [10] -> \s_araddr [42]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1481: \m_araddr [11] -> \s_araddr [43]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1482: \m_araddr [12] -> \s_araddr [44]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1483: \m_araddr [13] -> \s_araddr [45]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1484: \m_araddr [14] -> \s_araddr [46]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1485: \m_araddr [15] -> \s_araddr [47]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1486: \m_araddr [16] -> \s_araddr [48]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1487: \m_araddr [17] -> \s_araddr [49]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1488: \m_araddr [18] -> \s_araddr [50]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1489: \m_araddr [19] -> \s_araddr [51]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1490: \m_araddr [20] -> \s_araddr [52]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1491: \m_araddr [21] -> \s_araddr [53]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1492: \m_araddr [22] -> \s_araddr [54]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1493: \m_araddr [23] -> \s_araddr [55]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1494: \m_araddr [24] -> \s_araddr [56]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1495: \m_araddr [25] -> \s_araddr [57]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1496: \m_araddr [26] -> \s_araddr [58]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1497: \m_araddr [27] -> \s_araddr [59]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1498: \m_araddr [28] -> \s_araddr [60]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1499: \m_araddr [29] -> \s_araddr [61]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1500: \m_araddr [30] -> \s_araddr [62]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1501: \m_araddr [31] -> \s_araddr [63]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1502: \m_araddr [0] -> \s_araddr [64]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1503: \m_araddr [1] -> \s_araddr [65]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1504: \m_araddr [2] -> \s_araddr [66]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1505: \m_araddr [3] -> \s_araddr [67]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1506: \m_araddr [4] -> \s_araddr [68]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1507: \m_araddr [5] -> \s_araddr [69]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1508: \m_araddr [6] -> \s_araddr [70]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1509: \m_araddr [7] -> \s_araddr [71]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1510: \m_araddr [8] -> \s_araddr [72]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1511: \m_araddr [9] -> \s_araddr [73]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1512: \m_araddr [10] -> \s_araddr [74]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1513: \m_araddr [11] -> \s_araddr [75]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1514: \m_araddr [12] -> \s_araddr [76]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1515: \m_araddr [13] -> \s_araddr [77]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1516: \m_araddr [14] -> \s_araddr [78]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1517: \m_araddr [15] -> \s_araddr [79]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1518: \m_araddr [16] -> \s_araddr [80]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1519: \m_araddr [17] -> \s_araddr [81]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1520: \m_araddr [18] -> \s_araddr [82]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1521: \m_araddr [19] -> \s_araddr [83]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1522: \m_araddr [20] -> \s_araddr [84]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1523: \m_araddr [21] -> \s_araddr [85]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1524: \m_araddr [22] -> \s_araddr [86]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1525: \m_araddr [23] -> \s_araddr [87]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1526: \m_araddr [24] -> \s_araddr [88]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1527: \m_araddr [25] -> \s_araddr [89]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1528: \m_araddr [26] -> \s_araddr [90]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1529: \m_araddr [27] -> \s_araddr [91]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1530: \m_araddr [28] -> \s_araddr [92]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1531: \m_araddr [29] -> \s_araddr [93]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1532: \m_araddr [30] -> \s_araddr [94]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1533: \m_araddr [31] -> \s_araddr [95]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1534: \m_araddr [0] -> \s_araddr [96]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1535: \m_araddr [1] -> \s_araddr [97]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1536: \m_araddr [2] -> \s_araddr [98]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1537: \m_araddr [3] -> \s_araddr [99]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1538: \m_araddr [4] -> \s_araddr [100]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1539: \m_araddr [5] -> \s_araddr [101]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1540: \m_araddr [6] -> \s_araddr [102]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1541: \m_araddr [7] -> \s_araddr [103]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1542: \m_araddr [8] -> \s_araddr [104]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1543: \m_araddr [9] -> \s_araddr [105]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1544: \m_araddr [10] -> \s_araddr [106]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1545: \m_araddr [11] -> \s_araddr [107]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1546: \m_araddr [12] -> \s_araddr [108]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1547: \m_araddr [13] -> \s_araddr [109]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1548: \m_araddr [14] -> \s_araddr [110]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1549: \m_araddr [15] -> \s_araddr [111]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1550: \m_araddr [16] -> \s_araddr [112]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1551: \m_araddr [17] -> \s_araddr [113]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1552: \m_araddr [18] -> \s_araddr [114]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1553: \m_araddr [19] -> \s_araddr [115]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1554: \m_araddr [20] -> \s_araddr [116]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1555: \m_araddr [21] -> \s_araddr [117]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1556: \m_araddr [22] -> \s_araddr [118]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1557: \m_araddr [23] -> \s_araddr [119]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1558: \m_araddr [24] -> \s_araddr [120]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1559: \m_araddr [25] -> \s_araddr [121]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1560: \m_araddr [26] -> \s_araddr [122]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1561: \m_araddr [27] -> \s_araddr [123]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1562: \m_araddr [28] -> \s_araddr [124]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1563: \m_araddr [29] -> \s_araddr [125]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1564: \m_araddr [30] -> \s_araddr [126]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1565: \m_araddr [31] -> \s_araddr [127]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1566: \m_arprot [0] -> \s_arprot [0]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1567: \m_arprot [1] -> \s_arprot [1]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1568: \m_arprot [2] -> \s_arprot [2]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1569: \m_arprot [0] -> \s_arprot [3]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1570: \m_arprot [1] -> \s_arprot [4]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1571: \m_arprot [2] -> \s_arprot [5]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1572: \m_arprot [0] -> \s_arprot [6]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1573: \m_arprot [1] -> \s_arprot [7]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1574: \m_arprot [2] -> \s_arprot [8]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1575: \m_arprot [0] -> \s_arprot [9]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1576: \m_arprot [1] -> \s_arprot [10]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1577: \m_arprot [2] -> \s_arprot [11]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1578: \m_awaddr [0] -> \s_awaddr [0]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1579: \m_awaddr [1] -> \s_awaddr [1]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1580: \m_awaddr [2] -> \s_awaddr [2]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1581: \m_awaddr [3] -> \s_awaddr [3]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1582: \m_awaddr [4] -> \s_awaddr [4]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1583: \m_awaddr [5] -> \s_awaddr [5]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1584: \m_awaddr [6] -> \s_awaddr [6]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1585: \m_awaddr [7] -> \s_awaddr [7]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1586: \m_awaddr [8] -> \s_awaddr [8]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1587: \m_awaddr [9] -> \s_awaddr [9]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1588: \m_awaddr [10] -> \s_awaddr [10]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1589: \m_awaddr [11] -> \s_awaddr [11]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1590: \m_awaddr [12] -> \s_awaddr [12]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1591: \m_awaddr [13] -> \s_awaddr [13]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1592: \m_awaddr [14] -> \s_awaddr [14]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1593: \m_awaddr [15] -> \s_awaddr [15]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1594: \m_awaddr [16] -> \s_awaddr [16]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1595: \m_awaddr [17] -> \s_awaddr [17]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1596: \m_awaddr [18] -> \s_awaddr [18]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1597: \m_awaddr [19] -> \s_awaddr [19]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1598: \m_awaddr [20] -> \s_awaddr [20]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1599: \m_awaddr [21] -> \s_awaddr [21]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1600: \m_awaddr [22] -> \s_awaddr [22]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1601: \m_awaddr [23] -> \s_awaddr [23]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1602: \m_awaddr [24] -> \s_awaddr [24]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1603: \m_awaddr [25] -> \s_awaddr [25]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1604: \m_awaddr [26] -> \s_awaddr [26]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1605: \m_awaddr [27] -> \s_awaddr [27]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1606: \m_awaddr [28] -> \s_awaddr [28]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1607: \m_awaddr [29] -> \s_awaddr [29]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1608: \m_awaddr [30] -> \s_awaddr [30]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1609: \m_awaddr [31] -> \s_awaddr [31]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1610: \m_awaddr [0] -> \s_awaddr [32]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1611: \m_awaddr [1] -> \s_awaddr [33]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1612: \m_awaddr [2] -> \s_awaddr [34]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1613: \m_awaddr [3] -> \s_awaddr [35]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1614: \m_awaddr [4] -> \s_awaddr [36]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1615: \m_awaddr [5] -> \s_awaddr [37]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1616: \m_awaddr [6] -> \s_awaddr [38]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1617: \m_awaddr [7] -> \s_awaddr [39]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1618: \m_awaddr [8] -> \s_awaddr [40]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1619: \m_awaddr [9] -> \s_awaddr [41]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1620: \m_awaddr [10] -> \s_awaddr [42]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1621: \m_awaddr [11] -> \s_awaddr [43]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1622: \m_awaddr [12] -> \s_awaddr [44]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1623: \m_awaddr [13] -> \s_awaddr [45]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1624: \m_awaddr [14] -> \s_awaddr [46]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1625: \m_awaddr [15] -> \s_awaddr [47]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1626: \m_awaddr [16] -> \s_awaddr [48]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1627: \m_awaddr [17] -> \s_awaddr [49]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1628: \m_awaddr [18] -> \s_awaddr [50]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1629: \m_awaddr [19] -> \s_awaddr [51]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1630: \m_awaddr [20] -> \s_awaddr [52]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1631: \m_awaddr [21] -> \s_awaddr [53]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1632: \m_awaddr [22] -> \s_awaddr [54]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1633: \m_awaddr [23] -> \s_awaddr [55]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1634: \m_awaddr [24] -> \s_awaddr [56]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1635: \m_awaddr [25] -> \s_awaddr [57]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1636: \m_awaddr [26] -> \s_awaddr [58]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1637: \m_awaddr [27] -> \s_awaddr [59]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1638: \m_awaddr [28] -> \s_awaddr [60]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1639: \m_awaddr [29] -> \s_awaddr [61]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1640: \m_awaddr [30] -> \s_awaddr [62]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1641: \m_awaddr [31] -> \s_awaddr [63]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1642: \m_awaddr [0] -> \s_awaddr [64]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1643: \m_awaddr [1] -> \s_awaddr [65]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1644: \m_awaddr [2] -> \s_awaddr [66]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1645: \m_awaddr [3] -> \s_awaddr [67]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1646: \m_awaddr [4] -> \s_awaddr [68]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1647: \m_awaddr [5] -> \s_awaddr [69]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1648: \m_awaddr [6] -> \s_awaddr [70]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1649: \m_awaddr [7] -> \s_awaddr [71]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1650: \m_awaddr [8] -> \s_awaddr [72]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1651: \m_awaddr [9] -> \s_awaddr [73]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1652: \m_awaddr [10] -> \s_awaddr [74]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1653: \m_awaddr [11] -> \s_awaddr [75]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1654: \m_awaddr [12] -> \s_awaddr [76]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1655: \m_awaddr [13] -> \s_awaddr [77]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1656: \m_awaddr [14] -> \s_awaddr [78]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1657: \m_awaddr [15] -> \s_awaddr [79]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1658: \m_awaddr [16] -> \s_awaddr [80]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1659: \m_awaddr [17] -> \s_awaddr [81]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1660: \m_awaddr [18] -> \s_awaddr [82]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1661: \m_awaddr [19] -> \s_awaddr [83]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1662: \m_awaddr [20] -> \s_awaddr [84]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1663: \m_awaddr [21] -> \s_awaddr [85]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1664: \m_awaddr [22] -> \s_awaddr [86]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1665: \m_awaddr [23] -> \s_awaddr [87]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1666: \m_awaddr [24] -> \s_awaddr [88]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1667: \m_awaddr [25] -> \s_awaddr [89]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1668: \m_awaddr [26] -> \s_awaddr [90]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1669: \m_awaddr [27] -> \s_awaddr [91]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1670: \m_awaddr [28] -> \s_awaddr [92]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1671: \m_awaddr [29] -> \s_awaddr [93]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1672: \m_awaddr [30] -> \s_awaddr [94]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1673: \m_awaddr [31] -> \s_awaddr [95]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1674: \m_awaddr [0] -> \s_awaddr [96]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1675: \m_awaddr [1] -> \s_awaddr [97]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1676: \m_awaddr [2] -> \s_awaddr [98]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1677: \m_awaddr [3] -> \s_awaddr [99]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1678: \m_awaddr [4] -> \s_awaddr [100]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1679: \m_awaddr [5] -> \s_awaddr [101]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1680: \m_awaddr [6] -> \s_awaddr [102]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1681: \m_awaddr [7] -> \s_awaddr [103]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1682: \m_awaddr [8] -> \s_awaddr [104]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1683: \m_awaddr [9] -> \s_awaddr [105]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1684: \m_awaddr [10] -> \s_awaddr [106]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1685: \m_awaddr [11] -> \s_awaddr [107]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1686: \m_awaddr [12] -> \s_awaddr [108]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1687: \m_awaddr [13] -> \s_awaddr [109]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1688: \m_awaddr [14] -> \s_awaddr [110]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1689: \m_awaddr [15] -> \s_awaddr [111]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1690: \m_awaddr [16] -> \s_awaddr [112]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1691: \m_awaddr [17] -> \s_awaddr [113]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1692: \m_awaddr [18] -> \s_awaddr [114]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1693: \m_awaddr [19] -> \s_awaddr [115]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1694: \m_awaddr [20] -> \s_awaddr [116]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1695: \m_awaddr [21] -> \s_awaddr [117]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1696: \m_awaddr [22] -> \s_awaddr [118]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1697: \m_awaddr [23] -> \s_awaddr [119]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1698: \m_awaddr [24] -> \s_awaddr [120]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1699: \m_awaddr [25] -> \s_awaddr [121]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1700: \m_awaddr [26] -> \s_awaddr [122]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1701: \m_awaddr [27] -> \s_awaddr [123]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1702: \m_awaddr [28] -> \s_awaddr [124]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1703: \m_awaddr [29] -> \s_awaddr [125]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1704: \m_awaddr [30] -> \s_awaddr [126]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1705: \m_awaddr [31] -> \s_awaddr [127]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1706: \m_awprot [0] -> \s_awprot [0]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1707: \m_awprot [1] -> \s_awprot [1]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1708: \m_awprot [2] -> \s_awprot [2]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1709: \m_awprot [0] -> \s_awprot [3]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1710: \m_awprot [1] -> \s_awprot [4]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1711: \m_awprot [2] -> \s_awprot [5]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1712: \m_awprot [0] -> \s_awprot [6]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1713: \m_awprot [1] -> \s_awprot [7]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1714: \m_awprot [2] -> \s_awprot [8]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1715: \m_awprot [0] -> \s_awprot [9]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1716: \m_awprot [1] -> \s_awprot [10]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1717: \m_awprot [2] -> \s_awprot [11]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1718: \m_wdata [0] -> \s_wdata [0]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1719: \m_wdata [1] -> \s_wdata [1]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1720: \m_wdata [2] -> \s_wdata [2]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1721: \m_wdata [3] -> \s_wdata [3]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1722: \m_wdata [4] -> \s_wdata [4]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1723: \m_wdata [5] -> \s_wdata [5]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1724: \m_wdata [6] -> \s_wdata [6]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1725: \m_wdata [7] -> \s_wdata [7]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1726: \m_wdata [8] -> \s_wdata [8]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1727: \m_wdata [9] -> \s_wdata [9]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1728: \m_wdata [10] -> \s_wdata [10]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1729: \m_wdata [11] -> \s_wdata [11]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1730: \m_wdata [12] -> \s_wdata [12]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1731: \m_wdata [13] -> \s_wdata [13]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1732: \m_wdata [14] -> \s_wdata [14]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1733: \m_wdata [15] -> \s_wdata [15]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1734: \m_wdata [16] -> \s_wdata [16]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1735: \m_wdata [17] -> \s_wdata [17]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1736: \m_wdata [18] -> \s_wdata [18]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1737: \m_wdata [19] -> \s_wdata [19]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1738: \m_wdata [20] -> \s_wdata [20]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1739: \m_wdata [21] -> \s_wdata [21]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1740: \m_wdata [22] -> \s_wdata [22]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1741: \m_wdata [23] -> \s_wdata [23]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1742: \m_wdata [24] -> \s_wdata [24]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1743: \m_wdata [25] -> \s_wdata [25]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1744: \m_wdata [26] -> \s_wdata [26]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1745: \m_wdata [27] -> \s_wdata [27]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1746: \m_wdata [28] -> \s_wdata [28]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1747: \m_wdata [29] -> \s_wdata [29]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1748: \m_wdata [30] -> \s_wdata [30]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1749: \m_wdata [31] -> \s_wdata [31]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1750: \m_wdata [0] -> \s_wdata [32]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1751: \m_wdata [1] -> \s_wdata [33]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1752: \m_wdata [2] -> \s_wdata [34]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1753: \m_wdata [3] -> \s_wdata [35]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1754: \m_wdata [4] -> \s_wdata [36]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1755: \m_wdata [5] -> \s_wdata [37]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1756: \m_wdata [6] -> \s_wdata [38]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1757: \m_wdata [7] -> \s_wdata [39]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1758: \m_wdata [8] -> \s_wdata [40]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1759: \m_wdata [9] -> \s_wdata [41]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1760: \m_wdata [10] -> \s_wdata [42]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1761: \m_wdata [11] -> \s_wdata [43]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1762: \m_wdata [12] -> \s_wdata [44]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1763: \m_wdata [13] -> \s_wdata [45]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1764: \m_wdata [14] -> \s_wdata [46]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1765: \m_wdata [15] -> \s_wdata [47]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1766: \m_wdata [16] -> \s_wdata [48]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1767: \m_wdata [17] -> \s_wdata [49]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1768: \m_wdata [18] -> \s_wdata [50]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1769: \m_wdata [19] -> \s_wdata [51]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1770: \m_wdata [20] -> \s_wdata [52]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1771: \m_wdata [21] -> \s_wdata [53]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1772: \m_wdata [22] -> \s_wdata [54]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1773: \m_wdata [23] -> \s_wdata [55]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1774: \m_wdata [24] -> \s_wdata [56]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1775: \m_wdata [25] -> \s_wdata [57]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1776: \m_wdata [26] -> \s_wdata [58]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1777: \m_wdata [27] -> \s_wdata [59]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1778: \m_wdata [28] -> \s_wdata [60]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1779: \m_wdata [29] -> \s_wdata [61]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1780: \m_wdata [30] -> \s_wdata [62]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1781: \m_wdata [31] -> \s_wdata [63]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1782: \m_wdata [0] -> \s_wdata [64]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1783: \m_wdata [1] -> \s_wdata [65]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1784: \m_wdata [2] -> \s_wdata [66]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1785: \m_wdata [3] -> \s_wdata [67]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1786: \m_wdata [4] -> \s_wdata [68]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1787: \m_wdata [5] -> \s_wdata [69]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1788: \m_wdata [6] -> \s_wdata [70]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1789: \m_wdata [7] -> \s_wdata [71]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1790: \m_wdata [8] -> \s_wdata [72]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1791: \m_wdata [9] -> \s_wdata [73]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1792: \m_wdata [10] -> \s_wdata [74]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1793: \m_wdata [11] -> \s_wdata [75]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1794: \m_wdata [12] -> \s_wdata [76]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1795: \m_wdata [13] -> \s_wdata [77]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1796: \m_wdata [14] -> \s_wdata [78]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1797: \m_wdata [15] -> \s_wdata [79]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1798: \m_wdata [16] -> \s_wdata [80]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1799: \m_wdata [17] -> \s_wdata [81]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1800: \m_wdata [18] -> \s_wdata [82]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1801: \m_wdata [19] -> \s_wdata [83]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1802: \m_wdata [20] -> \s_wdata [84]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1803: \m_wdata [21] -> \s_wdata [85]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1804: \m_wdata [22] -> \s_wdata [86]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1805: \m_wdata [23] -> \s_wdata [87]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1806: \m_wdata [24] -> \s_wdata [88]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1807: \m_wdata [25] -> \s_wdata [89]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1808: \m_wdata [26] -> \s_wdata [90]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1809: \m_wdata [27] -> \s_wdata [91]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1810: \m_wdata [28] -> \s_wdata [92]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1811: \m_wdata [29] -> \s_wdata [93]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1812: \m_wdata [30] -> \s_wdata [94]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1813: \m_wdata [31] -> \s_wdata [95]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1814: \m_wdata [0] -> \s_wdata [96]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1815: \m_wdata [1] -> \s_wdata [97]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1816: \m_wdata [2] -> \s_wdata [98]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1817: \m_wdata [3] -> \s_wdata [99]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1818: \m_wdata [4] -> \s_wdata [100]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1819: \m_wdata [5] -> \s_wdata [101]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1820: \m_wdata [6] -> \s_wdata [102]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1821: \m_wdata [7] -> \s_wdata [103]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1822: \m_wdata [8] -> \s_wdata [104]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1823: \m_wdata [9] -> \s_wdata [105]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1824: \m_wdata [10] -> \s_wdata [106]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1825: \m_wdata [11] -> \s_wdata [107]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1826: \m_wdata [12] -> \s_wdata [108]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1827: \m_wdata [13] -> \s_wdata [109]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1828: \m_wdata [14] -> \s_wdata [110]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1829: \m_wdata [15] -> \s_wdata [111]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1830: \m_wdata [16] -> \s_wdata [112]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1831: \m_wdata [17] -> \s_wdata [113]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1832: \m_wdata [18] -> \s_wdata [114]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1833: \m_wdata [19] -> \s_wdata [115]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1834: \m_wdata [20] -> \s_wdata [116]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1835: \m_wdata [21] -> \s_wdata [117]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1836: \m_wdata [22] -> \s_wdata [118]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1837: \m_wdata [23] -> \s_wdata [119]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1838: \m_wdata [24] -> \s_wdata [120]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1839: \m_wdata [25] -> \s_wdata [121]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1840: \m_wdata [26] -> \s_wdata [122]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1841: \m_wdata [27] -> \s_wdata [123]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1842: \m_wdata [28] -> \s_wdata [124]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1843: \m_wdata [29] -> \s_wdata [125]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1844: \m_wdata [30] -> \s_wdata [126]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1845: \m_wdata [31] -> \s_wdata [127]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1846: \m_wstrb [0] -> \s_wstrb [0]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1847: \m_wstrb [1] -> \s_wstrb [1]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1848: \m_wstrb [2] -> \s_wstrb [2]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1849: \m_wstrb [3] -> \s_wstrb [3]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1850: \m_wstrb [0] -> \s_wstrb [4]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1851: \m_wstrb [1] -> \s_wstrb [5]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1852: \m_wstrb [2] -> \s_wstrb [6]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1853: \m_wstrb [3] -> \s_wstrb [7]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1854: \m_wstrb [0] -> \s_wstrb [8]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1855: \m_wstrb [1] -> \s_wstrb [9]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1856: \m_wstrb [2] -> \s_wstrb [10]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1857: \m_wstrb [3] -> \s_wstrb [11]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1858: \m_wstrb [0] -> \s_wstrb [12]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1859: \m_wstrb [1] -> \s_wstrb [13]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1860: \m_wstrb [2] -> \s_wstrb [14]
+Add interconnect_macro/$auto$insbuf.cc:97:execute$1861: \m_wstrb [3] -> \s_wstrb [15]
+
+108. Executing CHECK pass (checking for obvious problems).
+Checking module interconnect_macro...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/c0b9fe258ba5447e8cc38ec97815e065.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/tmp/9e39477b7552461ab6213bca837c6c72.lib ",
+   "modules": {
+      "\\interconnect_macro": {
+         "num_wires":         388,
+         "num_wire_bits":     1110,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         833,
+         "num_submodules":       0,
+         "area":              6842.442600,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sg13g2_a221oi_1": 2,
+            "sg13g2_a22oi_1": 39,
+            "sg13g2_and2_1": 10,
+            "sg13g2_and3_1": 3,
+            "sg13g2_and4_1": 11,
+            "sg13g2_buf_1": 424,
+            "sg13g2_inv_1": 45,
+            "sg13g2_nand2_1": 44,
+            "sg13g2_nand3_1": 45,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 86,
+            "sg13g2_nor2_1": 18,
+            "sg13g2_nor2b_1": 5,
+            "sg13g2_nor3_1": 12,
+            "sg13g2_nor4_1": 11,
+            "sg13g2_o21ai_1": 75,
+            "sg13g2_or2_1": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         388,
+         "num_wire_bits":     1110,
+         "num_pub_wires":     40,
+         "num_pub_wire_bits": 762,
+         "num_ports":         40,
+         "num_port_bits":     762,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         833,
+         "num_submodules":       0,
+         "area":              6842.442600,
+         "sequential_area":    0.000000,
+         "num_cells_by_type": {
+            "sg13g2_a221oi_1": 2,
+            "sg13g2_a22oi_1": 39,
+            "sg13g2_and2_1": 10,
+            "sg13g2_and3_1": 3,
+            "sg13g2_and4_1": 11,
+            "sg13g2_buf_1": 424,
+            "sg13g2_inv_1": 45,
+            "sg13g2_nand2_1": 44,
+            "sg13g2_nand3_1": 45,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 86,
+            "sg13g2_nor2_1": 18,
+            "sg13g2_nor2b_1": 5,
+            "sg13g2_nor3_1": 12,
+            "sg13g2_nor4_1": 11,
+            "sg13g2_o21ai_1": 75,
+            "sg13g2_or2_1": 2
+         }
+      }
+}
+
+109. Printing statistics.
+
+=== interconnect_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      388        - wires
+     1110        - wire bits
+       40        - public wires
+      762        - public wire bits
+       40        - ports
+      762        - port bits
+      833 6.84E+03 cells
+        2    29.03   sg13g2_a221oi_1
+       39  423.095   sg13g2_a22oi_1
+       10    90.72   sg13g2_and2_1
+        3   38.102   sg13g2_and3_1
+       11  159.667   sg13g2_and4_1
+      424 3.08E+03   sg13g2_buf_1
+       45  244.944   sg13g2_inv_1
+       44  319.334   sg13g2_nand2_1
+       45   408.24   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+       86   936.23   sg13g2_nand4_1
+       18  130.637   sg13g2_nor2_1
+        5    45.36   sg13g2_nor2b_1
+       12  108.864   sg13g2_nor3_1
+       11   119.75   sg13g2_nor4_1
+       75    680.4   sg13g2_o21ai_1
+        2   18.144   sg13g2_or2_1
+
+   Chip area for module '\interconnect_macro': 6842.442600
+     of which used for sequential elements: 0.000000 (0.00%)
+
+110. Executing Verilog backend.
+Dumping module `\interconnect_macro'.
+
+111. Executing JSON backend.

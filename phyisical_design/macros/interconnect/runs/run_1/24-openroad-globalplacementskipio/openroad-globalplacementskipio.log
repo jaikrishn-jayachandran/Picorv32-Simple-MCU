@@ -1,0 +1,114 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/21-openroad-generatepdn/interconnect_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ global_placement -density 0.4 -skip_io -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: (  5.760 15.120 ) ( 170.880 177.660 ) um
+[INFO GPL-0036] Movable instances area:       6843.917 um^2
+[INFO GPL-0037] Total instances area:         6843.917 um^2
+[INFO GPL-0035] Pin density area adjust:       717.286 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:               833
+[INFO GPL-0007] Movable instances:                 833
+[INFO GPL-0008] Fixed instances:                     0
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                   1110
+[INFO GPL-0011] Number of pins:                   2466
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 176.975 195.695 ) um
+[INFO GPL-0013] Core BBox: (  5.760 15.120 ) ( 170.880 177.660 ) um
+[INFO GPL-0016] Core area:                   26838.605 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                 26838.605 um^2
+[INFO GPL-0017] Fixed instances area:            0.000 um^2
+[INFO GPL-0018] Movable instances area:       7561.203 um^2
+[INFO GPL-0019] Utilization:                    28.173 %
+[INFO GPL-0020] Standard cells area:          7561.203 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 833	Region center = 0
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.4000
+[INFO GPL-0024] Movable insts average area:      9.077 um^2
+[INFO GPL-0025] Ideal bin area:                 22.693 um^2
+[INFO GPL-0026] Ideal bin count:                  1182
+[INFO GPL-0027] Total bin area:              26838.605 um^2
+[INFO GPL-0028] Bin count (X, Y):          32 ,     32
+[INFO GPL-0029] Bin size (W * H):       5.160 *  5.079 um
+[INFO GPL-0030] Number of bins:                   1024
+[INFO GPL-0007] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9941 |  7.528510e+02 |   +0.00% |  3.40e-15 |      
+       10 |   0.9940 |  1.215010e+02 |  -83.86% |  5.53e-15 |      
+       20 |   0.9940 |  1.045580e+02 |  -13.94% |  9.01e-15 |      
+       30 |   0.9939 |  1.041500e+02 |   -0.39% |  1.47e-14 |      
+       40 |   0.9938 |  1.034600e+02 |   -0.66% |  2.39e-14 |      
+       50 |   0.9938 |  1.031320e+02 |   -0.32% |  3.89e-14 |      
+       60 |   0.9938 |  1.032600e+02 |   +0.12% |  6.34e-14 |      
+       70 |   0.9938 |  1.035920e+02 |   +0.32% |  1.03e-13 |      
+       80 |   0.9938 |  1.046530e+02 |   +1.02% |  1.68e-13 |      
+       90 |   0.9936 |  1.070620e+02 |   +2.30% |  2.74e-13 |      
+      100 |   0.9909 |  1.117800e+02 |   +4.41% |  4.46e-13 |      
+      110 |   0.9829 |  1.240380e+02 |  +10.97% |  7.27e-13 |      
+      120 |   0.9737 |  1.608280e+02 |  +29.66% |  1.18e-12 |      
+      130 |   0.9453 |  2.349790e+02 |  +46.11% |  1.93e-12 |      
+      140 |   0.8829 |  3.276710e+02 |  +39.45% |  3.14e-12 |      
+      150 |   0.8246 |  4.085670e+02 |  +24.69% |  5.12e-12 |      
+      160 |   0.7884 |  4.532370e+02 |  +10.93% |  8.34e-12 |      
+      170 |   0.7772 |  4.747070e+02 |   +4.74% |  1.36e-11 |      
+      180 |   0.7669 |  5.433150e+02 |  +14.45% |  2.21e-11 |      
+      190 |   0.7526 |  6.429280e+02 |  +18.33% |  3.60e-11 |      
+      200 |   0.7444 |  8.347950e+02 |  +29.84% |  5.87e-11 |      
+      210 |   0.7297 |  1.183135e+03 |  +41.73% |  9.56e-11 |      
+      220 |   0.7155 |  1.433356e+03 |  +21.15% |  1.56e-10 |      
+      230 |   0.6831 |  1.780711e+03 |  +24.23% |  2.54e-10 |      
+      240 |   0.6452 |  2.121429e+03 |  +19.13% |  4.13e-10 |      
+      250 |   0.6240 |  2.157878e+03 |   +1.72% |  6.73e-10 |      
+      260 |   0.5871 |  2.391427e+03 |  +10.82% |  1.10e-09 |      
+      270 |   0.5521 |  2.594480e+03 |   +8.49% |  1.79e-09 |      
+      280 |   0.5041 |  2.801791e+03 |   +7.99% |  2.91e-09 |      
+      290 |   0.4583 |  2.959527e+03 |   +5.63% |  4.74e-09 |      
+      300 |   0.4085 |  3.111928e+03 |   +5.15% |  7.72e-09 |      
+      310 |   0.3740 |  3.281024e+03 |   +5.43% |  1.26e-08 |      
+      320 |   0.3358 |  3.417480e+03 |   +4.16% |  2.01e-08 |      
+      330 |   0.3056 |  3.508456e+03 |   +2.66% |  2.96e-08 |      
+      340 |   0.2702 |  3.614976e+03 |   +3.04% |  4.36e-08 |      
+      350 |   0.2383 |  3.737027e+03 |   +3.38% |  6.42e-08 |      
+      360 |   0.2079 |  3.856659e+03 |   +3.20% |  9.45e-08 |      
+      370 |   0.1848 |  3.987767e+03 |   +3.40% |  1.39e-07 |      
+      380 |   0.1650 |  4.117384e+03 |   +3.25% |  2.05e-07 |      
+      390 |   0.1482 |  4.203097e+03 |   +2.08% |  3.02e-07 |      
+      400 |   0.1262 |  4.278223e+03 |   +1.79% |  4.45e-07 |      
+      410 |   0.1099 |  4.319460e+03 |   +0.96% |  6.56e-07 |      
+      416 |   0.0991 |  4.391938e+03 |          |  8.60e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 416
+[INFO GPL-1002] Placed Cell Area             7561.2029
+[INFO GPL-1003] Available Free Area         26838.6048
+[INFO GPL-1004] Minimum Feasible Density        0.2900 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.3130
+[INFO GPL-1008]     - For 80% usage of free space: 0.3522
+[INFO GPL-1009]     - For 50% usage of free space: 0.5635
+[INFO GPL-1014] Final placement area: 7561.20 (+0.00%)
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                  424    3077.22
+  Inverter                                 45     244.94
+  Multi-Input combinational cell          364    3521.75
+  Total                                   833    6843.92
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/24-openroad-globalplacementskipio/interconnect_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/24-openroad-globalplacementskipio/interconnect_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/24-openroad-globalplacementskipio/interconnect_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/24-openroad-globalplacementskipio/interconnect_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/24-openroad-globalplacementskipio/interconnect_macro.sdc'…
