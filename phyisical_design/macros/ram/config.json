@@ -1,0 +1,45 @@
+{
+  "DESIGN_NAME": "ram_macro",
+
+  "PDK": "ihp-sg13g2",
+  "STD_CELL_LIBRARY": "sg13g2_stdcell",
+
+  "PDN_MULTILAYER": true,
+
+  "VERILOG_FILES": [
+    "dir::../../../rtl/macros/ram_macro.sv",
+    "dir::../../../rtl/axi_ram.sv"
+  ],
+
+  "VERILOG_DEFINES": [
+    "SYNTHESIS"
+  ],
+
+  "CLOCK_PORT": "clk_i",
+  "CLOCK_PERIOD": 10.0,
+
+  "FP_CORE_UTIL": 35,
+  "PL_TARGET_DENSITY_PCT": 45,
+
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+
+  "SYNTH_STRATEGY": "DELAY 1",
+  "SYNTH_MAX_FANOUT": 8,
+
+  "CTS_SINK_CLUSTERING_ENABLE": true,
+  "CTS_SINK_CLUSTERING_SIZE": 8,
+
+  "VDD_NETS": [
+    "VDD"
+  ],
+
+  "GND_NETS": [
+    "VSS"
+  ],
+
+  "DRT_OPT_ITERS": 64,
+  "DRT_THREADS": 8,
+
+  "PNR_SDC_FILE": "dir::constraint.sdc",
+  "SIGNOFF_SDC_FILE": "dir::constraint.sdc"
+}

@@ -14,7 +14,7 @@
         "nom_typ_1p20V_25C"
     ],
     "RT_MIN_LAYER": "Metal2",
-    "RT_MAX_LAYER": "Metal5",
+    "RT_MAX_LAYER": "TopMetal2",
     "SCL_GROUND_PINS": [
         "VSS"
     ],
@@ -65,7 +65,7 @@
     "SYNTH_EXCLUDED_CELL_FILE": "/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/synth_exclude.cells",
     "PNR_EXCLUDED_CELL_FILE": "/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/pnr_exclude.cells",
     "OUTPUT_CAP_LOAD": 6,
-    "MAX_FANOUT_CONSTRAINT": 12,
+    "MAX_FANOUT_CONSTRAINT": 8,
     "MAX_TRANSITION_CONSTRAINT": null,
     "MAX_CAPACITANCE_CONSTRAINT": null,
     "CLOCK_UNCERTAINTY_CONSTRAINT": 0.25,
@@ -89,7 +89,7 @@
     "PDK_ROOT": "/home/jaikrishn/IHP-Open-PDK",
     "DESIGN_NAME": "picorv32_macro",
     "PDK": "ihp-sg13g2",
-    "CLOCK_PERIOD": 20,
+    "CLOCK_PERIOD": 10,
     "CLOCK_PORT": "clk_i",
     "CLOCK_NET": null,
     "VDD_NETS": [
@@ -98,12 +98,7 @@
     "GND_NETS": [
         "VSS"
     ],
-    "DIE_AREA": [
-        0,
-        0,
-        450,
-        450
-    ],
+    "DIE_AREA": null,
     "EXTRA_EXCLUDED_CELLS": null,
     "MACROS": null,
     "EXTRA_LEFS": null,
@@ -331,7 +326,7 @@
     "PDN_ENABLE_RAILS": true,
     "PDN_HORIZONTAL_HALO": 10,
     "PDN_VERTICAL_HALO": 10,
-    "PDN_MULTILAYER": false,
+    "PDN_MULTILAYER": true,
     "PDN_RAIL_OFFSET": 0,
     "PDN_VWIDTH": 2.2,
     "PDN_HWIDTH": 2.2,
@@ -364,10 +359,13 @@
     "GRT_ADJUSTMENT": 0.3,
     "GRT_MACRO_EXTENSION": 0,
     "GRT_LAYER_ADJUSTMENTS": [
-        0.26,
-        0.26,
-        0.26,
-        0.26
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
     ],
     "PL_OPTIMIZE_MIRRORING": true,
     "PL_MAX_DISPLACEMENT_X": 500,
@@ -376,7 +374,7 @@
     "RSZ_DONT_TOUCH_RX": "$^",
     "RSZ_DONT_TOUCH_LIST": null,
     "RSZ_CORNERS": null,
-    "PL_TARGET_DENSITY_PCT": 50,
+    "PL_TARGET_DENSITY_PCT": 45,
     "PL_SKIP_INITIAL_PLACEMENT": false,
     "PL_WIRE_LENGTH_COEF": 0.25,
     "PL_MIN_PHI_COEFFICIENT": null,
@@ -426,7 +424,7 @@
     "CTS_DELAY_BUFFER_DERATE_PCT": null,
     "CTS_OBSTRUCTION_AWARE": null,
     "CTS_SINK_CLUSTERING_ENABLE": true,
-    "CTS_SINK_CLUSTERING_SIZE": null,
+    "CTS_SINK_CLUSTERING_SIZE": 8,
     "CTS_SINK_CLUSTERING_MAX_DIAMETER": null,
     "CTS_MACRO_CLUSTERING_SIZE": null,
     "CTS_MACRO_CLUSTERING_MAX_DIAMETER": null,
