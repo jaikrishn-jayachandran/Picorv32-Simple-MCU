@@ -1,0 +1,7 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/tmp/f8506e2cd33d47db8a9165e55bd95424.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/tmp/f8506e2cd33d47db8a9165e55bd95424.bb.v"
+lint_off -rule UNDRIVEN -file "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/tmp/a2c9516039ea4ca887d3023fab161109.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/tmp/a2c9516039ea4ca887d3023fab161109.bb.v"

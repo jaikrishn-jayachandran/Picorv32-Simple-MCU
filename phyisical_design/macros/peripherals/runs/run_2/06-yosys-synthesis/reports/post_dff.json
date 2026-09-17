@@ -1,0 +1,59 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/tmp/82e5540a7daa4ff7bec8488ebde36f4c.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/tmp/ded33f6696e644c2a03e8233e33cf708.lib ",
+   "modules": {
+      "\\peripherals_macro": {
+         "num_wires":         422,
+         "num_wire_bits":     675,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         531,
+         "num_submodules":       0,
+         "area":              4947.868800,
+         "sequential_area":    4947.868800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 201,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "sg13g2_dfrbpq_1": 101
+         }
+      }
+   },
+      "design": {
+         "num_wires":         422,
+         "num_wire_bits":     675,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 245,
+         "num_ports":         22,
+         "num_port_bits":     244,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         531,
+         "num_submodules":       0,
+         "area":              4947.868800,
+         "sequential_area":    4947.868800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 171,
+            "$_AND_": 3,
+            "$_MUX_": 201,
+            "$_NAND_": 3,
+            "$_NOR_": 1,
+            "$_NOT_": 4,
+            "$_ORNOT_": 35,
+            "$_OR_": 12,
+            "sg13g2_dfrbpq_1": 101
+         }
+      }
+}
+

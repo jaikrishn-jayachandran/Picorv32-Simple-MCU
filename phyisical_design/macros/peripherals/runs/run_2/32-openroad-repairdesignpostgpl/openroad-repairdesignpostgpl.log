@@ -1,0 +1,152 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/28-openroad-globalplacement/peripherals_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO RSZ-0027] Inserted 77 sg13g2_buf_1 input buffers.
+[INFO RSZ-0028] Inserted 101 sg13g2_buf_1 output buffers.
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 20.0 -cap_margin 20.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       974
+       10 |     +0.0% |       0 |       0 |             0 |       964
+       20 |     +0.0% |       0 |       0 |             0 |       954
+       30 |     +0.0% |       0 |       0 |             0 |       944
+       40 |     +0.0% |       0 |       0 |             0 |       934
+       50 |     +0.0% |       0 |       0 |             0 |       924
+       60 |     +0.0% |       0 |       0 |             0 |       914
+       70 |     +0.0% |       0 |       0 |             0 |       904
+       80 |     +0.0% |       0 |       0 |             0 |       894
+       90 |     +0.0% |       0 |       0 |             0 |       884
+      100 |     +0.0% |       0 |       0 |             0 |       874
+      110 |     +0.0% |       0 |       0 |             0 |       864
+      120 |     +0.0% |       0 |       0 |             0 |       854
+      130 |     +0.0% |       0 |       0 |             0 |       844
+      140 |     +0.0% |       0 |       0 |             0 |       834
+      150 |     +0.0% |       0 |       0 |             0 |       824
+      160 |     +0.0% |       0 |       0 |             0 |       814
+      170 |     +0.0% |       0 |       0 |             0 |       804
+      180 |     +0.0% |       0 |       0 |             0 |       794
+      190 |     +0.0% |       0 |       0 |             0 |       784
+      200 |     +0.0% |       0 |       0 |             0 |       774
+      210 |     +0.0% |       0 |       0 |             0 |       764
+      220 |     +0.0% |       0 |       0 |             0 |       754
+      230 |     +0.0% |       0 |       0 |             0 |       744
+      240 |     +1.4% |       0 |      21 |             2 |       734
+      250 |     +1.4% |       0 |      21 |             2 |       724
+      260 |     +1.4% |       0 |      21 |             2 |       714
+      270 |     +1.4% |       0 |      21 |             2 |       704
+      280 |     +1.4% |       0 |      21 |             2 |       694
+      290 |     +1.4% |       0 |      21 |             2 |       684
+      300 |     +1.4% |       0 |      21 |             2 |       674
+      310 |     +1.4% |       0 |      21 |             2 |       664
+      320 |     +1.4% |       0 |      21 |             2 |       654
+      330 |     +1.4% |       0 |      21 |             2 |       644
+      340 |     +1.4% |       0 |      21 |             2 |       634
+      350 |     +1.4% |       0 |      21 |             2 |       624
+      360 |     +1.4% |       0 |      21 |             2 |       614
+      370 |     +1.4% |       0 |      21 |             2 |       604
+      380 |     +1.4% |       0 |      21 |             2 |       594
+      390 |     +1.4% |       0 |      21 |             2 |       584
+      400 |     +1.4% |       0 |      21 |             2 |       574
+      410 |     +2.0% |       0 |      31 |             4 |       564
+      420 |     +2.0% |       0 |      31 |             4 |       554
+      430 |     +2.0% |       0 |      31 |             4 |       544
+      440 |     +2.0% |       0 |      31 |             4 |       534
+      450 |     +2.0% |       0 |      31 |             4 |       524
+      460 |     +2.0% |       0 |      31 |             4 |       514
+      470 |     +2.0% |       0 |      31 |             4 |       504
+      480 |     +2.0% |       0 |      31 |             4 |       494
+      490 |     +2.0% |       0 |      31 |             4 |       484
+      500 |     +2.0% |       0 |      31 |             4 |       474
+      510 |     +2.0% |       0 |      31 |             4 |       464
+      520 |     +2.0% |       0 |      31 |             4 |       454
+      530 |     +2.0% |       0 |      31 |             4 |       444
+      540 |     +2.0% |       0 |      31 |             4 |       434
+      550 |     +2.0% |       0 |      31 |             4 |       424
+      560 |     +2.0% |       0 |      31 |             4 |       414
+      570 |     +2.0% |       0 |      31 |             4 |       404
+      580 |     +2.0% |       0 |      31 |             4 |       394
+      590 |     +2.0% |       0 |      31 |             4 |       384
+      600 |     +2.0% |       0 |      31 |             4 |       374
+      610 |     +2.0% |       0 |      31 |             4 |       364
+      620 |     +3.4% |       0 |      52 |             8 |       354
+      630 |     +4.2% |       0 |      63 |             9 |       344
+      640 |     +4.2% |       0 |      63 |             9 |       334
+      650 |     +4.2% |       0 |      63 |             9 |       324
+      660 |     +4.6% |       0 |      69 |            12 |       314
+      670 |     +4.7% |       0 |      71 |            13 |       304
+      680 |     +4.7% |       0 |      71 |            13 |       294
+      690 |     +4.7% |       0 |      71 |            13 |       284
+      700 |     +4.7% |       0 |      72 |            14 |       274
+      710 |     +6.3% |       0 |      96 |            16 |       264
+      720 |     +6.3% |       0 |      96 |            16 |       254
+      730 |     +6.3% |       0 |      96 |            16 |       244
+      740 |     +6.3% |       0 |      96 |            16 |       234
+      750 |     +6.3% |       0 |      96 |            16 |       224
+      760 |     +6.3% |       0 |      96 |            16 |       214
+      770 |     +6.3% |       0 |      96 |            16 |       204
+      780 |     +6.3% |       0 |      96 |            16 |       194
+      790 |     +6.3% |       0 |      96 |            16 |       184
+      800 |     +6.3% |       0 |      96 |            16 |       174
+      810 |     +6.3% |       0 |      96 |            16 |       164
+      820 |     +6.3% |       0 |      96 |            16 |       154
+      830 |     +6.3% |       0 |      96 |            16 |       144
+      840 |     +6.3% |       0 |      96 |            16 |       134
+      850 |     +6.3% |       0 |      96 |            16 |       124
+      860 |     +6.3% |       0 |      96 |            16 |       114
+      870 |     +6.3% |       0 |      96 |            16 |       104
+      880 |     +6.3% |       0 |      96 |            16 |        94
+      890 |     +6.3% |       0 |      96 |            16 |        84
+      900 |     +6.3% |       0 |      96 |            16 |        74
+      910 |     +6.3% |       0 |      96 |            16 |        64
+      920 |     +6.3% |       0 |      96 |            16 |        54
+      930 |     +6.3% |       0 |      96 |            16 |        44
+      940 |     +6.3% |       0 |      96 |            16 |        34
+      950 |     +6.3% |       0 |      96 |            16 |        24
+      960 |     +6.3% |       0 |      96 |            16 |        14
+      970 |     +6.3% |       0 |      96 |            16 |         4
+    final |     +6.3% |       0 |      96 |            16 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 3 slew violations.
+[INFO RSZ-0035] Found 16 fanout violations.
+[INFO RSZ-0038] Inserted 96 buffers in 16 nets.
+[INFO RSZ-0042] Inserted 4 tie sg13g2_tielo instances.
+[INFO RSZ-0042] Inserted 101 tie sg13g2_tiehi instances.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       5434.9 u
+average displacement        5.8 u
+max displacement           31.4 u
+original HPWL           31063.2 u
+legalized HPWL          32302.7 u
+delta HPWL                    4 %
+
+[INFO DPL-0020] Mirrored 495 instances
+[INFO DPL-0021] HPWL before           32302.7 u
+[INFO DPL-0022] HPWL after            31755.7 u
+[INFO DPL-0023] HPWL delta               -1.7 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 758 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Buffer                                    1       7.26
+  Timing Repair Buffer                    274    1988.58
+  Inverter                                 41     223.17
+  Sequential cell                         101    4947.87
+  Multi-Input combinational cell          514    4534.19
+  Total                                   931   11701.07
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/32-openroad-repairdesignpostgpl/peripherals_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/32-openroad-repairdesignpostgpl/peripherals_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/32-openroad-repairdesignpostgpl/peripherals_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/32-openroad-repairdesignpostgpl/peripherals_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_2/32-openroad-repairdesignpostgpl/peripherals_macro.sdc'…
