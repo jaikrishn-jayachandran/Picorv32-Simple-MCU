@@ -1,0 +1,1659 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib
+Imported 22 cell types from liberty file.
+[INFO] Using SDC file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\boot_spi_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv' to AST representation.
+Storing AST representation for module `$abstract\boot_ctrl'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv' to AST representation.
+Storing AST representation for module `$abstract\spi_master'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+7. Executing AST frontend in derive mode using pre-parsed AST for module `\boot_spi_macro'.
+Generating RTLIL representation for module `\boot_spi_macro'.
+
+7.1. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+Parameter \CLK_DIV = 8
+
+7.2. Executing AST frontend in derive mode using pre-parsed AST for module `\spi_master'.
+Parameter \CLK_DIV = 8
+Generating RTLIL representation for module `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000'.
+Parameter \FIRMWARE_WORDS = 1024
+
+7.3. Executing AST frontend in derive mode using pre-parsed AST for module `\boot_ctrl'.
+Parameter \FIRMWARE_WORDS = 1024
+Generating RTLIL representation for module `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000'.
+
+7.4. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+Used module:     $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000
+Used module:     $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000
+
+7.5. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+Used module:     $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000
+Used module:     $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000
+Removing unused module `$abstract\spi_master'.
+Removing unused module `$abstract\boot_ctrl'.
+Removing unused module `$abstract\boot_spi_macro'.
+Removed 3 unused modules.
+Renaming module boot_spi_macro to boot_spi_macro.
+
+8. Executing ATTRMAP pass (move or copy attributes).
+
+9. Executing TRIBUF pass.
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+
+10.1. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+Used module:     $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000
+Used module:     $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000
+
+10.2. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+Used module:     $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000
+Used module:     $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000
+Removed 0 unused modules.
+
+11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+12. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1 in module $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.
+Marked 8 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143$17 in module $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.
+Marked 1 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11 in module $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.
+Removed a total of 0 dead cases.
+
+13. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 1 assignment to connection.
+
+14. Executing PROC_INIT pass (extract init attributes).
+
+15. Executing PROC_ARST pass (detect async resets in processes).
+
+16. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~18 debug messages>
+
+17. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+     1/7: $0\done[0:0]
+     2/7: $0\busy[0:0]
+     3/7: $0\sclk_r[0:0]
+     4/7: $0\rx_shift[7:0]
+     5/7: $0\tx_shift[7:0]
+     6/7: $0\bit_cnt[3:0]
+     7/7: $0\div_cnt[3:0]
+Creating decoders for process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143$17'.
+     1/8: $8\next[3:0]
+     2/8: $7\next[3:0]
+     3/8: $6\next[3:0]
+     4/8: $5\next[3:0]
+     5/8: $4\next[3:0]
+     6/8: $3\next[3:0]
+     7/8: $2\next[3:0]
+     8/8: $1\next[3:0]
+Creating decoders for process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+     1/11: $0\ram_b_we_q[0:0]
+     2/11: $0\spi_start_q[0:0]
+     3/11: $0\state[3:0]
+     4/11: $0\cpu_rst_n_q[0:0]
+     5/11: $0\spi_cs_n_q[0:0]
+     6/11: $0\ram_b_wdata_q[31:0]
+     7/11: $0\ram_b_addr_q[31:0]
+     8/11: $0\spi_tx_q[7:0]
+     9/11: $0\word_asm[31:0]
+    10/11: $0\byte_cnt[1:0]
+    11/11: $0\word_cnt[31:0]
+
+18. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\next' from process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143$17'.
+
+19. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\done' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$296' with positive edge clock.
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\div_cnt' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$297' with positive edge clock.
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\bit_cnt' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$298' with positive edge clock.
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\tx_shift' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$299' with positive edge clock.
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\rx_shift' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$300' with positive edge clock.
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\sclk_r' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$301' with positive edge clock.
+Creating register for signal `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.\busy' using process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+  created $dff cell `$procdff$302' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\state' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$303' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\word_cnt' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$304' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\byte_cnt' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$305' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\word_asm' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$306' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\spi_start_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$307' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\spi_tx_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$308' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\ram_b_we_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$309' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\ram_b_addr_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$310' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\ram_b_wdata_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$311' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\spi_cs_n_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$312' with positive edge clock.
+Creating register for signal `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.\cpu_rst_n_q' using process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+  created $dff cell `$procdff$313' with positive edge clock.
+
+20. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+21. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 6 empty switches in `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+Removing empty process `$paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27$1'.
+Found and cleaned up 8 empty switches in `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143$17'.
+Removing empty process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143$17'.
+Found and cleaned up 4 empty switches in `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+Removing empty process `$paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64$11'.
+Cleaned up 18 empty switches.
+
+22. Executing CHECK pass (checking for obvious problems).
+Checking module boot_spi_macro...
+Checking module $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000...
+Checking module $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000...
+Found and reported 0 problems.
+
+23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+Optimizing module $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.
+<suppressed ~13 debug messages>
+Optimizing module $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.
+<suppressed ~17 debug messages>
+
+24. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\spi_master\CLK_DIV=32'00000000000000000000000000001000.
+Deleting now unused module $paramod\boot_ctrl\FIRMWARE_WORDS=32'00000000000000000000010000000000.
+<suppressed ~2 debug messages>
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+26. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 3 unused cells and 90 unused wires.
+<suppressed ~4 debug messages>
+
+27. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 149 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Computing hashes of 117 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+<suppressed ~96 debug messages>
+Removed a total of 32 cells.
+
+29. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $flatten\u_spi.$procmux$46: \u_spi.busy -> 1'0
+      Replacing known input bits on port A of cell $flatten\u_spi.$procmux$44: \u_spi.busy -> 1'1
+      Replacing known input bits on port A of cell $flatten\u_spi.$procmux$42: \u_spi.busy -> 1'1
+      Replacing known input bits on port A of cell $flatten\u_spi.$procmux$39: \u_spi.busy -> 1'1
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$165.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$177.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$190.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$123.
+    dead port 1/2 on $mux $flatten\u_boot_ctrl.$procmux$133.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$135.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$144.
+    dead port 2/2 on $mux $flatten\u_boot_ctrl.$procmux$154.
+Removed 8 multiplexer ports.
+<suppressed ~93 debug messages>
+
+30. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+    New ctrl vector for $pmux cell $flatten\u_boot_ctrl.$procmux$214: $auto$opt_reduce.cc:137:opt_pmux$317
+    New ctrl vector for $pmux cell $flatten\u_boot_ctrl.$procmux$258: { $flatten\u_boot_ctrl.$procmux$191_CMP $auto$opt_reduce.cc:137:opt_pmux$319 }
+    New ctrl vector for $pmux cell $flatten\u_boot_ctrl.$procmux$279: { $flatten\u_boot_ctrl.$procmux$136_CMP $auto$opt_reduce.cc:137:opt_pmux$321 }
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 3 changes.
+
+31. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 112 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+32. Executing OPT_DFF pass (perform DFF optimizations).
+
+33. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 0 unused cells and 41 unused wires.
+<suppressed ~1 debug messages>
+
+34. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+35. Rerunning OPT passes. (Maybe there is more to do…)
+
+36. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~87 debug messages>
+
+37. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+38. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+39. Executing OPT_DFF pass (perform DFF optimizations).
+
+40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+42. Executing FSM pass (extract and optimize FSM).
+
+42.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking boot_spi_macro.u_boot_ctrl.spi_tx_q as FSM state register:
+    Users of register don't seem to benefit from recoding.
+Found FSM state register boot_spi_macro.u_boot_ctrl.state.
+
+42.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\u_boot_ctrl.state' from module `\boot_spi_macro'.
+  found $dff cell for state register: $flatten\u_boot_ctrl.$procdff$303
+  root of input selection tree: $flatten\u_boot_ctrl.$0\state[3:0]
+  found reset state: 4'0000 (guessed from mux tree)
+  found ctrl input: \rst_ni
+  found state code: 4'0000
+  found ctrl input: \boot_done
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$124_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$196_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$136_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$155_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$166_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$178_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$191_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$202_CMP
+  found ctrl input: $flatten\u_boot_ctrl.$procmux$203_CMP
+  found state code: 4'1001
+  found ctrl input: $flatten\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130$16_Y
+  found state code: 4'0110
+  found state code: 4'1000
+  found ctrl input: $flatten\u_boot_ctrl.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$19_Y
+  found ctrl input: \u_spi.done
+  found state code: 4'0111
+  found state code: 4'0101
+  found state code: 4'0100
+  found state code: 4'0011
+  found state code: 4'0010
+  found state code: 4'0001
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$203_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$202_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$196_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$191_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$178_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$166_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$155_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$136_CMP
+  found ctrl output: $flatten\u_boot_ctrl.$procmux$124_CMP
+  found ctrl output: \boot_done
+  ctrl inputs: { \u_spi.done $flatten\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130$16_Y $flatten\u_boot_ctrl.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$19_Y \rst_ni }
+  ctrl outputs: { $flatten\u_boot_ctrl.$0\state[3:0] $flatten\u_boot_ctrl.$procmux$124_CMP $flatten\u_boot_ctrl.$procmux$136_CMP $flatten\u_boot_ctrl.$procmux$155_CMP $flatten\u_boot_ctrl.$procmux$166_CMP $flatten\u_boot_ctrl.$procmux$178_CMP $flatten\u_boot_ctrl.$procmux$191_CMP $flatten\u_boot_ctrl.$procmux$196_CMP $flatten\u_boot_ctrl.$procmux$202_CMP $flatten\u_boot_ctrl.$procmux$203_CMP \boot_done }
+  transition:     4'0000 4'---0 ->     4'0000 14'00000000000010
+  transition:     4'0000 4'---1 ->     4'0001 14'00010000000010
+  transition:     4'1000 4'---0 ->     4'0000 14'00001000000000
+  transition:     4'1000 4'-0-1 ->     4'0110 14'01101000000000
+  transition:     4'1000 4'-1-1 ->     4'1001 14'10011000000000
+  transition:     4'0100 4'---0 ->     4'0000 14'00000001000000
+  transition:     4'0100 4'0--1 ->     4'0100 14'01000001000000
+  transition:     4'0100 4'1--1 ->     4'0101 14'01010001000000
+  transition:     4'0010 4'---0 ->     4'0000 14'00000000010000
+  transition:     4'0010 4'0--1 ->     4'0010 14'00100000010000
+  transition:     4'0010 4'1--1 ->     4'0011 14'00110000010000
+  transition:     4'0110 4'---0 ->     4'0000 14'00000100000000
+  transition:     4'0110 4'0-01 ->     4'0110 14'01100100000000
+  transition:     4'0110 4'1-01 ->     4'0110 14'01100100000000
+  transition:     4'0110 4'--11 ->     4'0111 14'01110100000000
+  transition:     4'0001 4'---0 ->     4'0000 14'00000000000100
+  transition:     4'0001 4'---1 ->     4'0010 14'00100000000100
+  transition:     4'1001 4'---0 ->     4'0000 14'00000000000001
+  transition:     4'1001 4'---1 ->     4'1001 14'10010000000001
+  transition:     4'0101 4'---0 ->     4'0000 14'00000010000000
+  transition:     4'0101 4'0--1 ->     4'0101 14'01010010000000
+  transition:     4'0101 4'1--1 ->     4'0110 14'01100010000000
+  transition:     4'0011 4'---0 ->     4'0000 14'00000000100000
+  transition:     4'0011 4'0--1 ->     4'0011 14'00110000100000
+  transition:     4'0011 4'1--1 ->     4'0100 14'01000000100000
+  transition:     4'0111 4'---0 ->     4'0000 14'00000000001000
+  transition:     4'0111 4'---1 ->     4'1000 14'10000000001000
+
+42.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\u_boot_ctrl.state$322' from module `\boot_spi_macro'.
+  Merging pattern 4'0-01 and 4'1-01 from group (4 4 14'01100100000000).
+  Merging pattern 4'1-01 and 4'0-01 from group (4 4 14'01100100000000).
+
+42.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 19 unused cells and 19 unused wires.
+<suppressed ~21 debug messages>
+
+42.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\u_boot_ctrl.state$322' from module `\boot_spi_macro'.
+  Removing unused output signal $flatten\u_boot_ctrl.$procmux$202_CMP.
+  Removing unused output signal $flatten\u_boot_ctrl.$0\state[3:0] [0].
+  Removing unused output signal $flatten\u_boot_ctrl.$0\state[3:0] [1].
+  Removing unused output signal $flatten\u_boot_ctrl.$0\state[3:0] [2].
+  Removing unused output signal $flatten\u_boot_ctrl.$0\state[3:0] [3].
+
+42.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\u_boot_ctrl.state$322' from module `\boot_spi_macro' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  0000 -> ---------1
+  1000 -> --------1-
+  0100 -> -------1--
+  0010 -> ------1---
+  0110 -> -----1----
+  0001 -> ----1-----
+  1001 -> ---1------
+  0101 -> --1-------
+  0011 -> -1--------
+  0111 -> 1---------
+
+42.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\u_boot_ctrl.state$322' from module `boot_spi_macro':
+-------------------------------------
+
+  Information on FSM $fsm$\u_boot_ctrl.state$322 (\u_boot_ctrl.state):
+
+  Number of input signals:    4
+  Number of output signals:   9
+  Number of state bits:      10
+
+  Input signals:
+    0: \rst_ni
+    1: $flatten\u_boot_ctrl.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$19_Y
+    2: $flatten\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130$16_Y
+    3: \u_spi.done
+
+  Output signals:
+    0: \boot_done
+    1: $flatten\u_boot_ctrl.$procmux$203_CMP
+    2: $flatten\u_boot_ctrl.$procmux$196_CMP
+    3: $flatten\u_boot_ctrl.$procmux$191_CMP
+    4: $flatten\u_boot_ctrl.$procmux$178_CMP
+    5: $flatten\u_boot_ctrl.$procmux$166_CMP
+    6: $flatten\u_boot_ctrl.$procmux$155_CMP
+    7: $flatten\u_boot_ctrl.$procmux$136_CMP
+    8: $flatten\u_boot_ctrl.$procmux$124_CMP
+
+  State encoding:
+    0: 10'---------1  <RESET STATE>
+    1: 10'--------1-
+    2: 10'-------1--
+    3: 10'------1---
+    4: 10'-----1----
+    5: 10'----1-----
+    6: 10'---1------
+    7: 10'--1-------
+    8: 10'-1--------
+    9: 10'1---------
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 4'---0   ->     0 9'000000010
+      1:     0 4'---1   ->     5 9'000000010
+      2:     1 4'---0   ->     0 9'100000000
+      3:     1 4'-0-1   ->     4 9'100000000
+      4:     1 4'-1-1   ->     6 9'100000000
+      5:     2 4'---0   ->     0 9'000100000
+      6:     2 4'0--1   ->     2 9'000100000
+      7:     2 4'1--1   ->     7 9'000100000
+      8:     3 4'---0   ->     0 9'000001000
+      9:     3 4'0--1   ->     3 9'000001000
+     10:     3 4'1--1   ->     8 9'000001000
+     11:     4 4'---0   ->     0 9'010000000
+     12:     4 4'--01   ->     4 9'010000000
+     13:     4 4'--11   ->     9 9'010000000
+     14:     5 4'---0   ->     0 9'000000000
+     15:     5 4'---1   ->     3 9'000000000
+     16:     6 4'---0   ->     0 9'000000001
+     17:     6 4'---1   ->     6 9'000000001
+     18:     7 4'---0   ->     0 9'001000000
+     19:     7 4'1--1   ->     4 9'001000000
+     20:     7 4'0--1   ->     7 9'001000000
+     21:     8 4'---0   ->     0 9'000010000
+     22:     8 4'1--1   ->     2 9'000010000
+     23:     8 4'0--1   ->     8 9'000010000
+     24:     9 4'---0   ->     0 9'000000100
+     25:     9 4'---1   ->     1 9'000000100
+
+-------------------------------------
+
+42.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\u_boot_ctrl.state$322' from module `\boot_spi_macro'.
+
+43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+<suppressed ~5 debug messages>
+
+44. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 128 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Computing hashes of 122 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+45. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~75 debug messages>
+
+46. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+47. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 122 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+48. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\u_spi.$procdff$302 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$49_Y, Q = \u_spi.busy, rval = 1'0).
+Adding SRST signal on $flatten\u_spi.$procdff$301 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$57_Y, Q = \u_spi.sclk_r, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$411 ($sdff) from module boot_spi_macro (D = $flatten\u_spi.$not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:48$6_Y, Q = \u_spi.sclk_r).
+Adding SRST signal on $flatten\u_spi.$procdff$300 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$74_Y, Q = \u_spi.rx_shift, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:337:slice$419 ($sdff) from module boot_spi_macro (D = { \u_spi.rx_shift [6:0] \spi_miso }, Q = \u_spi.rx_shift).
+Adding SRST signal on $flatten\u_spi.$procdff$299 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$88_Y, Q = \u_spi.tx_shift, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:337:slice$427 ($sdff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$88_Y, Q = \u_spi.tx_shift).
+Adding SRST signal on $flatten\u_spi.$procdff$298 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$102_Y [3], Q = \u_spi.bit_cnt [3], rval = 1'0).
+Adding SRST signal on $flatten\u_spi.$procdff$298 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$99_Y [2:0], Q = \u_spi.bit_cnt [2:0], rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$438 ($sdff) from module boot_spi_macro (D = $flatten\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8_Y [2:0], Q = \u_spi.bit_cnt [2:0]).
+Adding EN signal on $auto$ff.cc:337:slice$437 ($sdff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$102_Y [3], Q = \u_spi.bit_cnt [3]).
+Adding SRST signal on $flatten\u_spi.$procdff$297 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$110_Y, Q = \u_spi.div_cnt, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:337:slice$455 ($sdff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$108_Y, Q = \u_spi.div_cnt).
+Adding SRST signal on $flatten\u_spi.$procdff$296 ($dff) from module boot_spi_macro (D = $flatten\u_spi.$procmux$23_Y, Q = \u_spi.done, rval = 1'0).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$313 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$226_Y, Q = \u_boot_ctrl.cpu_rst_n_q, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$472 ($sdff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$226_Y, Q = \u_boot_ctrl.cpu_rst_n_q).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$312 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$235_Y, Q = \u_boot_ctrl.spi_cs_n_q, rval = 1'1).
+Adding EN signal on $auto$ff.cc:337:slice$476 ($sdff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$235_Y, Q = \u_boot_ctrl.spi_cs_n_q).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$311 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$243_Y, Q = \u_boot_ctrl.ram_b_wdata_q, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$484 ($sdff) from module boot_spi_macro (D = \u_boot_ctrl.word_asm, Q = \u_boot_ctrl.ram_b_wdata_q).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$310 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$250_Y, Q = \u_boot_ctrl.ram_b_addr_q, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$486 ($sdff) from module boot_spi_macro (D = { \u_boot_ctrl.word_cnt [29:0] 2'00 }, Q = \u_boot_ctrl.ram_b_addr_q).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$309 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$206_Y, Q = \u_boot_ctrl.ram_b_we_q, rval = 1'0).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$308 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$258_Y, Q = \u_boot_ctrl.spi_tx_q, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:337:slice$489 ($sdff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$258_Y, Q = \u_boot_ctrl.spi_tx_q).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$307 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$214_Y, Q = \u_boot_ctrl.spi_start_q, rval = 1'0).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$306 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$272_Y, Q = \u_boot_ctrl.word_asm, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$494 ($sdff) from module boot_spi_macro (D = { \u_boot_ctrl.word_asm [23:0] \u_spi.rx_shift }, Q = \u_boot_ctrl.word_asm).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$305 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$279_Y, Q = \u_boot_ctrl.byte_cnt, rval = 2'00).
+Adding EN signal on $auto$ff.cc:337:slice$498 ($sdff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$279_Y, Q = \u_boot_ctrl.byte_cnt).
+Adding SRST signal on $flatten\u_boot_ctrl.$procdff$304 ($dff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$290_Y, Q = \u_boot_ctrl.word_cnt, rval = 0).
+Adding EN signal on $auto$ff.cc:337:slice$506 ($sdff) from module boot_spi_macro (D = $flatten\u_boot_ctrl.$procmux$290_Y, Q = \u_boot_ctrl.word_cnt).
+Setting constant 0-bit at position 0 on $auto$ff.cc:337:slice$487 ($sdffe) from module boot_spi_macro.
+Setting constant 0-bit at position 1 on $auto$ff.cc:337:slice$487 ($sdffe) from module boot_spi_macro.
+
+49. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 34 unused cells and 57 unused wires.
+<suppressed ~35 debug messages>
+
+50. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+<suppressed ~11 debug messages>
+
+51. Rerunning OPT passes. (Maybe there is more to do…)
+
+52. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+53. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+54. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 123 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Computing hashes of 114 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+55. Executing OPT_DFF pass (perform DFF optimizations).
+
+56. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 0 unused cells and 12 unused wires.
+<suppressed ~1 debug messages>
+
+57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+58. Rerunning OPT passes. (Maybe there is more to do…)
+
+59. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+60. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+61. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+62. Executing OPT_DFF pass (perform DFF optimizations).
+
+63. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+64. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+65. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from port B of cell boot_spi_macro.$auto$opt_dff.cc:235:make_patterns_logic$503 ($ne).
+Removed top 1 bits (of 2) from port B of cell boot_spi_macro.$auto$fsm_map.cc:77:implement_pattern_cache$398 ($eq).
+Removed top 1 bits (of 2) from port B of cell boot_spi_macro.$auto$fsm_map.cc:77:implement_pattern_cache$367 ($eq).
+Removed top 1 bits (of 2) from port B of cell boot_spi_macro.$auto$fsm_map.cc:77:implement_pattern_cache$363 ($eq).
+Removed top 22 bits (of 32) from port B of cell boot_spi_macro.$flatten\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130$16 ($eq).
+Removed top 3 bits (of 4) from port B of cell boot_spi_macro.$flatten\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57$9 ($eq).
+Removed top 1 bits (of 4) from port B of cell boot_spi_macro.$flatten\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46$5 ($eq).
+
+66. Executing PEEPOPT pass (run peephole optimizers).
+
+67. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+68. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module boot_spi_macro:
+  creating $macc model for $flatten\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117$13 ($add).
+  creating $macc model for $flatten\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125$15 ($add).
+  creating $macc model for $flatten\u_spi.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63$10 ($add).
+  creating $macc model for $flatten\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8 ($sub).
+  creating $alu model for $macc $flatten\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8.
+  creating $alu model for $macc $flatten\u_spi.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63$10.
+  creating $alu model for $macc $flatten\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125$15.
+  creating $alu model for $macc $flatten\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117$13.
+  creating $alu model for $flatten\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57$9 ($eq): merged with $flatten\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8.
+  creating $alu cell for $flatten\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117$13: $auto$alumacc.cc:512:replace_alu$511
+  creating $alu cell for $flatten\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125$15: $auto$alumacc.cc:512:replace_alu$514
+  creating $alu cell for $flatten\u_spi.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63$10: $auto$alumacc.cc:512:replace_alu$517
+  creating $alu cell for $flatten\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8, $flatten\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57$9: $auto$alumacc.cc:512:replace_alu$520
+  created 4 $alu and 0 $macc cells.
+
+69. Executing SHARE pass (SAT-based resource sharing).
+
+70. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+71. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+72. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+73. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+74. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+75. Executing OPT_DFF pass (perform DFF optimizations).
+
+76. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+77. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+78. Rerunning OPT passes. (Maybe there is more to do…)
+
+79. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+80. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+81. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 111 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+82. Executing OPT_DFF pass (perform DFF optimizations).
+
+83. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+84. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+85. Executing MEMORY pass.
+
+85.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+85.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+85.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+85.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+85.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+85.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+85.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+85.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+85.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+85.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+86. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+87. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+<suppressed ~18 debug messages>
+
+88. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 101 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+89. Executing OPT_DFF pass (perform DFF optimizations).
+
+90. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+91. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+92. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+93. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 101 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+94. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+95. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+    Consolidated identical input bits for $mux cell $flatten\u_boot_ctrl.$procmux$258:
+      Old ports: A=8'00000011, B=8'00000000, Y=$flatten\u_boot_ctrl.$procmux$258_Y
+      New ports: A=1'1, B=1'0, Y=$flatten\u_boot_ctrl.$procmux$258_Y [0]
+      New connections: $flatten\u_boot_ctrl.$procmux$258_Y [7:1] = { 6'000000 $flatten\u_boot_ctrl.$procmux$258_Y [0] }
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 1 changes.
+
+96. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 101 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+97. Executing OPT_SHARE pass.
+
+98. Executing OPT_DFF pass (perform DFF optimizations).
+
+99. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+100. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+<suppressed ~1 debug messages>
+
+101. Rerunning OPT passes. (Maybe there is more to do…)
+
+102. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+103. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+104. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 101 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+105. Executing OPT_SHARE pass.
+
+106. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 2 on $auto$ff.cc:337:slice$490 ($sdffe) from module boot_spi_macro.
+Setting constant 0-bit at position 3 on $auto$ff.cc:337:slice$490 ($sdffe) from module boot_spi_macro.
+Setting constant 0-bit at position 4 on $auto$ff.cc:337:slice$490 ($sdffe) from module boot_spi_macro.
+Setting constant 0-bit at position 5 on $auto$ff.cc:337:slice$490 ($sdffe) from module boot_spi_macro.
+Setting constant 0-bit at position 6 on $auto$ff.cc:337:slice$490 ($sdffe) from module boot_spi_macro.
+Setting constant 0-bit at position 7 on $auto$ff.cc:337:slice$490 ($sdffe) from module boot_spi_macro.
+
+107. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+108. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+109. Rerunning OPT passes. (Maybe there is more to do…)
+
+110. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+111. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+112. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 101 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+113. Executing OPT_SHARE pass.
+
+114. Executing OPT_DFF pass (perform DFF optimizations).
+
+115. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+116. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+117. Executing TECHMAP pass (map to technology primitives).
+
+117.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+117.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$8742280fdebca84e1c87f2a86ed84f62d558f4cc\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using template $paramod$6a42b6fefed750f8a1c58eab59479d960557103c\_90_alu for cells of type $alu.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000010 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100000 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~860 debug messages>
+
+118. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+<suppressed ~426 debug messages>
+
+119. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 537 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Computing hashes of 506 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+<suppressed ~93 debug messages>
+Removed a total of 31 cells.
+
+120. Executing OPT_DFF pass (perform DFF optimizations).
+
+121. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 47 unused cells and 330 unused wires.
+<suppressed ~48 debug messages>
+
+122. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+123. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 459 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+124. Executing OPT_DFF pass (perform DFF optimizations).
+
+125. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+126. Executing ABC pass (technology mapping using ABC).
+
+126.1. Extracting gate netlist of module `\boot_spi_macro' to `<abc-temp-dir>/input.blif'..
+Replacing 3 occurrences of constant undef bits with constant zero bits
+
+126.1.1. Executed ABC.
+Extracted 287 gates and 355 wires to a netlist network with 65 inputs and 77 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library /tmp/yosys-abc-Ury3JF/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+126.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        9
+ABC RESULTS:            ANDNOT cells:       72
+ABC RESULTS:               MUX cells:        6
+ABC RESULTS:              NAND cells:       28
+ABC RESULTS:               NOR cells:        4
+ABC RESULTS:               NOT cells:        6
+ABC RESULTS:                OR cells:       64
+ABC RESULTS:             ORNOT cells:       13
+ABC RESULTS:              XNOR cells:        5
+ABC RESULTS:               XOR cells:       33
+ABC RESULTS:        internal signals:      213
+ABC RESULTS:           input signals:       65
+ABC RESULTS:          output signals:       77
+Removing temp directory.
+Removing global temp directory.
+
+127. Executing OPT pass (performing simple optimizations).
+
+127.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+<suppressed ~34 debug messages>
+
+127.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 412 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+127.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+127.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 0 unused cells and 207 unused wires.
+<suppressed ~1 debug messages>
+
+127.5. Finished fast OPT passes.
+
+128. Executing HIERARCHY pass (managing design hierarchy).
+
+128.1. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+
+128.2. Analyzing design hierarchy..
+Top module:  \boot_spi_macro
+Removed 0 unused modules.
+
+129. Executing CHECK pass (checking for obvious problems).
+Checking module boot_spi_macro...
+Found and reported 0 problems.
+
+130. Printing statistics.
+
+=== boot_spi_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      292 wires
+      622 wire bits
+       54 public wires
+      381 public wire bits
+       11 ports
+       73 port bits
+      412 cells
+       72   $_ANDNOT_
+        9   $_AND_
+       10   $_DFF_P_
+        6   $_MUX_
+       28   $_NAND_
+        4   $_NOR_
+        6   $_NOT_
+       13   $_ORNOT_
+       64   $_OR_
+       32   $_SDFFE_PN0N_
+      115   $_SDFFE_PN0P_
+        1   $_SDFFE_PN1P_
+        8   $_SDFFE_PP0P_
+        3   $_SDFF_PN0_
+        1   $_SDFF_PP0_
+        5   $_XNOR_
+       33   $_XOR_
+        2   $scopeinfo
+
+131. Executing OPT pass (performing simple optimizations).
+
+131.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+131.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 412 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+131.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boot_spi_macro..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+131.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boot_spi_macro.
+Performed a total of 0 changes.
+
+131.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boot_spi_macro'.
+Computing hashes of 412 cells of `\boot_spi_macro'.
+Finding duplicate cells in `\boot_spi_macro'.
+Removed a total of 0 cells.
+
+131.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+131.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+
+131.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boot_spi_macro.
+
+131.9. Finished fast OPT passes. (There is nothing left to do.)
+
+132. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 2 unused cells and 31 unused wires.
+<suppressed ~33 debug messages>
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/1db27a14fb0049ab86836ce430f8efa0.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/3da77f7fbfbe43d498e722dbc4cd0c3b.lib ",
+   "modules": {
+      "\\boot_spi_macro": {
+         "num_wires":         261,
+         "num_wire_bits":     425,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 184,
+         "num_ports":         11,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         410,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 72,
+            "$_AND_": 9,
+            "$_DFF_P_": 10,
+            "$_MUX_": 6,
+            "$_NAND_": 28,
+            "$_NOR_": 4,
+            "$_NOT_": 6,
+            "$_ORNOT_": 13,
+            "$_OR_": 64,
+            "$_SDFFE_PN0N_": 32,
+            "$_SDFFE_PN0P_": 115,
+            "$_SDFFE_PN1P_": 1,
+            "$_SDFFE_PP0P_": 8,
+            "$_SDFF_PN0_": 3,
+            "$_SDFF_PP0_": 1,
+            "$_XNOR_": 5,
+            "$_XOR_": 33
+         }
+      }
+   },
+      "design": {
+         "num_wires":         261,
+         "num_wire_bits":     425,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 184,
+         "num_ports":         11,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         410,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 72,
+            "$_AND_": 9,
+            "$_DFF_P_": 10,
+            "$_MUX_": 6,
+            "$_NAND_": 28,
+            "$_NOR_": 4,
+            "$_NOT_": 6,
+            "$_ORNOT_": 13,
+            "$_OR_": 64,
+            "$_SDFFE_PN0N_": 32,
+            "$_SDFFE_PN0P_": 115,
+            "$_SDFFE_PN1P_": 1,
+            "$_SDFFE_PP0P_": 8,
+            "$_SDFF_PN0_": 3,
+            "$_SDFF_PP0_": 1,
+            "$_XNOR_": 5,
+            "$_XOR_": 33
+         }
+      }
+}
+
+133. Printing statistics.
+
+=== boot_spi_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      261 wires
+      425 wire bits
+       23 public wires
+      184 public wire bits
+       11 ports
+       73 port bits
+      410 cells
+       72   $_ANDNOT_
+        9   $_AND_
+       10   $_DFF_P_
+        6   $_MUX_
+       28   $_NAND_
+        4   $_NOR_
+        6   $_NOT_
+       13   $_ORNOT_
+       64   $_OR_
+       32   $_SDFFE_PN0N_
+      115   $_SDFFE_PN0P_
+        1   $_SDFFE_PN1P_
+        8   $_SDFFE_PP0P_
+        3   $_SDFF_PN0_
+        1   $_SDFF_PP0_
+        5   $_XNOR_
+       33   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFF_P_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_SDFFE_PN0N_ is unknown!
+   Area for cell type $_SDFFE_PN0P_ is unknown!
+   Area for cell type $_SDFFE_PN1P_ is unknown!
+   Area for cell type $_SDFFE_PP0P_ is unknown!
+   Area for cell type $_SDFF_PN0_ is unknown!
+   Area for cell type $_SDFF_PP0_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v'…
+
+134. Executing TECHMAP pass (map to technology primitives).
+
+134.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `$_TBUF_'.
+Successfully finished Verilog frontend.
+
+134.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+135. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v'…
+
+136. Executing TECHMAP pass (map to technology primitives).
+
+136.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_PN0_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_NN0_'.
+Successfully finished Verilog frontend.
+
+136.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+137. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+138. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sg13g2_dfrbpq_1 (noninv, pins=4, area=48.99) is a direct match for cell type $_DFF_PN0_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    unmapped dff cell: $_DFF_P_
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sg13g2_dfrbpq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+138.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~4 debug messages>
+Mapping DFF cells in module `\boot_spi_macro':
+  mapped 170 $_DFF_PN0_ cells to \sg13g2_dfrbpq_1 cells.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/1db27a14fb0049ab86836ce430f8efa0.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/3da77f7fbfbe43d498e722dbc4cd0c3b.lib ",
+   "modules": {
+      "\\boot_spi_macro": {
+         "num_wires":         577,
+         "num_wire_bits":     741,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 184,
+         "num_ports":         11,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         726,
+         "num_submodules":       0,
+         "area":              8328.096000,
+         "sequential_area":    8328.096000,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 72,
+            "$_AND_": 9,
+            "$_MUX_": 322,
+            "$_NAND_": 28,
+            "$_NOR_": 4,
+            "$_NOT_": 6,
+            "$_ORNOT_": 13,
+            "$_OR_": 64,
+            "$_XNOR_": 5,
+            "$_XOR_": 33,
+            "sg13g2_dfrbpq_1": 170
+         }
+      }
+   },
+      "design": {
+         "num_wires":         577,
+         "num_wire_bits":     741,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 184,
+         "num_ports":         11,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         726,
+         "num_submodules":       0,
+         "area":              8328.096000,
+         "sequential_area":    8328.096000,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 72,
+            "$_AND_": 9,
+            "$_MUX_": 322,
+            "$_NAND_": 28,
+            "$_NOR_": 4,
+            "$_NOT_": 6,
+            "$_ORNOT_": 13,
+            "$_OR_": 64,
+            "$_XNOR_": 5,
+            "$_XOR_": 33,
+            "sg13g2_dfrbpq_1": 170
+         }
+      }
+}
+
+139. Printing statistics.
+
+=== boot_spi_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      577        - wires
+      741        - wire bits
+       23        - public wires
+      184        - public wire bits
+       11        - ports
+       73        - port bits
+      726 8.33E+03 cells
+       72        -   $_ANDNOT_
+        9        -   $_AND_
+      322        -   $_MUX_
+       28        -   $_NAND_
+        4        -   $_NOR_
+        6        -   $_NOT_
+       13        -   $_ORNOT_
+       64        -   $_OR_
+        5        -   $_XNOR_
+       33        -   $_XOR_
+      170 8.33E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\boot_spi_macro': 8328.096000
+     of which used for sequential elements: 8328.096000 (100.00%)
+
+[INFO] Using generated ABC script '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/06-yosys-synthesis/DELAY_1.abc'…
+
+140. Executing ABC pass (technology mapping using ABC).
+
+140.1. Extracting gate netlist of module `\boot_spi_macro' to `/tmp/yosys-abc-FP5iwM/input.blif'..
+
+140.1.1. Executed ABC.
+Extracted 556 gates and 729 wires to a netlist network with 171 inputs and 170 outputs.
+Running ABC script: /tmp/yosys-abc-FP5iwM/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-FP5iwM/abc.script"
+ABC: + read_blif /tmp/yosys-abc-FP5iwM/input.blif 
+ABC: + read_lib -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/1db27a14fb0049ab86836ce430f8efa0.lib 
+ABC: Library with only 1 cell classes cannot be used.
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Corner" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler1000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler10000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler200" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler2000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler400" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler4000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadAnalog" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVss" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIn" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVss" without logic function.
+ABC: Library "sg13g2_io_typ_1p2V_3p3V_25C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/1db27a14fb0049ab86836ce430f8efa0.lib" has 3 cells (19 skipped: 0 seq; 6 tri-state; 4 no func; 9 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.00 sec
+ABC: Memory =    0.39 MB. Time =     0.00 sec
+ABC: + read_lib -m -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/3da77f7fbfbe43d498e722dbc4cd0c3b.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_antennanp" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhrq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllrq_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_8".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_2".
+ABC: Library "sg13g2_stdcell_typ_1p20V_25C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/3da77f7fbfbe43d498e722dbc4cd0c3b.lib" has 54 cells (25 skipped: 12 seq; 6 tri-state; 0 no func; 7 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.02 sec
+ABC: Memory =    2.64 MB. Time =     0.02 sec
+ABC: + read_constr -v /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sg13g2_buf_4/X".
+ABC: Setting output load to be 6.000000.
+ABC: + source /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/06-yosys-synthesis/DELAY_1.abc 
+ABC: Error: The network is combinational.
+ABC: The cell areas are multiplied by the factor: <num_fanins> ^ (0.90).
+ABC: The cell delays are multiplied by the factor: <num_fanins> ^ (0.20).
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: WireLoad = "none"  Gates =    529 (  3.6 %)   Cap =  7.8 ff (  5.0 %)   Area =     5181.77 ( 90.0 %)   Delay =  1377.33 ps  (  1.7 %)               
+ABC: Path  0 --      27 : 0    6 pi              A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =  16.9 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     788 : 4   19 sg13g2_nand4_1  A =  10.89  Df = 476.8 -297.9 ps  S = 578.1 ps  Cin =  3.0 ff  Cout =  55.3 ff  Cmax = 300.0 ff  G = 1798  
+ABC: Path  2 --     789 : 3   11 sg13g2_nor3_1   A =   9.07  Df =1025.4 -643.7 ps  S = 509.2 ps  Cin =  3.0 ff  Cout =  32.9 ff  Cmax = 300.0 ff  G = 1079  
+ABC: Path  3 --     808 : 5    1 sg13g2_a221oi_1 A =  14.52  Df =1314.8  -98.8 ps  S = 150.6 ps  Cin =  3.0 ff  Cout =   3.0 ff  Cmax = 300.0 ff  G =   98  
+ABC: Path  4 --     809 : 2    1 sg13g2_nor2_1   A =   7.26  Df =1377.3  -58.8 ps  S = 132.7 ps  Cin =  3.0 ff  Cout =   6.0 ff  Cmax = 300.0 ff  G =  201  
+ABC: Start-point = pi26 (\u_spi.div_cnt [0]).  End-point = po148 ($auto$rtlil.cc:3583:MuxGate$2703).
+ABC: netlist                       : i/o =  171/  170  lat =    0  nd =   529  edge =   1487  area =2107.64  delay =602.55  lev = 5
+ABC: + write_blif /tmp/yosys-abc-FP5iwM/output.blif 
+
+140.1.2. Re-integrating ABC results.
+ABC RESULTS:     sg13g2_a21o_1 cells:        6
+ABC RESULTS:    sg13g2_a21oi_1 cells:       75
+ABC RESULTS:   sg13g2_a221oi_1 cells:        9
+ABC RESULTS:    sg13g2_a22oi_1 cells:        4
+ABC RESULTS:     sg13g2_and2_1 cells:       43
+ABC RESULTS:     sg13g2_and3_1 cells:        8
+ABC RESULTS:     sg13g2_and4_1 cells:       16
+ABC RESULTS:      sg13g2_inv_1 cells:       19
+ABC RESULTS:     sg13g2_mux2_1 cells:       34
+ABC RESULTS:    sg13g2_nand2_1 cells:       13
+ABC RESULTS:   sg13g2_nand2b_1 cells:        4
+ABC RESULTS:    sg13g2_nand3_1 cells:       15
+ABC RESULTS:   sg13g2_nand3b_1 cells:        1
+ABC RESULTS:    sg13g2_nand4_1 cells:       31
+ABC RESULTS:     sg13g2_nor2_1 cells:       89
+ABC RESULTS:    sg13g2_nor2b_1 cells:       18
+ABC RESULTS:     sg13g2_nor3_1 cells:       62
+ABC RESULTS:     sg13g2_nor4_1 cells:       36
+ABC RESULTS:    sg13g2_o21ai_1 cells:       43
+ABC RESULTS:      sg13g2_or2_1 cells:        1
+ABC RESULTS:      sg13g2_or3_1 cells:        1
+ABC RESULTS:      sg13g2_or4_1 cells:        1
+ABC RESULTS:        internal signals:      388
+ABC RESULTS:           input signals:      171
+ABC RESULTS:          output signals:      170
+Removing temp directory.
+Removing global temp directory.
+
+141. Executing SETUNDEF pass (replace undef values with defined constants).
+
+142. Executing HILOMAP pass (mapping to constant drivers).
+
+143. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+144. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boot_spi_macro..
+Removed 6 unused cells and 745 unused wires.
+<suppressed ~16 debug messages>
+
+145. Executing INSBUF pass (insert buffer cells for connected wires).
+
+146. Executing CHECK pass (checking for obvious problems).
+Checking module boot_spi_macro...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/1db27a14fb0049ab86836ce430f8efa0.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/tmp/3da77f7fbfbe43d498e722dbc4cd0c3b.lib ",
+   "modules": {
+      "\\boot_spi_macro": {
+         "num_wires":         812,
+         "num_wire_bits":     874,
+         "num_pub_wires":     113,
+         "num_pub_wire_bits": 175,
+         "num_ports":         11,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         871,
+         "num_submodules":       0,
+         "area":              14758.178400,
+         "sequential_area":    8328.096000,
+         "num_cells_by_type": {
+            "sg13g2_a21o_1": 6,
+            "sg13g2_a21oi_1": 75,
+            "sg13g2_a221oi_1": 9,
+            "sg13g2_a22oi_1": 4,
+            "sg13g2_and2_1": 43,
+            "sg13g2_and3_1": 8,
+            "sg13g2_and4_1": 16,
+            "sg13g2_dfrbpq_1": 170,
+            "sg13g2_inv_1": 19,
+            "sg13g2_mux2_1": 34,
+            "sg13g2_nand2_1": 13,
+            "sg13g2_nand2b_1": 4,
+            "sg13g2_nand3_1": 15,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 31,
+            "sg13g2_nor2_1": 89,
+            "sg13g2_nor2b_1": 18,
+            "sg13g2_nor3_1": 62,
+            "sg13g2_nor4_1": 36,
+            "sg13g2_o21ai_1": 43,
+            "sg13g2_or2_1": 1,
+            "sg13g2_or3_1": 1,
+            "sg13g2_or4_1": 1,
+            "sg13g2_tiehi": 170,
+            "sg13g2_tielo": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         812,
+         "num_wire_bits":     874,
+         "num_pub_wires":     113,
+         "num_pub_wire_bits": 175,
+         "num_ports":         11,
+         "num_port_bits":     73,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         871,
+         "num_submodules":       0,
+         "area":              14758.178400,
+         "sequential_area":    8328.096000,
+         "num_cells_by_type": {
+            "sg13g2_a21o_1": 6,
+            "sg13g2_a21oi_1": 75,
+            "sg13g2_a221oi_1": 9,
+            "sg13g2_a22oi_1": 4,
+            "sg13g2_and2_1": 43,
+            "sg13g2_and3_1": 8,
+            "sg13g2_and4_1": 16,
+            "sg13g2_dfrbpq_1": 170,
+            "sg13g2_inv_1": 19,
+            "sg13g2_mux2_1": 34,
+            "sg13g2_nand2_1": 13,
+            "sg13g2_nand2b_1": 4,
+            "sg13g2_nand3_1": 15,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 31,
+            "sg13g2_nor2_1": 89,
+            "sg13g2_nor2b_1": 18,
+            "sg13g2_nor3_1": 62,
+            "sg13g2_nor4_1": 36,
+            "sg13g2_o21ai_1": 43,
+            "sg13g2_or2_1": 1,
+            "sg13g2_or3_1": 1,
+            "sg13g2_or4_1": 1,
+            "sg13g2_tiehi": 170,
+            "sg13g2_tielo": 2
+         }
+      }
+}
+
+147. Printing statistics.
+
+=== boot_spi_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      812        - wires
+      874        - wire bits
+      113        - public wires
+      175        - public wire bits
+       11        - ports
+       73        - port bits
+      871 1.48E+04 cells
+        6   76.205   sg13g2_a21o_1
+       75    680.4   sg13g2_a21oi_1
+        9  130.637   sg13g2_a221oi_1
+        4   43.394   sg13g2_a22oi_1
+       43  390.096   sg13g2_and2_1
+        8  101.606   sg13g2_and3_1
+       16  232.243   sg13g2_and4_1
+      170 8.33E+03   sg13g2_dfrbpq_1
+       19  103.421   sg13g2_inv_1
+       34  616.896   sg13g2_mux2_1
+       13   94.349   sg13g2_nand2_1
+        4   36.288   sg13g2_nand2b_1
+       15   136.08   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+       31  337.478   sg13g2_nand4_1
+       89  645.926   sg13g2_nor2_1
+       18  163.296   sg13g2_nor2b_1
+       62  562.464   sg13g2_nor3_1
+       36   391.91   sg13g2_nor4_1
+       43  390.096   sg13g2_o21ai_1
+        1    9.072   sg13g2_or2_1
+        1   12.701   sg13g2_or3_1
+        1   14.515   sg13g2_or4_1
+      170 1.23E+03   sg13g2_tiehi
+        2   14.515   sg13g2_tielo
+
+   Chip area for module '\boot_spi_macro': 14758.178400
+     of which used for sequential elements: 8328.096000 (56.43%)
+
+148. Executing Verilog backend.
+Dumping module `\boot_spi_macro'.
+
+149. Executing JSON backend.

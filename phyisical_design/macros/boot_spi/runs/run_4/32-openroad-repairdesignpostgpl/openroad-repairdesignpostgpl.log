@@ -1,0 +1,148 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/28-openroad-globalplacement/boot_spi_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO RSZ-0027] Inserted 2 sg13g2_buf_1 input buffers.
+[INFO RSZ-0028] Inserted 68 sg13g2_buf_1 output buffers.
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 20.0 -cap_margin 20.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |       944
+       10 |     +0.0% |       0 |       0 |             0 |       934
+       20 |     +0.0% |       0 |       0 |             0 |       924
+       30 |     +0.0% |       0 |       0 |             0 |       914
+       40 |     +0.0% |       0 |       0 |             0 |       904
+       50 |     +0.0% |       0 |       0 |             0 |       894
+       60 |     +0.0% |       0 |       0 |             0 |       884
+       70 |     +0.0% |       0 |       0 |             0 |       874
+       80 |     +0.0% |       0 |       0 |             0 |       864
+       90 |     +0.0% |       0 |       0 |             0 |       854
+      100 |     +0.0% |       0 |       0 |             0 |       844
+      110 |     +0.0% |       0 |       0 |             0 |       834
+      120 |     +0.0% |       0 |       0 |             0 |       824
+      130 |     +0.0% |       0 |       0 |             0 |       814
+      140 |     +0.0% |       0 |       0 |             0 |       804
+      150 |     +0.0% |       0 |       0 |             0 |       794
+      160 |     +0.0% |       0 |       0 |             0 |       784
+      170 |     +0.0% |       0 |       0 |             0 |       774
+      180 |     +0.0% |       0 |       0 |             0 |       764
+      190 |     +0.0% |       0 |       0 |             0 |       754
+      200 |     +0.0% |       0 |       1 |             1 |       744
+      210 |     +0.0% |       0 |       1 |             1 |       734
+      220 |     +0.0% |       0 |       1 |             1 |       724
+      230 |     +0.0% |       0 |       1 |             1 |       714
+      240 |     +0.0% |       0 |       1 |             1 |       704
+      250 |     +0.0% |       0 |       1 |             1 |       694
+      260 |     +0.0% |       0 |       1 |             1 |       684
+      270 |     +0.0% |       0 |       1 |             1 |       674
+      280 |     +0.0% |       0 |       1 |             1 |       664
+      290 |     +0.1% |       0 |       3 |             2 |       654
+      300 |     +0.2% |       0 |       5 |             3 |       644
+      310 |     +0.2% |       0 |       5 |             3 |       634
+      320 |     +0.2% |       0 |       5 |             3 |       624
+      330 |     +0.2% |       0 |       5 |             3 |       614
+      340 |     +0.2% |       0 |       5 |             3 |       604
+      350 |     +0.5% |       0 |      10 |             5 |       594
+      360 |     +0.5% |       0 |      10 |             5 |       584
+      370 |     +0.5% |       0 |      10 |             5 |       574
+      380 |     +0.5% |       0 |      10 |             5 |       564
+      390 |     +0.5% |       0 |      10 |             5 |       554
+      400 |     +0.5% |       0 |      10 |             5 |       544
+      410 |     +0.5% |       0 |      10 |             5 |       534
+      420 |     +0.5% |       0 |      10 |             5 |       524
+      430 |     +0.5% |       0 |      10 |             5 |       514
+      440 |     +0.7% |       0 |      14 |             8 |       504
+      450 |     +0.7% |       0 |      14 |             8 |       494
+      460 |     +0.7% |       0 |      14 |             8 |       484
+      470 |     +0.7% |       0 |      14 |             8 |       474
+      480 |     +0.7% |       0 |      14 |             8 |       464
+      490 |     +0.7% |       0 |      14 |             8 |       454
+      500 |     +0.7% |       0 |      15 |             9 |       444
+      510 |     +0.7% |       0 |      15 |             9 |       434
+      520 |     +1.0% |       0 |      21 |            10 |       424
+      530 |     +1.0% |       0 |      22 |            11 |       414
+      540 |     +1.0% |       0 |      22 |            11 |       404
+      550 |     +1.0% |       0 |      22 |            11 |       394
+      560 |     +1.0% |       0 |      22 |            11 |       384
+      570 |     +1.0% |       0 |      22 |            11 |       374
+      580 |     +1.0% |       0 |      22 |            11 |       364
+      590 |     +1.0% |       0 |      22 |            11 |       354
+      600 |     +1.9% |       0 |      41 |            12 |       344
+      610 |     +2.4% |       0 |      51 |            15 |       334
+      620 |     +2.4% |       0 |      51 |            15 |       324
+      630 |     +2.6% |       0 |      54 |            16 |       314
+      640 |     +2.9% |       0 |      61 |            17 |       304
+      650 |     +2.9% |       0 |      61 |            17 |       294
+      660 |     +2.9% |       0 |      61 |            17 |       284
+      670 |     +2.9% |       0 |      61 |            17 |       274
+      680 |     +2.9% |       0 |      61 |            17 |       264
+      690 |     +2.9% |       0 |      61 |            17 |       254
+      700 |     +2.9% |       0 |      61 |            17 |       244
+      710 |     +2.9% |       0 |      61 |            17 |       234
+      720 |     +2.9% |       0 |      61 |            17 |       224
+      730 |     +2.9% |       0 |      62 |            18 |       214
+      740 |     +3.0% |       0 |      63 |            19 |       204
+      750 |     +3.0% |       0 |      63 |            19 |       194
+      760 |     +3.0% |       0 |      63 |            19 |       184
+      770 |     +4.2% |       0 |      88 |            21 |       174
+      780 |     +4.2% |       0 |      88 |            21 |       164
+      790 |     +4.2% |       0 |      88 |            21 |       154
+      800 |     +4.2% |       0 |      88 |            21 |       144
+      810 |     +4.2% |       0 |      88 |            21 |       134
+      820 |     +4.2% |       0 |      88 |            21 |       124
+      830 |     +4.2% |       0 |      88 |            21 |       114
+      840 |     +4.2% |       0 |      88 |            21 |       104
+      850 |     +4.2% |       0 |      88 |            21 |        94
+      860 |     +4.2% |       0 |      88 |            21 |        84
+      870 |     +4.2% |       0 |      88 |            21 |        74
+      880 |     +4.2% |       0 |      88 |            21 |        64
+      890 |     +4.2% |       0 |      88 |            21 |        54
+      900 |     +4.2% |       0 |      88 |            21 |        44
+      910 |     +4.2% |       0 |      88 |            21 |        34
+      920 |     +4.2% |       0 |      88 |            21 |        24
+      930 |     +4.2% |       0 |      88 |            21 |        14
+      940 |     +4.2% |       0 |      88 |            21 |         4
+    final |     +4.2% |       0 |      88 |            21 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 2 slew violations.
+[INFO RSZ-0035] Found 21 fanout violations.
+[INFO RSZ-0038] Inserted 88 buffers in 21 nets.
+[INFO RSZ-0042] Inserted 2 tie sg13g2_tielo instances.
+[INFO RSZ-0042] Inserted 170 tie sg13g2_tiehi instances.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       3097.4 u
+average displacement        3.0 u
+max displacement           22.1 u
+original HPWL           21825.9 u
+legalized HPWL          23123.3 u
+delta HPWL                    6 %
+
+[INFO DPL-0020] Mirrored 512 instances
+[INFO DPL-0021] HPWL before           23123.3 u
+[INFO DPL-0022] HPWL after            22514.5 u
+[INFO DPL-0023] HPWL delta               -2.6 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+[INFO ODB-0403] 660 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Timing Repair Buffer                    158    1146.70
+  Inverter                                 19     103.42
+  Sequential cell                         170    8328.10
+  Multi-Input combinational cell          682    6326.81
+  Total                                  1029   15905.03
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/32-openroad-repairdesignpostgpl/boot_spi_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/32-openroad-repairdesignpostgpl/boot_spi_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/32-openroad-repairdesignpostgpl/boot_spi_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/32-openroad-repairdesignpostgpl/boot_spi_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_4/32-openroad-repairdesignpostgpl/boot_spi_macro.sdc'…

@@ -1,0 +1,43 @@
+147. Printing statistics.
+
+=== boot_spi_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      812        - wires
+      874        - wire bits
+      113        - public wires
+      175        - public wire bits
+       11        - ports
+       73        - port bits
+      871 1.48E+04 cells
+        6   76.205   sg13g2_a21o_1
+       75    680.4   sg13g2_a21oi_1
+        9  130.637   sg13g2_a221oi_1
+        4   43.394   sg13g2_a22oi_1
+       43  390.096   sg13g2_and2_1
+        8  101.606   sg13g2_and3_1
+       16  232.243   sg13g2_and4_1
+      170 8.33E+03   sg13g2_dfrbpq_1
+       19  103.421   sg13g2_inv_1
+       34  616.896   sg13g2_mux2_1
+       13   94.349   sg13g2_nand2_1
+        4   36.288   sg13g2_nand2b_1
+       15   136.08   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+       31  337.478   sg13g2_nand4_1
+       89  645.926   sg13g2_nor2_1
+       18  163.296   sg13g2_nor2b_1
+       62  562.464   sg13g2_nor3_1
+       36   391.91   sg13g2_nor4_1
+       43  390.096   sg13g2_o21ai_1
+        1    9.072   sg13g2_or2_1
+        1   12.701   sg13g2_or3_1
+        1   14.515   sg13g2_or4_1
+      170 1.23E+03   sg13g2_tiehi
+        2   14.515   sg13g2_tielo
+
+   Chip area for module '\boot_spi_macro': 14758.178400
+     of which used for sequential elements: 8328.096000 (56.43%)
+

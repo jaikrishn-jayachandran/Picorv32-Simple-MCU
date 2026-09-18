@@ -1,5 +1,5 @@
 # ============================================================
-# Clock
+# CLOCK
 # ============================================================
 
 create_clock -name clk_i \
@@ -13,7 +13,7 @@ set_clock_transition 0.2 [get_clocks clk_i]
 
 
 # ============================================================
-# SPI input
+# SPI INPUT
 # ============================================================
 
 set_input_delay -clock clk_i -max 2.0 \
@@ -29,7 +29,7 @@ set_driving_cell \
 
 
 # ============================================================
-# RAM boot-write outputs
+# BOOT RAM WRITE INTERFACE
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 [get_ports {
@@ -52,7 +52,7 @@ set_load 0.05 [get_ports {
 
 
 # ============================================================
-# CPU reset output
+# CPU RESET OUTPUT
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 \
@@ -65,7 +65,7 @@ set_load 0.05 [get_ports cpu_rst_n]
 
 
 # ============================================================
-# SPI outputs
+# SPI OUTPUTS
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 [get_ports {
@@ -88,7 +88,7 @@ set_load 0.05 [get_ports {
 
 
 # ============================================================
-# Boot status
+# BOOT STATUS
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 \
@@ -101,7 +101,7 @@ set_load 0.05 [get_ports boot_done]
 
 
 # ============================================================
-# Asynchronous reset
+# ASYNCHRONOUS RESET
 # ============================================================
 
 set_false_path -from [get_ports rst_ni]

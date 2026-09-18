@@ -1,0 +1,176 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: _1386_ (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: spi_sclk (output port clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.041238    0.000000    0.000000    0.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.008447    0.004223    0.004223 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+    16    0.201688    0.062733    0.087507    0.091730 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.063405    0.005203    0.096934 ^ clkbuf_4_0_0_clk_i/A (sg13g2_buf_8)
+     2    0.041147    0.034364    0.093067    0.190000 ^ clkbuf_4_0_0_clk_i/X (sg13g2_buf_8)
+                                                         clknet_4_0_0_clk_i (net)
+                      0.034428    0.001072    0.191073 ^ clkbuf_5_1__f_clk_i/A (sg13g2_buf_16)
+     6    0.026486    0.021148    0.068633    0.259706 ^ clkbuf_5_1__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_5_1__leaf_clk_i (net)
+                      0.021149    0.000306    0.260012 ^ _1386_/CLK (sg13g2_dfrbpq_1)
+     1    0.003387    0.025689    0.164486    0.424497 ^ _1386_/Q (sg13g2_dfrbpq_1)
+                                                         net70 (net)
+                      0.025689    0.000037    0.424534 ^ fanout121/A (sg13g2_buf_1)
+     5    0.027278    0.117044    0.128973    0.553508 ^ fanout121/X (sg13g2_buf_1)
+                                                         net121 (net)
+                      0.117053    0.000818    0.554326 ^ output70/A (sg13g2_buf_1)
+     1    0.050000    0.211225    0.229180    0.783506 ^ output70/X (sg13g2_buf_1)
+                                                         spi_sclk (net)
+                      0.211225    0.000000    0.783506 ^ spi_sclk (out)
+                                              0.783506   data arrival time
+
+                                 10.000000   10.000000   clock clk_i (rise edge)
+                                  0.000000   10.000000   clock network delay (propagated)
+                                 -0.200000    9.800000   clock uncertainty
+                                  0.000000    9.800000   clock reconvergence pessimism
+                                 -2.000000    7.800000   output external delay
+                                              7.800000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.800000   data required time
+                                             -0.783506   data arrival time
+---------------------------------------------------------------------------------------------
+                                              7.016494   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_0_clk_i/X                          8     16     -8 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 10 unannotated drivers.
+ clkload0/Y
+ clkload1/Y
+ clkload2/Y
+ clkload3/Y
+ clkload4/Y
+ clkload5/Y
+ clkload6/Y
+ clkload7/Y
+ clkload8/Y
+ clkload9/Y
+Found 70 partially unannotated drivers.
+ boot_spi_macro/L_LO
+ boot_spi_macro_159/L_LO
+ output10/X
+ output11/X
+ output12/X
+ output13/X
+ output14/X
+ output15/X
+ output16/X
+ output17/X
+ output18/X
+ output19/X
+ output20/X
+ output21/X
+ output22/X
+ output23/X
+ output24/X
+ output25/X
+ output26/X
+ output27/X
+ output28/X
+ output29/X
+ output3/X
+ output30/X
+ output31/X
+ output32/X
+ output33/X
+ output34/X
+ output35/X
+ output36/X
+ output37/X
+ output38/X
+ output39/X
+ output4/X
+ output40/X
+ output41/X
+ output42/X
+ output43/X
+ output44/X
+ output45/X
+ output46/X
+ output47/X
+ output48/X
+ output49/X
+ output5/X
+ output50/X
+ output51/X
+ output52/X
+ output53/X
+ output54/X
+ output55/X
+ output56/X
+ output57/X
+ output58/X
+ output59/X
+ output6/X
+ output60/X
+ output61/X
+ output62/X
+ output63/X
+ output64/X
+ output65/X
+ output66/X
+ output67/X
+ output68/X
+ output69/X
+ output7/X
+ output70/X
+ output8/X
+ output9/X
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_typ_1p20V_25C: 0
+max fanout violation count 1
+Writing metric design__max_fanout_violation__count__corner:nom_typ_1p20V_25C: 1
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_typ_1p20V_25C: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There is 1 input port missing set_input_delay.
+  rst_ni
+Warning: There is 1 unconstrained endpoint.
+  _1388_/D
