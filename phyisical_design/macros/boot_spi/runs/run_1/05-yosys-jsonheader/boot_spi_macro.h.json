@@ -1,0 +1,4461 @@
+{
+  "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+  "modules": {
+    "boot_spi_macro": {
+      "attributes": {
+        "hdlname": "boot_spi_macro",
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:3.1-82.10"
+      },
+      "parameter_default_values": {
+        "ADDR_WIDTH": "00000000000000000000000000100000",
+        "CLK_DIV": "00000000000000000000000000001000",
+        "DATA_WIDTH": "00000000000000000000000000100000",
+        "FIRMWARE_WORDS": "00000000000000000000010000000000"
+      },
+      "ports": {
+        "clk_i": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_ni": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "cpu_rst_n": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "boot_we": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "boot_addr": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ]
+        },
+        "boot_wdata": {
+          "direction": "output",
+          "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ]
+        },
+        "spi_cs_n": {
+          "direction": "output",
+          "bits": [ 70 ]
+        },
+        "spi_sclk": {
+          "direction": "output",
+          "bits": [ 71 ]
+        },
+        "spi_mosi": {
+          "direction": "output",
+          "bits": [ 72 ]
+        },
+        "spi_miso": {
+          "direction": "input",
+          "bits": [ 73 ]
+        },
+        "boot_done": {
+          "direction": "output",
+          "bits": [ 74 ]
+        }
+      },
+      "cells": {
+        "$flatten\\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117$13": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117.37-117.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75, 76 ],
+            "B": [ "1" ],
+            "Y": [ 77, 78 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125$15": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125.38-125.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ],
+            "B": [ "1" ],
+            "Y": [ 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130$16": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130.25-130.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ],
+            "B": [ "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 143 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$18": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.33-154.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75, 76 ],
+            "B": [ "1", "1" ],
+            "Y": [ 144 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:163$20": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:163.21-163.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ],
+            "B": [ "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 145 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:181$21": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:181.27-181.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "0", "1" ],
+            "Y": [ 74 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$19": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.21-154.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 150 ],
+            "B": [ 144 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$303": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 152, 153, 154, 155 ],
+            "Q": [ 146, 147, 148, 149 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$304": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187 ],
+            "Q": [ 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$305": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 188, 189 ],
+            "Q": [ 75, 76 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$306": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221 ],
+            "Q": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$307": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 254 ],
+            "Q": [ 255 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$308": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 256, 257, 258, 259, 260, 261, 262, 263 ],
+            "Q": [ 264, 265, 266, 267, 268, 269, 270, 271 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$309": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 272 ],
+            "Q": [ 5 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$310": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304 ],
+            "Q": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$311": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336 ],
+            "Q": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$312": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 337 ],
+            "Q": [ 70 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procdff$313": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 338 ],
+            "Q": [ 4 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$121": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:163.21-163.51|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:163.17-167.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "1", "1", "0" ],
+            "B": [ "1", "0", "0", "1" ],
+            "S": [ 145 ],
+            "Y": [ 339, 340, 341, 342 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$123": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:161.47-161.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 339, 340, 341, 342 ],
+            "S": [ 343 ],
+            "Y": [ 344, 345, 346, 347 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$124_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:161.47-161.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "0", "1" ],
+            "Y": [ 343 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$130": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:156.30-156.38|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:156.26-158.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "S": [ 150 ],
+            "Y": [ 348, 349, 350, 351 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$133": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.21-154.49|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.17-158.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 348, 349, 350, 351 ],
+            "B": [ "x", "x", "x", "x" ],
+            "S": [ 151 ],
+            "Y": [ 352, 353, 354, 355 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$135": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.61-151.61|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 352, 353, 354, 355 ],
+            "S": [ 356 ],
+            "Y": [ 357, 358, 359, 360 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$136_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.61-151.61|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 356 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$142": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.21-154.49|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.17-158.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 357, 358, 359, 360 ],
+            "B": [ "1", "1", "1", "0" ],
+            "S": [ 151 ],
+            "Y": [ 361, 362, 363, 364 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$144": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.61-151.61|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 361, 362, 363, 364 ],
+            "S": [ 365 ],
+            "Y": [ 366, 367, 368, 369 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$145_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.61-151.61|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 365 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$152": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.32-151.40|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.28-151.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "S": [ 150 ],
+            "Y": [ 370, 371, 372, 373 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$154": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:150.63-150.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 370, 371, 372, 373 ],
+            "S": [ 374 ],
+            "Y": [ 375, 376, 377, 378 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$155_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:150.63-150.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "1", "0" ],
+            "Y": [ 374 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$163": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:150.32-150.40|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:150.28-150.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "1", "0" ],
+            "S": [ 150 ],
+            "Y": [ 379, 380, 381, 382 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$165": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:149.63-149.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 379, 380, 381, 382 ],
+            "S": [ 383 ],
+            "Y": [ 384, 385, 386, 387 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$166_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:149.63-149.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "1", "0" ],
+            "Y": [ 383 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$175": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:149.32-149.40|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:149.28-149.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "1", "0" ],
+            "S": [ 150 ],
+            "Y": [ 388, 389, 390, 391 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$177": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:148.63-148.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 388, 389, 390, 391 ],
+            "S": [ 392 ],
+            "Y": [ 393, 394, 395, 396 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$178_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:148.63-148.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "0", "0" ],
+            "Y": [ 392 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$188": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:148.32-148.40|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:148.28-148.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "0", "0" ],
+            "S": [ 150 ],
+            "Y": [ 397, 398, 399, 400 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$190": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:147.46-147.46|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x", "x", "x", "x" ],
+            "B": [ 397, 398, 399, 400 ],
+            "S": [ 401 ],
+            "Y": [ 402, 403, 404, 405 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$191_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:147.46-147.46|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "0", "0" ],
+            "Y": [ 401 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$193": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000001010",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:168.16-168.16|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "0", "1", 344, 345, 346, 347, "0", "0", "0", "1", 366, 367, 368, 369, 375, 376, 377, 378, 384, 385, 386, 387, 393, 394, 395, 396, 402, 403, 404, 405, "0", "1", "0", "0", "1", "0", "0", "0" ],
+            "S": [ 406, 407, 408, 409, 410, 411, 412, 413, 414, 415 ],
+            "Y": [ 416, 417, 418, 419 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$194_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:168.16-168.16|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "0", "1" ],
+            "Y": [ 406 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$195_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:161.47-161.47|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "0", "1" ],
+            "Y": [ 407 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$196_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:159.16-159.16|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 408 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$197_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:151.61-151.61|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 409 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$198_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:150.63-150.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "1", "0" ],
+            "Y": [ 410 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$199_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:149.63-149.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "1", "0" ],
+            "Y": [ 411 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$200_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:148.63-148.63|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "0", "0" ],
+            "Y": [ 412 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$201_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:147.46-147.46|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "0", "0" ],
+            "Y": [ 413 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$202_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:146.44-146.44|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "0", "0" ],
+            "Y": [ 414 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$203_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.21-145.21|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:145.9-171.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "Y": [ 415 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$206": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 420 ],
+            "Y": [ 421 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$207_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 420 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$209": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 421 ],
+            "S": [ 3 ],
+            "Y": [ 272 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$214": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000101",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1", "1", "1", "1", "1" ],
+            "S": [ 422, 423, 424, 425, 426 ],
+            "Y": [ 427 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$215_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 422 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$216_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:105.20-105.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "1", "0" ],
+            "Y": [ 423 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$217_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:100.20-100.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "1", "0" ],
+            "Y": [ 424 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$218_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:95.20-95.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "0", "0" ],
+            "Y": [ 425 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$219_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:90.20-90.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "0", "0" ],
+            "Y": [ 426 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$221": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 427 ],
+            "S": [ 3 ],
+            "Y": [ 254 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$224": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0" ],
+            "B": [ 416, 417, 418, 419 ],
+            "S": [ 3 ],
+            "Y": [ 152, 153, 154, 155 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$226": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:133.20-133.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ "1", "0" ],
+            "S": [ 428, 429 ],
+            "Y": [ 430 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$227_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:133.20-133.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "0", "1" ],
+            "Y": [ 428 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$228_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.25-84.25|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "Y": [ 429 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$230": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 430 ],
+            "S": [ 3 ],
+            "Y": [ 338 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$233": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130.25-130.55|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130.21-132.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ "1" ],
+            "S": [ 143 ],
+            "Y": [ 431 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$235": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:127.20-127.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ 431, "0" ],
+            "S": [ 432, 433 ],
+            "Y": [ 434 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$236_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:127.20-127.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "0", "1" ],
+            "Y": [ 432 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$237_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.25-84.25|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "Y": [ 433 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$239": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 434 ],
+            "S": [ 3 ],
+            "Y": [ 337 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$243": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
+            "B": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253 ],
+            "S": [ 435 ],
+            "Y": [ 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$244_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 435 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$246": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467 ],
+            "S": [ 3 ],
+            "Y": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$250": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+            "B": [ "0", "0", 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108 ],
+            "S": [ 468 ],
+            "Y": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$251_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 468 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$253": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500 ],
+            "S": [ 3 ],
+            "Y": [ 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$258": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000101",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 264, 265, 266, 267, 268, 269, 270, 271 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 501, 502, 503, 504, 505 ],
+            "Y": [ 506, 507, 508, 509, 510, 511, 512, 513 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$259_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 501 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$260_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:105.20-105.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "0", "1", "0" ],
+            "Y": [ 502 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$261_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:100.20-100.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "0", "1", "0" ],
+            "Y": [ 503 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$262_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:95.20-95.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "0", "0" ],
+            "Y": [ 504 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$263_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:90.20-90.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "0", "0" ],
+            "Y": [ 505 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$265": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 506, 507, 508, 509, 510, 511, 512, 513 ],
+            "S": [ 3 ],
+            "Y": [ 256, 257, 258, 259, 260, 261, 262, 263 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$270": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:115.25-115.33|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:115.21-118.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253 ],
+            "B": [ 514, 515, 516, 517, 518, 519, 520, 521, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+            "S": [ 150 ],
+            "Y": [ 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$272": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253 ],
+            "B": [ 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553 ],
+            "S": [ 554 ],
+            "Y": [ 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$273_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 554 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$275": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586 ],
+            "S": [ 3 ],
+            "Y": [ 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$279": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75, 76 ],
+            "B": [ "0", "0", 587, 588, "0", "0" ],
+            "S": [ 589, 590, 591 ],
+            "Y": [ 592, 593 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$280_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 589 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$281": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:115.25-115.33|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:115.21-118.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75, 76 ],
+            "B": [ 77, 78 ],
+            "S": [ 150 ],
+            "Y": [ 587, 588 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$283_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:110.20-110.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "0", "1", "1", "0" ],
+            "Y": [ 590 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$284_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.25-84.25|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "Y": [ 591 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$286": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0" ],
+            "B": [ 592, 593 ],
+            "S": [ 3 ],
+            "Y": [ 188, 189 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$290": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ],
+            "B": [ 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 594, 595 ],
+            "Y": [ 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$291_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:119.20-119.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 594 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$292_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.25-84.25|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:84.13-138.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146, 147, 148, 149 ],
+            "Y": [ 595 ]
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$294": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.13-65.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:65.9-139.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627 ],
+            "S": [ 3 ],
+            "Y": [ 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187 ]
+          }
+        },
+        "$flatten\\u_spi.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63$10": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63.32-63.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 628, 629, 630, 631 ],
+            "B": [ "1" ],
+            "Y": [ 632, 633, 634, 635 ]
+          }
+        },
+        "$flatten\\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46$5": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 628, 629, 630, 631 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 636 ]
+          }
+        },
+        "$flatten\\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57$9": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57.29-57.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 637, 638, 639, 640 ],
+            "B": [ "1", "0", "0", "0" ],
+            "Y": [ 641 ]
+          }
+        },
+        "$flatten\\u_spi.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39$4": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 255 ],
+            "B": [ 642 ],
+            "Y": [ 643 ]
+          }
+        },
+        "$flatten\\u_spi.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39$3": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.26-39.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 644 ],
+            "Y": [ 642 ]
+          }
+        },
+        "$flatten\\u_spi.$not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:48$6": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:48.32-48.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "Y": [ 645 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$296": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 646 ],
+            "Q": [ 150 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$297": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 647, 648, 649, 650 ],
+            "Q": [ 628, 629, 630, 631 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$298": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 651, 652, 653, 654 ],
+            "Q": [ 637, 638, 639, 640 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$299": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 655, 656, 657, 658, 659, 660, 661, 662 ],
+            "Q": [ 663, 664, 665, 666, 667, 668, 669, 72 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$300": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 670, 671, 672, 673, 674, 675, 676, 677 ],
+            "Q": [ 514, 515, 516, 517, 518, 519, 520, 521 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$301": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 678 ],
+            "Q": [ 71 ]
+          }
+        },
+        "$flatten\\u_spi.$procdff$302": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 679 ],
+            "Q": [ 644 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$102": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 680, 681, 682, 683 ],
+            "B": [ "0", "0", "0", "1" ],
+            "S": [ 643 ],
+            "Y": [ 684, 685, 686, 687 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$105": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0" ],
+            "B": [ 684, 685, 686, 687 ],
+            "S": [ 3 ],
+            "Y": [ 651, 652, 653, 654 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$108": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 632, 633, 634, 635 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 636 ],
+            "Y": [ 688, 689, 690, 691 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$110": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 628, 629, 630, 631 ],
+            "B": [ 688, 689, 690, 691 ],
+            "S": [ 644 ],
+            "Y": [ 692, 693, 694, 695 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$113": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 692, 693, 694, 695 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 643 ],
+            "Y": [ 696, 697, 698, 699 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$116": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0" ],
+            "B": [ 696, 697, 698, 699 ],
+            "S": [ 3 ],
+            "Y": [ 647, 648, 649, 650 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$23": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57.29-57.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57.25-60.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 641 ],
+            "Y": [ 700 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$26": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.25-50.39|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.21-61.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 700 ],
+            "S": [ 71 ],
+            "Y": [ 701 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$28": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 701 ],
+            "S": [ 636 ],
+            "Y": [ 702 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$30": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 702 ],
+            "S": [ 644 ],
+            "Y": [ 703 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$33": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 703 ],
+            "B": [ "0" ],
+            "S": [ 643 ],
+            "Y": [ 704 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$36": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 704 ],
+            "S": [ 3 ],
+            "Y": [ 646 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$39": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57.29-57.41|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57.25-60.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 644 ],
+            "B": [ "0" ],
+            "S": [ 641 ],
+            "Y": [ 705 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$42": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.25-50.39|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.21-61.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 644 ],
+            "B": [ 705 ],
+            "S": [ 71 ],
+            "Y": [ 706 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$44": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 644 ],
+            "B": [ 706 ],
+            "S": [ 636 ],
+            "Y": [ 707 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$46": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 644 ],
+            "B": [ 707 ],
+            "S": [ 644 ],
+            "Y": [ 708 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$49": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 708 ],
+            "B": [ "1" ],
+            "S": [ 643 ],
+            "Y": [ 709 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$52": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 709 ],
+            "S": [ 3 ],
+            "Y": [ 679 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$55": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "B": [ 645 ],
+            "S": [ 636 ],
+            "Y": [ 710 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "B": [ 710 ],
+            "S": [ 644 ],
+            "Y": [ 711 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$60": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 711 ],
+            "B": [ "0" ],
+            "S": [ 643 ],
+            "Y": [ 712 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$63": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 712 ],
+            "S": [ 3 ],
+            "Y": [ 678 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$67": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.25-50.39|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.21-61.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73, 514, 515, 516, 517, 518, 519, 520 ],
+            "B": [ 514, 515, 516, 517, 518, 519, 520, 521 ],
+            "S": [ 71 ],
+            "Y": [ 713, 714, 715, 716, 717, 718, 719, 720 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$69": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 514, 515, 516, 517, 518, 519, 520, 521 ],
+            "B": [ 713, 714, 715, 716, 717, 718, 719, 720 ],
+            "S": [ 636 ],
+            "Y": [ 721, 722, 723, 724, 725, 726, 727, 728 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$71": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 514, 515, 516, 517, 518, 519, 520, 521 ],
+            "B": [ 721, 722, 723, 724, 725, 726, 727, 728 ],
+            "S": [ 644 ],
+            "Y": [ 729, 730, 731, 732, 733, 734, 735, 736 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$74": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 729, 730, 731, 732, 733, 734, 735, 736 ],
+            "B": [ 514, 515, 516, 517, 518, 519, 520, 521 ],
+            "S": [ 643 ],
+            "Y": [ 737, 738, 739, 740, 741, 742, 743, 744 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$77": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 737, 738, 739, 740, 741, 742, 743, 744 ],
+            "S": [ 3 ],
+            "Y": [ 670, 671, 672, 673, 674, 675, 676, 677 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$81": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.25-50.39|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.21-61.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 663, 664, 665, 666, 667, 668, 669, 72 ],
+            "B": [ "0", 663, 664, 665, 666, 667, 668, 669 ],
+            "S": [ 71 ],
+            "Y": [ 745, 746, 747, 748, 749, 750, 751, 752 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$83": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 663, 664, 665, 666, 667, 668, 669, 72 ],
+            "B": [ 745, 746, 747, 748, 749, 750, 751, 752 ],
+            "S": [ 636 ],
+            "Y": [ 753, 754, 755, 756, 757, 758, 759, 760 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$85": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 663, 664, 665, 666, 667, 668, 669, 72 ],
+            "B": [ 753, 754, 755, 756, 757, 758, 759, 760 ],
+            "S": [ 644 ],
+            "Y": [ 761, 762, 763, 764, 765, 766, 767, 768 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$88": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.13-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 761, 762, 763, 764, 765, 766, 767, 768 ],
+            "B": [ 264, 265, 266, 267, 268, 269, 270, 271 ],
+            "S": [ 643 ],
+            "Y": [ 769, 770, 771, 772, 773, 774, 775, 776 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$91": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.13-28.20|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:28.9-66.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 769, 770, 771, 772, 773, 774, 775, 776 ],
+            "S": [ 3 ],
+            "Y": [ 655, 656, 657, 658, 659, 660, 661, 662 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$95": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.25-50.39|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:50.21-61.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 637, 638, 639, 640 ],
+            "B": [ 777, 778, 779, 780 ],
+            "S": [ 71 ],
+            "Y": [ 781, 782, 783, 784 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$97": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.17-64.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 637, 638, 639, 640 ],
+            "B": [ 781, 782, 783, 784 ],
+            "S": [ 636 ],
+            "Y": [ 785, 786, 787, 788 ]
+          }
+        },
+        "$flatten\\u_spi.$procmux$99": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.26-45.30|/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:45.22-65.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 637, 638, 639, 640 ],
+            "B": [ 785, 786, 787, 788 ],
+            "S": [ 644 ],
+            "Y": [ 680, 681, 682, 683 ]
+          }
+        },
+        "$flatten\\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8": {
+          "hide_name": 1,
+          "type": "$sub",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56.37-56.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 637, 638, 639, 640 ],
+            "B": [ "1" ],
+            "Y": [ 777, 778, 779, 780 ]
+          }
+        }
+      },
+      "netnames": {
+        "$flatten\\u_boot_ctrl.$0\\byte_cnt[1:0]": {
+          "hide_name": 1,
+          "bits": [ 188, 189 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\cpu_rst_n_q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 338 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\ram_b_addr_q[31:0]": {
+          "hide_name": 1,
+          "bits": [ 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\ram_b_wdata_q[31:0]": {
+          "hide_name": 1,
+          "bits": [ 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\ram_b_we_q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 272 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\spi_cs_n_q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 337 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\spi_start_q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 254 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\spi_tx_q[7:0]": {
+          "hide_name": 1,
+          "bits": [ 256, 257, 258, 259, 260, 261, 262, 263 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\state[3:0]": {
+          "hide_name": 1,
+          "bits": [ 152, 153, 154, 155 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\word_asm[31:0]": {
+          "hide_name": 1,
+          "bits": [ 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$0\\word_cnt[31:0]": {
+          "hide_name": 1,
+          "bits": [ 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:64.5-140.8"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$2\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 402, 403, 404, 405 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$3\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 393, 394, 395, 396 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$4\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 384, 385, 386, 387 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$5\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 375, 376, 377, 378 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$6\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 366, 367, 368, 369 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$7\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 357, 358, 359, 360 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$8\\next[3:0]": {
+          "hide_name": 1,
+          "bits": [ 344, 345, 346, 347 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:143.16-143.16"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117$13_Y": {
+          "hide_name": 1,
+          "bits": [ 77, 78 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:117.37-117.52"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125$15_Y": {
+          "hide_name": 1,
+          "bits": [ 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:125.38-125.53"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130$16_Y": {
+          "hide_name": 1,
+          "bits": [ 143 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:130.25-130.55"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$18_Y": {
+          "hide_name": 1,
+          "bits": [ 144 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.33-154.49"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:163$20_Y": {
+          "hide_name": 1,
+          "bits": [ 145 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:163.21-163.51"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154$19_Y": {
+          "hide_name": 1,
+          "bits": [ 151 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:154.21-154.49"
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$121_Y": {
+          "hide_name": 1,
+          "bits": [ 339, 340, 341, 342 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$124_CMP": {
+          "hide_name": 1,
+          "bits": [ 343 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$130_Y": {
+          "hide_name": 1,
+          "bits": [ 348, 349, 350, 351 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$133_Y": {
+          "hide_name": 1,
+          "bits": [ 352, 353, 354, 355 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$136_CMP": {
+          "hide_name": 1,
+          "bits": [ 356 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$142_Y": {
+          "hide_name": 1,
+          "bits": [ 361, 362, 363, 364 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$145_CMP": {
+          "hide_name": 1,
+          "bits": [ 365 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$152_Y": {
+          "hide_name": 1,
+          "bits": [ 370, 371, 372, 373 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$155_CMP": {
+          "hide_name": 1,
+          "bits": [ 374 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$163_Y": {
+          "hide_name": 1,
+          "bits": [ 379, 380, 381, 382 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$166_CMP": {
+          "hide_name": 1,
+          "bits": [ 383 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$175_Y": {
+          "hide_name": 1,
+          "bits": [ 388, 389, 390, 391 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$178_CMP": {
+          "hide_name": 1,
+          "bits": [ 392 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$188_Y": {
+          "hide_name": 1,
+          "bits": [ 397, 398, 399, 400 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$191_CMP": {
+          "hide_name": 1,
+          "bits": [ 401 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$194_CMP": {
+          "hide_name": 1,
+          "bits": [ 406 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$195_CMP": {
+          "hide_name": 1,
+          "bits": [ 407 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$196_CMP": {
+          "hide_name": 1,
+          "bits": [ 408 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$197_CMP": {
+          "hide_name": 1,
+          "bits": [ 409 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$198_CMP": {
+          "hide_name": 1,
+          "bits": [ 410 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$199_CMP": {
+          "hide_name": 1,
+          "bits": [ 411 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$200_CMP": {
+          "hide_name": 1,
+          "bits": [ 412 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$201_CMP": {
+          "hide_name": 1,
+          "bits": [ 413 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$202_CMP": {
+          "hide_name": 1,
+          "bits": [ 414 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$203_CMP": {
+          "hide_name": 1,
+          "bits": [ 415 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$206_Y": {
+          "hide_name": 1,
+          "bits": [ 421 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$207_CMP": {
+          "hide_name": 1,
+          "bits": [ 420 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$214_Y": {
+          "hide_name": 1,
+          "bits": [ 427 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$215_CMP": {
+          "hide_name": 1,
+          "bits": [ 422 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$216_CMP": {
+          "hide_name": 1,
+          "bits": [ 423 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$217_CMP": {
+          "hide_name": 1,
+          "bits": [ 424 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$218_CMP": {
+          "hide_name": 1,
+          "bits": [ 425 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$219_CMP": {
+          "hide_name": 1,
+          "bits": [ 426 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$226_Y": {
+          "hide_name": 1,
+          "bits": [ 430 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$227_CMP": {
+          "hide_name": 1,
+          "bits": [ 428 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$228_CMP": {
+          "hide_name": 1,
+          "bits": [ 429 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$233_Y": {
+          "hide_name": 1,
+          "bits": [ 431 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$235_Y": {
+          "hide_name": 1,
+          "bits": [ 434 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$236_CMP": {
+          "hide_name": 1,
+          "bits": [ 432 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$237_CMP": {
+          "hide_name": 1,
+          "bits": [ 433 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$243_Y": {
+          "hide_name": 1,
+          "bits": [ 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$244_CMP": {
+          "hide_name": 1,
+          "bits": [ 435 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$250_Y": {
+          "hide_name": 1,
+          "bits": [ 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$251_CMP": {
+          "hide_name": 1,
+          "bits": [ 468 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$258_Y": {
+          "hide_name": 1,
+          "bits": [ 506, 507, 508, 509, 510, 511, 512, 513 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$259_CMP": {
+          "hide_name": 1,
+          "bits": [ 501 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$260_CMP": {
+          "hide_name": 1,
+          "bits": [ 502 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$261_CMP": {
+          "hide_name": 1,
+          "bits": [ 503 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$262_CMP": {
+          "hide_name": 1,
+          "bits": [ 504 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$263_CMP": {
+          "hide_name": 1,
+          "bits": [ 505 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$270_Y": {
+          "hide_name": 1,
+          "bits": [ 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$272_Y": {
+          "hide_name": 1,
+          "bits": [ 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$273_CMP": {
+          "hide_name": 1,
+          "bits": [ 554 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$279_Y": {
+          "hide_name": 1,
+          "bits": [ 592, 593 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$280_CMP": {
+          "hide_name": 1,
+          "bits": [ 589 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$281_Y": {
+          "hide_name": 1,
+          "bits": [ 587, 588 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$283_CMP": {
+          "hide_name": 1,
+          "bits": [ 590 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$284_CMP": {
+          "hide_name": 1,
+          "bits": [ 591 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$290_Y": {
+          "hide_name": 1,
+          "bits": [ 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$291_CMP": {
+          "hide_name": 1,
+          "bits": [ 594 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_boot_ctrl.$procmux$292_CMP": {
+          "hide_name": 1,
+          "bits": [ 595 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$0\\bit_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 651, 652, 653, 654 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\busy[0:0]": {
+          "hide_name": 1,
+          "bits": [ 679 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\div_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 647, 648, 649, 650 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\done[0:0]": {
+          "hide_name": 1,
+          "bits": [ 646 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\rx_shift[7:0]": {
+          "hide_name": 1,
+          "bits": [ 670, 671, 672, 673, 674, 675, 676, 677 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\sclk_r[0:0]": {
+          "hide_name": 1,
+          "bits": [ 678 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$0\\tx_shift[7:0]": {
+          "hide_name": 1,
+          "bits": [ 655, 656, 657, 658, 659, 660, 661, 662 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:27.5-67.8"
+          }
+        },
+        "$flatten\\u_spi.$add$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63$10_Y": {
+          "hide_name": 1,
+          "bits": [ 632, 633, 634, 635 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:63.32-63.46"
+          }
+        },
+        "$flatten\\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46$5_Y": {
+          "hide_name": 1,
+          "bits": [ 636 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:46.21-46.43"
+          }
+        },
+        "$flatten\\u_spi.$eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57$9_Y": {
+          "hide_name": 1,
+          "bits": [ 641 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:57.29-57.41"
+          }
+        },
+        "$flatten\\u_spi.$logic_and$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39$4_Y": {
+          "hide_name": 1,
+          "bits": [ 643 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.17-39.31"
+          }
+        },
+        "$flatten\\u_spi.$logic_not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39$3_Y": {
+          "hide_name": 1,
+          "bits": [ 642 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:39.26-39.31"
+          }
+        },
+        "$flatten\\u_spi.$not$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:48$6_Y": {
+          "hide_name": 1,
+          "bits": [ 645 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:48.32-48.39"
+          }
+        },
+        "$flatten\\u_spi.$procmux$102_Y": {
+          "hide_name": 1,
+          "bits": [ 684, 685, 686, 687 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$108_Y": {
+          "hide_name": 1,
+          "bits": [ 688, 689, 690, 691 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$110_Y": {
+          "hide_name": 1,
+          "bits": [ 692, 693, 694, 695 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$113_Y": {
+          "hide_name": 1,
+          "bits": [ 696, 697, 698, 699 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$23_Y": {
+          "hide_name": 1,
+          "bits": [ 700 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$26_Y": {
+          "hide_name": 1,
+          "bits": [ 701 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$28_Y": {
+          "hide_name": 1,
+          "bits": [ 702 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$30_Y": {
+          "hide_name": 1,
+          "bits": [ 703 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$33_Y": {
+          "hide_name": 1,
+          "bits": [ 704 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$39_Y": {
+          "hide_name": 1,
+          "bits": [ 705 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$42_Y": {
+          "hide_name": 1,
+          "bits": [ 706 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$44_Y": {
+          "hide_name": 1,
+          "bits": [ 707 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$46_Y": {
+          "hide_name": 1,
+          "bits": [ 708 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$49_Y": {
+          "hide_name": 1,
+          "bits": [ 709 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$55_Y": {
+          "hide_name": 1,
+          "bits": [ 710 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$57_Y": {
+          "hide_name": 1,
+          "bits": [ 711 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$60_Y": {
+          "hide_name": 1,
+          "bits": [ 712 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$67_Y": {
+          "hide_name": 1,
+          "bits": [ 713, 714, 715, 716, 717, 718, 719, 720 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$69_Y": {
+          "hide_name": 1,
+          "bits": [ 721, 722, 723, 724, 725, 726, 727, 728 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$71_Y": {
+          "hide_name": 1,
+          "bits": [ 729, 730, 731, 732, 733, 734, 735, 736 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$74_Y": {
+          "hide_name": 1,
+          "bits": [ 737, 738, 739, 740, 741, 742, 743, 744 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$81_Y": {
+          "hide_name": 1,
+          "bits": [ 745, 746, 747, 748, 749, 750, 751, 752 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$83_Y": {
+          "hide_name": 1,
+          "bits": [ 753, 754, 755, 756, 757, 758, 759, 760 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$85_Y": {
+          "hide_name": 1,
+          "bits": [ 761, 762, 763, 764, 765, 766, 767, 768 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$88_Y": {
+          "hide_name": 1,
+          "bits": [ 769, 770, 771, 772, 773, 774, 775, 776 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$95_Y": {
+          "hide_name": 1,
+          "bits": [ 781, 782, 783, 784 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$97_Y": {
+          "hide_name": 1,
+          "bits": [ 785, 786, 787, 788 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$procmux$99_Y": {
+          "hide_name": 1,
+          "bits": [ 680, 681, 682, 683 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_spi.$sub$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56$8_Y": {
+          "hide_name": 1,
+          "bits": [ 777, 778, 779, 780 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:56.37-56.51"
+          }
+        },
+        "boot_addr": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:17.35-17.44"
+          }
+        },
+        "boot_done": {
+          "hide_name": 0,
+          "bits": [ 74 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:27.18-27.27"
+          }
+        },
+        "boot_wdata": {
+          "hide_name": 0,
+          "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:18.35-18.45"
+          }
+        },
+        "boot_we": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:16.35-16.42"
+          }
+        },
+        "clk_i": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:9.17-9.22"
+          }
+        },
+        "cpu_rst_n": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:13.18-13.27"
+          }
+        },
+        "rst_ni": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:10.17-10.23"
+          }
+        },
+        "spi_cs_n": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:21.18-21.26"
+          }
+        },
+        "spi_done": {
+          "hide_name": 0,
+          "bits": [ 150 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:33.17-33.25"
+          }
+        },
+        "spi_miso": {
+          "hide_name": 0,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:24.19-24.27"
+          }
+        },
+        "spi_mosi": {
+          "hide_name": 0,
+          "bits": [ 72 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:23.18-23.26"
+          }
+        },
+        "spi_rx": {
+          "hide_name": 0,
+          "bits": [ 514, 515, 516, 517, 518, 519, 520, 521 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:32.17-32.23"
+          }
+        },
+        "spi_sclk": {
+          "hide_name": 0,
+          "bits": [ 71 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:22.18-22.26"
+          }
+        },
+        "spi_start": {
+          "hide_name": 0,
+          "bits": [ 255 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:30.17-30.26"
+          }
+        },
+        "spi_tx": {
+          "hide_name": 0,
+          "bits": [ 264, 265, 266, 267, 268, 269, 270, 271 ],
+          "attributes": {
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/boot_spi_macro.sv:31.17-31.23"
+          }
+        },
+        "u_boot_ctrl.byte_cnt": {
+          "hide_name": 0,
+          "bits": [ 75, 76 ],
+          "attributes": {
+            "hdlname": "u_boot_ctrl byte_cnt",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:50.18-50.26"
+          }
+        },
+        "u_boot_ctrl.next": {
+          "hide_name": 0,
+          "bits": [ 416, 417, 418, 419 ],
+          "attributes": {
+            "enum_type": "$enum0",
+            "enum_value_0000": "\\S_IDLE",
+            "enum_value_0001": "\\S_CS_LOW",
+            "enum_value_0010": "\\S_SEND_CMD",
+            "enum_value_0011": "\\S_SEND_ADDR_H",
+            "enum_value_0100": "\\S_SEND_ADDR_M",
+            "enum_value_0101": "\\S_SEND_ADDR_L",
+            "enum_value_0110": "\\S_READ_BYTE",
+            "enum_value_0111": "\\S_WRITE_RAM",
+            "enum_value_1000": "\\S_NEXT_WORD",
+            "enum_value_1001": "\\S_DONE",
+            "hdlname": "u_boot_ctrl next",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:47.20-47.24",
+            "wiretype": "\\state_t"
+          }
+        },
+        "u_boot_ctrl.state": {
+          "hide_name": 0,
+          "bits": [ 146, 147, 148, 149 ],
+          "attributes": {
+            "enum_type": "$enum0",
+            "enum_value_0000": "\\S_IDLE",
+            "enum_value_0001": "\\S_CS_LOW",
+            "enum_value_0010": "\\S_SEND_CMD",
+            "enum_value_0011": "\\S_SEND_ADDR_H",
+            "enum_value_0100": "\\S_SEND_ADDR_M",
+            "enum_value_0101": "\\S_SEND_ADDR_L",
+            "enum_value_0110": "\\S_READ_BYTE",
+            "enum_value_0111": "\\S_WRITE_RAM",
+            "enum_value_1000": "\\S_NEXT_WORD",
+            "enum_value_1001": "\\S_DONE",
+            "hdlname": "u_boot_ctrl state",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:47.13-47.18",
+            "wiretype": "\\state_t"
+          }
+        },
+        "u_boot_ctrl.word_asm": {
+          "hide_name": 0,
+          "bits": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253 ],
+          "attributes": {
+            "hdlname": "u_boot_ctrl word_asm",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:51.18-51.26"
+          }
+        },
+        "u_boot_ctrl.word_cnt": {
+          "hide_name": 0,
+          "bits": [ 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110 ],
+          "attributes": {
+            "hdlname": "u_boot_ctrl word_cnt",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/boot_ctrl.sv:49.18-49.26"
+          }
+        },
+        "u_spi.bit_cnt": {
+          "hide_name": 0,
+          "bits": [ 637, 638, 639, 640 ],
+          "attributes": {
+            "hdlname": "u_spi bit_cnt",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:21.17-21.24"
+          }
+        },
+        "u_spi.busy": {
+          "hide_name": 0,
+          "bits": [ 644 ],
+          "attributes": {
+            "hdlname": "u_spi busy",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:25.17-25.21"
+          }
+        },
+        "u_spi.div_cnt": {
+          "hide_name": 0,
+          "bits": [ 628, 629, 630, 631 ],
+          "attributes": {
+            "hdlname": "u_spi div_cnt",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:20.17-20.24"
+          }
+        },
+        "u_spi.tx_shift": {
+          "hide_name": 0,
+          "bits": [ 663, 664, 665, 666, 667, 668, 669, 72 ],
+          "attributes": {
+            "hdlname": "u_spi tx_shift",
+            "src": "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/spi_master.sv:22.17-22.25"
+          }
+        }
+      }
+    }
+  }
+}
