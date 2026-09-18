@@ -2,6 +2,7 @@
   "DESIGN_NAME": "boot_spi_macro",
   "PDK": "ihp-sg13g2",
   "STD_CELL_LIBRARY": "sg13g2_stdcell",
+
   "PDN_MULTILAYER": true,
 
   "VERILOG_FILES": [
@@ -24,7 +25,7 @@
   "SYNTH_MAX_FANOUT": 16,
 
   "CTS_SINK_CLUSTERING_ENABLE": true,
-  "CTS_SINK_CLUSTERING_SIZE": 2,
+  "CTS_SINK_CLUSTERING_SIZE": 4,
 
   "VDD_NETS": [
     "VDD"

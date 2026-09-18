@@ -1,3 +1,7 @@
+# ============================================================
+# Clock
+# ============================================================
+
 create_clock -name clk_i \
     -period 10.0 \
     -waveform {0.0 5.0} \
@@ -12,8 +16,11 @@ set_clock_transition 0.2 [get_clocks clk_i]
 # SPI input
 # ============================================================
 
-set_input_delay -clock clk_i -max 2.0 [get_ports spi_miso]
-set_input_delay -clock clk_i -min 0.0 [get_ports spi_miso]
+set_input_delay -clock clk_i -max 2.0 \
+    [get_ports spi_miso]
+
+set_input_delay -clock clk_i -min 0.0 \
+    [get_ports spi_miso]
 
 set_driving_cell \
     -lib_cell sg13g2_buf_4 \
@@ -22,7 +29,7 @@ set_driving_cell \
 
 
 # ============================================================
-# Boot RAM write interface
+# RAM boot-write outputs
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 [get_ports {
@@ -48,8 +55,11 @@ set_load 0.05 [get_ports {
 # CPU reset output
 # ============================================================
 
-set_output_delay -clock clk_i -max 2.0 [get_ports cpu_rst_n]
-set_output_delay -clock clk_i -min 0.0 [get_ports cpu_rst_n]
+set_output_delay -clock clk_i -max 2.0 \
+    [get_ports cpu_rst_n]
+
+set_output_delay -clock clk_i -min 0.0 \
+    [get_ports cpu_rst_n]
 
 set_load 0.05 [get_ports cpu_rst_n]
 
@@ -81,8 +91,11 @@ set_load 0.05 [get_ports {
 # Boot status
 # ============================================================
 
-set_output_delay -clock clk_i -max 2.0 [get_ports boot_done]
-set_output_delay -clock clk_i -min 0.0 [get_ports boot_done]
+set_output_delay -clock clk_i -max 2.0 \
+    [get_ports boot_done]
+
+set_output_delay -clock clk_i -min 0.0 \
+    [get_ports boot_done]
 
 set_load 0.05 [get_ports boot_done]
 
