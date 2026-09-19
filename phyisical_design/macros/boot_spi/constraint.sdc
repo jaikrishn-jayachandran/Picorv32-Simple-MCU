@@ -29,7 +29,7 @@ set_driving_cell \
 
 
 # ============================================================
-# BOOT RAM WRITE INTERFACE
+# RAM BOOT-WRITE OUTPUTS
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 [get_ports {
@@ -52,7 +52,7 @@ set_load 0.05 [get_ports {
 
 
 # ============================================================
-# CPU RESET OUTPUT
+# CPU RESET
 # ============================================================
 
 set_output_delay -clock clk_i -max 2.0 \
