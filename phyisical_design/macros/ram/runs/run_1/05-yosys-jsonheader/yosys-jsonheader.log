@@ -1,0 +1,278 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/475ef9b7284442a5b2c3c64310d1971e.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/475ef9b7284442a5b2c3c64310d1971e.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_a21o_1'.
+Generating RTLIL representation for module `\sg13g2_a21o_2'.
+Generating RTLIL representation for module `\sg13g2_a21oi_1'.
+Generating RTLIL representation for module `\sg13g2_a21oi_2'.
+Generating RTLIL representation for module `\sg13g2_a221oi_1'.
+Generating RTLIL representation for module `\sg13g2_a22oi_1'.
+Generating RTLIL representation for module `\sg13g2_and2_1'.
+Generating RTLIL representation for module `\sg13g2_and2_2'.
+Generating RTLIL representation for module `\sg13g2_and3_1'.
+Generating RTLIL representation for module `\sg13g2_and3_2'.
+Generating RTLIL representation for module `\sg13g2_and4_1'.
+Generating RTLIL representation for module `\sg13g2_and4_2'.
+Generating RTLIL representation for module `\sg13g2_antennanp'.
+Generating RTLIL representation for module `\sg13g2_buf_1'.
+Generating RTLIL representation for module `\sg13g2_buf_16'.
+Generating RTLIL representation for module `\sg13g2_buf_2'.
+Generating RTLIL representation for module `\sg13g2_buf_4'.
+Generating RTLIL representation for module `\sg13g2_buf_8'.
+Generating RTLIL representation for module `\sg13g2_decap_4'.
+Generating RTLIL representation for module `\sg13g2_decap_8'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_dlhq_1'.
+Generating RTLIL representation for module `\sg13g2_dlhr_1'.
+Generating RTLIL representation for module `\sg13g2_dlhrq_1'.
+Generating RTLIL representation for module `\sg13g2_dllr_1'.
+Generating RTLIL representation for module `\sg13g2_dllrq_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd1_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd2_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd3_1'.
+Generating RTLIL representation for module `\sg13g2_ebufn_2'.
+Generating RTLIL representation for module `\sg13g2_ebufn_4'.
+Generating RTLIL representation for module `\sg13g2_ebufn_8'.
+Generating RTLIL representation for module `\sg13g2_einvn_2'.
+Generating RTLIL representation for module `\sg13g2_einvn_4'.
+Generating RTLIL representation for module `\sg13g2_einvn_8'.
+Generating RTLIL representation for module `\sg13g2_fill_1'.
+Generating RTLIL representation for module `\sg13g2_fill_2'.
+Generating RTLIL representation for module `\sg13g2_fill_4'.
+Generating RTLIL representation for module `\sg13g2_fill_8'.
+Generating RTLIL representation for module `\sg13g2_inv_1'.
+Generating RTLIL representation for module `\sg13g2_inv_16'.
+Generating RTLIL representation for module `\sg13g2_inv_2'.
+Generating RTLIL representation for module `\sg13g2_inv_4'.
+Generating RTLIL representation for module `\sg13g2_inv_8'.
+Generating RTLIL representation for module `\sg13g2_lgcp_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_2'.
+Generating RTLIL representation for module `\sg13g2_mux4_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_2'.
+Generating RTLIL representation for module `\sg13g2_nand2b_1'.
+Generating RTLIL representation for module `\sg13g2_nand2b_2'.
+Generating RTLIL representation for module `\sg13g2_nand3_1'.
+Generating RTLIL representation for module `\sg13g2_nand3b_1'.
+Generating RTLIL representation for module `\sg13g2_nand4_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_2'.
+Generating RTLIL representation for module `\sg13g2_nor2b_1'.
+Generating RTLIL representation for module `\sg13g2_nor2b_2'.
+Generating RTLIL representation for module `\sg13g2_nor3_1'.
+Generating RTLIL representation for module `\sg13g2_nor3_2'.
+Generating RTLIL representation for module `\sg13g2_nor4_1'.
+Generating RTLIL representation for module `\sg13g2_nor4_2'.
+Generating RTLIL representation for module `\sg13g2_o21ai_1'.
+Generating RTLIL representation for module `\sg13g2_or2_1'.
+Generating RTLIL representation for module `\sg13g2_or2_2'.
+Generating RTLIL representation for module `\sg13g2_or3_1'.
+Generating RTLIL representation for module `\sg13g2_or3_2'.
+Generating RTLIL representation for module `\sg13g2_or4_1'.
+Generating RTLIL representation for module `\sg13g2_or4_2'.
+Generating RTLIL representation for module `\sg13g2_sdfbbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_sighold'.
+Generating RTLIL representation for module `\sg13g2_slgcp_1'.
+Generating RTLIL representation for module `\sg13g2_tiehi'.
+Generating RTLIL representation for module `\sg13g2_tielo'.
+Generating RTLIL representation for module `\sg13g2_xnor2_1'.
+Generating RTLIL representation for module `\sg13g2_xor2_1'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/bedd45d5ecdb417d8e97505ff23e4f6f.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/bedd45d5ecdb417d8e97505ff23e4f6f.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_Corner'.
+Generating RTLIL representation for module `\sg13g2_Filler1000'.
+Generating RTLIL representation for module `\sg13g2_Filler10000'.
+Generating RTLIL representation for module `\sg13g2_Filler200'.
+Generating RTLIL representation for module `\sg13g2_Filler2000'.
+Generating RTLIL representation for module `\sg13g2_Filler400'.
+Generating RTLIL representation for module `\sg13g2_Filler4000'.
+Generating RTLIL representation for module `\sg13g2_IOPadAnalog'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVss'.
+Generating RTLIL representation for module `\sg13g2_IOPadIn'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadVss'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v' to AST representation.
+Generating RTLIL representation for module `\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\ram_macro'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v' to AST representation.
+Storing AST representation for module `$abstract\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+7. Executing AST frontend in derive mode using pre-parsed AST for module `\ram_macro'.
+Generating RTLIL representation for module `\ram_macro'.
+
+7.1. Analyzing design hierarchy..
+Top module:  \ram_macro
+
+7.2. Analyzing design hierarchy..
+Top module:  \ram_macro
+Removing unused module `$abstract\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Removing unused module `$abstract\ram_macro'.
+Removed 2 unused modules.
+Renaming module ram_macro to ram_macro.
+
+8. Executing PROC pass (convert processes to netlists).
+
+8.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41 in module ram_macro.
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39 in module ram_macro.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18 in module ram_macro.
+Removed a total of 0 dead cases.
+
+8.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 10 assignments to connections.
+
+8.4. Executing PROC_INIT pass (extract init attributes).
+
+8.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+
+8.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~17 debug messages>
+
+8.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+     1/12: $0\read_addr_q[9:0]
+     2/12: $0\read_state_q[1:0]
+     3/12: $0\wstrb_q[3:0]
+     4/12: $0\wdata_q[31:0]
+     5/12: $0\w_pending_q[0:0]
+     6/12: $0\awaddr_q[31:0]
+     7/12: $0\aw_pending_q[0:0]
+     8/12: $0\s_axil_rvalid[0:0]
+     9/12: $0\s_axil_rresp[1:0]
+    10/12: $0\s_axil_rdata[31:0]
+    11/12: $0\s_axil_bvalid[0:0]
+    12/12: $0\s_axil_bresp[1:0]
+Creating decoders for process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+     1/21: $3\sram_bm[31:0]
+     2/21: $3\sram_din[31:0]
+     3/21: $3\sram_addr[9:0]
+     4/21: $3\sram_ren[0:0]
+     5/21: $3\sram_wen[0:0]
+     6/21: $3\sram_men[0:0]
+     7/21: $2\sram_bm[31:0] [31:24]
+     8/21: $2\sram_bm[31:0] [15:8]
+     9/21: $2\sram_bm[31:0] [7:0]
+    10/21: $2\sram_bm[31:0] [23:16]
+    11/21: $2\sram_din[31:0]
+    12/21: $2\sram_addr[9:0]
+    13/21: $2\sram_ren[0:0]
+    14/21: $2\sram_wen[0:0]
+    15/21: $2\sram_men[0:0]
+    16/21: $1\sram_bm[31:0]
+    17/21: $1\sram_din[31:0]
+    18/21: $1\sram_addr[9:0]
+    19/21: $1\sram_ren[0:0]
+    20/21: $1\sram_wen[0:0]
+    21/21: $1\sram_men[0:0]
+Creating decoders for process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+     1/5: $1\s_axil_arready[0:0]
+     2/5: $2\s_axil_wready[0:0]
+     3/5: $2\s_axil_awready[0:0]
+     4/5: $1\s_axil_wready[0:0]
+     5/5: $1\s_axil_awready[0:0]
+
+8.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\ram_macro.\sram_clk' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_men' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_wen' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_ren' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_addr' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_din' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_bm' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\s_axil_awready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+No latch inferred for signal `\ram_macro.\s_axil_wready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+No latch inferred for signal `\ram_macro.\s_axil_arready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+
+8.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ram_macro.\s_axil_bresp' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$262' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_bvalid' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$267' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_rdata' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$272' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_rresp' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$277' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_rvalid' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$282' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\aw_pending_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$287' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\awaddr_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$292' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\w_pending_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$297' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\wdata_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$302' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\wstrb_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$307' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\read_state_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$312' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\read_addr_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$317' with positive edge clock and positive level reset.
+
+8.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+8.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 10 empty switches in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+Removing empty process `ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+Found and cleaned up 3 empty switches in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+Removing empty process `ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+Found and cleaned up 4 empty switches in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+Removing empty process `ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+Cleaned up 17 empty switches.
+
+8.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~34 debug messages>
+
+9. Executing FLATTEN pass (flatten design).
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 15 unused cells and 172 unused wires.
+<suppressed ~25 debug messages>

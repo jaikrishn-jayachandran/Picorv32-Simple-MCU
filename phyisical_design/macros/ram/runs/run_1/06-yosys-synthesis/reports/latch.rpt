@@ -1,0 +1,12 @@
+
+18. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\ram_macro.\sram_clk' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_men' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_wen' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_ren' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_addr' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_din' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_bm' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\s_axil_awready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+No latch inferred for signal `\ram_macro.\s_axil_wready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+No latch inferred for signal `\ram_macro.\s_axil_arready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.

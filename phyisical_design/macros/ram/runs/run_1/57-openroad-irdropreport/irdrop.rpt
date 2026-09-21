@@ -1,0 +1,26 @@
++ analyze_power_grid -net VPWR -voltage_file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/57-openroad-irdropreport/net-VPWR.csv
+[INFO PSM-0040] All shapes on net VPWR are connected.
+########## IR report #################
+Net              : VPWR
+Corner           : nom_slow_1p08V_125C
+Total power      : 2.02e-03 W
+Supply voltage   : 1.08e+00 V
+Worstcase voltage: 1.08e+00 V
+Average voltage  : 1.08e+00 V
+Average IR drop  : 1.26e-05 V
+Worstcase IR drop: 7.71e-04 V
+Percentage drop  : 0.07 %
+######################################
++ analyze_power_grid -net VGND -voltage_file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/57-openroad-irdropreport/net-VGND.csv
+[INFO PSM-0040] All shapes on net VGND are connected.
+########## IR report #################
+Net              : VGND
+Corner           : nom_slow_1p08V_125C
+Total power      : 2.02e-03 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 7.02e-04 V
+Average voltage  : 1.05e-05 V
+Average IR drop  : 1.05e-05 V
+Worstcase IR drop: 7.02e-04 V
+Percentage drop  : 0.07 %
+######################################

@@ -1,0 +1,31 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+-- Running command `
+                    verilog_defines -DPDK_ihp-sg13g2;
+verilog_defines -DSCL_sg13g2_stdcell;
+verilog_defines -D__librelane__;
+verilog_defines -DUSE_POWER_PINS;
+verilog_defines -D__pnr__;
+read_verilog -sv -lib /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/bad49b7d61b7462e96c5fc74e3714496.bb.v;
+
+                    blackbox;
+                    write_verilog -noattr -noexpr -nohex -nodec -defparam -blackboxes /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/bad49b7d61b7462e96c5fc74e3714496.bb.v;
+                    ' --
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/bad49b7d61b7462e96c5fc74e3714496.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/bad49b7d61b7462e96c5fc74e3714496.bb.v' to AST representation.
+Generating RTLIL representation for module `\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog backend.
+Dumping module `\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+
+End of script. Logfile hash: 92fde0a7fb, CPU: user 0.01s system 0.00s, MEM: 52.34 MB peak
+Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+Time spent: 60% 2x read_verilog (0 sec), 26% 2x write_verilog (0 sec), ...

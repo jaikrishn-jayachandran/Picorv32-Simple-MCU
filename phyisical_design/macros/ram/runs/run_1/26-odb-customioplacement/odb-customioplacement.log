@@ -1,0 +1,43 @@
+[WARNING ORD-0039] .openroad ignored with -python
+[WARNING] # not found in design but found in config.
+[WARNING] ------------------------------------------------------------ not found in design but found in config.
+Top-level design name: ram_macro
+Block boundaries: 0 0 665010 683730
+Horizontal Tracks Origin: 420, Count: 1627, Step: 420
+Vertical Tracks Origin: 480, Count: 1385, Step: 480
+Placement details for the N side
+Virtual pin count:  0
+Actual pin count:  64
+Total pin count:  64
+Tracks count:  693
+Tracks per pin:  10
+Used tracks count:  631
+Unused track count:  62
+Starting track index:  31
+Placement details for the E side
+Virtual pin count:  0
+Actual pin count:  41
+Total pin count:  41
+Tracks count:  814
+Tracks per pin:  19
+Used tracks count:  761
+Unused track count:  53
+Starting track index:  26
+Placement details for the W side
+Virtual pin count:  0
+Actual pin count:  8
+Total pin count:  8
+Tracks count:  814
+Tracks per pin:  101
+Used tracks count:  708
+Unused track count:  106
+Starting track index:  53
+Placement details for the S side
+Virtual pin count:  0
+Actual pin count:  100
+Total pin count:  100
+Tracks count:  693
+Tracks per pin:  6
+Used tracks count:  595
+Unused track count:  98
+Starting track index:  49

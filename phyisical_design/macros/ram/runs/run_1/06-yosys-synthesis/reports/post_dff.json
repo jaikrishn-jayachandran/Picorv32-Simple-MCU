@@ -1,0 +1,61 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/09eef54f51e6417ab35e97ed48fdf5af.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/643f5627d1ce472489a28e2eb8c518fc.lib ",
+   "modules": {
+      "\\ram_macro": {
+         "num_wires":         291,
+         "num_wire_bits":     656,
+         "num_pub_wires":     38,
+         "num_pub_wire_bits": 371,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         420,
+         "num_submodules":       0,
+         "area":              4751.913600,
+         "sequential_area":    4751.913600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 48,
+            "$_AND_": 45,
+            "$_MUX_": 146,
+            "$_NAND_": 5,
+            "$_NOR_": 4,
+            "$_NOT_": 8,
+            "$_ORNOT_": 6,
+            "$_OR_": 60,
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1,
+            "sg13g2_dfrbpq_1": 97
+         }
+      }
+   },
+      "design": {
+         "num_wires":         291,
+         "num_wire_bits":     656,
+         "num_pub_wires":     38,
+         "num_pub_wire_bits": 371,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         420,
+         "num_submodules":       0,
+         "area":              4751.913600,
+         "sequential_area":    4751.913600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 48,
+            "$_AND_": 45,
+            "$_MUX_": 146,
+            "$_NAND_": 5,
+            "$_NOR_": 4,
+            "$_NOT_": 8,
+            "$_ORNOT_": 6,
+            "$_OR_": 60,
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1,
+            "sg13g2_dfrbpq_1": 97
+         }
+      }
+}
+

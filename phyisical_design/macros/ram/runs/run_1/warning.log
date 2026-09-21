@@ -1,0 +1,114 @@
+118 Lint warnings found.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+# not found in design but found in config.
+------------------------------------------------------------ not found in design but found in config.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Cont
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+[DRT-0418] Term u_sram/A_DIN[15] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[15] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[16] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[16] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[16] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[17] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[14] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[17] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[14] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[14] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[13] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[18] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[18] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[13] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[18] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[12] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[19] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[20] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[20] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[11] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[11] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[20] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[11] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[10] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[10] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[21] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[21] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[22] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[22] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[9] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[9] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[9] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[8] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[23] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[23] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[23] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[24] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[7] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[24] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[7] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[7] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[25] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[25] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[6] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[6] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[25] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[5] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[26] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[5] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[26] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[27] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[4] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[4] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[4] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[3] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[3] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[28] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[28] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[28] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[29] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[2] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[29] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[2] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[2] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[1] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BM[30] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[30] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_BM[1] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DOUT[30] has no pins on routing grid
+[DRT-0418] Term u_sram/A_DIN[0] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_DIN[31] has no pins on routing grid
+[DRT-0418] Term u_sram/A_ADDR[0] has no pins on routing grid
+[DRT-0418] Term u_sram/A_ADDR[1] has no pins on routing grid
+[DRT-0418] Term u_sram/A_ADDR[2] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_ADDR[2] has no pins on routing grid
+[DRT-0418] Term u_sram/A_ADDR[3] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_ADDR[3] has no pins on routing grid
+[DRT-0418] Term u_sram/A_ADDR[7] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_ADDR[7] has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_ADDR[9] has no pins on routing grid
+[DRT-0418] Term u_sram/A_CLK has no pins on routing grid
+[DRT-0418] Term u_sram/A_MEN has no pins on routing grid
+[DRT-0418] Term u_sram/A_BIST_MEN has no pins on routing grid
+Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro RM_IHPSG13_1P_1024x32_c2_bm_bist, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+Cell 'ram_macro' has (22) input pin(s) without antenna gate information. They might not be connected to a gate.

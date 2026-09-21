@@ -1,0 +1,76 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold reg-reg] _831_/Q -> u_sram/A_ADDR[1] : -0.336970
+[hold reg-reg] _830_/Q -> u_sram/A_ADDR[0] : -0.320217
+[hold reg-reg] _834_/Q -> u_sram/A_ADDR[4] : -0.318901
+[hold reg-reg] _832_/Q -> u_sram/A_ADDR[2] : -0.311271
+[hold in-reg] boot_wdata[31] -> u_sram/A_DIN[31] : -0.296082
+[hold reg-reg] _837_/Q -> u_sram/A_ADDR[7] : -0.286778
+[hold in-reg] boot_wdata[30] -> u_sram/A_DIN[30] : -0.281556
+[hold reg-reg] _839_/Q -> u_sram/A_ADDR[9] : -0.279751
+[hold in-reg] boot_wdata[29] -> u_sram/A_DIN[29] : -0.267974
+[hold reg-reg] _833_/Q -> u_sram/A_ADDR[3] : -0.265464
+[hold reg-reg] _835_/Q -> u_sram/A_ADDR[5] : -0.259223
+[hold in-reg] boot_wdata[28] -> u_sram/A_DIN[28] : -0.254254
+[hold in-reg] boot_wdata[27] -> u_sram/A_DIN[27] : -0.240343
+[hold reg-reg] _836_/Q -> u_sram/A_ADDR[6] : -0.239404
+[hold in-reg] boot_wdata[26] -> u_sram/A_DIN[26] : -0.226626
+[hold reg-reg] _838_/Q -> u_sram/A_ADDR[8] : -0.224089
+[hold in-reg] boot_wdata[25] -> u_sram/A_DIN[25] : -0.219450
+[hold in-reg] boot_wdata[24] -> u_sram/A_DIN[24] : -0.215742
+[hold in-reg] boot_wdata[23] -> u_sram/A_DIN[23] : -0.212618
+[hold in-reg] boot_wdata[22] -> u_sram/A_DIN[22] : -0.209303
+[hold in-reg] boot_wdata[21] -> u_sram/A_DIN[21] : -0.208548
+[hold in-reg] boot_wdata[20] -> u_sram/A_DIN[20] : -0.206091
+[hold in-reg] boot_wdata[18] -> u_sram/A_DIN[18] : -0.200799
+[hold in-reg] boot_wdata[19] -> u_sram/A_DIN[19] : -0.199036
+[hold in-reg] boot_wdata[17] -> u_sram/A_DIN[17] : -0.194212
+[hold in-reg] boot_wdata[16] -> u_sram/A_DIN[16] : -0.189127
+[hold reg-reg] _876_/Q -> u_sram/A_BM[24] : -0.179748
+[hold reg-reg] _876_/Q -> u_sram/A_BM[31] : -0.179748
+[hold reg-reg] _876_/Q -> u_sram/A_BM[30] : -0.178911
+[hold reg-reg] _876_/Q -> u_sram/A_BM[29] : -0.178753
+[hold reg-reg] _876_/Q -> u_sram/A_BM[28] : -0.178626
+[hold reg-reg] _876_/Q -> u_sram/A_BM[27] : -0.178529
+[hold reg-reg] _876_/Q -> u_sram/A_BM[26] : -0.178463
+[hold reg-reg] _876_/Q -> u_sram/A_BM[25] : -0.178427
+[hold in-reg] boot_wdata[15] -> u_sram/A_DIN[15] : -0.107034
+[hold in-reg] boot_wdata[14] -> u_sram/A_DIN[14] : -0.100400
+[hold in-reg] boot_wdata[13] -> u_sram/A_DIN[13] : -0.087284
+[hold in-reg] boot_wdata[12] -> u_sram/A_DIN[12] : -0.076303
+[hold in-reg] boot_wdata[10] -> u_sram/A_DIN[10] : -0.072026
+[hold in-reg] boot_wdata[11] -> u_sram/A_DIN[11] : -0.066290
+[hold in-reg] boot_wdata[5] -> u_sram/A_DIN[5] : -0.064829
+[hold reg-reg] _875_/Q -> u_sram/A_BM[16] : -0.064479
+[hold in-reg] boot_wdata[9] -> u_sram/A_DIN[9] : -0.063953
+[hold in-reg] boot_wdata[8] -> u_sram/A_DIN[8] : -0.062728
+[hold in-reg] boot_wdata[7] -> u_sram/A_DIN[7] : -0.062267
+[hold reg-reg] _875_/Q -> u_sram/A_BM[23] : -0.061630
+[hold reg-reg] _875_/Q -> u_sram/A_BM[22] : -0.061345
+[hold reg-reg] _875_/Q -> u_sram/A_BM[21] : -0.061181
+[hold reg-reg] _875_/Q -> u_sram/A_BM[20] : -0.061049
+[hold reg-reg] _875_/Q -> u_sram/A_BM[19] : -0.060948
+[hold reg-reg] _875_/Q -> u_sram/A_BM[18] : -0.060879
+[hold reg-reg] _875_/Q -> u_sram/A_BM[17] : -0.060843
+[hold in-reg] boot_wdata[6] -> u_sram/A_DIN[6] : -0.059624
+[hold in-reg] boot_wdata[4] -> u_sram/A_DIN[4] : -0.059255
+[hold in-reg] boot_wdata[3] -> u_sram/A_DIN[3] : -0.052112
+[hold in-reg] boot_we -> u_sram/A_BM[8] : -0.049125
+[hold in-reg] boot_we -> u_sram/A_BM[15] : -0.047131
+[hold in-reg] boot_we -> u_sram/A_BM[14] : -0.046939
+[hold in-reg] boot_we -> u_sram/A_BM[13] : -0.046777
+[hold in-reg] boot_we -> u_sram/A_BM[12] : -0.046646
+[hold in-reg] boot_wdata[2] -> u_sram/A_DIN[2] : -0.046566
+[hold in-reg] boot_we -> u_sram/A_BM[11] : -0.046547
+[hold in-reg] boot_we -> u_sram/A_BM[10] : -0.046480
+[hold in-reg] boot_wdata[1] -> u_sram/A_DIN[1] : -0.046448
+[hold in-reg] boot_we -> u_sram/A_BM[9] : -0.046444
+[hold in-reg] boot_wdata[0] -> u_sram/A_DIN[0] : -0.033489
+Writing metric timing__hold_vio__count__corner:nom_slow_1p08V_125C: 66
+Writing metric timing__hold_r2r__ws__corner:nom_slow_1p08V_125C: -0.336970
+Writing metric timing__hold_r2r_vio__count__corner:nom_slow_1p08V_125C: 26
+Writing metric timing__setup_vio__count__corner:nom_slow_1p08V_125C: 0
+Writing metric timing__setup_r2r__ws__corner:nom_slow_1p08V_125C: 2.084430
+Writing metric timing__setup_r2r_vio__count__corner:nom_slow_1p08V_125C: 0

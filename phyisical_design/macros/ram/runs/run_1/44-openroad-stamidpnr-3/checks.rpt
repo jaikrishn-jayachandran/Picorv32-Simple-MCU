@@ -1,0 +1,267 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Startpoint: boot_we (input port clocked by clk_i)
+Endpoint: u_sram (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 v input external delay
+     1    0.005726    0.000000    0.000000    2.000000 v boot_we (in)
+                                                         boot_we (net)
+                      0.000236    0.000118    2.000118 v hold378/A (sg13g2_dlygate4sd3_1)
+     1    0.004772    0.066765    0.580330    2.580448 v hold378/X (sg13g2_dlygate4sd3_1)
+                                                         net377 (net)
+                      0.066765    0.000147    2.580595 v input43/A (sg13g2_buf_1)
+     1    0.056022    0.295499    0.303044    2.883639 v input43/X (sg13g2_buf_1)
+                                                         net43 (net)
+                      0.297504    0.019893    2.903533 v hold379/A (sg13g2_dlygate4sd3_1)
+     2    0.058570    0.326068    0.980320    3.883853 v hold379/X (sg13g2_dlygate4sd3_1)
+                                                         net378 (net)
+                      0.326175    0.005704    3.889557 v fanout249/A (sg13g2_buf_1)
+     5    0.055931    0.293554    0.399527    4.289084 v fanout249/X (sg13g2_buf_1)
+                                                         net249 (net)
+                      0.293554    0.000244    4.289328 v fanout245/A (sg13g2_buf_1)
+     8    0.052785    0.278302    0.381903    4.671231 v fanout245/X (sg13g2_buf_1)
+                                                         net245 (net)
+                      0.278330    0.002885    4.674116 v fanout244/A (sg13g2_buf_1)
+     8    0.040721    0.217444    0.333865    5.007981 v fanout244/X (sg13g2_buf_1)
+                                                         net244 (net)
+                      0.217444    0.000548    5.008529 v _443_/A_N (sg13g2_nand3b_1)
+     2    0.021272    0.323972    0.399703    5.408232 v _443_/Y (sg13g2_nand3b_1)
+                                                         _136_ (net)
+                      0.323986    0.001795    5.410027 v hold369/A (sg13g2_dlygate4sd3_1)
+     3    0.035825    0.217373    0.905425    6.315453 v hold369/X (sg13g2_dlygate4sd3_1)
+                                                         net368 (net)
+                      0.217421    0.003189    6.318641 v _533_/B (sg13g2_or4_1)
+     1    0.003710    0.070296    0.365845    6.684485 v _533_/X (sg13g2_or4_1)
+                                                         _199_ (net)
+                      0.070296    0.000086    6.684572 v hold370/A (sg13g2_dlygate4sd3_1)
+     1    0.006091    0.072866    0.626565    7.311137 v hold370/X (sg13g2_dlygate4sd3_1)
+                                                         net369 (net)
+                      0.072866    0.000182    7.311319 v _534_/A (sg13g2_buf_4)
+     1    0.006580    0.032878    0.127297    7.438616 v _534_/X (sg13g2_buf_4)
+                                                         _200_ (net)
+                      0.032879    0.000310    7.438926 v hold371/A (sg13g2_dlygate4sd3_1)
+     4    0.022533    0.160903    0.697439    8.136366 v hold371/X (sg13g2_dlygate4sd3_1)
+                                                         net370 (net)
+                      0.160904    0.000393    8.136758 v _589_/B (sg13g2_nor2_2)
+     3    0.048755    0.332213    0.328728    8.465487 ^ _589_/Y (sg13g2_nor2_2)
+                                                         _245_ (net)
+                      0.332447    0.007311    8.472797 ^ hold372/A (sg13g2_dlygate4sd3_1)
+     4    0.055109    0.363857    0.951633    9.424431 ^ hold372/X (sg13g2_dlygate4sd3_1)
+                                                         net371 (net)
+                      0.363893    0.003800    9.428231 ^ _598_/A2 (sg13g2_a21o_1)
+     1    0.038346    0.253509    0.441758    9.869988 ^ _598_/X (sg13g2_a21o_1)
+                                                         sram_bm[0] (net)
+                      0.253760    0.006552    9.876541 ^ hold491/A (sg13g2_dlygate4sd3_1)
+     8    0.062073    0.407266    0.944749   10.821290 ^ hold491/X (sg13g2_dlygate4sd3_1)
+                                                         net490 (net)
+                      0.543831    0.014040   10.835330 ^ u_sram/A_BM[0] (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+                                             10.835330   data arrival time
+
+                                 10.000000   10.000000   clock clk_i (rise edge)
+                                  0.000000   10.000000   clock source latency
+     2    0.105554    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.022705    0.011353   10.011353 ^ delaybuf_0_clk_i/A (sg13g2_buf_16)
+     1    0.033177    0.034027    0.094500   10.105853 ^ delaybuf_0_clk_i/X (sg13g2_buf_16)
+                                                         delaynet_0_clk_i (net)
+                      0.034243    0.004362   10.110215 ^ delaybuf_1_clk_i/A (sg13g2_buf_16)
+     1    0.028488    0.032814    0.099902   10.210117 ^ delaybuf_1_clk_i/X (sg13g2_buf_16)
+                                                         delaynet_1_clk_i (net)
+                      0.032899    0.002905   10.213023 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     1    0.018050    0.029073    0.096308   10.309331 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.029078    0.000756   10.310086 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     1    0.008844    0.025630    0.091385   10.401471 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.034175    0.000467   10.401938 ^ u_sram/A_CLK (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+                                 -0.200000   10.201939   clock uncertainty
+                                  0.000000   10.201939   clock reconvergence pessimism
+                                  0.312840   10.514778   library setup time
+                                             10.514778   data required time
+---------------------------------------------------------------------------------------------
+                                             10.514778   data required time
+                                            -10.835330   data arrival time
+---------------------------------------------------------------------------------------------
+                                             -0.320552   slack (VIOLATED)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Startpoint: boot_we (input port clocked by clk_i)
+Endpoint: u_sram (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  2.000000    2.000000 v input external delay
+     1    0.005726    0.000000    0.000000    2.000000 v boot_we (in)
+                                                         boot_we (net)
+                      0.000236    0.000118    2.000118 v hold378/A (sg13g2_dlygate4sd3_1)
+     1    0.004772    0.066765    0.580330    2.580448 v hold378/X (sg13g2_dlygate4sd3_1)
+                                                         net377 (net)
+                      0.066765    0.000147    2.580595 v input43/A (sg13g2_buf_1)
+     1    0.056022    0.295499    0.303044    2.883639 v input43/X (sg13g2_buf_1)
+                                                         net43 (net)
+                      0.297504    0.019893    2.903533 v hold379/A (sg13g2_dlygate4sd3_1)
+     2    0.058570    0.326068    0.980320    3.883853 v hold379/X (sg13g2_dlygate4sd3_1)
+                                                         net378 (net)
+                      0.326175    0.005704    3.889557 v fanout249/A (sg13g2_buf_1)
+     5    0.055931    0.293554    0.399527    4.289084 v fanout249/X (sg13g2_buf_1)
+                                                         net249 (net)
+                      0.293554    0.000244    4.289328 v fanout245/A (sg13g2_buf_1)
+     8    0.052785    0.278302    0.381903    4.671231 v fanout245/X (sg13g2_buf_1)
+                                                         net245 (net)
+                      0.278330    0.002885    4.674116 v fanout244/A (sg13g2_buf_1)
+     8    0.040721    0.217444    0.333865    5.007981 v fanout244/X (sg13g2_buf_1)
+                                                         net244 (net)
+                      0.217444    0.000548    5.008529 v _443_/A_N (sg13g2_nand3b_1)
+     2    0.021272    0.323972    0.399703    5.408232 v _443_/Y (sg13g2_nand3b_1)
+                                                         _136_ (net)
+                      0.323986    0.001795    5.410027 v hold369/A (sg13g2_dlygate4sd3_1)
+     3    0.035825    0.217373    0.905425    6.315453 v hold369/X (sg13g2_dlygate4sd3_1)
+                                                         net368 (net)
+                      0.217421    0.003189    6.318641 v _533_/B (sg13g2_or4_1)
+     1    0.003710    0.070296    0.365845    6.684485 v _533_/X (sg13g2_or4_1)
+                                                         _199_ (net)
+                      0.070296    0.000086    6.684572 v hold370/A (sg13g2_dlygate4sd3_1)
+     1    0.006091    0.072866    0.626565    7.311137 v hold370/X (sg13g2_dlygate4sd3_1)
+                                                         net369 (net)
+                      0.072866    0.000182    7.311319 v _534_/A (sg13g2_buf_4)
+     1    0.006580    0.032878    0.127297    7.438616 v _534_/X (sg13g2_buf_4)
+                                                         _200_ (net)
+                      0.032879    0.000310    7.438926 v hold371/A (sg13g2_dlygate4sd3_1)
+     4    0.022533    0.160903    0.697439    8.136366 v hold371/X (sg13g2_dlygate4sd3_1)
+                                                         net370 (net)
+                      0.160904    0.000393    8.136758 v _589_/B (sg13g2_nor2_2)
+     3    0.048755    0.332213    0.328728    8.465487 ^ _589_/Y (sg13g2_nor2_2)
+                                                         _245_ (net)
+                      0.332447    0.007311    8.472797 ^ hold372/A (sg13g2_dlygate4sd3_1)
+     4    0.055109    0.363857    0.951633    9.424431 ^ hold372/X (sg13g2_dlygate4sd3_1)
+                                                         net371 (net)
+                      0.363893    0.003800    9.428231 ^ _598_/A2 (sg13g2_a21o_1)
+     1    0.038346    0.253509    0.441758    9.869988 ^ _598_/X (sg13g2_a21o_1)
+                                                         sram_bm[0] (net)
+                      0.253760    0.006552    9.876541 ^ hold491/A (sg13g2_dlygate4sd3_1)
+     8    0.062073    0.407266    0.944749   10.821290 ^ hold491/X (sg13g2_dlygate4sd3_1)
+                                                         net490 (net)
+                      0.543831    0.014040   10.835330 ^ u_sram/A_BM[0] (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+                                             10.835330   data arrival time
+
+                                 10.000000   10.000000   clock clk_i (rise edge)
+                                  0.000000   10.000000   clock source latency
+     2    0.105554    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.022705    0.011353   10.011353 ^ delaybuf_0_clk_i/A (sg13g2_buf_16)
+     1    0.033177    0.034027    0.094500   10.105853 ^ delaybuf_0_clk_i/X (sg13g2_buf_16)
+                                                         delaynet_0_clk_i (net)
+                      0.034243    0.004362   10.110215 ^ delaybuf_1_clk_i/A (sg13g2_buf_16)
+     1    0.028488    0.032814    0.099902   10.210117 ^ delaybuf_1_clk_i/X (sg13g2_buf_16)
+                                                         delaynet_1_clk_i (net)
+                      0.032899    0.002905   10.213023 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     1    0.018050    0.029073    0.096308   10.309331 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.029078    0.000756   10.310086 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     1    0.008844    0.025630    0.091385   10.401471 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.034175    0.000467   10.401938 ^ u_sram/A_CLK (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+                                 -0.200000   10.201939   clock uncertainty
+                                  0.000000   10.201939   clock reconvergence pessimism
+                                  0.312840   10.514778   library setup time
+                                             10.514778   data required time
+---------------------------------------------------------------------------------------------
+                                             10.514778   data required time
+                                            -10.835330   data arrival time
+---------------------------------------------------------------------------------------------
+                                             -0.320552   slack (VIOLATED)
+
+
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_0_clk_i_regs/X                     8     16     -8 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 37 unannotated drivers.
+ boot_addr[0]
+ boot_addr[12]
+ boot_addr[13]
+ boot_addr[14]
+ boot_addr[15]
+ boot_addr[16]
+ boot_addr[17]
+ boot_addr[18]
+ boot_addr[19]
+ boot_addr[1]
+ boot_addr[20]
+ boot_addr[21]
+ boot_addr[22]
+ boot_addr[23]
+ boot_addr[24]
+ boot_addr[25]
+ boot_addr[26]
+ boot_addr[27]
+ boot_addr[28]
+ boot_addr[29]
+ boot_addr[30]
+ boot_addr[31]
+ clkload0/Y
+ clkload1/Y
+ clkload10/Y
+ clkload11/Y
+ clkload12/Y
+ clkload13/Y
+ clkload14/Y
+ clkload2/Y
+ clkload3/Y
+ clkload4/Y
+ clkload5/Y
+ clkload6/Y
+ clkload7/Y
+ clkload8/Y
+ clkload9/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_slow_1p08V_125C: 0
+max fanout violation count 1
+Writing metric design__max_fanout_violation__count__corner:nom_slow_1p08V_125C: 1
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_slow_1p08V_125C: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There is 1 input port missing set_input_delay.
+  rst_ni

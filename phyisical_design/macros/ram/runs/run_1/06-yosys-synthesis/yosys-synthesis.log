@@ -1,0 +1,1478 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib
+Imported 22 cell types from liberty file.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v' to AST representation.
+Generating RTLIL representation for module `\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Successfully finished Verilog frontend.
+[INFO] Using SDC file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv' to AST representation.
+Storing AST representation for module `$abstract\ram_macro'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v' to AST representation.
+Storing AST representation for module `$abstract\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+7. Executing AST frontend in derive mode using pre-parsed AST for module `\ram_macro'.
+Generating RTLIL representation for module `\ram_macro'.
+
+7.1. Analyzing design hierarchy..
+Top module:  \ram_macro
+
+7.2. Analyzing design hierarchy..
+Top module:  \ram_macro
+Removing unused module `$abstract\RM_IHPSG13_1P_1024x32_c2_bm_bist'.
+Removing unused module `$abstract\ram_macro'.
+Removed 2 unused modules.
+Renaming module ram_macro to ram_macro.
+
+8. Executing ATTRMAP pass (move or copy attributes).
+
+9. Executing TRIBUF pass.
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+
+10.1. Analyzing design hierarchy..
+Top module:  \ram_macro
+
+10.2. Analyzing design hierarchy..
+Top module:  \ram_macro
+Removed 0 unused modules.
+
+11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+12. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41 in module ram_macro.
+Marked 3 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39 in module ram_macro.
+Marked 4 switch rules as full_case in process $proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18 in module ram_macro.
+Removed a total of 0 dead cases.
+
+13. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 10 assignments to connections.
+
+14. Executing PROC_INIT pass (extract init attributes).
+
+15. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_ni in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+
+16. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~17 debug messages>
+
+17. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+     1/12: $0\read_addr_q[9:0]
+     2/12: $0\read_state_q[1:0]
+     3/12: $0\wstrb_q[3:0]
+     4/12: $0\wdata_q[31:0]
+     5/12: $0\w_pending_q[0:0]
+     6/12: $0\awaddr_q[31:0]
+     7/12: $0\aw_pending_q[0:0]
+     8/12: $0\s_axil_rvalid[0:0]
+     9/12: $0\s_axil_rresp[1:0]
+    10/12: $0\s_axil_rdata[31:0]
+    11/12: $0\s_axil_bvalid[0:0]
+    12/12: $0\s_axil_bresp[1:0]
+Creating decoders for process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+     1/21: $3\sram_bm[31:0]
+     2/21: $3\sram_din[31:0]
+     3/21: $3\sram_addr[9:0]
+     4/21: $3\sram_ren[0:0]
+     5/21: $3\sram_wen[0:0]
+     6/21: $3\sram_men[0:0]
+     7/21: $2\sram_bm[31:0] [31:24]
+     8/21: $2\sram_bm[31:0] [15:8]
+     9/21: $2\sram_bm[31:0] [7:0]
+    10/21: $2\sram_bm[31:0] [23:16]
+    11/21: $2\sram_din[31:0]
+    12/21: $2\sram_addr[9:0]
+    13/21: $2\sram_ren[0:0]
+    14/21: $2\sram_wen[0:0]
+    15/21: $2\sram_men[0:0]
+    16/21: $1\sram_bm[31:0]
+    17/21: $1\sram_din[31:0]
+    18/21: $1\sram_addr[9:0]
+    19/21: $1\sram_ren[0:0]
+    20/21: $1\sram_wen[0:0]
+    21/21: $1\sram_men[0:0]
+Creating decoders for process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+     1/5: $1\s_axil_arready[0:0]
+     2/5: $2\s_axil_wready[0:0]
+     3/5: $2\s_axil_awready[0:0]
+     4/5: $1\s_axil_wready[0:0]
+     5/5: $1\s_axil_awready[0:0]
+
+18. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\ram_macro.\sram_clk' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_men' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_wen' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_ren' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_addr' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_din' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\sram_bm' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+No latch inferred for signal `\ram_macro.\s_axil_awready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+No latch inferred for signal `\ram_macro.\s_axil_wready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+No latch inferred for signal `\ram_macro.\s_axil_arready' from process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+
+19. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ram_macro.\s_axil_bresp' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$262' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_bvalid' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$267' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_rdata' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$272' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_rresp' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$277' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\s_axil_rvalid' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$282' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\aw_pending_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$287' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\awaddr_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$292' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\w_pending_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$297' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\wdata_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$302' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\wstrb_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$307' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\read_state_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$312' with positive edge clock and positive level reset.
+Creating register for signal `\ram_macro.\read_addr_q' using process `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+  created $adff cell `$procdff$317' with positive edge clock and positive level reset.
+
+20. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+21. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 10 empty switches in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+Removing empty process `ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:459$41'.
+Found and cleaned up 3 empty switches in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+Removing empty process `ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:350$39'.
+Found and cleaned up 4 empty switches in `\ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+Removing empty process `ram_macro.$proc$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:290$18'.
+Cleaned up 17 empty switches.
+
+22. Executing CHECK pass (checking for obvious problems).
+Checking module ram_macro...
+Found and reported 0 problems.
+
+23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~34 debug messages>
+
+24. Executing FLATTEN pass (flatten design).
+
+25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+26. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 15 unused cells and 171 unused wires.
+<suppressed ~24 debug messages>
+
+27. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 133 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 121 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+<suppressed ~36 debug messages>
+Removed a total of 12 cells.
+
+29. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$117.
+    dead port 1/2 on $mux $procmux$120.
+    dead port 1/2 on $mux $procmux$125.
+    dead port 1/2 on $mux $procmux$128.
+    dead port 1/2 on $mux $procmux$134.
+    dead port 1/2 on $mux $procmux$137.
+    dead port 1/2 on $mux $procmux$143.
+    dead port 1/2 on $mux $procmux$146.
+    dead port 1/2 on $mux $procmux$151.
+    dead port 1/2 on $mux $procmux$154.
+    dead port 1/2 on $mux $procmux$160.
+    dead port 1/2 on $mux $procmux$163.
+    dead port 1/2 on $mux $procmux$169.
+    dead port 1/2 on $mux $procmux$175.
+    dead port 1/2 on $mux $procmux$181.
+    dead port 1/2 on $mux $procmux$187.
+    dead port 1/2 on $mux $procmux$193.
+    dead port 1/2 on $mux $procmux$199.
+    dead port 1/2 on $mux $procmux$205.
+    dead port 1/2 on $mux $procmux$211.
+    dead port 1/2 on $mux $procmux$217.
+    dead port 2/2 on $mux $procmux$244.
+    dead port 2/2 on $mux $procmux$250.
+Removed 23 multiplexer ports.
+<suppressed ~103 debug messages>
+
+30. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+31. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 98 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 97 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+32. Executing OPT_DFF pass (perform DFF optimizations).
+
+33. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 0 unused cells and 36 unused wires.
+<suppressed ~1 debug messages>
+
+34. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+35. Rerunning OPT passes. (Maybe there is more to do…)
+
+36. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~73 debug messages>
+
+37. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+38. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 97 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+39. Executing OPT_DFF pass (perform DFF optimizations).
+
+40. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+41. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+42. Executing FSM pass (extract and optimize FSM).
+
+42.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register ram_macro.read_state_q.
+Not marking ram_macro.s_axil_bresp as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+Not marking ram_macro.s_axil_rresp as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+
+42.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\read_state_q' from module `\ram_macro'.
+  found $adff cell for state register: $procdff$312
+  root of input selection tree: $0\read_state_q[1:0]
+  found reset state: 2'00 (from async reset)
+  found ctrl input: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:632$52_Y
+  found ctrl input: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:440$40_Y
+  found ctrl input: \axi_ar_fire
+  found ctrl input: \axi_araddr_valid
+  found state code: 2'01
+  found state code: 2'10
+  found ctrl output: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:280$14_Y
+  found ctrl output: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:440$40_Y
+  found ctrl output: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:632$52_Y
+  ctrl inputs: { \axi_ar_fire \axi_araddr_valid }
+  ctrl outputs: { $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:632$52_Y $0\read_state_q[1:0] $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:440$40_Y $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:280$14_Y }
+  transition:       2'00 2'0- ->       2'00 5'00001
+  transition:       2'00 2'10 ->       2'00 5'00001
+  transition:       2'00 2'11 ->       2'01 5'00101
+  transition:       2'10 2'-- ->       2'00 5'10000
+  transition:       2'01 2'-- ->       2'10 5'01010
+
+42.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\read_state_q$318' from module `\ram_macro'.
+
+42.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 8 unused cells and 8 unused wires.
+<suppressed ~9 debug messages>
+
+42.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\read_state_q$318' from module `\ram_macro'.
+  Removing unused output signal $0\read_state_q[1:0] [0].
+  Removing unused output signal $0\read_state_q[1:0] [1].
+
+42.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\read_state_q$318' from module `\ram_macro' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  00 -> --1
+  10 -> -1-
+  01 -> 1--
+
+42.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\read_state_q$318' from module `ram_macro':
+-------------------------------------
+
+  Information on FSM $fsm$\read_state_q$318 (\read_state_q):
+
+  Number of input signals:    2
+  Number of output signals:   3
+  Number of state bits:       3
+
+  Input signals:
+    0: \axi_araddr_valid
+    1: \axi_ar_fire
+
+  Output signals:
+    0: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:280$14_Y
+    1: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:440$40_Y
+    2: $eq$/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/ram_macro.sv:632$52_Y
+
+  State encoding:
+    0:      3'--1  <RESET STATE>
+    1:      3'-1-
+    2:      3'1--
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 2'10   ->     0 3'001
+      1:     0 2'0-   ->     0 3'001
+      2:     0 2'11   ->     2 3'001
+      3:     1 2'--   ->     0 3'100
+      4:     2 2'--   ->     1 3'010
+
+-------------------------------------
+
+42.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\read_state_q$318' from module `\ram_macro'.
+
+43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~1 debug messages>
+
+44. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 97 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+45. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~68 debug messages>
+
+46. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+47. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 97 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+48. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$317 ($adff) from module ram_macro (D = \s_axil_araddr [11:2], Q = \read_addr_q).
+Adding EN signal on $procdff$307 ($adff) from module ram_macro (D = \s_axil_wstrb, Q = \wstrb_q).
+Adding EN signal on $procdff$302 ($adff) from module ram_macro (D = \s_axil_wdata, Q = \wdata_q).
+Adding EN signal on $procdff$297 ($adff) from module ram_macro (D = $0\w_pending_q[0:0], Q = \w_pending_q).
+Adding EN signal on $procdff$292 ($adff) from module ram_macro (D = \s_axil_awaddr, Q = \awaddr_q).
+Adding EN signal on $procdff$287 ($adff) from module ram_macro (D = $0\aw_pending_q[0:0], Q = \aw_pending_q).
+Adding EN signal on $procdff$282 ($adff) from module ram_macro (D = $0\s_axil_rvalid[0:0], Q = \s_axil_rvalid).
+Adding EN signal on $procdff$277 ($adff) from module ram_macro (D = $0\s_axil_rresp[1:0], Q = \s_axil_rresp).
+Adding EN signal on $procdff$272 ($adff) from module ram_macro (D = $0\s_axil_rdata[31:0], Q = \s_axil_rdata).
+Adding EN signal on $procdff$267 ($adff) from module ram_macro (D = $0\s_axil_bvalid[0:0], Q = \s_axil_bvalid).
+Adding EN signal on $procdff$262 ($adff) from module ram_macro (D = $procmux$110_Y, Q = \s_axil_bresp).
+
+49. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 6 unused cells and 12 unused wires.
+<suppressed ~7 debug messages>
+
+50. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~6 debug messages>
+
+51. Rerunning OPT passes. (Maybe there is more to do…)
+
+52. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~58 debug messages>
+
+53. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+54. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 104 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 102 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 101 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+55. Executing OPT_DFF pass (perform DFF optimizations).
+
+56. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+58. Rerunning OPT passes. (Maybe there is more to do…)
+
+59. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~58 debug messages>
+
+60. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+61. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 101 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+62. Executing OPT_DFF pass (perform DFF optimizations).
+
+63. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+64. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+65. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell ram_macro.$auto$opt_dff.cc:235:make_patterns_logic$354 ($ne).
+Removed top 20 bits (of 32) from FF cell ram_macro.$auto$ff.cc:337:slice$348 ($adffe).
+Removed top 20 bits (of 32) from wire ram_macro.awaddr_q.
+Removed top 16 bits (of 32) from wire ram_macro.sram_dout.
+
+66. Executing PEEPOPT pass (run peephole optimizers).
+
+67. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+68. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module ram_macro:
+  created 0 $alu and 0 $macc cells.
+
+69. Executing SHARE pass (SAT-based resource sharing).
+
+70. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+71. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 101 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+72. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~58 debug messages>
+
+73. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+74. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 101 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+75. Executing OPT_DFF pass (perform DFF optimizations).
+
+76. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+77. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+78. Executing MEMORY pass.
+
+78.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+78.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+78.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+78.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+78.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+78.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+78.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+78.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+78.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+78.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+79. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+80. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~20 debug messages>
+
+81. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 88 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 87 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+82. Executing OPT_DFF pass (perform DFF optimizations).
+
+83. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 0 unused cells and 14 unused wires.
+<suppressed ~1 debug messages>
+
+84. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+85. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~3 debug messages>
+
+86. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 87 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+87. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~22 debug messages>
+
+88. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+    Consolidated identical input bits for $mux cell $procmux$110:
+      Old ports: A=2'11, B=2'00, Y=$procmux$110_Y
+      New ports: A=1'1, B=1'0, Y=$procmux$110_Y [0]
+      New connections: $procmux$110_Y [1] = $procmux$110_Y [0]
+    Consolidated identical input bits for $mux cell $procmux$166:
+      Old ports: A=8'00000000, B={ \wstrb_q [3] \wstrb_q [3] \wstrb_q [3] \wstrb_q [3] \wstrb_q [3] \wstrb_q [3] \wstrb_q [3] \wstrb_q [3] }, Y=$2\sram_bm[31:0] [31:24]
+      New ports: A=1'0, B=\wstrb_q [3], Y=$2\sram_bm[31:0] [24]
+      New connections: $2\sram_bm[31:0] [31:25] = { $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [24] }
+    Consolidated identical input bits for $mux cell $procmux$172:
+      Old ports: A=8'00000000, B={ \wstrb_q [1] \wstrb_q [1] \wstrb_q [1] \wstrb_q [1] \wstrb_q [1] \wstrb_q [1] \wstrb_q [1] \wstrb_q [1] }, Y=$2\sram_bm[31:0] [15:8]
+      New ports: A=1'0, B=\wstrb_q [1], Y=$2\sram_bm[31:0] [8]
+      New connections: $2\sram_bm[31:0] [15:9] = { $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [8] }
+    Consolidated identical input bits for $mux cell $procmux$178:
+      Old ports: A=8'00000000, B={ \wstrb_q [0] \wstrb_q [0] \wstrb_q [0] \wstrb_q [0] \wstrb_q [0] \wstrb_q [0] \wstrb_q [0] \wstrb_q [0] }, Y=$2\sram_bm[31:0] [7:0]
+      New ports: A=1'0, B=\wstrb_q [0], Y=$2\sram_bm[31:0] [0]
+      New connections: $2\sram_bm[31:0] [7:1] = { $2\sram_bm[31:0] [0] $2\sram_bm[31:0] [0] $2\sram_bm[31:0] [0] $2\sram_bm[31:0] [0] $2\sram_bm[31:0] [0] $2\sram_bm[31:0] [0] $2\sram_bm[31:0] [0] }
+    Consolidated identical input bits for $mux cell $procmux$184:
+      Old ports: A=8'00000000, B={ \wstrb_q [2] \wstrb_q [2] \wstrb_q [2] \wstrb_q [2] \wstrb_q [2] \wstrb_q [2] \wstrb_q [2] \wstrb_q [2] }, Y=$2\sram_bm[31:0] [23:16]
+      New ports: A=1'0, B=\wstrb_q [2], Y=$2\sram_bm[31:0] [16]
+      New connections: $2\sram_bm[31:0] [23:17] = { $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [16] }
+    Consolidated identical input bits for $mux cell $procmux$96:
+      Old ports: A=2'11, B=2'00, Y=$0\s_axil_rresp[1:0]
+      New ports: A=1'1, B=1'0, Y=$0\s_axil_rresp[1:0] [0]
+      New connections: $0\s_axil_rresp[1:0] [1] = $0\s_axil_rresp[1:0] [0]
+  Optimizing cells in module \ram_macro.
+    Consolidated identical input bits for $mux cell $procmux$220:
+      Old ports: A=$2\sram_bm[31:0], B=32'11111111111111111111111111111111, Y=\sram_bm
+      New ports: A={ $2\sram_bm[31:0] [24] $2\sram_bm[31:0] [16] $2\sram_bm[31:0] [8] $2\sram_bm[31:0] [0] }, B=4'1111, Y={ \sram_bm [24] \sram_bm [16] \sram_bm [8] \sram_bm [0] }
+      New connections: { \sram_bm [31:25] \sram_bm [23:17] \sram_bm [15:9] \sram_bm [7:1] } = { \sram_bm [24] \sram_bm [24] \sram_bm [24] \sram_bm [24] \sram_bm [24] \sram_bm [24] \sram_bm [24] \sram_bm [16] \sram_bm [16] \sram_bm [16] \sram_bm [16] \sram_bm [16] \sram_bm [16] \sram_bm [16] \sram_bm [8] \sram_bm [8] \sram_bm [8] \sram_bm [8] \sram_bm [8] \sram_bm [8] \sram_bm [8] \sram_bm [0] \sram_bm [0] \sram_bm [0] \sram_bm [0] \sram_bm [0] \sram_bm [0] \sram_bm [0] }
+  Optimizing cells in module \ram_macro.
+Performed a total of 7 changes.
+
+89. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 87 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+90. Executing OPT_SHARE pass.
+
+91. Executing OPT_DFF pass (perform DFF optimizations).
+
+92. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+93. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~6 debug messages>
+
+94. Rerunning OPT passes. (Maybe there is more to do…)
+
+95. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+96. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+97. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 87 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+98. Executing OPT_SHARE pass.
+
+99. Executing OPT_DFF pass (perform DFF optimizations).
+
+100. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+101. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+102. Executing TECHMAP pass (map to technology primitives).
+
+102.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+102.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~163 debug messages>
+
+103. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~9 debug messages>
+
+104. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 349 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 340 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Computing hashes of 339 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+<suppressed ~30 debug messages>
+Removed a total of 10 cells.
+
+105. Executing OPT_DFF pass (perform DFF optimizations).
+
+106. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 2 unused cells and 25 unused wires.
+<suppressed ~3 debug messages>
+
+107. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+108. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 337 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+109. Executing OPT_DFF pass (perform DFF optimizations).
+
+110. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+111. Executing ABC pass (technology mapping using ABC).
+
+111.1. Extracting gate netlist of module `\ram_macro' to `<abc-temp-dir>/input.blif'..
+
+111.1.1. Executed ABC.
+Extracted 239 gates and 428 wires to a netlist network with 187 inputs and 100 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library /tmp/yosys-abc-xaqnU0/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+111.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       45
+ABC RESULTS:            ANDNOT cells:       48
+ABC RESULTS:               MUX cells:       52
+ABC RESULTS:              NAND cells:        5
+ABC RESULTS:               NOR cells:        4
+ABC RESULTS:               NOT cells:        7
+ABC RESULTS:                OR cells:       60
+ABC RESULTS:             ORNOT cells:        6
+ABC RESULTS:        internal signals:      141
+ABC RESULTS:           input signals:      187
+ABC RESULTS:          output signals:      100
+Removing temp directory.
+Removing global temp directory.
+
+112. Executing OPT pass (performing simple optimizations).
+
+112.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+<suppressed ~10 debug messages>
+
+112.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 325 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+112.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+112.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 1 unused cells and 332 unused wires.
+<suppressed ~6 debug messages>
+
+112.5. Finished fast OPT passes.
+
+113. Executing HIERARCHY pass (managing design hierarchy).
+
+113.1. Analyzing design hierarchy..
+Top module:  \ram_macro
+
+113.2. Analyzing design hierarchy..
+Top module:  \ram_macro
+Removed 0 unused modules.
+
+114. Executing CHECK pass (checking for obvious problems).
+Checking module ram_macro...
+Found and reported 0 problems.
+
+115. Printing statistics.
+
+=== ram_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      196 wires
+      561 wire bits
+       39 public wires
+      372 public wire bits
+       22 ports
+      213 port bits
+      324 cells
+       48   $_ANDNOT_
+       45   $_AND_
+       10   $_DFFE_PN0N_
+       84   $_DFFE_PN0P_
+        2   $_DFF_PN0_
+        1   $_DFF_PN1_
+       52   $_MUX_
+        5   $_NAND_
+        4   $_NOR_
+        6   $_NOT_
+        6   $_ORNOT_
+       60   $_OR_
+        1   RM_IHPSG13_1P_1024x32_c2_bm_bist
+
+116. Executing OPT pass (performing simple optimizations).
+
+116.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+116.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 324 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+116.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram_macro..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+116.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram_macro.
+Performed a total of 0 changes.
+
+116.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram_macro'.
+Computing hashes of 324 cells of `\ram_macro'.
+Finding duplicate cells in `\ram_macro'.
+Removed a total of 0 cells.
+
+116.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+116.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+
+116.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram_macro.
+
+116.9. Finished fast OPT passes. (There is nothing left to do.)
+
+117. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/09eef54f51e6417ab35e97ed48fdf5af.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/643f5627d1ce472489a28e2eb8c518fc.lib ",
+   "modules": {
+      "\\ram_macro": {
+         "num_wires":         195,
+         "num_wire_bits":     560,
+         "num_pub_wires":     38,
+         "num_pub_wire_bits": 371,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         324,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 48,
+            "$_AND_": 45,
+            "$_DFFE_PN0N_": 10,
+            "$_DFFE_PN0P_": 84,
+            "$_DFF_PN0_": 2,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 52,
+            "$_NAND_": 5,
+            "$_NOR_": 4,
+            "$_NOT_": 6,
+            "$_ORNOT_": 6,
+            "$_OR_": 60,
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         195,
+         "num_wire_bits":     560,
+         "num_pub_wires":     38,
+         "num_pub_wire_bits": 371,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         324,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 48,
+            "$_AND_": 45,
+            "$_DFFE_PN0N_": 10,
+            "$_DFFE_PN0P_": 84,
+            "$_DFF_PN0_": 2,
+            "$_DFF_PN1_": 1,
+            "$_MUX_": 52,
+            "$_NAND_": 5,
+            "$_NOR_": 4,
+            "$_NOT_": 6,
+            "$_ORNOT_": 6,
+            "$_OR_": 60,
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1
+         }
+      }
+}
+
+118. Printing statistics.
+
+=== ram_macro ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      195 wires
+      560 wire bits
+       38 public wires
+      371 public wire bits
+       22 ports
+      213 port bits
+      324 cells
+       48   $_ANDNOT_
+       45   $_AND_
+       10   $_DFFE_PN0N_
+       84   $_DFFE_PN0P_
+        2   $_DFF_PN0_
+        1   $_DFF_PN1_
+       52   $_MUX_
+        5   $_NAND_
+        4   $_NOR_
+        6   $_NOT_
+        6   $_ORNOT_
+       60   $_OR_
+        1   RM_IHPSG13_1P_1024x32_c2_bm_bist
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type \RM_IHPSG13_1P_1024x32_c2_bm_bist is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v'…
+
+119. Executing TECHMAP pass (map to technology primitives).
+
+119.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `$_TBUF_'.
+Successfully finished Verilog frontend.
+
+119.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+120. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v'…
+
+121. Executing TECHMAP pass (map to technology primitives).
+
+121.1. Executing Verilog-2005 frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v
+Parsing Verilog input from `/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_PN0_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_NN0_'.
+Successfully finished Verilog frontend.
+
+121.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+122. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+123. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sg13g2_dfrbpq_1 (noninv, pins=4, area=48.99) is a direct match for cell type $_DFF_PN0_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    unmapped dff cell: $_DFF_P_
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sg13g2_dfrbpq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+123.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~4 debug messages>
+Mapping DFF cells in module `\ram_macro':
+  mapped 97 $_DFF_PN0_ cells to \sg13g2_dfrbpq_1 cells.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/09eef54f51e6417ab35e97ed48fdf5af.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/643f5627d1ce472489a28e2eb8c518fc.lib ",
+   "modules": {
+      "\\ram_macro": {
+         "num_wires":         291,
+         "num_wire_bits":     656,
+         "num_pub_wires":     38,
+         "num_pub_wire_bits": 371,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         420,
+         "num_submodules":       0,
+         "area":              4751.913600,
+         "sequential_area":    4751.913600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 48,
+            "$_AND_": 45,
+            "$_MUX_": 146,
+            "$_NAND_": 5,
+            "$_NOR_": 4,
+            "$_NOT_": 8,
+            "$_ORNOT_": 6,
+            "$_OR_": 60,
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1,
+            "sg13g2_dfrbpq_1": 97
+         }
+      }
+   },
+      "design": {
+         "num_wires":         291,
+         "num_wire_bits":     656,
+         "num_pub_wires":     38,
+         "num_pub_wire_bits": 371,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         420,
+         "num_submodules":       0,
+         "area":              4751.913600,
+         "sequential_area":    4751.913600,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 48,
+            "$_AND_": 45,
+            "$_MUX_": 146,
+            "$_NAND_": 5,
+            "$_NOR_": 4,
+            "$_NOT_": 8,
+            "$_ORNOT_": 6,
+            "$_OR_": 60,
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1,
+            "sg13g2_dfrbpq_1": 97
+         }
+      }
+}
+
+124. Printing statistics.
+
+=== ram_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      291        - wires
+      656        - wire bits
+       38        - public wires
+      371        - public wire bits
+       22        - ports
+      213        - port bits
+      420 4.75E+03 cells
+       48        -   $_ANDNOT_
+       45        -   $_AND_
+      146        -   $_MUX_
+        5        -   $_NAND_
+        4        -   $_NOR_
+        8        -   $_NOT_
+        6        -   $_ORNOT_
+       60        -   $_OR_
+        1        -   RM_IHPSG13_1P_1024x32_c2_bm_bist
+       97 4.75E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type \RM_IHPSG13_1P_1024x32_c2_bm_bist is unknown!
+
+   Chip area for module '\ram_macro': 4751.913600
+     of which used for sequential elements: 4751.913600 (100.00%)
+
+[INFO] Using generated ABC script '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/06-yosys-synthesis/DELAY_4.abc'…
+
+125. Executing ABC pass (technology mapping using ABC).
+
+125.1. Extracting gate netlist of module `\ram_macro' to `/tmp/yosys-abc-LRI9Y2/input.blif'..
+
+125.1.1. Executed ABC.
+Extracted 322 gates and 599 wires to a netlist network with 277 inputs and 148 outputs.
+Running ABC script: /tmp/yosys-abc-LRI9Y2/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-LRI9Y2/abc.script"
+ABC: + read_blif /tmp/yosys-abc-LRI9Y2/input.blif 
+ABC: + read_lib -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/09eef54f51e6417ab35e97ed48fdf5af.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_antennanp" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_decap_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dfrbpq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dlhrq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllr_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_dllrq_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_ebufn_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_einvn_8".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_4" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_fill_8" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sg13g2_sdfrbpq_2".
+ABC: Library "sg13g2_stdcell_slow_1p08V_125C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/09eef54f51e6417ab35e97ed48fdf5af.lib" has 54 cells (25 skipped: 12 seq; 6 tri-state; 0 no func; 7 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.01 sec
+ABC: Memory =    2.64 MB. Time =     0.01 sec
+ABC: + read_lib -m -w /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/643f5627d1ce472489a28e2eb8c518fc.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Corner" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler1000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler10000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler200" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler2000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler400" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_Filler4000" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadAnalog" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIOVss" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadIn" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadInOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut16mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut30mA".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sg13g2_IOPadTriOut4mA".
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVdd" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "sg13g2_IOPadVss" without logic function.
+ABC: Library "sg13g2_io_slow_1p08V_3p0V_125C" from "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/643f5627d1ce472489a28e2eb8c518fc.lib" has 3 cells (19 skipped: 0 seq; 6 tri-state; 4 no func; 9 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.00 sec
+ABC: Memory =    0.39 MB. Time =     0.00 sec
+ABC: Updated library "sg13g2_stdcell_slow_1p08V_125C" with additional 3 cells from library "sg13g2_io_slow_1p08V_3p0V_125C".
+ABC: + read_constr -v /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sg13g2_buf_4/X".
+ABC: Setting output load to be 6.000000.
+ABC: + source /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/06-yosys-synthesis/DELAY_4.abc 
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: WireLoad = "1k"  Gates =    374 ( 14.2 %)   Cap =  8.8 ff (  2.8 %)   Area =     4176.71 ( 94.9 %)   Delay =  1629.35 ps  ( 14.7 %)               
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: Cannot find the default PI driving cell (sg13g2_buf_4/X) in the library.
+ABC: WireLoad = "none"  Gates =    374 ( 14.2 %)   Cap =  5.7 ff ( 11.5 %)   Area =     3937.21 ( 76.5 %)   Delay =  1213.72 ps  ( 26.7 %)               
+ABC: Path  0 --     121 : 0    1 pi             A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   2.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     451 : 4    2 sg13g2_or4_1   A =  14.52  Df = 319.4 -194.3 ps  S =  90.1 ps  Cin =  2.3 ff  Cout =   7.7 ff  Cmax = 300.0 ff  G =  328  
+ABC: Path  2 --     453 : 4    1 sg13g2_nor4_2  A =  21.77  Df = 551.3 -233.1 ps  S = 209.1 ps  Cin =  5.3 ff  Cout =   8.2 ff  Cmax = 600.0 ff  G =  150  
+ABC: Path  3 --     454 : 1   11 sg13g2_buf_8   A =  23.59  Df = 744.7 -291.1 ps  S =  55.5 ps  Cin =  8.0 ff  Cout =  34.6 ff  Cmax =2400.0 ff  G =  417  
+ABC: Path  4 --     455 : 2    4 sg13g2_nand2_2 A =  10.89  Df = 884.9 -336.0 ps  S = 124.0 ps  Cin =  5.3 ff  Cout =  22.9 ff  Cmax = 600.0 ff  G =  420  
+ABC: Path  5 --     499 : 1   16 sg13g2_buf_8   A =  23.59  Df =1058.3 -352.1 ps  S =  62.9 ps  Cin =  8.0 ff  Cout =  52.6 ff  Cmax =2400.0 ff  G =  626  
+ABC: Path  6 --     501 : 3    1 sg13g2_o21ai_1 A =   9.07  Df =1213.7 -394.7 ps  S = 146.4 ps  Cin =  3.1 ff  Cout =   6.0 ff  Cmax = 300.0 ff  G =  193  
+ABC: Start-point = pi120 (\s_axil_awaddr [18]).  End-point = po15 (\sram_din [19]).
+ABC: netlist                       : i/o =  277/  148  lat =    0  nd =   374  edge =    914  area =3936.87  delay = 7.00  lev = 7
+ABC: + write_blif /tmp/yosys-abc-LRI9Y2/output.blif 
+
+125.1.2. Re-integrating ABC results.
+ABC RESULTS:     sg13g2_a21o_1 cells:        4
+ABC RESULTS:    sg13g2_a21oi_1 cells:        5
+ABC RESULTS:    sg13g2_a22oi_1 cells:        1
+ABC RESULTS:     sg13g2_and2_1 cells:       10
+ABC RESULTS:     sg13g2_and3_1 cells:        1
+ABC RESULTS:     sg13g2_and4_1 cells:        3
+ABC RESULTS:      sg13g2_buf_1 cells:        3
+ABC RESULTS:     sg13g2_buf_16 cells:        1
+ABC RESULTS:      sg13g2_buf_2 cells:        3
+ABC RESULTS:      sg13g2_buf_4 cells:        2
+ABC RESULTS:      sg13g2_buf_8 cells:        5
+ABC RESULTS:      sg13g2_inv_1 cells:       38
+ABC RESULTS:      sg13g2_inv_4 cells:        1
+ABC RESULTS:     sg13g2_mux2_1 cells:       56
+ABC RESULTS:    sg13g2_nand2_1 cells:       78
+ABC RESULTS:    sg13g2_nand2_2 cells:        1
+ABC RESULTS:   sg13g2_nand2b_1 cells:       33
+ABC RESULTS:    sg13g2_nand3_1 cells:       12
+ABC RESULTS:   sg13g2_nand3b_1 cells:        1
+ABC RESULTS:    sg13g2_nand4_1 cells:       13
+ABC RESULTS:     sg13g2_nor2_1 cells:        7
+ABC RESULTS:     sg13g2_nor2_2 cells:        1
+ABC RESULTS:    sg13g2_nor2b_1 cells:        1
+ABC RESULTS:     sg13g2_nor3_1 cells:        2
+ABC RESULTS:     sg13g2_nor4_1 cells:        1
+ABC RESULTS:     sg13g2_nor4_2 cells:       10
+ABC RESULTS:    sg13g2_o21ai_1 cells:       76
+ABC RESULTS:      sg13g2_or2_1 cells:        2
+ABC RESULTS:      sg13g2_or4_1 cells:        3
+ABC RESULTS:        internal signals:      174
+ABC RESULTS:           input signals:      277
+ABC RESULTS:          output signals:      148
+Removing temp directory.
+Removing global temp directory.
+
+126. Executing SETUNDEF pass (replace undef values with defined constants).
+
+127. Executing HILOMAP pass (mapping to constant drivers).
+
+128. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+129. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram_macro..
+Removed 0 unused cells and 630 unused wires.
+<suppressed ~34 debug messages>
+
+130. Executing INSBUF pass (insert buffer cells for connected wires).
+Add ram_macro/$auto$insbuf.cc:97:execute$1816: \s_axil_bresp [1] -> \s_axil_bresp [0]
+Add ram_macro/$auto$insbuf.cc:97:execute$1817: \s_axil_rresp [1] -> \s_axil_rresp [0]
+
+131. Executing CHECK pass (checking for obvious problems).
+Checking module ram_macro...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/09eef54f51e6417ab35e97ed48fdf5af.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/tmp/643f5627d1ce472489a28e2eb8c518fc.lib ",
+   "modules": {
+      "\\ram_macro": {
+         "num_wires":         566,
+         "num_wire_bits":     757,
+         "num_pub_wires":     147,
+         "num_pub_wire_bits": 338,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         554,
+         "num_submodules":       0,
+         "area":              9284.247000,
+         "sequential_area":    4751.913600,
+         "num_cells_by_type": {
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1,
+            "sg13g2_a21o_1": 4,
+            "sg13g2_a21oi_1": 5,
+            "sg13g2_a22oi_1": 1,
+            "sg13g2_and2_1": 10,
+            "sg13g2_and3_1": 1,
+            "sg13g2_and4_1": 3,
+            "sg13g2_buf_1": 5,
+            "sg13g2_buf_16": 1,
+            "sg13g2_buf_2": 3,
+            "sg13g2_buf_4": 2,
+            "sg13g2_buf_8": 5,
+            "sg13g2_dfrbpq_1": 97,
+            "sg13g2_inv_1": 38,
+            "sg13g2_inv_4": 1,
+            "sg13g2_mux2_1": 56,
+            "sg13g2_nand2_1": 78,
+            "sg13g2_nand2_2": 1,
+            "sg13g2_nand2b_1": 33,
+            "sg13g2_nand3_1": 12,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 13,
+            "sg13g2_nor2_1": 7,
+            "sg13g2_nor2_2": 1,
+            "sg13g2_nor2b_1": 1,
+            "sg13g2_nor3_1": 2,
+            "sg13g2_nor4_1": 1,
+            "sg13g2_nor4_2": 10,
+            "sg13g2_o21ai_1": 76,
+            "sg13g2_or2_1": 2,
+            "sg13g2_or4_1": 3,
+            "sg13g2_tiehi": 1,
+            "sg13g2_tielo": 79
+         }
+      }
+   },
+      "design": {
+         "num_wires":         566,
+         "num_wire_bits":     757,
+         "num_pub_wires":     147,
+         "num_pub_wire_bits": 338,
+         "num_ports":         22,
+         "num_port_bits":     213,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         554,
+         "num_submodules":       0,
+         "area":              9284.247000,
+         "sequential_area":    4751.913600,
+         "num_cells_by_type": {
+            "RM_IHPSG13_1P_1024x32_c2_bm_bist": 1,
+            "sg13g2_a21o_1": 4,
+            "sg13g2_a21oi_1": 5,
+            "sg13g2_a22oi_1": 1,
+            "sg13g2_and2_1": 10,
+            "sg13g2_and3_1": 1,
+            "sg13g2_and4_1": 3,
+            "sg13g2_buf_1": 5,
+            "sg13g2_buf_16": 1,
+            "sg13g2_buf_2": 3,
+            "sg13g2_buf_4": 2,
+            "sg13g2_buf_8": 5,
+            "sg13g2_dfrbpq_1": 97,
+            "sg13g2_inv_1": 38,
+            "sg13g2_inv_4": 1,
+            "sg13g2_mux2_1": 56,
+            "sg13g2_nand2_1": 78,
+            "sg13g2_nand2_2": 1,
+            "sg13g2_nand2b_1": 33,
+            "sg13g2_nand3_1": 12,
+            "sg13g2_nand3b_1": 1,
+            "sg13g2_nand4_1": 13,
+            "sg13g2_nor2_1": 7,
+            "sg13g2_nor2_2": 1,
+            "sg13g2_nor2b_1": 1,
+            "sg13g2_nor3_1": 2,
+            "sg13g2_nor4_1": 1,
+            "sg13g2_nor4_2": 10,
+            "sg13g2_o21ai_1": 76,
+            "sg13g2_or2_1": 2,
+            "sg13g2_or4_1": 3,
+            "sg13g2_tiehi": 1,
+            "sg13g2_tielo": 79
+         }
+      }
+}
+
+132. Printing statistics.
+
+=== ram_macro ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      566        - wires
+      757        - wire bits
+      147        - public wires
+      338        - public wire bits
+       22        - ports
+      213        - port bits
+      554 9.28E+03 cells
+        1        -   RM_IHPSG13_1P_1024x32_c2_bm_bist
+        4   50.803   sg13g2_a21o_1
+        5    45.36   sg13g2_a21oi_1
+        1   10.849   sg13g2_a22oi_1
+       10    90.72   sg13g2_and2_1
+        1   12.701   sg13g2_and3_1
+        3   43.546   sg13g2_and4_1
+        5   36.288   sg13g2_buf_1
+        1    45.36   sg13g2_buf_16
+        3   27.216   sg13g2_buf_2
+        2    29.03   sg13g2_buf_4
+        5  117.936   sg13g2_buf_8
+       97 4.75E+03   sg13g2_dfrbpq_1
+       38  206.842   sg13g2_inv_1
+        1   10.886   sg13g2_inv_4
+       56 1.02E+03   sg13g2_mux2_1
+       78  566.093   sg13g2_nand2_1
+        1   10.886   sg13g2_nand2_2
+       33  299.376   sg13g2_nand2b_1
+       12  108.864   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+       13  141.523   sg13g2_nand4_1
+        7   50.803   sg13g2_nor2_1
+        1   10.886   sg13g2_nor2_2
+        1    9.072   sg13g2_nor2b_1
+        2   18.144   sg13g2_nor3_1
+        1   10.886   sg13g2_nor4_1
+       10  217.728   sg13g2_nor4_2
+       76  689.472   sg13g2_o21ai_1
+        2   18.144   sg13g2_or2_1
+        3   43.546   sg13g2_or4_1
+        1    7.258   sg13g2_tiehi
+       79   573.35   sg13g2_tielo
+
+   Area for cell type \RM_IHPSG13_1P_1024x32_c2_bm_bist is unknown!
+
+   Chip area for module '\ram_macro': 9284.247000
+     of which used for sequential elements: 4751.913600 (51.18%)
+
+133. Executing Verilog backend.
+Dumping module `\ram_macro'.
+
+134. Executing JSON backend.

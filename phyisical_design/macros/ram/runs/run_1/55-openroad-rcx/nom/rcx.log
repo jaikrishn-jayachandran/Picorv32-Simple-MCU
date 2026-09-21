@@ -1,0 +1,41 @@
+Reading technology LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Reading cell LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+Reading macro LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x32_c2_bm_bist.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x32_c2_bm_bist.lef, created 1 library cells
+Reading gpio pad LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0127] Reading DEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/54-odb-cellfrequencytables/ram_macro.def
+[INFO ODB-0128] Design: ram_macro
+[INFO ODB-0130]     Created 215 pins.
+[INFO ODB-0131]     Created 21725 components and 46697 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 43451 connections.
+[INFO ODB-0133]     Created 1388 nets and 3231 connections.
+[INFO ODB-0134] Finished DEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/54-odb-cellfrequencytables/ram_macro.def
+Using RCX ruleset '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules -lef_res
+[INFO RCX-0435] Reading extraction model file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation ram_macro (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 4620 rc segments
+[INFO RCX-0439] Coupling Cap extraction ram_macro ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 56% of 7964 wires extracted
+[INFO RCX-0442] 100% of 7964 wires extracted
+[INFO RCX-0045] Extract 1388 nets, 5986 rsegs, 5986 caps, 7033 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_sram matched with u_sram
+u_sram matched with u_sram
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1  140182.69
+  Fill cell                             20521  250020.69
+  Antenna cell                              4      21.77
+  Standard cell                          1199   17666.81
+  Total                                 21725  407891.97
+Writing extracted parasitics to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/55-openroad-rcx/nom/ram_macro.nom.spef'…
+[INFO RCX-0443] 1388 nets finished

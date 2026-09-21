@@ -1,0 +1,15 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+Writing metric clock__skew__worst_setup__corner:nom_slow_1p08V_125C: 0.22589930565539854
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Clock clk_i
+0.394551 source latency _874_/CLK ^
+-0.368652 target latency u_sram/A_CLK ^
+0.200000 clock uncertainty
+0.000000 CRPR
+--------------
+0.225899 setup skew
+

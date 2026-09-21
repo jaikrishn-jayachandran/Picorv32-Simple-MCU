@@ -1,0 +1,36 @@
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/54-odb-cellfrequencytables/ram_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/pnr.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Using voltage extracted from lib (1.08V) for power nets and 0V for ground nets…
+%OL_CREATE_REPORT irdrop.rpt
++ analyze_power_grid -net VPWR -voltage_file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/57-openroad-irdropreport/net-VPWR.csv
+[INFO PSM-0040] All shapes on net VPWR are connected.
+########## IR report #################
+Net              : VPWR
+Corner           : nom_slow_1p08V_125C
+Total power      : 2.02e-03 W
+Supply voltage   : 1.08e+00 V
+Worstcase voltage: 1.08e+00 V
+Average voltage  : 1.08e+00 V
+Average IR drop  : 1.26e-05 V
+Worstcase IR drop: 7.71e-04 V
+Percentage drop  : 0.07 %
+######################################
++ analyze_power_grid -net VGND -voltage_file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/57-openroad-irdropreport/net-VGND.csv
+[INFO PSM-0040] All shapes on net VGND are connected.
+########## IR report #################
+Net              : VGND
+Corner           : nom_slow_1p08V_125C
+Total power      : 2.02e-03 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 7.02e-04 V
+Average voltage  : 1.05e-05 V
+Average IR drop  : 1.05e-05 V
+Worstcase IR drop: 7.02e-04 V
+Percentage drop  : 0.07 %
+######################################
+%OL_END_REPORT

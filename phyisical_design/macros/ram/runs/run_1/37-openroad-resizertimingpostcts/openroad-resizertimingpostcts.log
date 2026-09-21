@@ -1,0 +1,83 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib line 20, library RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C already exists.
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/35-openroad-cts/ram_macro.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/pnr.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50.0
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
++ repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1000000000000000055511151231257827021181583404541015625 -max_buffer_percent 50.0
+[INFO RSZ-0046] Found 164 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -0.832 | -54.909 | u_sram/A_DIN[31]
+       10 |       0 |      29 |            0 |    +0.3% |  -0.783 | -50.908 | u_sram/A_DIN[27]
+       20 |       0 |      54 |            0 |    +0.6% |  -0.773 | -43.819 | u_sram/A_ADDR[9]
+       30 |       0 |      87 |            0 |    +0.9% |  -0.761 | -39.109 | u_sram/A_DIN[19]
+       40 |       0 |     108 |            0 |    +1.2% |  -0.712 | -30.960 | u_sram/A_DIN[14]
+       50 |       0 |     128 |            0 |    +1.4% |  -0.690 | -23.638 | u_sram/A_DIN[5]
+       60 |       0 |     139 |            0 |    +1.5% |  -0.683 | -20.635 | u_sram/A_DIN[8]
+       70 |       0 |     164 |            0 |    +1.8% |  -0.538 | -11.851 | u_sram/A_ADDR[4]
+       80 |       0 |     176 |            0 |    +1.9% |  -0.538 | -10.961 | u_sram/A_ADDR[4]
+       90 |       0 |     177 |            0 |    +1.9% |  -0.538 | -10.716 | u_sram/A_ADDR[4]
+      100 |       0 |     177 |            0 |    +1.9% |  -0.538 | -10.716 | u_sram/A_ADDR[4]
+      110 |       0 |     179 |            0 |    +1.9% |  -0.525 | -10.228 | u_sram/A_ADDR[2]
+      120 |       0 |     181 |            0 |    +1.9% |  -0.525 |  -9.983 | u_sram/A_ADDR[2]
+      130 |       0 |     186 |            0 |    +2.0% |  -0.525 |  -9.491 | u_sram/A_ADDR[2]
+      140 |       0 |     195 |            0 |    +2.1% |  -0.294 |  -8.507 | u_sram/A_ADDR[1]
+      150 |       0 |     204 |            0 |    +2.2% |  -0.294 |  -8.507 | u_sram/A_ADDR[1]
+      160 |       0 |     213 |            0 |    +2.3% |  -0.294 |  -8.507 | u_sram/A_ADDR[1]
+      170 |       0 |     233 |            0 |    +2.5% |  -0.265 |  -7.103 | u_sram/A_ADDR[9]
+      180 |       0 |     263 |            0 |    +2.8% |  -0.209 |  -4.748 | u_sram/A_DIN[26]
+      190 |       0 |     293 |            0 |    +3.1% |  -0.201 |  -2.690 | u_sram/A_DIN[16]
+      200 |       0 |     323 |            0 |    +3.5% |  -0.155 |  -1.035 | u_sram/A_DIN[7]
+    final |       0 |     341 |            0 |    +3.7% |   0.101 |   0.000 | _820_/D
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 341 hold buffers.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       2921.0 u
+average displacement        2.5 u
+max displacement           73.8 u
+original HPWL           91407.7 u
+legalized HPWL          93812.1 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 699 instances
+[INFO DPL-0021] HPWL before           93812.1 u
+[INFO DPL-0022] HPWL after            91903.4 u
+[INFO DPL-0023] HPWL delta               -2.0 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_sram matched with u_sram
+u_sram matched with u_sram
+[INFO ODB-0403] 682 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1  140182.69
+  Buffer                                   16     255.83
+  Clock buffer                             22     649.56
+  Timing Repair Buffer                    590    7375.54
+  Inverter                                 39     217.73
+  Clock inverter                           15      81.65
+  Sequential cell                          97    4751.91
+  Multi-Input combinational cell          401    4058.81
+  Total                                  1181  157573.72
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/37-openroad-resizertimingpostcts/ram_macro.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/37-openroad-resizertimingpostcts/ram_macro.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/37-openroad-resizertimingpostcts/ram_macro.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/37-openroad-resizertimingpostcts/ram_macro.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/37-openroad-resizertimingpostcts/ram_macro.sdc'…

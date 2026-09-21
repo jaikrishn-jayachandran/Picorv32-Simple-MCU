@@ -1,0 +1,875 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Startpoint: u_sram (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _795_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.100000    0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                      0.100000    0.000000    0.000000 ^ u_sram/A_CLK (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+     1    0.003239    0.063918    7.296496    7.296496 ^ u_sram/A_DOUT[0] (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+                                                         sram_dout[0] (net)
+                      0.047938    0.000000    7.296496 ^ _626_/B (sg13g2_nand2_1)
+     1    0.003196    0.202493    0.079525    7.376022 v _626_/Y (sg13g2_nand2_1)
+                                                         _264_ (net)
+                      0.202493    0.000000    7.376022 v _627_/B1 (sg13g2_o21ai_1)
+     1    0.001486    0.091284    0.094739    7.470761 ^ _627_/Y (sg13g2_o21ai_1)
+                                                         _021_ (net)
+                      0.091284    0.000000    7.470761 ^ _795_/D (sg13g2_dfrbpq_1)
+                                              7.470761   data arrival time
+
+                      0.100000   10.000000   10.000000   clock clk_i (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.200000    9.800000   clock uncertainty
+                                  0.000000    9.800000   clock reconvergence pessimism
+                                              9.800000 ^ _795_/CLK (sg13g2_dfrbpq_1)
+                                 -0.204073    9.595928   library setup time
+                                              9.595928   data required time
+---------------------------------------------------------------------------------------------
+                                              9.595928   data required time
+                                             -7.470761   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.125167   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+u_sram/A_BM[0]                          0.595200    1.515484   -0.920284 (VIOLATED)
+u_sram/A_BM[16]                         0.595200    1.515484   -0.920284 (VIOLATED)
+u_sram/A_BM[24]                         0.595200    1.515484   -0.920284 (VIOLATED)
+u_sram/A_BM[8]                          0.595200    1.515484   -0.920284 (VIOLATED)
+u_sram/A_BM[17]                         0.595200    1.136613   -0.541413 (VIOLATED)
+u_sram/A_BM[1]                          0.595200    1.136613   -0.541413 (VIOLATED)
+u_sram/A_BM[25]                         0.595200    1.136613   -0.541413 (VIOLATED)
+u_sram/A_BM[9]                          0.595200    1.136613   -0.541413 (VIOLATED)
+u_sram/A_BM[10]                         0.595200    0.852460   -0.257260 (VIOLATED)
+u_sram/A_BM[18]                         0.595200    0.852460   -0.257260 (VIOLATED)
+u_sram/A_BM[26]                         0.595200    0.852460   -0.257260 (VIOLATED)
+u_sram/A_BM[2]                          0.595200    0.852460   -0.257260 (VIOLATED)
+u_sram/A_BM[11]                         0.595200    0.639345   -0.044145 (VIOLATED)
+u_sram/A_BM[19]                         0.595200    0.639345   -0.044145 (VIOLATED)
+u_sram/A_BM[27]                         0.595200    0.639345   -0.044145 (VIOLATED)
+u_sram/A_BM[3]                          0.595200    0.639345   -0.044145 (VIOLATED)
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+rst_ni                                   16     97    -81 (VIOLATED)
+_888_/Q                                   8     67    -59 (VIOLATED)
+boot_we                                  16     52    -36 (VIOLATED)
+_449_/X                                   8     16     -8 (VIOLATED)
+_492_/X                                   8     16     -8 (VIOLATED)
+_624_/X                                   8     16     -8 (VIOLATED)
+_673_/X                                   8     16     -8 (VIOLATED)
+_744_/X                                   8     16     -8 (VIOLATED)
+_761_/X                                   8     16     -8 (VIOLATED)
+_535_/Y                                   8     13     -5 (VIOLATED)
+_440_/X                                   8     11     -3 (VIOLATED)
+_447_/X                                   8     11     -3 (VIOLATED)
+_532_/X                                   8     11     -3 (VIOLATED)
+_534_/X                                   8     11     -3 (VIOLATED)
+_591_/Y                                   8     11     -3 (VIOLATED)
+_730_/X                                   8     11     -3 (VIOLATED)
+_542_/X                                   8      9        (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 757 unannotated drivers.
+ boot_addr[0]
+ boot_addr[10]
+ boot_addr[11]
+ boot_addr[12]
+ boot_addr[13]
+ boot_addr[14]
+ boot_addr[15]
+ boot_addr[16]
+ boot_addr[17]
+ boot_addr[18]
+ boot_addr[19]
+ boot_addr[1]
+ boot_addr[20]
+ boot_addr[21]
+ boot_addr[22]
+ boot_addr[23]
+ boot_addr[24]
+ boot_addr[25]
+ boot_addr[26]
+ boot_addr[27]
+ boot_addr[28]
+ boot_addr[29]
+ boot_addr[2]
+ boot_addr[30]
+ boot_addr[31]
+ boot_addr[3]
+ boot_addr[4]
+ boot_addr[5]
+ boot_addr[6]
+ boot_addr[7]
+ boot_addr[8]
+ boot_addr[9]
+ boot_wdata[0]
+ boot_wdata[10]
+ boot_wdata[11]
+ boot_wdata[12]
+ boot_wdata[13]
+ boot_wdata[14]
+ boot_wdata[15]
+ boot_wdata[16]
+ boot_wdata[17]
+ boot_wdata[18]
+ boot_wdata[19]
+ boot_wdata[1]
+ boot_wdata[20]
+ boot_wdata[21]
+ boot_wdata[22]
+ boot_wdata[23]
+ boot_wdata[24]
+ boot_wdata[25]
+ boot_wdata[26]
+ boot_wdata[27]
+ boot_wdata[28]
+ boot_wdata[29]
+ boot_wdata[2]
+ boot_wdata[30]
+ boot_wdata[31]
+ boot_wdata[3]
+ boot_wdata[4]
+ boot_wdata[5]
+ boot_wdata[6]
+ boot_wdata[7]
+ boot_wdata[8]
+ boot_wdata[9]
+ boot_we
+ clk_i
+ rst_ni
+ s_axil_araddr[0]
+ s_axil_araddr[10]
+ s_axil_araddr[11]
+ s_axil_araddr[12]
+ s_axil_araddr[13]
+ s_axil_araddr[14]
+ s_axil_araddr[15]
+ s_axil_araddr[16]
+ s_axil_araddr[17]
+ s_axil_araddr[18]
+ s_axil_araddr[19]
+ s_axil_araddr[1]
+ s_axil_araddr[20]
+ s_axil_araddr[21]
+ s_axil_araddr[22]
+ s_axil_araddr[23]
+ s_axil_araddr[24]
+ s_axil_araddr[25]
+ s_axil_araddr[26]
+ s_axil_araddr[27]
+ s_axil_araddr[28]
+ s_axil_araddr[29]
+ s_axil_araddr[2]
+ s_axil_araddr[30]
+ s_axil_araddr[31]
+ s_axil_araddr[3]
+ s_axil_araddr[4]
+ s_axil_araddr[5]
+ s_axil_araddr[6]
+ s_axil_araddr[7]
+ s_axil_araddr[8]
+ s_axil_araddr[9]
+ s_axil_arvalid
+ s_axil_awaddr[0]
+ s_axil_awaddr[10]
+ s_axil_awaddr[11]
+ s_axil_awaddr[12]
+ s_axil_awaddr[13]
+ s_axil_awaddr[14]
+ s_axil_awaddr[15]
+ s_axil_awaddr[16]
+ s_axil_awaddr[17]
+ s_axil_awaddr[18]
+ s_axil_awaddr[19]
+ s_axil_awaddr[1]
+ s_axil_awaddr[20]
+ s_axil_awaddr[21]
+ s_axil_awaddr[22]
+ s_axil_awaddr[23]
+ s_axil_awaddr[24]
+ s_axil_awaddr[25]
+ s_axil_awaddr[26]
+ s_axil_awaddr[27]
+ s_axil_awaddr[28]
+ s_axil_awaddr[29]
+ s_axil_awaddr[2]
+ s_axil_awaddr[30]
+ s_axil_awaddr[31]
+ s_axil_awaddr[3]
+ s_axil_awaddr[4]
+ s_axil_awaddr[5]
+ s_axil_awaddr[6]
+ s_axil_awaddr[7]
+ s_axil_awaddr[8]
+ s_axil_awaddr[9]
+ s_axil_awvalid
+ s_axil_bready
+ s_axil_rready
+ s_axil_wdata[0]
+ s_axil_wdata[10]
+ s_axil_wdata[11]
+ s_axil_wdata[12]
+ s_axil_wdata[13]
+ s_axil_wdata[14]
+ s_axil_wdata[15]
+ s_axil_wdata[16]
+ s_axil_wdata[17]
+ s_axil_wdata[18]
+ s_axil_wdata[19]
+ s_axil_wdata[1]
+ s_axil_wdata[20]
+ s_axil_wdata[21]
+ s_axil_wdata[22]
+ s_axil_wdata[23]
+ s_axil_wdata[24]
+ s_axil_wdata[25]
+ s_axil_wdata[26]
+ s_axil_wdata[27]
+ s_axil_wdata[28]
+ s_axil_wdata[29]
+ s_axil_wdata[2]
+ s_axil_wdata[30]
+ s_axil_wdata[31]
+ s_axil_wdata[3]
+ s_axil_wdata[4]
+ s_axil_wdata[5]
+ s_axil_wdata[6]
+ s_axil_wdata[7]
+ s_axil_wdata[8]
+ s_axil_wdata[9]
+ s_axil_wstrb[0]
+ s_axil_wstrb[1]
+ s_axil_wstrb[2]
+ s_axil_wstrb[3]
+ s_axil_wvalid
+ _419_/Y
+ _420_/Y
+ _421_/Y
+ _422_/X
+ _423_/Y
+ _424_/Y
+ _425_/Y
+ _426_/Y
+ _427_/X
+ _428_/Y
+ _429_/Y
+ _430_/Y
+ _431_/X
+ _432_/Y
+ _433_/Y
+ _434_/Y
+ _435_/Y
+ _436_/Y
+ _437_/Y
+ _438_/Y
+ _439_/X
+ _440_/X
+ _441_/X
+ _442_/X
+ _443_/Y
+ _444_/X
+ _445_/X
+ _446_/Y
+ _447_/X
+ _448_/Y
+ _449_/X
+ _450_/Y
+ _451_/Y
+ _452_/Y
+ _453_/Y
+ _454_/Y
+ _455_/Y
+ _456_/Y
+ _457_/Y
+ _458_/Y
+ _459_/Y
+ _460_/Y
+ _461_/Y
+ _462_/Y
+ _463_/Y
+ _464_/Y
+ _465_/Y
+ _466_/Y
+ _467_/Y
+ _468_/Y
+ _469_/Y
+ _470_/Y
+ _471_/Y
+ _472_/Y
+ _473_/Y
+ _474_/Y
+ _475_/Y
+ _476_/Y
+ _477_/Y
+ _478_/Y
+ _479_/Y
+ _480_/Y
+ _481_/Y
+ _482_/Y
+ _483_/Y
+ _484_/Y
+ _485_/Y
+ _486_/Y
+ _487_/Y
+ _488_/Y
+ _489_/Y
+ _490_/Y
+ _491_/Y
+ _492_/X
+ _493_/Y
+ _494_/Y
+ _495_/Y
+ _496_/Y
+ _497_/Y
+ _498_/Y
+ _499_/Y
+ _500_/Y
+ _501_/Y
+ _502_/Y
+ _503_/Y
+ _504_/Y
+ _505_/Y
+ _506_/Y
+ _507_/Y
+ _508_/Y
+ _509_/Y
+ _510_/Y
+ _511_/Y
+ _512_/Y
+ _513_/Y
+ _514_/Y
+ _515_/Y
+ _516_/Y
+ _517_/Y
+ _518_/Y
+ _519_/Y
+ _520_/Y
+ _521_/Y
+ _522_/Y
+ _523_/Y
+ _524_/Y
+ _525_/Y
+ _526_/Y
+ _527_/Y
+ _528_/Y
+ _529_/Y
+ _530_/Y
+ _531_/Y
+ _532_/X
+ _533_/X
+ _534_/X
+ _535_/Y
+ _536_/X
+ _537_/Y
+ _538_/Y
+ _539_/Y
+ _540_/Y
+ _541_/Y
+ _542_/X
+ _543_/X
+ _544_/Y
+ _545_/Y
+ _546_/Y
+ _547_/Y
+ _548_/X
+ _549_/Y
+ _550_/Y
+ _551_/Y
+ _552_/Y
+ _553_/X
+ _554_/Y
+ _555_/Y
+ _556_/Y
+ _557_/Y
+ _558_/X
+ _559_/Y
+ _560_/Y
+ _561_/Y
+ _562_/Y
+ _563_/X
+ _564_/Y
+ _565_/Y
+ _566_/Y
+ _567_/Y
+ _568_/X
+ _569_/Y
+ _570_/Y
+ _571_/Y
+ _572_/Y
+ _573_/X
+ _574_/Y
+ _575_/Y
+ _576_/Y
+ _577_/Y
+ _578_/X
+ _579_/Y
+ _580_/Y
+ _581_/Y
+ _582_/Y
+ _583_/X
+ _584_/Y
+ _585_/Y
+ _586_/Y
+ _587_/Y
+ _588_/Y
+ _589_/Y
+ _590_/Y
+ _591_/Y
+ _592_/Y
+ _593_/Y
+ _594_/X
+ _595_/Y
+ _596_/Y
+ _597_/Y
+ _598_/X
+ _599_/X
+ _600_/X
+ _601_/X
+ _602_/Y
+ _603_/Y
+ _604_/Y
+ _605_/Y
+ _606_/Y
+ _607_/Y
+ _608_/Y
+ _609_/Y
+ _610_/Y
+ _611_/Y
+ _612_/Y
+ _613_/Y
+ _614_/Y
+ _615_/Y
+ _616_/Y
+ _617_/Y
+ _618_/Y
+ _619_/Y
+ _620_/Y
+ _621_/Y
+ _622_/Y
+ _623_/Y
+ _624_/X
+ _625_/Y
+ _626_/Y
+ _627_/Y
+ _628_/Y
+ _629_/Y
+ _630_/Y
+ _631_/Y
+ _632_/Y
+ _633_/Y
+ _634_/Y
+ _635_/Y
+ _636_/Y
+ _637_/Y
+ _638_/Y
+ _639_/Y
+ _640_/Y
+ _641_/Y
+ _642_/Y
+ _643_/Y
+ _644_/Y
+ _645_/Y
+ _646_/Y
+ _647_/Y
+ _648_/Y
+ _649_/Y
+ _650_/Y
+ _651_/Y
+ _652_/Y
+ _653_/Y
+ _654_/Y
+ _655_/Y
+ _656_/Y
+ _657_/Y
+ _658_/Y
+ _659_/Y
+ _660_/Y
+ _661_/Y
+ _662_/Y
+ _663_/Y
+ _664_/Y
+ _665_/Y
+ _666_/Y
+ _667_/Y
+ _668_/Y
+ _669_/Y
+ _670_/Y
+ _671_/Y
+ _672_/Y
+ _673_/X
+ _674_/Y
+ _675_/Y
+ _676_/Y
+ _677_/Y
+ _678_/Y
+ _679_/Y
+ _680_/Y
+ _681_/Y
+ _682_/Y
+ _683_/Y
+ _684_/Y
+ _685_/Y
+ _686_/Y
+ _687_/Y
+ _688_/Y
+ _689_/Y
+ _690_/Y
+ _691_/Y
+ _692_/Y
+ _693_/Y
+ _694_/Y
+ _695_/Y
+ _696_/Y
+ _697_/Y
+ _698_/Y
+ _699_/Y
+ _700_/Y
+ _701_/Y
+ _702_/Y
+ _703_/Y
+ _704_/Y
+ _705_/Y
+ _706_/Y
+ _707_/Y
+ _708_/Y
+ _709_/Y
+ _710_/Y
+ _711_/Y
+ _712_/Y
+ _713_/Y
+ _714_/Y
+ _715_/Y
+ _716_/Y
+ _717_/Y
+ _718_/Y
+ _719_/Y
+ _720_/Y
+ _721_/Y
+ _722_/Y
+ _723_/Y
+ _724_/Y
+ _725_/Y
+ _726_/Y
+ _727_/Y
+ _728_/Y
+ _729_/Y
+ _730_/X
+ _731_/Y
+ _732_/X
+ _733_/X
+ _734_/X
+ _735_/X
+ _736_/X
+ _737_/X
+ _738_/X
+ _739_/X
+ _740_/X
+ _741_/X
+ _742_/Y
+ _743_/X
+ _744_/X
+ _745_/Y
+ _746_/X
+ _747_/X
+ _748_/X
+ _749_/X
+ _750_/X
+ _751_/X
+ _752_/X
+ _753_/X
+ _754_/X
+ _755_/X
+ _756_/X
+ _757_/X
+ _758_/X
+ _759_/X
+ _760_/X
+ _761_/X
+ _762_/X
+ _763_/X
+ _764_/X
+ _765_/X
+ _766_/X
+ _767_/X
+ _768_/X
+ _769_/X
+ _770_/X
+ _771_/X
+ _772_/X
+ _773_/X
+ _774_/X
+ _775_/X
+ _776_/X
+ _777_/X
+ _778_/X
+ _779_/X
+ _780_/X
+ _781_/X
+ _782_/X
+ _783_/X
+ _784_/X
+ _785_/X
+ _786_/X
+ _787_/X
+ _788_/X
+ _789_/X
+ _790_/X
+ _791_/X
+ _792_/X
+ _793_/Q
+ _794_/Q
+ _795_/Q
+ _796_/Q
+ _797_/Q
+ _798_/Q
+ _799_/Q
+ _800_/Q
+ _801_/Q
+ _802_/Q
+ _803_/Q
+ _804_/Q
+ _805_/Q
+ _806_/Q
+ _807_/Q
+ _808_/Q
+ _809_/Q
+ _810_/Q
+ _811_/Q
+ _812_/Q
+ _813_/Q
+ _814_/Q
+ _815_/Q
+ _816_/Q
+ _817_/Q
+ _818_/Q
+ _819_/Q
+ _820_/Q
+ _821_/Q
+ _822_/Q
+ _823_/Q
+ _824_/Q
+ _825_/Q
+ _826_/Q
+ _827_/Q
+ _828_/Q
+ _829_/Q
+ _830_/Q
+ _831_/Q
+ _832_/Q
+ _833_/Q
+ _834_/Q
+ _835_/Q
+ _836_/Q
+ _837_/Q
+ _838_/Q
+ _839_/Q
+ _840_/Q
+ _841_/Q
+ _842_/Q
+ _843_/Q
+ _844_/Q
+ _845_/Q
+ _846_/Q
+ _847_/Q
+ _848_/Q
+ _849_/Q
+ _850_/Q
+ _851_/Q
+ _852_/Q
+ _853_/Q
+ _854_/Q
+ _855_/Q
+ _856_/Q
+ _857_/Q
+ _858_/Q
+ _859_/Q
+ _860_/Q
+ _861_/Q
+ _862_/Q
+ _863_/Q
+ _864_/Q
+ _865_/Q
+ _866_/Q
+ _867_/Q
+ _868_/Q
+ _869_/Q
+ _870_/Q
+ _871_/Q
+ _872_/Q
+ _873_/Q
+ _874_/Q
+ _875_/Q
+ _876_/Q
+ _877_/Q
+ _878_/Q
+ _879_/Q
+ _880_/Q
+ _881_/Q
+ _882_/Q
+ _883_/Q
+ _884_/Q
+ _885_/Q
+ _886_/Q
+ _887_/Q
+ _888_/Q
+ _889_/Q
+ _890_/L_HI
+ _891_/L_LO
+ _892_/L_LO
+ _893_/L_LO
+ _894_/L_LO
+ _895_/L_LO
+ _896_/L_LO
+ _897_/L_LO
+ _898_/L_LO
+ _899_/L_LO
+ _900_/L_LO
+ _901_/L_LO
+ _902_/L_LO
+ _903_/L_LO
+ _904_/L_LO
+ _905_/L_LO
+ _906_/L_LO
+ _907_/L_LO
+ _908_/L_LO
+ _909_/L_LO
+ _910_/L_LO
+ _911_/L_LO
+ _912_/L_LO
+ _913_/L_LO
+ _914_/L_LO
+ _915_/L_LO
+ _916_/L_LO
+ _917_/L_LO
+ _918_/L_LO
+ _919_/L_LO
+ _920_/L_LO
+ _921_/L_LO
+ _922_/L_LO
+ _923_/L_LO
+ _924_/L_LO
+ _925_/L_LO
+ _926_/L_LO
+ _927_/L_LO
+ _928_/L_LO
+ _929_/L_LO
+ _930_/L_LO
+ _931_/L_LO
+ _932_/L_LO
+ _933_/L_LO
+ _934_/L_LO
+ _935_/L_LO
+ _936_/L_LO
+ _937_/L_LO
+ _938_/L_LO
+ _939_/L_LO
+ _940_/L_LO
+ _941_/L_LO
+ _942_/L_LO
+ _943_/L_LO
+ _944_/L_LO
+ _945_/L_LO
+ _946_/L_LO
+ _947_/L_LO
+ _948_/L_LO
+ _949_/L_LO
+ _950_/L_LO
+ _951_/L_LO
+ _952_/L_LO
+ _953_/L_LO
+ _954_/L_LO
+ _955_/L_LO
+ _956_/L_LO
+ _957_/L_LO
+ _958_/L_LO
+ _959_/L_LO
+ _960_/L_LO
+ _961_/L_LO
+ _962_/L_LO
+ _963_/L_LO
+ _964_/L_LO
+ _965_/L_LO
+ _966_/L_LO
+ _967_/L_LO
+ _968_/L_LO
+ _969_/L_LO
+ _970_/X
+ _971_/X
+ u_sram/A_DOUT[0]
+ u_sram/A_DOUT[10]
+ u_sram/A_DOUT[11]
+ u_sram/A_DOUT[12]
+ u_sram/A_DOUT[13]
+ u_sram/A_DOUT[14]
+ u_sram/A_DOUT[15]
+ u_sram/A_DOUT[16]
+ u_sram/A_DOUT[17]
+ u_sram/A_DOUT[18]
+ u_sram/A_DOUT[19]
+ u_sram/A_DOUT[1]
+ u_sram/A_DOUT[20]
+ u_sram/A_DOUT[21]
+ u_sram/A_DOUT[22]
+ u_sram/A_DOUT[23]
+ u_sram/A_DOUT[24]
+ u_sram/A_DOUT[25]
+ u_sram/A_DOUT[26]
+ u_sram/A_DOUT[27]
+ u_sram/A_DOUT[28]
+ u_sram/A_DOUT[29]
+ u_sram/A_DOUT[2]
+ u_sram/A_DOUT[30]
+ u_sram/A_DOUT[31]
+ u_sram/A_DOUT[3]
+ u_sram/A_DOUT[4]
+ u_sram/A_DOUT[5]
+ u_sram/A_DOUT[6]
+ u_sram/A_DOUT[7]
+ u_sram/A_DOUT[8]
+ u_sram/A_DOUT[9]
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 16
+max fanout violation count 17
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There is 1 input port missing set_input_delay.
+  rst_ni

@@ -1,0 +1,146 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: u_sram (rising edge-triggered flip-flop clocked by clk_i)
+Endpoint: _797_ (rising edge-triggered flip-flop clocked by clk_i)
+Path Group: clk_i
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk_i (rise edge)
+                                  0.000000    0.000000   clock source latency
+     2    0.077972    0.000000    0.000000    0.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.010445    0.005222    0.005222 ^ delaybuf_0_clk_i/A (sg13g2_buf_16)
+     1    0.028478    0.020463    0.056933    0.062155 ^ delaybuf_0_clk_i/X (sg13g2_buf_16)
+                                                         delaynet_0_clk_i (net)
+                      0.020626    0.002905    0.065061 ^ delaybuf_1_clk_i/A (sg13g2_buf_16)
+     1    0.027173    0.020658    0.061679    0.126740 ^ delaybuf_1_clk_i/X (sg13g2_buf_16)
+                                                         delaynet_1_clk_i (net)
+                      0.020783    0.002615    0.129355 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     1    0.020249    0.019086    0.060592    0.189946 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.019130    0.001668    0.191614 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     1    0.007636    0.016012    0.057514    0.249128 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.021351    0.000477    0.249605 ^ u_sram/A_CLK (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+     1    0.056512    0.198723    7.376997    7.626603 ^ u_sram/A_DOUT[2] (RM_IHPSG13_1P_1024x32_c2_bm_bist)
+                                                         sram_dout[2] (net)
+                      0.149042    0.007899    7.634502 ^ wire678/A (sg13g2_buf_4)
+     1    0.048717    0.067722    0.169638    7.804140 ^ wire678/X (sg13g2_buf_4)
+                                                         net677 (net)
+                      0.068828    0.006842    7.810981 ^ _632_/B (sg13g2_nand2_1)
+     1    0.005517    0.065450    0.071150    7.882132 v _632_/Y (sg13g2_nand2_1)
+                                                         _268_ (net)
+                      0.065452    0.000366    7.882497 v _633_/B1 (sg13g2_o21ai_1)
+     1    0.003562    0.081381    0.050659    7.933156 ^ _633_/Y (sg13g2_o21ai_1)
+                                                         _023_ (net)
+                      0.081383    0.000247    7.933403 ^ _797_/D (sg13g2_dfrbpq_1)
+                                              7.933403   data arrival time
+
+                                 10.000000   10.000000   clock clk_i (rise edge)
+                                  0.000000   10.000000   clock source latency
+     2    0.072626    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.016701    0.008351   10.008351 ^ clkbuf_regs_0_clk_i/A (sg13g2_buf_16)
+     1    0.016159    0.017928    0.057971   10.066322 ^ clkbuf_regs_0_clk_i/X (sg13g2_buf_16)
+                                                         clk_i_regs (net)
+                      0.017932    0.000663   10.066986 ^ clkbuf_0_clk_i_regs/A (sg13g2_buf_16)
+    16    0.182995    0.058079    0.079657   10.146643 ^ clkbuf_0_clk_i_regs/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i_regs (net)
+                      0.075316    0.024484   10.171126 ^ clkbuf_4_13_0_clk_i_regs/A (sg13g2_buf_8)
+     7    0.028857    0.029558    0.093992   10.265119 ^ clkbuf_4_13_0_clk_i_regs/X (sg13g2_buf_8)
+                                                         clknet_4_13_0_clk_i_regs (net)
+                      0.029578    0.001324   10.266443 ^ _797_/CLK (sg13g2_dfrbpq_1)
+                                 -0.150000   10.116443   clock uncertainty
+                                  0.000000   10.116443   clock reconvergence pessimism
+                                 -0.131250    9.985193   library setup time
+                                              9.985193   data required time
+---------------------------------------------------------------------------------------------
+                                              9.985193   data required time
+                                             -7.933403   data arrival time
+---------------------------------------------------------------------------------------------
+                                              2.051790   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_0_clk_i_regs/X                     8     16     -8 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 37 unannotated drivers.
+ boot_addr[0]
+ boot_addr[12]
+ boot_addr[13]
+ boot_addr[14]
+ boot_addr[15]
+ boot_addr[16]
+ boot_addr[17]
+ boot_addr[18]
+ boot_addr[19]
+ boot_addr[1]
+ boot_addr[20]
+ boot_addr[21]
+ boot_addr[22]
+ boot_addr[23]
+ boot_addr[24]
+ boot_addr[25]
+ boot_addr[26]
+ boot_addr[27]
+ boot_addr[28]
+ boot_addr[29]
+ boot_addr[30]
+ boot_addr[31]
+ clkload0/Y
+ clkload1/Y
+ clkload10/Y
+ clkload11/Y
+ clkload12/Y
+ clkload13/Y
+ clkload14/Y
+ clkload2/Y
+ clkload3/Y
+ clkload4/Y
+ clkload5/Y
+ clkload6/Y
+ clkload7/Y
+ clkload8/Y
+ clkload9/Y
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 1
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There is 1 input port missing set_input_delay.
+  rst_ni

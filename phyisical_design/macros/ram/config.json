@@ -1,45 +1,101 @@
 {
   "DESIGN_NAME": "ram_macro",
 
-  "PDK": "ihp-sg13g2",
-  "STD_CELL_LIBRARY": "sg13g2_stdcell",
-
-  "PDN_MULTILAYER": true,
-
   "VERILOG_FILES": [
     "dir::../../../rtl/macros/ram_macro.sv",
-    "dir::../../../rtl/axi_ram.sv"
-  ],
-
-  "VERILOG_DEFINES": [
-    "SYNTHESIS"
+    "dir::../../../rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v"
   ],
 
   "CLOCK_PORT": "clk_i",
   "CLOCK_PERIOD": 10.0,
 
   "FP_CORE_UTIL": 35,
-  "PL_TARGET_DENSITY_PCT": 45,
+
+  "RT_MIN_LAYER": "Metal2",
+  "RT_MAX_LAYER": "Metal4",
+
+  "SYNTH_STRATEGY": "DELAY 4",
+
+  "DEFAULT_CORNER": "nom_slow_1p08V_125C",
+  "SYNTH_CORNER": "nom_slow_1p08V_125C",
+
+  "PNR_SDC_FILE": "dir::pnr.sdc",
+  "SIGNOFF_SDC_FILE": "dir::signoff.sdc",
 
   "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
 
-  "SYNTH_STRATEGY": "DELAY 1",
-  "SYNTH_MAX_FANOUT": 8,
+  "PDN_CFG": "dir::pdn_cfg.tcl",
 
-  "CTS_SINK_CLUSTERING_ENABLE": true,
-  "CTS_SINK_CLUSTERING_SIZE": 8,
+  "PDN_MULTILAYER": true,
 
-  "VDD_NETS": [
-    "VDD"
+  "PDN_ENABLE_PINS": true,
+  "PDN_ENABLE_RAILS": true,
+
+  "PDN_RAIL_LAYER": "Metal1",
+  "PDN_RAIL_WIDTH": 0.44,
+
+  "PDN_VWIDTH": 2.2,
+  "PDN_HWIDTH": 2.2,
+
+  "PDN_VSPACING": 4.0,
+  "PDN_HSPACING": 4.0,
+
+  "PDN_VPITCH": 75.6,
+  "PDN_HPITCH": 75.6,
+
+  "PDN_VOFFSET": 13.6,
+  "PDN_HOFFSET": 13.6,
+
+  "PDN_HORIZONTAL_HALO": 10.0,
+  "PDN_VERTICAL_HALO": 10.0,
+
+  "PDN_CORE_RING": false,
+
+  "PDN_VERTICAL_LAYER": "TopMetal1",
+  "PDN_HORIZONTAL_LAYER": "TopMetal2",
+
+  "PDN_CONNECT_MACROS_TO_GRID": true,
+
+  "PDN_ENABLE_GLOBAL_CONNECTIONS": true,
+
+  "PDN_MACRO_CONNECTIONS": [
+    "u_sram VPWR VGND VDD! VSS!",
+    "u_sram VPWR VGND VDDARRAY! VSS!"
   ],
 
-  "GND_NETS": [
-    "VSS"
-  ],
+  "MACROS": {
+    "RM_IHPSG13_1P_1024x32_c2_bm_bist": {
+      "gds": [
+        "pdk_dir::libs.ref/sg13g2_sram/gds/RM_IHPSG13_1P_1024x32_c2_bm_bist.gds"
+      ],
 
-  "DRT_OPT_ITERS": 64,
-  "DRT_THREADS": 8,
+      "lef": [
+        "pdk_dir::libs.ref/sg13g2_sram/lef/RM_IHPSG13_1P_1024x32_c2_bm_bist.lef"
+      ],
 
-  "PNR_SDC_FILE": "dir::constraint.sdc",
-  "SIGNOFF_SDC_FILE": "dir::constraint.sdc"
+      "nl": [
+        "dir::../../../rtl/macros/RM_IHPSG13_1P_1024x32_c2_bm_bist.v"
+      ],
+
+      "lib": {
+        "*": "pdk_dir::libs.ref/sg13g2_sram/lib/RM_IHPSG13_1P_1024x32_c2_bm_bist_slow_1p08V_125C.lib"
+      },
+
+      "instances": {
+        "u_sram": {
+          "location": [
+            40,
+            90
+          ],
+          "orientation": "N"
+        }
+      }
+    }
+  },
+
+  "RUN_POST_GRT_DESIGN_REPAIR": true,
+
+  "MAX_FANOUT_CONSTRAINT": 16,
+
+  "DESIGN_REPAIR_BUFFER_INPUT_PORTS": true
 }
