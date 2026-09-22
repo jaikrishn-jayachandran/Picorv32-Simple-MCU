@@ -1,0 +1,9 @@
+set circuit1 [readnet spice /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/62-magic-spiceextraction/soc_top.spice]
+set circuit2 [readnet verilog /dev/null]
+puts "Reading SPICE netlist file '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice'..."
+readnet spice /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice $circuit2
+puts "Reading SPICE netlist file '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice'..."
+readnet spice /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice $circuit2
+puts "Reading Verilog netlist file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/40-openroad-detailedrouting/soc_top.pnl.v'..."
+readnet verilog /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/40-openroad-detailedrouting/soc_top.pnl.v $circuit2
+lvs "$circuit1 soc_top" "$circuit2 soc_top" /nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/64-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

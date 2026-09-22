@@ -1,0 +1,12 @@
+[WARNING ORD-0039] .openroad ignored with -python
+Placing the following macros:
+{'u_cpu': ['u_cpu', 100000, 100000, 'N'], 'u_ram': ['u_ram', 900000, 100000, 'N'], 'u_boot_spi': ['u_boot_spi', 100000, 950000, 'N'], 'u_ic': ['u_ic', 500000, 950000, 'N'], 'u_periph0': ['u_periph0', 850000, 950000, 'N'], 'u_periph1': ['u_periph1', 100000, 1450000, 'N'], 'u_periph2': ['u_periph2', 500000, 1450000, 'N']}
+Design name: soc_top
+Placing u_boot_spi
+Placing u_cpu
+Placing u_ic
+Placing u_periph0
+Placing u_periph1
+Placing u_periph2
+Placing u_ram
+Successfully placed 7 instances.

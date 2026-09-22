@@ -1,0 +1,1075 @@
+* NGSPICE file created from soc_top.ext - technology: ihp-sg13g2
+
+* Black-box entry subcircuit for sg13g2_antennanp abstract view
+.subckt sg13g2_antennanp A VDD VSS
+.ends
+
+* Black-box entry subcircuit for peripherals_macro abstract view
+.subckt peripherals_macro VDD VSS clk_i gpio_dir[0] gpio_dir[10] gpio_dir[11] gpio_dir[12]
++ gpio_dir[13] gpio_dir[14] gpio_dir[15] gpio_dir[16] gpio_dir[17] gpio_dir[18] gpio_dir[19]
++ gpio_dir[1] gpio_dir[20] gpio_dir[21] gpio_dir[22] gpio_dir[23] gpio_dir[24] gpio_dir[25]
++ gpio_dir[26] gpio_dir[27] gpio_dir[28] gpio_dir[29] gpio_dir[2] gpio_dir[30] gpio_dir[31]
++ gpio_dir[3] gpio_dir[4] gpio_dir[5] gpio_dir[6] gpio_dir[7] gpio_dir[8] gpio_dir[9]
++ gpio_in[0] gpio_in[10] gpio_in[11] gpio_in[12] gpio_in[13] gpio_in[14] gpio_in[15]
++ gpio_in[16] gpio_in[17] gpio_in[18] gpio_in[19] gpio_in[1] gpio_in[20] gpio_in[21]
++ gpio_in[22] gpio_in[23] gpio_in[24] gpio_in[25] gpio_in[26] gpio_in[27] gpio_in[28]
++ gpio_in[29] gpio_in[2] gpio_in[30] gpio_in[31] gpio_in[3] gpio_in[4] gpio_in[5]
++ gpio_in[6] gpio_in[7] gpio_in[8] gpio_in[9] gpio_out[0] gpio_out[10] gpio_out[11]
++ gpio_out[12] gpio_out[13] gpio_out[14] gpio_out[15] gpio_out[16] gpio_out[17] gpio_out[18]
++ gpio_out[19] gpio_out[1] gpio_out[20] gpio_out[21] gpio_out[22] gpio_out[23] gpio_out[24]
++ gpio_out[25] gpio_out[26] gpio_out[27] gpio_out[28] gpio_out[29] gpio_out[2] gpio_out[30]
++ gpio_out[31] gpio_out[3] gpio_out[4] gpio_out[5] gpio_out[6] gpio_out[7] gpio_out[8]
++ gpio_out[9] rst_ni s_axil_araddr[0] s_axil_araddr[10] s_axil_araddr[11] s_axil_araddr[12]
++ s_axil_araddr[13] s_axil_araddr[14] s_axil_araddr[15] s_axil_araddr[16] s_axil_araddr[17]
++ s_axil_araddr[18] s_axil_araddr[19] s_axil_araddr[1] s_axil_araddr[20] s_axil_araddr[21]
++ s_axil_araddr[22] s_axil_araddr[23] s_axil_araddr[24] s_axil_araddr[25] s_axil_araddr[26]
++ s_axil_araddr[27] s_axil_araddr[28] s_axil_araddr[29] s_axil_araddr[2] s_axil_araddr[30]
++ s_axil_araddr[31] s_axil_araddr[3] s_axil_araddr[4] s_axil_araddr[5] s_axil_araddr[6]
++ s_axil_araddr[7] s_axil_araddr[8] s_axil_araddr[9] s_axil_arready s_axil_arvalid
++ s_axil_awaddr[0] s_axil_awaddr[10] s_axil_awaddr[11] s_axil_awaddr[12] s_axil_awaddr[13]
++ s_axil_awaddr[14] s_axil_awaddr[15] s_axil_awaddr[16] s_axil_awaddr[17] s_axil_awaddr[18]
++ s_axil_awaddr[19] s_axil_awaddr[1] s_axil_awaddr[20] s_axil_awaddr[21] s_axil_awaddr[22]
++ s_axil_awaddr[23] s_axil_awaddr[24] s_axil_awaddr[25] s_axil_awaddr[26] s_axil_awaddr[27]
++ s_axil_awaddr[28] s_axil_awaddr[29] s_axil_awaddr[2] s_axil_awaddr[30] s_axil_awaddr[31]
++ s_axil_awaddr[3] s_axil_awaddr[4] s_axil_awaddr[5] s_axil_awaddr[6] s_axil_awaddr[7]
++ s_axil_awaddr[8] s_axil_awaddr[9] s_axil_awready s_axil_awvalid s_axil_bready s_axil_bresp[0]
++ s_axil_bresp[1] s_axil_bvalid s_axil_rdata[0] s_axil_rdata[10] s_axil_rdata[11]
++ s_axil_rdata[12] s_axil_rdata[13] s_axil_rdata[14] s_axil_rdata[15] s_axil_rdata[16]
++ s_axil_rdata[17] s_axil_rdata[18] s_axil_rdata[19] s_axil_rdata[1] s_axil_rdata[20]
++ s_axil_rdata[21] s_axil_rdata[22] s_axil_rdata[23] s_axil_rdata[24] s_axil_rdata[25]
++ s_axil_rdata[26] s_axil_rdata[27] s_axil_rdata[28] s_axil_rdata[29] s_axil_rdata[2]
++ s_axil_rdata[30] s_axil_rdata[31] s_axil_rdata[3] s_axil_rdata[4] s_axil_rdata[5]
++ s_axil_rdata[6] s_axil_rdata[7] s_axil_rdata[8] s_axil_rdata[9] s_axil_rready s_axil_rresp[0]
++ s_axil_rresp[1] s_axil_rvalid s_axil_wdata[0] s_axil_wdata[10] s_axil_wdata[11]
++ s_axil_wdata[12] s_axil_wdata[13] s_axil_wdata[14] s_axil_wdata[15] s_axil_wdata[16]
++ s_axil_wdata[17] s_axil_wdata[18] s_axil_wdata[19] s_axil_wdata[1] s_axil_wdata[20]
++ s_axil_wdata[21] s_axil_wdata[22] s_axil_wdata[23] s_axil_wdata[24] s_axil_wdata[25]
++ s_axil_wdata[26] s_axil_wdata[27] s_axil_wdata[28] s_axil_wdata[29] s_axil_wdata[2]
++ s_axil_wdata[30] s_axil_wdata[31] s_axil_wdata[3] s_axil_wdata[4] s_axil_wdata[5]
++ s_axil_wdata[6] s_axil_wdata[7] s_axil_wdata[8] s_axil_wdata[9] s_axil_wready s_axil_wstrb[0]
++ s_axil_wstrb[1] s_axil_wstrb[2] s_axil_wstrb[3] s_axil_wvalid
+.ends
+
+* Black-box entry subcircuit for sg13g2_buf_16 abstract view
+.subckt sg13g2_buf_16 X A VDD VSS
+.ends
+
+* Black-box entry subcircuit for picorv32_macro abstract view
+.subckt picorv32_macro VDD VSS clk_i mem_axi_araddr[0] mem_axi_araddr[10] mem_axi_araddr[11]
++ mem_axi_araddr[12] mem_axi_araddr[13] mem_axi_araddr[14] mem_axi_araddr[15] mem_axi_araddr[16]
++ mem_axi_araddr[17] mem_axi_araddr[18] mem_axi_araddr[19] mem_axi_araddr[1] mem_axi_araddr[20]
++ mem_axi_araddr[21] mem_axi_araddr[22] mem_axi_araddr[23] mem_axi_araddr[24] mem_axi_araddr[25]
++ mem_axi_araddr[26] mem_axi_araddr[27] mem_axi_araddr[28] mem_axi_araddr[29] mem_axi_araddr[2]
++ mem_axi_araddr[30] mem_axi_araddr[31] mem_axi_araddr[3] mem_axi_araddr[4] mem_axi_araddr[5]
++ mem_axi_araddr[6] mem_axi_araddr[7] mem_axi_araddr[8] mem_axi_araddr[9] mem_axi_arprot[0]
++ mem_axi_arprot[1] mem_axi_arprot[2] mem_axi_arready mem_axi_arvalid mem_axi_awaddr[0]
++ mem_axi_awaddr[10] mem_axi_awaddr[11] mem_axi_awaddr[12] mem_axi_awaddr[13] mem_axi_awaddr[14]
++ mem_axi_awaddr[15] mem_axi_awaddr[16] mem_axi_awaddr[17] mem_axi_awaddr[18] mem_axi_awaddr[19]
++ mem_axi_awaddr[1] mem_axi_awaddr[20] mem_axi_awaddr[21] mem_axi_awaddr[22] mem_axi_awaddr[23]
++ mem_axi_awaddr[24] mem_axi_awaddr[25] mem_axi_awaddr[26] mem_axi_awaddr[27] mem_axi_awaddr[28]
++ mem_axi_awaddr[29] mem_axi_awaddr[2] mem_axi_awaddr[30] mem_axi_awaddr[31] mem_axi_awaddr[3]
++ mem_axi_awaddr[4] mem_axi_awaddr[5] mem_axi_awaddr[6] mem_axi_awaddr[7] mem_axi_awaddr[8]
++ mem_axi_awaddr[9] mem_axi_awprot[0] mem_axi_awprot[1] mem_axi_awprot[2] mem_axi_awready
++ mem_axi_awvalid mem_axi_bready mem_axi_bvalid mem_axi_rdata[0] mem_axi_rdata[10]
++ mem_axi_rdata[11] mem_axi_rdata[12] mem_axi_rdata[13] mem_axi_rdata[14] mem_axi_rdata[15]
++ mem_axi_rdata[16] mem_axi_rdata[17] mem_axi_rdata[18] mem_axi_rdata[19] mem_axi_rdata[1]
++ mem_axi_rdata[20] mem_axi_rdata[21] mem_axi_rdata[22] mem_axi_rdata[23] mem_axi_rdata[24]
++ mem_axi_rdata[25] mem_axi_rdata[26] mem_axi_rdata[27] mem_axi_rdata[28] mem_axi_rdata[29]
++ mem_axi_rdata[2] mem_axi_rdata[30] mem_axi_rdata[31] mem_axi_rdata[3] mem_axi_rdata[4]
++ mem_axi_rdata[5] mem_axi_rdata[6] mem_axi_rdata[7] mem_axi_rdata[8] mem_axi_rdata[9]
++ mem_axi_rready mem_axi_rvalid mem_axi_wdata[0] mem_axi_wdata[10] mem_axi_wdata[11]
++ mem_axi_wdata[12] mem_axi_wdata[13] mem_axi_wdata[14] mem_axi_wdata[15] mem_axi_wdata[16]
++ mem_axi_wdata[17] mem_axi_wdata[18] mem_axi_wdata[19] mem_axi_wdata[1] mem_axi_wdata[20]
++ mem_axi_wdata[21] mem_axi_wdata[22] mem_axi_wdata[23] mem_axi_wdata[24] mem_axi_wdata[25]
++ mem_axi_wdata[26] mem_axi_wdata[27] mem_axi_wdata[28] mem_axi_wdata[29] mem_axi_wdata[2]
++ mem_axi_wdata[30] mem_axi_wdata[31] mem_axi_wdata[3] mem_axi_wdata[4] mem_axi_wdata[5]
++ mem_axi_wdata[6] mem_axi_wdata[7] mem_axi_wdata[8] mem_axi_wdata[9] mem_axi_wready
++ mem_axi_wstrb[0] mem_axi_wstrb[1] mem_axi_wstrb[2] mem_axi_wstrb[3] mem_axi_wvalid
++ rst_ni trap
+.ends
+
+* Black-box entry subcircuit for ram_macro abstract view
+.subckt ram_macro VGND VPWR boot_addr[0] boot_addr[10] boot_addr[11] boot_addr[12]
++ boot_addr[13] boot_addr[14] boot_addr[15] boot_addr[16] boot_addr[17] boot_addr[18]
++ boot_addr[19] boot_addr[1] boot_addr[20] boot_addr[21] boot_addr[22] boot_addr[23]
++ boot_addr[24] boot_addr[25] boot_addr[26] boot_addr[27] boot_addr[28] boot_addr[29]
++ boot_addr[2] boot_addr[30] boot_addr[31] boot_addr[3] boot_addr[4] boot_addr[5]
++ boot_addr[6] boot_addr[7] boot_addr[8] boot_addr[9] boot_wdata[0] boot_wdata[10]
++ boot_wdata[11] boot_wdata[12] boot_wdata[13] boot_wdata[14] boot_wdata[15] boot_wdata[16]
++ boot_wdata[17] boot_wdata[18] boot_wdata[19] boot_wdata[1] boot_wdata[20] boot_wdata[21]
++ boot_wdata[22] boot_wdata[23] boot_wdata[24] boot_wdata[25] boot_wdata[26] boot_wdata[27]
++ boot_wdata[28] boot_wdata[29] boot_wdata[2] boot_wdata[30] boot_wdata[31] boot_wdata[3]
++ boot_wdata[4] boot_wdata[5] boot_wdata[6] boot_wdata[7] boot_wdata[8] boot_wdata[9]
++ boot_we clk_i rst_ni s_axil_araddr[0] s_axil_araddr[10] s_axil_araddr[11] s_axil_araddr[12]
++ s_axil_araddr[13] s_axil_araddr[14] s_axil_araddr[15] s_axil_araddr[16] s_axil_araddr[17]
++ s_axil_araddr[18] s_axil_araddr[19] s_axil_araddr[1] s_axil_araddr[20] s_axil_araddr[21]
++ s_axil_araddr[22] s_axil_araddr[23] s_axil_araddr[24] s_axil_araddr[25] s_axil_araddr[26]
++ s_axil_araddr[27] s_axil_araddr[28] s_axil_araddr[29] s_axil_araddr[2] s_axil_araddr[30]
++ s_axil_araddr[31] s_axil_araddr[3] s_axil_araddr[4] s_axil_araddr[5] s_axil_araddr[6]
++ s_axil_araddr[7] s_axil_araddr[8] s_axil_araddr[9] s_axil_arready s_axil_arvalid
++ s_axil_awaddr[0] s_axil_awaddr[10] s_axil_awaddr[11] s_axil_awaddr[12] s_axil_awaddr[13]
++ s_axil_awaddr[14] s_axil_awaddr[15] s_axil_awaddr[16] s_axil_awaddr[17] s_axil_awaddr[18]
++ s_axil_awaddr[19] s_axil_awaddr[1] s_axil_awaddr[20] s_axil_awaddr[21] s_axil_awaddr[22]
++ s_axil_awaddr[23] s_axil_awaddr[24] s_axil_awaddr[25] s_axil_awaddr[26] s_axil_awaddr[27]
++ s_axil_awaddr[28] s_axil_awaddr[29] s_axil_awaddr[2] s_axil_awaddr[30] s_axil_awaddr[31]
++ s_axil_awaddr[3] s_axil_awaddr[4] s_axil_awaddr[5] s_axil_awaddr[6] s_axil_awaddr[7]
++ s_axil_awaddr[8] s_axil_awaddr[9] s_axil_awready s_axil_awvalid s_axil_bready s_axil_bresp[0]
++ s_axil_bresp[1] s_axil_bvalid s_axil_rdata[0] s_axil_rdata[10] s_axil_rdata[11]
++ s_axil_rdata[12] s_axil_rdata[13] s_axil_rdata[14] s_axil_rdata[15] s_axil_rdata[16]
++ s_axil_rdata[17] s_axil_rdata[18] s_axil_rdata[19] s_axil_rdata[1] s_axil_rdata[20]
++ s_axil_rdata[21] s_axil_rdata[22] s_axil_rdata[23] s_axil_rdata[24] s_axil_rdata[25]
++ s_axil_rdata[26] s_axil_rdata[27] s_axil_rdata[28] s_axil_rdata[29] s_axil_rdata[2]
++ s_axil_rdata[30] s_axil_rdata[31] s_axil_rdata[3] s_axil_rdata[4] s_axil_rdata[5]
++ s_axil_rdata[6] s_axil_rdata[7] s_axil_rdata[8] s_axil_rdata[9] s_axil_rready s_axil_rresp[0]
++ s_axil_rresp[1] s_axil_rvalid s_axil_wdata[0] s_axil_wdata[10] s_axil_wdata[11]
++ s_axil_wdata[12] s_axil_wdata[13] s_axil_wdata[14] s_axil_wdata[15] s_axil_wdata[16]
++ s_axil_wdata[17] s_axil_wdata[18] s_axil_wdata[19] s_axil_wdata[1] s_axil_wdata[20]
++ s_axil_wdata[21] s_axil_wdata[22] s_axil_wdata[23] s_axil_wdata[24] s_axil_wdata[25]
++ s_axil_wdata[26] s_axil_wdata[27] s_axil_wdata[28] s_axil_wdata[29] s_axil_wdata[2]
++ s_axil_wdata[30] s_axil_wdata[31] s_axil_wdata[3] s_axil_wdata[4] s_axil_wdata[5]
++ s_axil_wdata[6] s_axil_wdata[7] s_axil_wdata[8] s_axil_wdata[9] s_axil_wready s_axil_wstrb[0]
++ s_axil_wstrb[1] s_axil_wstrb[2] s_axil_wstrb[3] s_axil_wvalid
+.ends
+
+* Black-box entry subcircuit for boot_spi_macro abstract view
+.subckt boot_spi_macro VDD VSS boot_addr[0] boot_addr[10] boot_addr[11] boot_addr[12]
++ boot_addr[13] boot_addr[14] boot_addr[15] boot_addr[16] boot_addr[17] boot_addr[18]
++ boot_addr[19] boot_addr[1] boot_addr[20] boot_addr[21] boot_addr[22] boot_addr[23]
++ boot_addr[24] boot_addr[25] boot_addr[26] boot_addr[27] boot_addr[28] boot_addr[29]
++ boot_addr[2] boot_addr[30] boot_addr[31] boot_addr[3] boot_addr[4] boot_addr[5]
++ boot_addr[6] boot_addr[7] boot_addr[8] boot_addr[9] boot_done boot_wdata[0] boot_wdata[10]
++ boot_wdata[11] boot_wdata[12] boot_wdata[13] boot_wdata[14] boot_wdata[15] boot_wdata[16]
++ boot_wdata[17] boot_wdata[18] boot_wdata[19] boot_wdata[1] boot_wdata[20] boot_wdata[21]
++ boot_wdata[22] boot_wdata[23] boot_wdata[24] boot_wdata[25] boot_wdata[26] boot_wdata[27]
++ boot_wdata[28] boot_wdata[29] boot_wdata[2] boot_wdata[30] boot_wdata[31] boot_wdata[3]
++ boot_wdata[4] boot_wdata[5] boot_wdata[6] boot_wdata[7] boot_wdata[8] boot_wdata[9]
++ boot_we clk_i cpu_rst_n rst_ni spi_cs_n spi_miso spi_mosi spi_sclk
+.ends
+
+* Black-box entry subcircuit for interconnect_macro abstract view
+.subckt interconnect_macro VDD VSS clk_i m_araddr[0] m_araddr[10] m_araddr[11] m_araddr[12]
++ m_araddr[13] m_araddr[14] m_araddr[15] m_araddr[16] m_araddr[17] m_araddr[18] m_araddr[19]
++ m_araddr[1] m_araddr[20] m_araddr[21] m_araddr[22] m_araddr[23] m_araddr[24] m_araddr[25]
++ m_araddr[26] m_araddr[27] m_araddr[28] m_araddr[29] m_araddr[2] m_araddr[30] m_araddr[31]
++ m_araddr[3] m_araddr[4] m_araddr[5] m_araddr[6] m_araddr[7] m_araddr[8] m_araddr[9]
++ m_arprot[0] m_arprot[1] m_arprot[2] m_arready m_arvalid m_awaddr[0] m_awaddr[10]
++ m_awaddr[11] m_awaddr[12] m_awaddr[13] m_awaddr[14] m_awaddr[15] m_awaddr[16] m_awaddr[17]
++ m_awaddr[18] m_awaddr[19] m_awaddr[1] m_awaddr[20] m_awaddr[21] m_awaddr[22] m_awaddr[23]
++ m_awaddr[24] m_awaddr[25] m_awaddr[26] m_awaddr[27] m_awaddr[28] m_awaddr[29] m_awaddr[2]
++ m_awaddr[30] m_awaddr[31] m_awaddr[3] m_awaddr[4] m_awaddr[5] m_awaddr[6] m_awaddr[7]
++ m_awaddr[8] m_awaddr[9] m_awprot[0] m_awprot[1] m_awprot[2] m_awready m_awvalid
++ m_bready m_bresp[0] m_bresp[1] m_bvalid m_rdata[0] m_rdata[10] m_rdata[11] m_rdata[12]
++ m_rdata[13] m_rdata[14] m_rdata[15] m_rdata[16] m_rdata[17] m_rdata[18] m_rdata[19]
++ m_rdata[1] m_rdata[20] m_rdata[21] m_rdata[22] m_rdata[23] m_rdata[24] m_rdata[25]
++ m_rdata[26] m_rdata[27] m_rdata[28] m_rdata[29] m_rdata[2] m_rdata[30] m_rdata[31]
++ m_rdata[3] m_rdata[4] m_rdata[5] m_rdata[6] m_rdata[7] m_rdata[8] m_rdata[9] m_rready
++ m_rresp[0] m_rresp[1] m_rvalid m_wdata[0] m_wdata[10] m_wdata[11] m_wdata[12] m_wdata[13]
++ m_wdata[14] m_wdata[15] m_wdata[16] m_wdata[17] m_wdata[18] m_wdata[19] m_wdata[1]
++ m_wdata[20] m_wdata[21] m_wdata[22] m_wdata[23] m_wdata[24] m_wdata[25] m_wdata[26]
++ m_wdata[27] m_wdata[28] m_wdata[29] m_wdata[2] m_wdata[30] m_wdata[31] m_wdata[3]
++ m_wdata[4] m_wdata[5] m_wdata[6] m_wdata[7] m_wdata[8] m_wdata[9] m_wready m_wstrb[0]
++ m_wstrb[1] m_wstrb[2] m_wstrb[3] m_wvalid rst_ni s_araddr[0] s_araddr[100] s_araddr[101]
++ s_araddr[102] s_araddr[103] s_araddr[104] s_araddr[105] s_araddr[106] s_araddr[107]
++ s_araddr[108] s_araddr[109] s_araddr[10] s_araddr[110] s_araddr[111] s_araddr[112]
++ s_araddr[113] s_araddr[114] s_araddr[115] s_araddr[116] s_araddr[117] s_araddr[118]
++ s_araddr[119] s_araddr[11] s_araddr[120] s_araddr[121] s_araddr[122] s_araddr[123]
++ s_araddr[124] s_araddr[125] s_araddr[126] s_araddr[127] s_araddr[12] s_araddr[13]
++ s_araddr[14] s_araddr[15] s_araddr[16] s_araddr[17] s_araddr[18] s_araddr[19] s_araddr[1]
++ s_araddr[20] s_araddr[21] s_araddr[22] s_araddr[23] s_araddr[24] s_araddr[25] s_araddr[26]
++ s_araddr[27] s_araddr[28] s_araddr[29] s_araddr[2] s_araddr[30] s_araddr[31] s_araddr[32]
++ s_araddr[33] s_araddr[34] s_araddr[35] s_araddr[36] s_araddr[37] s_araddr[38] s_araddr[39]
++ s_araddr[3] s_araddr[40] s_araddr[41] s_araddr[42] s_araddr[43] s_araddr[44] s_araddr[45]
++ s_araddr[46] s_araddr[47] s_araddr[48] s_araddr[49] s_araddr[4] s_araddr[50] s_araddr[51]
++ s_araddr[52] s_araddr[53] s_araddr[54] s_araddr[55] s_araddr[56] s_araddr[57] s_araddr[58]
++ s_araddr[59] s_araddr[5] s_araddr[60] s_araddr[61] s_araddr[62] s_araddr[63] s_araddr[64]
++ s_araddr[65] s_araddr[66] s_araddr[67] s_araddr[68] s_araddr[69] s_araddr[6] s_araddr[70]
++ s_araddr[71] s_araddr[72] s_araddr[73] s_araddr[74] s_araddr[75] s_araddr[76] s_araddr[77]
++ s_araddr[78] s_araddr[79] s_araddr[7] s_araddr[80] s_araddr[81] s_araddr[82] s_araddr[83]
++ s_araddr[84] s_araddr[85] s_araddr[86] s_araddr[87] s_araddr[88] s_araddr[89] s_araddr[8]
++ s_araddr[90] s_araddr[91] s_araddr[92] s_araddr[93] s_araddr[94] s_araddr[95] s_araddr[96]
++ s_araddr[97] s_araddr[98] s_araddr[99] s_araddr[9] s_arprot[0] s_arprot[10] s_arprot[11]
++ s_arprot[1] s_arprot[2] s_arprot[3] s_arprot[4] s_arprot[5] s_arprot[6] s_arprot[7]
++ s_arprot[8] s_arprot[9] s_arready[0] s_arready[1] s_arready[2] s_arready[3] s_arvalid[0]
++ s_arvalid[1] s_arvalid[2] s_arvalid[3] s_awaddr[0] s_awaddr[100] s_awaddr[101] s_awaddr[102]
++ s_awaddr[103] s_awaddr[104] s_awaddr[105] s_awaddr[106] s_awaddr[107] s_awaddr[108]
++ s_awaddr[109] s_awaddr[10] s_awaddr[110] s_awaddr[111] s_awaddr[112] s_awaddr[113]
++ s_awaddr[114] s_awaddr[115] s_awaddr[116] s_awaddr[117] s_awaddr[118] s_awaddr[119]
++ s_awaddr[11] s_awaddr[120] s_awaddr[121] s_awaddr[122] s_awaddr[123] s_awaddr[124]
++ s_awaddr[125] s_awaddr[126] s_awaddr[127] s_awaddr[12] s_awaddr[13] s_awaddr[14]
++ s_awaddr[15] s_awaddr[16] s_awaddr[17] s_awaddr[18] s_awaddr[19] s_awaddr[1] s_awaddr[20]
++ s_awaddr[21] s_awaddr[22] s_awaddr[23] s_awaddr[24] s_awaddr[25] s_awaddr[26] s_awaddr[27]
++ s_awaddr[28] s_awaddr[29] s_awaddr[2] s_awaddr[30] s_awaddr[31] s_awaddr[32] s_awaddr[33]
++ s_awaddr[34] s_awaddr[35] s_awaddr[36] s_awaddr[37] s_awaddr[38] s_awaddr[39] s_awaddr[3]
++ s_awaddr[40] s_awaddr[41] s_awaddr[42] s_awaddr[43] s_awaddr[44] s_awaddr[45] s_awaddr[46]
++ s_awaddr[47] s_awaddr[48] s_awaddr[49] s_awaddr[4] s_awaddr[50] s_awaddr[51] s_awaddr[52]
++ s_awaddr[53] s_awaddr[54] s_awaddr[55] s_awaddr[56] s_awaddr[57] s_awaddr[58] s_awaddr[59]
++ s_awaddr[5] s_awaddr[60] s_awaddr[61] s_awaddr[62] s_awaddr[63] s_awaddr[64] s_awaddr[65]
++ s_awaddr[66] s_awaddr[67] s_awaddr[68] s_awaddr[69] s_awaddr[6] s_awaddr[70] s_awaddr[71]
++ s_awaddr[72] s_awaddr[73] s_awaddr[74] s_awaddr[75] s_awaddr[76] s_awaddr[77] s_awaddr[78]
++ s_awaddr[79] s_awaddr[7] s_awaddr[80] s_awaddr[81] s_awaddr[82] s_awaddr[83] s_awaddr[84]
++ s_awaddr[85] s_awaddr[86] s_awaddr[87] s_awaddr[88] s_awaddr[89] s_awaddr[8] s_awaddr[90]
++ s_awaddr[91] s_awaddr[92] s_awaddr[93] s_awaddr[94] s_awaddr[95] s_awaddr[96] s_awaddr[97]
++ s_awaddr[98] s_awaddr[99] s_awaddr[9] s_awprot[0] s_awprot[10] s_awprot[11] s_awprot[1]
++ s_awprot[2] s_awprot[3] s_awprot[4] s_awprot[5] s_awprot[6] s_awprot[7] s_awprot[8]
++ s_awprot[9] s_awready[0] s_awready[1] s_awready[2] s_awready[3] s_awvalid[0] s_awvalid[1]
++ s_awvalid[2] s_awvalid[3] s_bready[0] s_bready[1] s_bready[2] s_bready[3] s_bresp[0]
++ s_bresp[1] s_bresp[2] s_bresp[3] s_bresp[4] s_bresp[5] s_bresp[6] s_bresp[7] s_bvalid[0]
++ s_bvalid[1] s_bvalid[2] s_bvalid[3] s_rdata[0] s_rdata[100] s_rdata[101] s_rdata[102]
++ s_rdata[103] s_rdata[104] s_rdata[105] s_rdata[106] s_rdata[107] s_rdata[108] s_rdata[109]
++ s_rdata[10] s_rdata[110] s_rdata[111] s_rdata[112] s_rdata[113] s_rdata[114] s_rdata[115]
++ s_rdata[116] s_rdata[117] s_rdata[118] s_rdata[119] s_rdata[11] s_rdata[120] s_rdata[121]
++ s_rdata[122] s_rdata[123] s_rdata[124] s_rdata[125] s_rdata[126] s_rdata[127] s_rdata[12]
++ s_rdata[13] s_rdata[14] s_rdata[15] s_rdata[16] s_rdata[17] s_rdata[18] s_rdata[19]
++ s_rdata[1] s_rdata[20] s_rdata[21] s_rdata[22] s_rdata[23] s_rdata[24] s_rdata[25]
++ s_rdata[26] s_rdata[27] s_rdata[28] s_rdata[29] s_rdata[2] s_rdata[30] s_rdata[31]
++ s_rdata[32] s_rdata[33] s_rdata[34] s_rdata[35] s_rdata[36] s_rdata[37] s_rdata[38]
++ s_rdata[39] s_rdata[3] s_rdata[40] s_rdata[41] s_rdata[42] s_rdata[43] s_rdata[44]
++ s_rdata[45] s_rdata[46] s_rdata[47] s_rdata[48] s_rdata[49] s_rdata[4] s_rdata[50]
++ s_rdata[51] s_rdata[52] s_rdata[53] s_rdata[54] s_rdata[55] s_rdata[56] s_rdata[57]
++ s_rdata[58] s_rdata[59] s_rdata[5] s_rdata[60] s_rdata[61] s_rdata[62] s_rdata[63]
++ s_rdata[64] s_rdata[65] s_rdata[66] s_rdata[67] s_rdata[68] s_rdata[69] s_rdata[6]
++ s_rdata[70] s_rdata[71] s_rdata[72] s_rdata[73] s_rdata[74] s_rdata[75] s_rdata[76]
++ s_rdata[77] s_rdata[78] s_rdata[79] s_rdata[7] s_rdata[80] s_rdata[81] s_rdata[82]
++ s_rdata[83] s_rdata[84] s_rdata[85] s_rdata[86] s_rdata[87] s_rdata[88] s_rdata[89]
++ s_rdata[8] s_rdata[90] s_rdata[91] s_rdata[92] s_rdata[93] s_rdata[94] s_rdata[95]
++ s_rdata[96] s_rdata[97] s_rdata[98] s_rdata[99] s_rdata[9] s_rready[0] s_rready[1]
++ s_rready[2] s_rready[3] s_rresp[0] s_rresp[1] s_rresp[2] s_rresp[3] s_rresp[4] s_rresp[5]
++ s_rresp[6] s_rresp[7] s_rvalid[0] s_rvalid[1] s_rvalid[2] s_rvalid[3] s_wdata[0]
++ s_wdata[100] s_wdata[101] s_wdata[102] s_wdata[103] s_wdata[104] s_wdata[105] s_wdata[106]
++ s_wdata[107] s_wdata[108] s_wdata[109] s_wdata[10] s_wdata[110] s_wdata[111] s_wdata[112]
++ s_wdata[113] s_wdata[114] s_wdata[115] s_wdata[116] s_wdata[117] s_wdata[118] s_wdata[119]
++ s_wdata[11] s_wdata[120] s_wdata[121] s_wdata[122] s_wdata[123] s_wdata[124] s_wdata[125]
++ s_wdata[126] s_wdata[127] s_wdata[12] s_wdata[13] s_wdata[14] s_wdata[15] s_wdata[16]
++ s_wdata[17] s_wdata[18] s_wdata[19] s_wdata[1] s_wdata[20] s_wdata[21] s_wdata[22]
++ s_wdata[23] s_wdata[24] s_wdata[25] s_wdata[26] s_wdata[27] s_wdata[28] s_wdata[29]
++ s_wdata[2] s_wdata[30] s_wdata[31] s_wdata[32] s_wdata[33] s_wdata[34] s_wdata[35]
++ s_wdata[36] s_wdata[37] s_wdata[38] s_wdata[39] s_wdata[3] s_wdata[40] s_wdata[41]
++ s_wdata[42] s_wdata[43] s_wdata[44] s_wdata[45] s_wdata[46] s_wdata[47] s_wdata[48]
++ s_wdata[49] s_wdata[4] s_wdata[50] s_wdata[51] s_wdata[52] s_wdata[53] s_wdata[54]
++ s_wdata[55] s_wdata[56] s_wdata[57] s_wdata[58] s_wdata[59] s_wdata[5] s_wdata[60]
++ s_wdata[61] s_wdata[62] s_wdata[63] s_wdata[64] s_wdata[65] s_wdata[66] s_wdata[67]
++ s_wdata[68] s_wdata[69] s_wdata[6] s_wdata[70] s_wdata[71] s_wdata[72] s_wdata[73]
++ s_wdata[74] s_wdata[75] s_wdata[76] s_wdata[77] s_wdata[78] s_wdata[79] s_wdata[7]
++ s_wdata[80] s_wdata[81] s_wdata[82] s_wdata[83] s_wdata[84] s_wdata[85] s_wdata[86]
++ s_wdata[87] s_wdata[88] s_wdata[89] s_wdata[8] s_wdata[90] s_wdata[91] s_wdata[92]
++ s_wdata[93] s_wdata[94] s_wdata[95] s_wdata[96] s_wdata[97] s_wdata[98] s_wdata[99]
++ s_wdata[9] s_wready[0] s_wready[1] s_wready[2] s_wready[3] s_wstrb[0] s_wstrb[10]
++ s_wstrb[11] s_wstrb[12] s_wstrb[13] s_wstrb[14] s_wstrb[15] s_wstrb[1] s_wstrb[2]
++ s_wstrb[3] s_wstrb[4] s_wstrb[5] s_wstrb[6] s_wstrb[7] s_wstrb[8] s_wstrb[9] s_wvalid[0]
++ s_wvalid[1] s_wvalid[2] s_wvalid[3]
+.ends
+
+.subckt soc_top VDD VSS clk_i gpio0_dir[0] gpio0_dir[10] gpio0_dir[11] gpio0_dir[12]
++ gpio0_dir[13] gpio0_dir[14] gpio0_dir[15] gpio0_dir[16] gpio0_dir[17] gpio0_dir[18]
++ gpio0_dir[19] gpio0_dir[1] gpio0_dir[20] gpio0_dir[21] gpio0_dir[22] gpio0_dir[23]
++ gpio0_dir[24] gpio0_dir[25] gpio0_dir[26] gpio0_dir[27] gpio0_dir[28] gpio0_dir[29]
++ gpio0_dir[2] gpio0_dir[30] gpio0_dir[31] gpio0_dir[3] gpio0_dir[4] gpio0_dir[5]
++ gpio0_dir[6] gpio0_dir[7] gpio0_dir[8] gpio0_dir[9] gpio0_in[0] gpio0_in[10] gpio0_in[11]
++ gpio0_in[12] gpio0_in[13] gpio0_in[14] gpio0_in[15] gpio0_in[16] gpio0_in[17] gpio0_in[18]
++ gpio0_in[19] gpio0_in[1] gpio0_in[20] gpio0_in[21] gpio0_in[22] gpio0_in[23] gpio0_in[24]
++ gpio0_in[25] gpio0_in[26] gpio0_in[27] gpio0_in[28] gpio0_in[29] gpio0_in[2] gpio0_in[30]
++ gpio0_in[31] gpio0_in[3] gpio0_in[4] gpio0_in[5] gpio0_in[6] gpio0_in[7] gpio0_in[8]
++ gpio0_in[9] gpio0_out[0] gpio0_out[10] gpio0_out[11] gpio0_out[12] gpio0_out[13]
++ gpio0_out[14] gpio0_out[15] gpio0_out[16] gpio0_out[17] gpio0_out[18] gpio0_out[19]
++ gpio0_out[1] gpio0_out[20] gpio0_out[21] gpio0_out[22] gpio0_out[23] gpio0_out[24]
++ gpio0_out[25] gpio0_out[26] gpio0_out[27] gpio0_out[28] gpio0_out[29] gpio0_out[2]
++ gpio0_out[30] gpio0_out[31] gpio0_out[3] gpio0_out[4] gpio0_out[5] gpio0_out[6]
++ gpio0_out[7] gpio0_out[8] gpio0_out[9] gpio1_dir[0] gpio1_dir[10] gpio1_dir[11]
++ gpio1_dir[12] gpio1_dir[13] gpio1_dir[14] gpio1_dir[15] gpio1_dir[16] gpio1_dir[17]
++ gpio1_dir[18] gpio1_dir[19] gpio1_dir[1] gpio1_dir[20] gpio1_dir[21] gpio1_dir[22]
++ gpio1_dir[23] gpio1_dir[24] gpio1_dir[25] gpio1_dir[26] gpio1_dir[27] gpio1_dir[28]
++ gpio1_dir[29] gpio1_dir[2] gpio1_dir[30] gpio1_dir[31] gpio1_dir[3] gpio1_dir[4]
++ gpio1_dir[5] gpio1_dir[6] gpio1_dir[7] gpio1_dir[8] gpio1_dir[9] gpio1_in[0] gpio1_in[10]
++ gpio1_in[11] gpio1_in[12] gpio1_in[13] gpio1_in[14] gpio1_in[15] gpio1_in[16] gpio1_in[17]
++ gpio1_in[18] gpio1_in[19] gpio1_in[1] gpio1_in[20] gpio1_in[21] gpio1_in[22] gpio1_in[23]
++ gpio1_in[24] gpio1_in[25] gpio1_in[26] gpio1_in[27] gpio1_in[28] gpio1_in[29] gpio1_in[2]
++ gpio1_in[30] gpio1_in[31] gpio1_in[3] gpio1_in[4] gpio1_in[5] gpio1_in[6] gpio1_in[7]
++ gpio1_in[8] gpio1_in[9] gpio1_out[0] gpio1_out[10] gpio1_out[11] gpio1_out[12] gpio1_out[13]
++ gpio1_out[14] gpio1_out[15] gpio1_out[16] gpio1_out[17] gpio1_out[18] gpio1_out[19]
++ gpio1_out[1] gpio1_out[20] gpio1_out[21] gpio1_out[22] gpio1_out[23] gpio1_out[24]
++ gpio1_out[25] gpio1_out[26] gpio1_out[27] gpio1_out[28] gpio1_out[29] gpio1_out[2]
++ gpio1_out[30] gpio1_out[31] gpio1_out[3] gpio1_out[4] gpio1_out[5] gpio1_out[6]
++ gpio1_out[7] gpio1_out[8] gpio1_out[9] gpio2_dir[0] gpio2_dir[10] gpio2_dir[11]
++ gpio2_dir[12] gpio2_dir[13] gpio2_dir[14] gpio2_dir[15] gpio2_dir[16] gpio2_dir[17]
++ gpio2_dir[18] gpio2_dir[19] gpio2_dir[1] gpio2_dir[20] gpio2_dir[21] gpio2_dir[22]
++ gpio2_dir[23] gpio2_dir[24] gpio2_dir[25] gpio2_dir[26] gpio2_dir[27] gpio2_dir[28]
++ gpio2_dir[29] gpio2_dir[2] gpio2_dir[30] gpio2_dir[31] gpio2_dir[3] gpio2_dir[4]
++ gpio2_dir[5] gpio2_dir[6] gpio2_dir[7] gpio2_dir[8] gpio2_dir[9] gpio2_in[0] gpio2_in[10]
++ gpio2_in[11] gpio2_in[12] gpio2_in[13] gpio2_in[14] gpio2_in[15] gpio2_in[16] gpio2_in[17]
++ gpio2_in[18] gpio2_in[19] gpio2_in[1] gpio2_in[20] gpio2_in[21] gpio2_in[22] gpio2_in[23]
++ gpio2_in[24] gpio2_in[25] gpio2_in[26] gpio2_in[27] gpio2_in[28] gpio2_in[29] gpio2_in[2]
++ gpio2_in[30] gpio2_in[31] gpio2_in[3] gpio2_in[4] gpio2_in[5] gpio2_in[6] gpio2_in[7]
++ gpio2_in[8] gpio2_in[9] gpio2_out[0] gpio2_out[10] gpio2_out[11] gpio2_out[12] gpio2_out[13]
++ gpio2_out[14] gpio2_out[15] gpio2_out[16] gpio2_out[17] gpio2_out[18] gpio2_out[19]
++ gpio2_out[1] gpio2_out[20] gpio2_out[21] gpio2_out[22] gpio2_out[23] gpio2_out[24]
++ gpio2_out[25] gpio2_out[26] gpio2_out[27] gpio2_out[28] gpio2_out[29] gpio2_out[2]
++ gpio2_out[30] gpio2_out[31] gpio2_out[3] gpio2_out[4] gpio2_out[5] gpio2_out[6]
++ gpio2_out[7] gpio2_out[8] gpio2_out[9] rst_ni spi_cs_n spi_miso spi_mosi spi_sclk
+XANTENNA_279 ANTENNA_279/A ANTENNA_29/VDD ANTENNA_29/VSS sg13g2_antennanp
+XANTENNA_268 ANTENNA_268/A ANTENNA_268/VDD ANTENNA_268/VSS sg13g2_antennanp
+XANTENNA_257 ANTENNA_257/A ANTENNA_261/VDD ANTENNA_261/VSS sg13g2_antennanp
+XANTENNA_246 ANTENNA_246/A ANTENNA_246/VDD ANTENNA_246/VSS sg13g2_antennanp
+XANTENNA_235 ANTENNA_236/A ANTENNA_240/VDD ANTENNA_240/VSS sg13g2_antennanp
+XANTENNA_224 ANTENNA_224/A ANTENNA_224/VDD ANTENNA_224/VSS sg13g2_antennanp
+XANTENNA_213 ANTENNA_213/A ANTENNA_213/VDD ANTENNA_213/VSS sg13g2_antennanp
+XANTENNA_202 ANTENNA_202/A ANTENNA_249/VDD ANTENNA_249/VSS sg13g2_antennanp
+XANTENNA_5 ANTENNA_5/A ANTENNA_5/VDD ANTENNA_5/VSS sg13g2_antennanp
+XANTENNA_269 ANTENNA_269/A ANTENNA_269/VDD ANTENNA_269/VSS sg13g2_antennanp
+XANTENNA_258 ANTENNA_258/A ANTENNA_258/VDD ANTENNA_258/VSS sg13g2_antennanp
+XANTENNA_247 ANTENNA_248/A ANTENNA_247/VDD ANTENNA_247/VSS sg13g2_antennanp
+XANTENNA_236 ANTENNA_236/A ANTENNA_236/VDD ANTENNA_236/VSS sg13g2_antennanp
+XANTENNA_225 ANTENNA_226/A ANTENNA_230/VDD ANTENNA_230/VSS sg13g2_antennanp
+XANTENNA_214 ANTENNA_214/A ANTENNA_218/VDD ANTENNA_218/VSS sg13g2_antennanp
+XANTENNA_203 ANTENNA_204/A ANTENNA_208/VDD ANTENNA_208/VSS sg13g2_antennanp
+Xu_periph0 VDD VSS u_periph2/clk_i gpio0_dir[0] gpio0_dir[10] gpio0_dir[11] gpio0_dir[12]
++ gpio0_dir[13] gpio0_dir[14] gpio0_dir[15] gpio0_dir[16] gpio0_dir[17] gpio0_dir[18]
++ gpio0_dir[19] gpio0_dir[1] gpio0_dir[20] gpio0_dir[21] gpio0_dir[22] gpio0_dir[23]
++ gpio0_dir[24] gpio0_dir[25] gpio0_dir[26] gpio0_dir[27] gpio0_dir[28] gpio0_dir[29]
++ gpio0_dir[2] gpio0_dir[30] gpio0_dir[31] gpio0_dir[3] gpio0_dir[4] gpio0_dir[5]
++ gpio0_dir[6] gpio0_dir[7] gpio0_dir[8] gpio0_dir[9] gpio0_in[0] gpio0_in[10] gpio0_in[11]
++ gpio0_in[12] gpio0_in[13] gpio0_in[14] gpio0_in[15] gpio0_in[16] gpio0_in[17] gpio0_in[18]
++ gpio0_in[19] gpio0_in[1] gpio0_in[20] gpio0_in[21] gpio0_in[22] gpio0_in[23] gpio0_in[24]
++ gpio0_in[25] gpio0_in[26] gpio0_in[27] gpio0_in[28] gpio0_in[29] gpio0_in[2] gpio0_in[30]
++ gpio0_in[31] gpio0_in[3] gpio0_in[4] gpio0_in[5] gpio0_in[6] gpio0_in[7] gpio0_in[8]
++ gpio0_in[9] gpio0_out[0] gpio0_out[10] gpio0_out[11] gpio0_out[12] gpio0_out[13]
++ gpio0_out[14] gpio0_out[15] gpio0_out[16] gpio0_out[17] gpio0_out[18] gpio0_out[19]
++ gpio0_out[1] gpio0_out[20] gpio0_out[21] gpio0_out[22] gpio0_out[23] gpio0_out[24]
++ gpio0_out[25] gpio0_out[26] gpio0_out[27] gpio0_out[28] gpio0_out[29] gpio0_out[2]
++ gpio0_out[30] gpio0_out[31] gpio0_out[3] gpio0_out[4] gpio0_out[5] gpio0_out[6]
++ gpio0_out[7] gpio0_out[8] gpio0_out[9] rst_ni u_ic/s_araddr[32] u_ic/s_araddr[42]
++ u_ic/s_araddr[43] u_ic/s_araddr[44] u_ic/s_araddr[45] u_ic/s_araddr[46] u_ic/s_araddr[47]
++ u_ic/s_araddr[48] u_ic/s_araddr[49] u_ic/s_araddr[50] u_ic/s_araddr[51] u_ic/s_araddr[33]
++ u_ic/s_araddr[52] u_ic/s_araddr[53] u_ic/s_araddr[54] u_ic/s_araddr[55] u_ic/s_araddr[56]
++ u_ic/s_araddr[57] u_ic/s_araddr[58] u_ic/s_araddr[59] u_ic/s_araddr[60] u_ic/s_araddr[61]
++ u_ic/s_araddr[34] u_ic/s_araddr[62] u_ic/s_araddr[63] u_ic/s_araddr[35] u_ic/s_araddr[36]
++ u_ic/s_araddr[37] u_ic/s_araddr[38] u_ic/s_araddr[39] u_ic/s_araddr[40] u_ic/s_araddr[41]
++ u_ic/s_arready[1] u_ic/s_arvalid[1] u_ic/s_awaddr[32] u_ic/s_awaddr[42] u_ic/s_awaddr[43]
++ u_ic/s_awaddr[44] u_ic/s_awaddr[45] u_ic/s_awaddr[46] u_ic/s_awaddr[47] u_ic/s_awaddr[48]
++ u_ic/s_awaddr[49] u_ic/s_awaddr[50] u_ic/s_awaddr[51] u_ic/s_awaddr[33] u_ic/s_awaddr[52]
++ u_ic/s_awaddr[53] u_ic/s_awaddr[54] u_ic/s_awaddr[55] u_ic/s_awaddr[56] u_ic/s_awaddr[57]
++ u_ic/s_awaddr[58] u_ic/s_awaddr[59] u_ic/s_awaddr[60] u_ic/s_awaddr[61] u_ic/s_awaddr[34]
++ u_ic/s_awaddr[62] u_ic/s_awaddr[63] ANTENNA_251/A u_ic/s_awaddr[36] u_ic/s_awaddr[37]
++ u_ic/s_awaddr[38] u_ic/s_awaddr[39] u_ic/s_awaddr[40] u_ic/s_awaddr[41] u_ic/s_awready[1]
++ u_ic/s_awvalid[1] u_ic/s_bready[1] u_ic/s_bresp[2] u_ic/s_bresp[3] u_ic/s_bvalid[1]
++ u_ic/s_rdata[32] u_ic/s_rdata[42] u_ic/s_rdata[43] ANTENNA_281/A u_ic/s_rdata[45]
++ u_ic/s_rdata[46] u_ic/s_rdata[47] u_ic/s_rdata[48] u_ic/s_rdata[49] u_ic/s_rdata[50]
++ u_ic/s_rdata[51] u_ic/s_rdata[33] u_ic/s_rdata[52] u_ic/s_rdata[53] ANTENNA_284/A
++ u_ic/s_rdata[55] u_ic/s_rdata[56] u_ic/s_rdata[57] u_ic/s_rdata[58] u_ic/s_rdata[59]
++ ANTENNA_285/A u_ic/s_rdata[61] u_ic/s_rdata[34] u_ic/s_rdata[62] u_ic/s_rdata[63]
++ u_ic/s_rdata[35] u_ic/s_rdata[36] u_ic/s_rdata[37] u_ic/s_rdata[38] u_ic/s_rdata[39]
++ u_ic/s_rdata[40] u_ic/s_rdata[41] u_ic/s_rready[1] u_ic/s_rresp[2] u_ic/s_rresp[3]
++ u_ic/s_rvalid[1] u_ic/s_wdata[32] u_ic/s_wdata[42] u_ic/s_wdata[43] u_ic/s_wdata[44]
++ u_ic/s_wdata[45] u_ic/s_wdata[46] u_ic/s_wdata[47] u_ic/s_wdata[48] u_ic/s_wdata[49]
++ u_ic/s_wdata[50] ANTENNA_351/A u_ic/s_wdata[33] u_ic/s_wdata[52] u_ic/s_wdata[53]
++ u_ic/s_wdata[54] u_ic/s_wdata[55] ANTENNA_352/A u_ic/s_wdata[57] u_ic/s_wdata[58]
++ u_ic/s_wdata[59] u_ic/s_wdata[60] u_ic/s_wdata[61] u_ic/s_wdata[34] u_ic/s_wdata[62]
++ u_ic/s_wdata[63] ANTENNA_348/A u_ic/s_wdata[36] u_ic/s_wdata[37] u_ic/s_wdata[38]
++ u_ic/s_wdata[39] u_ic/s_wdata[40] u_ic/s_wdata[41] ANTENNA_384/A ANTENNA_393/A u_ic/s_wstrb[5]
++ u_ic/s_wstrb[6] ANTENNA_395/A u_ic/s_wvalid[1] peripherals_macro
+XANTENNA_6 ANTENNA_7/A ANTENNA_6/VDD ANTENNA_6/VSS sg13g2_antennanp
+XANTENNA_259 ANTENNA_259/A ANTENNA_259/VDD ANTENNA_259/VSS sg13g2_antennanp
+XANTENNA_248 ANTENNA_248/A ANTENNA_248/VDD ANTENNA_248/VSS sg13g2_antennanp
+XANTENNA_237 ANTENNA_238/A ANTENNA_242/VDD ANTENNA_242/VSS sg13g2_antennanp
+XANTENNA_226 ANTENNA_226/A ANTENNA_226/VDD ANTENNA_226/VSS sg13g2_antennanp
+XANTENNA_215 ANTENNA_216/A ANTENNA_220/VDD ANTENNA_220/VSS sg13g2_antennanp
+XANTENNA_204 ANTENNA_204/A ANTENNA_204/VDD ANTENNA_204/VSS sg13g2_antennanp
+Xu_periph1 VDD VSS u_periph2/clk_i gpio1_dir[0] gpio1_dir[10] gpio1_dir[11] gpio1_dir[12]
++ gpio1_dir[13] gpio1_dir[14] gpio1_dir[15] gpio1_dir[16] gpio1_dir[17] gpio1_dir[18]
++ gpio1_dir[19] gpio1_dir[1] gpio1_dir[20] gpio1_dir[21] gpio1_dir[22] gpio1_dir[23]
++ gpio1_dir[24] gpio1_dir[25] gpio1_dir[26] gpio1_dir[27] gpio1_dir[28] gpio1_dir[29]
++ gpio1_dir[2] gpio1_dir[30] gpio1_dir[31] gpio1_dir[3] gpio1_dir[4] gpio1_dir[5]
++ gpio1_dir[6] gpio1_dir[7] gpio1_dir[8] gpio1_dir[9] gpio1_in[0] gpio1_in[10] gpio1_in[11]
++ gpio1_in[12] gpio1_in[13] gpio1_in[14] gpio1_in[15] gpio1_in[16] gpio1_in[17] gpio1_in[18]
++ gpio1_in[19] gpio1_in[1] gpio1_in[20] gpio1_in[21] gpio1_in[22] gpio1_in[23] gpio1_in[24]
++ gpio1_in[25] gpio1_in[26] gpio1_in[27] gpio1_in[28] gpio1_in[29] gpio1_in[2] gpio1_in[30]
++ gpio1_in[31] gpio1_in[3] gpio1_in[4] gpio1_in[5] gpio1_in[6] gpio1_in[7] gpio1_in[8]
++ gpio1_in[9] gpio1_out[0] gpio1_out[10] gpio1_out[11] gpio1_out[12] gpio1_out[13]
++ gpio1_out[14] gpio1_out[15] gpio1_out[16] gpio1_out[17] gpio1_out[18] gpio1_out[19]
++ gpio1_out[1] gpio1_out[20] gpio1_out[21] gpio1_out[22] gpio1_out[23] gpio1_out[24]
++ gpio1_out[25] gpio1_out[26] gpio1_out[27] gpio1_out[28] gpio1_out[29] gpio1_out[2]
++ gpio1_out[30] gpio1_out[31] gpio1_out[3] gpio1_out[4] gpio1_out[5] gpio1_out[6]
++ gpio1_out[7] gpio1_out[8] gpio1_out[9] rst_ni u_ic/s_araddr[64] u_ic/s_araddr[74]
++ u_ic/s_araddr[75] u_ic/s_araddr[76] u_ic/s_araddr[77] u_ic/s_araddr[78] u_ic/s_araddr[79]
++ u_ic/s_araddr[80] u_ic/s_araddr[81] u_ic/s_araddr[82] u_ic/s_araddr[83] u_ic/s_araddr[65]
++ u_ic/s_araddr[84] u_ic/s_araddr[85] u_ic/s_araddr[86] u_ic/s_araddr[87] u_ic/s_araddr[88]
++ u_ic/s_araddr[89] u_ic/s_araddr[90] u_ic/s_araddr[91] u_ic/s_araddr[92] u_ic/s_araddr[93]
++ u_ic/s_araddr[66] u_ic/s_araddr[94] u_ic/s_araddr[95] u_ic/s_araddr[67] u_ic/s_araddr[68]
++ u_ic/s_araddr[69] u_ic/s_araddr[70] u_ic/s_araddr[71] u_ic/s_araddr[72] u_ic/s_araddr[73]
++ u_ic/s_arready[2] u_ic/s_arvalid[2] u_ic/s_awaddr[64] u_ic/s_awaddr[74] u_ic/s_awaddr[75]
++ u_ic/s_awaddr[76] u_ic/s_awaddr[77] u_ic/s_awaddr[78] u_ic/s_awaddr[79] u_ic/s_awaddr[80]
++ u_ic/s_awaddr[81] u_ic/s_awaddr[82] u_ic/s_awaddr[83] u_ic/s_awaddr[65] u_ic/s_awaddr[84]
++ u_ic/s_awaddr[85] u_ic/s_awaddr[86] u_ic/s_awaddr[87] u_ic/s_awaddr[88] u_ic/s_awaddr[89]
++ u_ic/s_awaddr[90] u_ic/s_awaddr[91] u_ic/s_awaddr[92] u_ic/s_awaddr[93] ANTENNA_254/A
++ u_ic/s_awaddr[94] u_ic/s_awaddr[95] u_ic/s_awaddr[67] u_ic/s_awaddr[68] u_ic/s_awaddr[69]
++ u_ic/s_awaddr[70] u_ic/s_awaddr[71] u_ic/s_awaddr[72] u_ic/s_awaddr[73] u_ic/s_awready[2]
++ u_ic/s_awvalid[2] ANTENNA_259/A u_ic/s_bresp[4] u_ic/s_bresp[5] u_ic/s_bvalid[2]
++ u_ic/s_rdata[64] u_ic/s_rdata[74] u_ic/s_rdata[75] ANTENNA_288/A u_ic/s_rdata[77]
++ u_ic/s_rdata[78] u_ic/s_rdata[79] u_ic/s_rdata[80] u_ic/s_rdata[81] u_ic/s_rdata[82]
++ u_ic/s_rdata[83] u_ic/s_rdata[65] ANTENNA_289/A ANTENNA_290/A ANTENNA_291/A u_ic/s_rdata[87]
++ u_ic/s_rdata[88] u_ic/s_rdata[89] u_ic/s_rdata[90] u_ic/s_rdata[91] ANTENNA_292/A
++ u_ic/s_rdata[93] u_ic/s_rdata[66] u_ic/s_rdata[94] ANTENNA_293/A u_ic/s_rdata[67]
++ u_ic/s_rdata[68] u_ic/s_rdata[69] u_ic/s_rdata[70] u_ic/s_rdata[71] u_ic/s_rdata[72]
++ u_ic/s_rdata[73] u_ic/s_rready[2] ANTENNA_297/A ANTENNA_298/A ANTENNA_299/A ANTENNA_353/A
++ u_ic/s_wdata[74] ANTENNA_359/A ANTENNA_360/A ANTENNA_364/A ANTENNA_365/A ANTENNA_366/A
++ ANTENNA_367/A ANTENNA_368/A u_ic/s_wdata[82] u_ic/s_wdata[83] u_ic/s_wdata[65] u_ic/s_wdata[84]
++ ANTENNA_371/A ANTENNA_398/A u_ic/s_wdata[87] u_ic/s_wdata[88] u_ic/s_wdata[89] ANTENNA_374/A
++ ANTENNA_375/A ANTENNA_376/A ANTENNA_377/A u_ic/s_wdata[66] u_ic/s_wdata[94] ANTENNA_378/A
++ ANTENNA_355/A u_ic/s_wdata[68] u_ic/s_wdata[69] ANTENNA_356/A u_ic/s_wdata[71] ANTENNA_357/A
++ ANTENNA_358/A ANTENNA_385/A u_ic/s_wstrb[8] u_ic/s_wstrb[9] ANTENNA_388/A u_ic/s_wstrb[11]
++ ANTENNA_396/A peripherals_macro
+XANTENNA_7 ANTENNA_7/A ANTENNA_7/VDD ANTENNA_7/VSS sg13g2_antennanp
+XANTENNA_249 ANTENNA_250/A ANTENNA_249/VDD ANTENNA_249/VSS sg13g2_antennanp
+XANTENNA_238 ANTENNA_238/A ANTENNA_238/VDD ANTENNA_238/VSS sg13g2_antennanp
+XANTENNA_227 ANTENNA_228/A ANTENNA_231/VDD ANTENNA_231/VSS sg13g2_antennanp
+XANTENNA_216 ANTENNA_216/A ANTENNA_216/VDD ANTENNA_216/VSS sg13g2_antennanp
+XANTENNA_205 ANTENNA_206/A ANTENNA_205/VDD ANTENNA_205/VSS sg13g2_antennanp
+Xu_periph2 VDD VSS u_periph2/clk_i gpio2_dir[0] gpio2_dir[10] gpio2_dir[11] gpio2_dir[12]
++ gpio2_dir[13] gpio2_dir[14] gpio2_dir[15] gpio2_dir[16] gpio2_dir[17] gpio2_dir[18]
++ gpio2_dir[19] gpio2_dir[1] gpio2_dir[20] gpio2_dir[21] gpio2_dir[22] gpio2_dir[23]
++ gpio2_dir[24] gpio2_dir[25] gpio2_dir[26] gpio2_dir[27] gpio2_dir[28] gpio2_dir[29]
++ gpio2_dir[2] gpio2_dir[30] gpio2_dir[31] gpio2_dir[3] gpio2_dir[4] gpio2_dir[5]
++ gpio2_dir[6] gpio2_dir[7] gpio2_dir[8] gpio2_dir[9] gpio2_in[0] gpio2_in[10] gpio2_in[11]
++ gpio2_in[12] gpio2_in[13] gpio2_in[14] gpio2_in[15] gpio2_in[16] gpio2_in[17] gpio2_in[18]
++ gpio2_in[19] gpio2_in[1] gpio2_in[20] gpio2_in[21] gpio2_in[22] gpio2_in[23] gpio2_in[24]
++ gpio2_in[25] gpio2_in[26] gpio2_in[27] gpio2_in[28] gpio2_in[29] gpio2_in[2] gpio2_in[30]
++ gpio2_in[31] gpio2_in[3] gpio2_in[4] gpio2_in[5] gpio2_in[6] gpio2_in[7] gpio2_in[8]
++ gpio2_in[9] gpio2_out[0] gpio2_out[10] gpio2_out[11] gpio2_out[12] gpio2_out[13]
++ gpio2_out[14] gpio2_out[15] gpio2_out[16] gpio2_out[17] gpio2_out[18] gpio2_out[19]
++ gpio2_out[1] gpio2_out[20] gpio2_out[21] gpio2_out[22] gpio2_out[23] gpio2_out[24]
++ gpio2_out[25] gpio2_out[26] gpio2_out[27] gpio2_out[28] gpio2_out[29] gpio2_out[2]
++ gpio2_out[30] gpio2_out[31] gpio2_out[3] gpio2_out[4] gpio2_out[5] gpio2_out[6]
++ gpio2_out[7] gpio2_out[8] gpio2_out[9] rst_ni u_ic/s_araddr[96] u_ic/s_araddr[106]
++ u_ic/s_araddr[107] u_ic/s_araddr[108] u_ic/s_araddr[109] u_ic/s_araddr[110] u_ic/s_araddr[111]
++ u_ic/s_araddr[112] u_ic/s_araddr[113] u_ic/s_araddr[114] u_ic/s_araddr[115] u_ic/s_araddr[97]
++ u_ic/s_araddr[116] u_ic/s_araddr[117] u_ic/s_araddr[118] u_ic/s_araddr[119] u_ic/s_araddr[120]
++ u_ic/s_araddr[121] u_ic/s_araddr[122] u_ic/s_araddr[123] u_ic/s_araddr[124] u_ic/s_araddr[125]
++ u_ic/s_araddr[98] u_ic/s_araddr[126] u_ic/s_araddr[127] u_ic/s_araddr[99] u_ic/s_araddr[100]
++ u_ic/s_araddr[101] u_ic/s_araddr[102] u_ic/s_araddr[103] u_ic/s_araddr[104] u_ic/s_araddr[105]
++ u_ic/s_arready[3] u_ic/s_arvalid[3] u_ic/s_awaddr[96] u_ic/s_awaddr[106] u_ic/s_awaddr[107]
++ u_ic/s_awaddr[108] u_ic/s_awaddr[109] u_ic/s_awaddr[110] u_ic/s_awaddr[111] u_ic/s_awaddr[112]
++ u_ic/s_awaddr[113] u_ic/s_awaddr[114] u_ic/s_awaddr[115] u_ic/s_awaddr[97] u_ic/s_awaddr[116]
++ u_ic/s_awaddr[117] u_ic/s_awaddr[118] u_ic/s_awaddr[119] u_ic/s_awaddr[120] u_ic/s_awaddr[121]
++ u_ic/s_awaddr[122] u_ic/s_awaddr[123] u_ic/s_awaddr[124] u_ic/s_awaddr[125] u_ic/s_awaddr[98]
++ u_ic/s_awaddr[126] u_ic/s_awaddr[127] u_ic/s_awaddr[99] u_ic/s_awaddr[100] u_ic/s_awaddr[101]
++ u_ic/s_awaddr[102] u_ic/s_awaddr[103] u_ic/s_awaddr[104] u_ic/s_awaddr[105] u_ic/s_awready[3]
++ ANTENNA_258/A u_ic/s_bready[3] u_ic/s_bresp[6] u_ic/s_bresp[7] u_ic/s_bvalid[3]
++ ANTENNA_294/A u_ic/s_rdata[106] ANTENNA_265/A u_ic/s_rdata[108] ANTENNA_266/A u_ic/s_rdata[110]
++ u_ic/s_rdata[111] u_ic/s_rdata[112] u_ic/s_rdata[113] ANTENNA_267/A u_ic/s_rdata[115]
++ u_ic/s_rdata[97] ANTENNA_268/A ANTENNA_269/A u_ic/s_rdata[118] ANTENNA_270/A u_ic/s_rdata[120]
++ u_ic/s_rdata[121] u_ic/s_rdata[122] u_ic/s_rdata[123] u_ic/s_rdata[124] u_ic/s_rdata[125]
++ ANTENNA_296/A u_ic/s_rdata[126] u_ic/s_rdata[127] u_ic/s_rdata[99] u_ic/s_rdata[100]
++ ANTENNA_262/A ANTENNA_264/A u_ic/s_rdata[103] u_ic/s_rdata[104] u_ic/s_rdata[105]
++ u_ic/s_rready[3] u_ic/s_rresp[6] u_ic/s_rresp[7] ANTENNA_300/A ANTENNA_380/A u_ic/s_wdata[106]
++ ANTENNA_307/A ANTENNA_308/A u_ic/s_wdata[109] ANTENNA_309/A u_ic/s_wdata[111] ANTENNA_312/A
++ ANTENNA_315/A ANTENNA_317/A ANTENNA_318/A ANTENNA_381/A u_ic/s_wdata[116] ANTENNA_319/A
++ u_ic/s_wdata[118] ANTENNA_320/A ANTENNA_322/A ANTENNA_323/A ANTENNA_324/A ANTENNA_325/A
++ ANTENNA_326/A u_ic/s_wdata[125] u_ic/s_wdata[98] u_ic/s_wdata[126] ANTENNA_327/A
++ ANTENNA_382/A u_ic/s_wdata[100] ANTENNA_303/A ANTENNA_304/A ANTENNA_305/A u_ic/s_wdata[104]
++ ANTENNA_306/A u_ic/s_wready[3] ANTENNA_389/A u_ic/s_wstrb[13] ANTENNA_390/A u_ic/s_wstrb[15]
++ u_ic/s_wvalid[3] peripherals_macro
+XANTENNA_8 ANTENNA_9/A ANTENNA_8/VDD ANTENNA_8/VSS sg13g2_antennanp
+XANTENNA_239 ANTENNA_240/A ANTENNA_239/VDD ANTENNA_239/VSS sg13g2_antennanp
+XANTENNA_228 ANTENNA_228/A ANTENNA_228/VDD ANTENNA_228/VSS sg13g2_antennanp
+XANTENNA_217 ANTENNA_218/A ANTENNA_222/VDD ANTENNA_222/VSS sg13g2_antennanp
+XANTENNA_206 ANTENNA_206/A ANTENNA_206/VDD ANTENNA_206/VSS sg13g2_antennanp
+XANTENNA_9 ANTENNA_9/A ANTENNA_9/VDD ANTENNA_9/VSS sg13g2_antennanp
+XANTENNA_229 ANTENNA_230/A ANTENNA_229/VDD ANTENNA_229/VSS sg13g2_antennanp
+XANTENNA_218 ANTENNA_218/A ANTENNA_218/VDD ANTENNA_218/VSS sg13g2_antennanp
+XANTENNA_207 ANTENNA_208/A ANTENNA_210/VDD ANTENNA_210/VSS sg13g2_antennanp
+XANTENNA_390 ANTENNA_390/A ANTENNA_390/VDD ANTENNA_390/VSS sg13g2_antennanp
+Xclkbuf_1_0__f_clk_i u_ic/clk_i clkbuf_0_clk_i/X clkbuf_1_0__f_clk_i/VDD clkbuf_1_0__f_clk_i/VSS
++ sg13g2_buf_16
+XANTENNA_219 ANTENNA_220/A ANTENNA_219/VDD ANTENNA_219/VSS sg13g2_antennanp
+XANTENNA_208 ANTENNA_208/A ANTENNA_208/VDD ANTENNA_208/VSS sg13g2_antennanp
+XANTENNA_380 ANTENNA_380/A ANTENNA_380/VDD ANTENNA_380/VSS sg13g2_antennanp
+XANTENNA_391 ANTENNA_391/A ANTENNA_391/VDD ANTENNA_391/VSS sg13g2_antennanp
+XANTENNA_209 ANTENNA_210/A ANTENNA_209/VDD ANTENNA_209/VSS sg13g2_antennanp
+XANTENNA_381 ANTENNA_381/A ANTENNA_381/VDD ANTENNA_381/VSS sg13g2_antennanp
+XANTENNA_392 ANTENNA_392/A ANTENNA_392/VDD ANTENNA_392/VSS sg13g2_antennanp
+XANTENNA_370 ANTENNA_371/A ANTENNA_376/VDD ANTENNA_376/VSS sg13g2_antennanp
+XANTENNA_360 ANTENNA_360/A ANTENNA_360/VDD ANTENNA_360/VSS sg13g2_antennanp
+XANTENNA_382 ANTENNA_382/A ANTENNA_382/VDD ANTENNA_382/VSS sg13g2_antennanp
+XANTENNA_393 ANTENNA_393/A ANTENNA_393/VDD ANTENNA_393/VSS sg13g2_antennanp
+XANTENNA_371 ANTENNA_371/A ANTENNA_371/VDD ANTENNA_371/VSS sg13g2_antennanp
+XANTENNA_190 rst_ni ANTENNA_190/VDD ANTENNA_190/VSS sg13g2_antennanp
+XANTENNA_90 gpio1_in[14] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_383 ANTENNA_384/A ANTENNA_383/VDD ANTENNA_383/VSS sg13g2_antennanp
+XANTENNA_394 ANTENNA_395/A ANTENNA_394/VDD ANTENNA_394/VSS sg13g2_antennanp
+XANTENNA_372 ANTENNA_372/A ANTENNA_372/VDD ANTENNA_372/VSS sg13g2_antennanp
+XANTENNA_361 ANTENNA_364/A ANTENNA_363/VDD ANTENNA_363/VSS sg13g2_antennanp
+XANTENNA_350 ANTENNA_350/A ANTENNA_350/VDD ANTENNA_350/VSS sg13g2_antennanp
+XANTENNA_191 rst_ni ANTENNA_191/VDD ANTENNA_191/VSS sg13g2_antennanp
+XANTENNA_180 rst_ni ANTENNA_189/VDD ANTENNA_180/VSS sg13g2_antennanp
+XANTENNA_80 gpio0_in[6] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_91 gpio1_in[15] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_384 ANTENNA_384/A ANTENNA_384/VDD ANTENNA_384/VSS sg13g2_antennanp
+XANTENNA_395 ANTENNA_395/A ANTENNA_395/VDD ANTENNA_395/VSS sg13g2_antennanp
+XANTENNA_373 ANTENNA_374/A ANTENNA_376/VDD ANTENNA_376/VSS sg13g2_antennanp
+XANTENNA_362 ANTENNA_364/A ANTENNA_364/VDD ANTENNA_362/VSS sg13g2_antennanp
+XANTENNA_351 ANTENNA_351/A ANTENNA_351/VDD ANTENNA_351/VSS sg13g2_antennanp
+XANTENNA_340 ANTENNA_340/A ANTENNA_340/VDD ANTENNA_340/VSS sg13g2_antennanp
+XANTENNA_192 rst_ni ANTENNA_192/VDD ANTENNA_192/VSS sg13g2_antennanp
+XANTENNA_181 rst_ni ANTENNA_181/VDD ANTENNA_181/VSS sg13g2_antennanp
+XANTENNA_170 rst_ni ANTENNA_182/VDD ANTENNA_191/VSS sg13g2_antennanp
+XANTENNA_70 gpio0_in[26] ANTENNA_70/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_81 gpio0_in[7] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_92 gpio1_in[16] ANTENNA_92/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_385 ANTENNA_385/A ANTENNA_385/VDD ANTENNA_385/VSS sg13g2_antennanp
+XANTENNA_396 ANTENNA_396/A ANTENNA_396/VDD ANTENNA_396/VSS sg13g2_antennanp
+XANTENNA_374 ANTENNA_374/A ANTENNA_374/VDD ANTENNA_374/VSS sg13g2_antennanp
+XANTENNA_363 ANTENNA_364/A ANTENNA_363/VDD ANTENNA_363/VSS sg13g2_antennanp
+XANTENNA_352 ANTENNA_352/A ANTENNA_352/VDD ANTENNA_352/VSS sg13g2_antennanp
+XANTENNA_341 ANTENNA_341/A ANTENNA_341/VDD ANTENNA_341/VSS sg13g2_antennanp
+XANTENNA_330 ANTENNA_330/A ANTENNA_330/VDD ANTENNA_330/VSS sg13g2_antennanp
+XANTENNA_193 rst_ni ANTENNA_193/VDD ANTENNA_193/VSS sg13g2_antennanp
+XANTENNA_182 rst_ni ANTENNA_182/VDD ANTENNA_182/VSS sg13g2_antennanp
+XANTENNA_171 rst_ni ANTENNA_192/VDD ANTENNA_192/VSS sg13g2_antennanp
+XANTENNA_160 rst_ni ANTENNA_186/VDD ANTENNA_186/VSS sg13g2_antennanp
+XANTENNA_60 gpio0_in[19] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_71 gpio0_in[27] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_82 gpio0_in[8] ANTENNA_82/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_93 gpio1_in[16] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_386 ANTENNA_387/A ANTENNA_391/VDD ANTENNA_391/VSS sg13g2_antennanp
+XANTENNA_397 spi_miso ANTENNA_397/VDD ANTENNA_397/VSS sg13g2_antennanp
+XANTENNA_375 ANTENNA_375/A ANTENNA_376/VDD ANTENNA_376/VSS sg13g2_antennanp
+XANTENNA_364 ANTENNA_364/A ANTENNA_364/VDD ANTENNA_364/VSS sg13g2_antennanp
+XANTENNA_353 ANTENNA_353/A ANTENNA_353/VDD ANTENNA_353/VSS sg13g2_antennanp
+XANTENNA_342 ANTENNA_343/A ANTENNA_342/VDD ANTENNA_342/VSS sg13g2_antennanp
+XANTENNA_331 ANTENNA_331/A ANTENNA_331/VDD ANTENNA_331/VSS sg13g2_antennanp
+XANTENNA_320 ANTENNA_320/A ANTENNA_320/VDD ANTENNA_320/VSS sg13g2_antennanp
+Xclkbuf_0_clk_i clkbuf_0_clk_i/X clk_i clkbuf_0_clk_i/VDD clkbuf_0_clk_i/VSS sg13g2_buf_16
+XANTENNA_194 ANTENNA_194/A ANTENNA_247/VDD ANTENNA_247/VSS sg13g2_antennanp
+XANTENNA_183 rst_ni ANTENNA_183/VDD ANTENNA_192/VSS sg13g2_antennanp
+XANTENNA_172 rst_ni ANTENNA_184/VDD ANTENNA_193/VSS sg13g2_antennanp
+XANTENNA_161 rst_ni ANTENNA_191/VDD ANTENNA_187/VSS sg13g2_antennanp
+XANTENNA_150 gpio2_in[3] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_50 gpio0_in[10] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_61 gpio0_in[1] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_72 gpio0_in[28] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_83 gpio0_in[9] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_94 gpio1_in[17] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_376 ANTENNA_376/A ANTENNA_376/VDD ANTENNA_376/VSS sg13g2_antennanp
+XANTENNA_365 ANTENNA_365/A ANTENNA_365/VDD ANTENNA_365/VSS sg13g2_antennanp
+XANTENNA_354 ANTENNA_355/A ANTENNA_358/VDD ANTENNA_358/VSS sg13g2_antennanp
+XANTENNA_343 ANTENNA_343/A ANTENNA_343/VDD ANTENNA_343/VSS sg13g2_antennanp
+XANTENNA_332 ANTENNA_332/A ANTENNA_335/VDD ANTENNA_335/VSS sg13g2_antennanp
+XANTENNA_321 ANTENNA_321/A ANTENNA_330/VDD ANTENNA_330/VSS sg13g2_antennanp
+XANTENNA_310 ANTENNA_312/A ANTENNA_315/VDD ANTENNA_315/VSS sg13g2_antennanp
+XANTENNA_387 ANTENNA_387/A ANTENNA_387/VDD ANTENNA_387/VSS sg13g2_antennanp
+XANTENNA_398 ANTENNA_398/A ANTENNA_398/VDD ANTENNA_398/VSS sg13g2_antennanp
+XANTENNA_195 ANTENNA_196/A ANTENNA_198/VDD ANTENNA_198/VSS sg13g2_antennanp
+XANTENNA_184 rst_ni ANTENNA_184/VDD ANTENNA_184/VSS sg13g2_antennanp
+XANTENNA_173 rst_ni ANTENNA_173/VDD ANTENNA_189/VSS sg13g2_antennanp
+XANTENNA_162 rst_ni ANTENNA_193/VDD ANTENNA_188/VSS sg13g2_antennanp
+XANTENNA_151 gpio2_in[4] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_140 gpio2_in[26] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_40 ANTENNA_40/A ANTENNA_40/VDD ANTENNA_40/VSS sg13g2_antennanp
+XANTENNA_51 gpio0_in[10] ANTENNA_51/VDD ANTENNA_51/VSS sg13g2_antennanp
+XANTENNA_62 gpio0_in[1] ANTENNA_62/VDD ANTENNA_62/VSS sg13g2_antennanp
+XANTENNA_73 gpio0_in[29] ANTENNA_73/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_84 gpio1_in[0] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_95 gpio1_in[18] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_388 ANTENNA_388/A ANTENNA_388/VDD ANTENNA_388/VSS sg13g2_antennanp
+XANTENNA_377 ANTENNA_377/A ANTENNA_398/VDD ANTENNA_398/VSS sg13g2_antennanp
+XANTENNA_366 ANTENNA_366/A ANTENNA_366/VDD ANTENNA_366/VSS sg13g2_antennanp
+XANTENNA_355 ANTENNA_355/A ANTENNA_355/VDD ANTENNA_355/VSS sg13g2_antennanp
+XANTENNA_344 ANTENNA_344/A ANTENNA_344/VDD ANTENNA_344/VSS sg13g2_antennanp
+XANTENNA_333 ANTENNA_333/A ANTENNA_333/VDD ANTENNA_333/VSS sg13g2_antennanp
+XANTENNA_322 ANTENNA_322/A ANTENNA_323/VDD ANTENNA_322/VSS sg13g2_antennanp
+XANTENNA_311 ANTENNA_312/A ANTENNA_320/VDD ANTENNA_320/VSS sg13g2_antennanp
+XANTENNA_300 ANTENNA_300/A ANTENNA_300/VDD ANTENNA_300/VSS sg13g2_antennanp
+XANTENNA_196 ANTENNA_196/A ANTENNA_223/VDD ANTENNA_223/VSS sg13g2_antennanp
+XANTENNA_185 rst_ni ANTENNA_185/VDD ANTENNA_185/VSS sg13g2_antennanp
+XANTENNA_174 rst_ni ANTENNA_190/VDD ANTENNA_181/VSS sg13g2_antennanp
+XANTENNA_163 rst_ni ANTENNA_189/VDD ANTENNA_189/VSS sg13g2_antennanp
+XANTENNA_152 gpio2_in[5] ANTENNA_152/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_141 gpio2_in[27] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_130 gpio2_in[20] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_41 ANTENNA_41/A ANTENNA_41/VDD ANTENNA_41/VSS sg13g2_antennanp
+XANTENNA_52 gpio0_in[11] ANTENNA_52/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_63 gpio0_in[1] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_74 gpio0_in[2] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_85 gpio1_in[10] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_96 gpio1_in[19] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_30 ANTENNA_30/A ANTENNA_30/VDD ANTENNA_30/VSS sg13g2_antennanp
+XANTENNA_389 ANTENNA_389/A ANTENNA_389/VDD ANTENNA_389/VSS sg13g2_antennanp
+XANTENNA_378 ANTENNA_378/A ANTENNA_378/VDD ANTENNA_378/VSS sg13g2_antennanp
+XANTENNA_367 ANTENNA_367/A ANTENNA_367/VDD ANTENNA_367/VSS sg13g2_antennanp
+XANTENNA_356 ANTENNA_356/A ANTENNA_356/VDD ANTENNA_356/VSS sg13g2_antennanp
+XANTENNA_345 ANTENNA_346/A ANTENNA_345/VDD ANTENNA_345/VSS sg13g2_antennanp
+XANTENNA_334 ANTENNA_335/A ANTENNA_334/VDD ANTENNA_334/VSS sg13g2_antennanp
+XANTENNA_323 ANTENNA_323/A ANTENNA_323/VDD ANTENNA_323/VSS sg13g2_antennanp
+XANTENNA_312 ANTENNA_312/A ANTENNA_315/VDD ANTENNA_315/VSS sg13g2_antennanp
+XANTENNA_301 ANTENNA_302/A ANTENNA_346/VDD ANTENNA_346/VSS sg13g2_antennanp
+XANTENNA_142 gpio2_in[27] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_131 gpio2_in[21] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_120 gpio2_in[13] ANTENNA_139/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_197 ANTENNA_198/A ANTENNA_197/VDD ANTENNA_197/VSS sg13g2_antennanp
+XANTENNA_186 rst_ni ANTENNA_186/VDD ANTENNA_186/VSS sg13g2_antennanp
+XANTENNA_175 rst_ni ANTENNA_182/VDD ANTENNA_191/VSS sg13g2_antennanp
+XANTENNA_164 rst_ni ANTENNA_190/VDD ANTENNA_181/VSS sg13g2_antennanp
+XANTENNA_153 gpio2_in[6] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_42 ANTENNA_42/A ANTENNA_42/VDD ANTENNA_42/VSS sg13g2_antennanp
+XANTENNA_53 gpio0_in[12] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_64 gpio0_in[20] ANTENNA_64/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_75 gpio0_in[30] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_86 gpio1_in[11] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_97 gpio1_in[19] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_31 ANTENNA_31/A ANTENNA_31/VDD ANTENNA_31/VSS sg13g2_antennanp
+XANTENNA_20 ANTENNA_20/A ANTENNA_20/VDD ANTENNA_20/VSS sg13g2_antennanp
+XANTENNA_379 ANTENNA_380/A ANTENNA_379/VDD ANTENNA_379/VSS sg13g2_antennanp
+XANTENNA_368 ANTENNA_368/A ANTENNA_368/VDD ANTENNA_368/VSS sg13g2_antennanp
+XANTENNA_357 ANTENNA_357/A ANTENNA_358/VDD ANTENNA_358/VSS sg13g2_antennanp
+XANTENNA_346 ANTENNA_346/A ANTENNA_346/VDD ANTENNA_346/VSS sg13g2_antennanp
+XANTENNA_335 ANTENNA_335/A ANTENNA_335/VDD ANTENNA_335/VSS sg13g2_antennanp
+XANTENNA_324 ANTENNA_324/A ANTENNA_324/VDD ANTENNA_324/VSS sg13g2_antennanp
+XANTENNA_313 ANTENNA_315/A ANTENNA_313/VDD ANTENNA_313/VSS sg13g2_antennanp
+XANTENNA_302 ANTENNA_302/A ANTENNA_302/VDD ANTENNA_302/VSS sg13g2_antennanp
+XANTENNA_110 gpio1_in[31] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_198 ANTENNA_198/A ANTENNA_198/VDD ANTENNA_198/VSS sg13g2_antennanp
+XANTENNA_187 rst_ni ANTENNA_191/VDD ANTENNA_187/VSS sg13g2_antennanp
+XANTENNA_176 rst_ni ANTENNA_192/VDD ANTENNA_192/VSS sg13g2_antennanp
+XANTENNA_165 rst_ni ANTENNA_182/VDD ANTENNA_191/VSS sg13g2_antennanp
+XANTENNA_154 gpio2_in[7] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_143 gpio2_in[27] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_132 gpio2_in[22] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_121 gpio2_in[14] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_10 ANTENNA_10/A ANTENNA_10/VDD ANTENNA_10/VSS sg13g2_antennanp
+XANTENNA_43 ANTENNA_43/A ANTENNA_43/VDD ANTENNA_43/VSS sg13g2_antennanp
+XANTENNA_54 gpio0_in[13] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_65 gpio0_in[21] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_32 ANTENNA_33/A ANTENNA_32/VDD ANTENNA_32/VSS sg13g2_antennanp
+XANTENNA_21 ANTENNA_21/A ANTENNA_21/VDD ANTENNA_21/VSS sg13g2_antennanp
+XANTENNA_76 gpio0_in[31] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_87 gpio1_in[13] ANTENNA_92/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_98 gpio1_in[21] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_369 ANTENNA_371/A ANTENNA_371/VDD ANTENNA_371/VSS sg13g2_antennanp
+XANTENNA_358 ANTENNA_358/A ANTENNA_358/VDD ANTENNA_358/VSS sg13g2_antennanp
+XANTENNA_347 ANTENNA_347/A ANTENNA_347/VDD ANTENNA_347/VSS sg13g2_antennanp
+XANTENNA_336 ANTENNA_336/A ANTENNA_336/VDD ANTENNA_336/VSS sg13g2_antennanp
+XANTENNA_325 ANTENNA_325/A ANTENNA_325/VDD ANTENNA_325/VSS sg13g2_antennanp
+XANTENNA_314 ANTENNA_315/A ANTENNA_323/VDD ANTENNA_314/VSS sg13g2_antennanp
+XANTENNA_303 ANTENNA_303/A ANTENNA_380/VDD ANTENNA_380/VSS sg13g2_antennanp
+XANTENNA_100 gpio1_in[22] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_111 gpio1_in[31] ANTENNA_111/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_199 ANTENNA_199/A ANTENNA_199/VDD ANTENNA_199/VSS sg13g2_antennanp
+XANTENNA_188 rst_ni ANTENNA_193/VDD ANTENNA_188/VSS sg13g2_antennanp
+XANTENNA_177 rst_ni ANTENNA_184/VDD ANTENNA_193/VSS sg13g2_antennanp
+XANTENNA_166 rst_ni ANTENNA_192/VDD ANTENNA_192/VSS sg13g2_antennanp
+XANTENNA_155 gpio2_in[8] ANTENNA_155/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_144 gpio2_in[28] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_133 gpio2_in[22] ANTENNA_155/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_122 gpio2_in[15] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_11 ANTENNA_11/A ANTENNA_11/VDD ANTENNA_11/VSS sg13g2_antennanp
+XANTENNA_44 ANTENNA_45/A ANTENNA_44/VDD ANTENNA_44/VSS sg13g2_antennanp
+XANTENNA_55 gpio0_in[14] ANTENNA_55/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_66 gpio0_in[22] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_77 gpio0_in[3] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_88 gpio1_in[13] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_99 gpio1_in[22] ANTENNA_99/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_33 ANTENNA_33/A ANTENNA_33/VDD ANTENNA_33/VSS sg13g2_antennanp
+XANTENNA_22 ANTENNA_22/A ANTENNA_22/VDD ANTENNA_22/VSS sg13g2_antennanp
+XANTENNA_359 ANTENNA_359/A ANTENNA_359/VDD ANTENNA_359/VSS sg13g2_antennanp
+XANTENNA_348 ANTENNA_348/A ANTENNA_348/VDD ANTENNA_348/VSS sg13g2_antennanp
+XANTENNA_337 ANTENNA_338/A ANTENNA_337/VDD ANTENNA_337/VSS sg13g2_antennanp
+XANTENNA_326 ANTENNA_326/A ANTENNA_326/VDD ANTENNA_326/VSS sg13g2_antennanp
+XANTENNA_315 ANTENNA_315/A ANTENNA_315/VDD ANTENNA_315/VSS sg13g2_antennanp
+XANTENNA_304 ANTENNA_304/A ANTENNA_380/VDD ANTENNA_380/VSS sg13g2_antennanp
+XANTENNA_101 gpio1_in[24] ANTENNA_101/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_112 gpio1_in[4] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_189 rst_ni ANTENNA_189/VDD ANTENNA_189/VSS sg13g2_antennanp
+XANTENNA_178 rst_ni ANTENNA_192/VDD ANTENNA_178/VSS sg13g2_antennanp
+XANTENNA_167 rst_ni ANTENNA_184/VDD ANTENNA_193/VSS sg13g2_antennanp
+XANTENNA_156 gpio2_in[9] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_145 gpio2_in[29] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_134 gpio2_in[22] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_123 gpio2_in[15] ANTENNA_129/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_12 ANTENNA_12/A ANTENNA_12/VDD ANTENNA_12/VSS sg13g2_antennanp
+XANTENNA_45 ANTENNA_45/A ANTENNA_45/VDD ANTENNA_45/VSS sg13g2_antennanp
+XANTENNA_56 gpio0_in[15] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_67 gpio0_in[23] ANTENNA_67/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_78 gpio0_in[4] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_89 gpio1_in[14] ANTENNA_92/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_34 ANTENNA_34/A ANTENNA_34/VDD ANTENNA_34/VSS sg13g2_antennanp
+XANTENNA_23 ANTENNA_23/A ANTENNA_23/VDD ANTENNA_23/VSS sg13g2_antennanp
+XANTENNA_349 ANTENNA_350/A ANTENNA_349/VDD ANTENNA_349/VSS sg13g2_antennanp
+XANTENNA_338 ANTENNA_338/A ANTENNA_338/VDD ANTENNA_338/VSS sg13g2_antennanp
+XANTENNA_327 ANTENNA_327/A ANTENNA_327/VDD ANTENNA_327/VSS sg13g2_antennanp
+XANTENNA_316 ANTENNA_317/A ANTENNA_319/VDD ANTENNA_319/VSS sg13g2_antennanp
+XANTENNA_305 ANTENNA_305/A ANTENNA_380/VDD ANTENNA_380/VSS sg13g2_antennanp
+XANTENNA_102 gpio1_in[24] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_113 gpio1_in[5] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_179 rst_ni ANTENNA_183/VDD ANTENNA_179/VSS sg13g2_antennanp
+XANTENNA_168 rst_ni ANTENNA_189/VDD ANTENNA_189/VSS sg13g2_antennanp
+XANTENNA_157 gpio2_in[9] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_146 gpio2_in[2] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_135 gpio2_in[23] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_124 gpio2_in[15] ANTENNA_139/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_46 ANTENNA_46/A ANTENNA_46/VDD ANTENNA_46/VSS sg13g2_antennanp
+XANTENNA_57 gpio0_in[16] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_68 gpio0_in[24] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_79 gpio0_in[5] ANTENNA_79/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_35 ANTENNA_35/A ANTENNA_35/VDD ANTENNA_35/VSS sg13g2_antennanp
+XANTENNA_24 ANTENNA_24/A ANTENNA_24/VDD ANTENNA_24/VSS sg13g2_antennanp
+XANTENNA_13 ANTENNA_13/A ANTENNA_13/VDD ANTENNA_13/VSS sg13g2_antennanp
+XANTENNA_339 ANTENNA_340/A ANTENNA_341/VDD ANTENNA_341/VSS sg13g2_antennanp
+XANTENNA_328 ANTENNA_328/A ANTENNA_328/VDD ANTENNA_328/VSS sg13g2_antennanp
+XANTENNA_317 ANTENNA_317/A ANTENNA_323/VDD ANTENNA_323/VSS sg13g2_antennanp
+XANTENNA_306 ANTENNA_306/A ANTENNA_306/VDD ANTENNA_306/VSS sg13g2_antennanp
+XANTENNA_103 gpio1_in[25] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_114 gpio1_in[6] ANTENNA_114/VDD ANTENNA_114/VSS sg13g2_antennanp
+XANTENNA_158 rst_ni ANTENNA_189/VDD ANTENNA_189/VSS sg13g2_antennanp
+XANTENNA_147 gpio2_in[2] ANTENNA_147/VDD ANTENNA_147/VSS sg13g2_antennanp
+XANTENNA_136 gpio2_in[24] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_125 gpio2_in[16] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_169 rst_ni ANTENNA_190/VDD ANTENNA_181/VSS sg13g2_antennanp
+XANTENNA_47 ANTENNA_47/A ANTENNA_47/VDD ANTENNA_47/VSS sg13g2_antennanp
+XANTENNA_58 gpio0_in[17] ANTENNA_58/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_69 gpio0_in[25] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_36 ANTENNA_37/A ANTENNA_36/VDD ANTENNA_36/VSS sg13g2_antennanp
+XANTENNA_25 ANTENNA_25/A ANTENNA_25/VDD ANTENNA_25/VSS sg13g2_antennanp
+XANTENNA_14 ANTENNA_14/A ANTENNA_14/VDD ANTENNA_14/VSS sg13g2_antennanp
+XANTENNA_329 ANTENNA_330/A ANTENNA_329/VDD ANTENNA_329/VSS sg13g2_antennanp
+XANTENNA_318 ANTENNA_318/A ANTENNA_319/VDD ANTENNA_319/VSS sg13g2_antennanp
+XANTENNA_307 ANTENNA_307/A ANTENNA_307/VDD ANTENNA_307/VSS sg13g2_antennanp
+XANTENNA_104 gpio1_in[27] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_115 gpio1_in[8] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_159 rst_ni ANTENNA_185/VDD ANTENNA_185/VSS sg13g2_antennanp
+XANTENNA_148 gpio2_in[30] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_137 gpio2_in[25] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_126 gpio2_in[17] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_48 ANTENNA_48/A ANTENNA_48/VDD ANTENNA_48/VSS sg13g2_antennanp
+XANTENNA_59 gpio0_in[18] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_37 ANTENNA_37/A ANTENNA_37/VDD ANTENNA_37/VSS sg13g2_antennanp
+XANTENNA_26 ANTENNA_26/A ANTENNA_26/VDD ANTENNA_26/VSS sg13g2_antennanp
+XANTENNA_15 ANTENNA_16/A ANTENNA_15/VDD ANTENNA_15/VSS sg13g2_antennanp
+Xu_cpu VDD VSS u_ic/clk_i u_ic/m_araddr[0] u_ic/m_araddr[10] u_ic/m_araddr[11] u_ic/m_araddr[12]
++ u_ic/m_araddr[13] u_ic/m_araddr[14] u_ic/m_araddr[15] u_ic/m_araddr[16] u_ic/m_araddr[17]
++ u_ic/m_araddr[18] u_ic/m_araddr[19] ANTENNA_29/A u_ic/m_araddr[20] u_ic/m_araddr[21]
++ u_ic/m_araddr[22] u_ic/m_araddr[23] u_ic/m_araddr[24] u_ic/m_araddr[25] u_ic/m_araddr[26]
++ u_ic/m_araddr[27] u_ic/m_araddr[28] u_ic/m_araddr[29] ANTENNA_30/A ANTENNA_31/A
++ u_ic/m_araddr[31] u_ic/m_araddr[3] ANTENNA_33/A u_ic/m_araddr[5] u_ic/m_araddr[6]
++ u_ic/m_araddr[7] u_ic/m_araddr[8] u_ic/m_araddr[9] u_ic/m_arprot[0] ANTENNA_34/A
++ u_ic/m_arprot[2] u_ic/m_arready u_ic/m_arvalid u_ic/m_awaddr[0] u_ic/m_awaddr[10]
++ u_ic/m_awaddr[11] u_ic/m_awaddr[12] u_ic/m_awaddr[13] u_ic/m_awaddr[14] u_ic/m_awaddr[15]
++ u_ic/m_awaddr[16] u_ic/m_awaddr[17] u_ic/m_awaddr[18] u_ic/m_awaddr[19] u_ic/m_awaddr[1]
++ u_ic/m_awaddr[20] u_ic/m_awaddr[21] u_ic/m_awaddr[22] u_ic/m_awaddr[23] u_ic/m_awaddr[24]
++ u_ic/m_awaddr[25] u_ic/m_awaddr[26] u_ic/m_awaddr[27] u_ic/m_awaddr[28] u_ic/m_awaddr[29]
++ u_ic/m_awaddr[2] u_ic/m_awaddr[30] u_ic/m_awaddr[31] u_ic/m_awaddr[3] u_ic/m_awaddr[4]
++ u_ic/m_awaddr[5] u_ic/m_awaddr[6] u_ic/m_awaddr[7] u_ic/m_awaddr[8] u_ic/m_awaddr[9]
++ u_ic/m_awprot[0] u_ic/m_awprot[1] u_ic/m_awprot[2] u_ic/m_awready u_ic/m_awvalid
++ ANTENNA_35/A u_ic/m_bvalid ANTENNA_37/A u_ic/m_rdata[10] u_ic/m_rdata[11] ANTENNA_38/A
++ u_ic/m_rdata[13] ANTENNA_39/A ANTENNA_40/A u_ic/m_rdata[16] u_ic/m_rdata[17] u_ic/m_rdata[18]
++ u_ic/m_rdata[19] u_ic/m_rdata[1] u_ic/m_rdata[20] ANTENNA_41/A u_ic/m_rdata[22]
++ u_ic/m_rdata[23] u_ic/m_rdata[24] u_ic/m_rdata[25] u_ic/m_rdata[26] u_ic/m_rdata[27]
++ u_ic/m_rdata[28] u_ic/m_rdata[29] u_ic/m_rdata[2] u_ic/m_rdata[30] u_ic/m_rdata[31]
++ u_ic/m_rdata[3] u_ic/m_rdata[4] u_ic/m_rdata[5] u_ic/m_rdata[6] u_ic/m_rdata[7]
++ u_ic/m_rdata[8] u_ic/m_rdata[9] u_ic/m_rready ANTENNA_42/A u_ic/m_wdata[0] u_ic/m_wdata[10]
++ u_ic/m_wdata[11] u_ic/m_wdata[12] u_ic/m_wdata[13] u_ic/m_wdata[14] ANTENNA_43/A
++ u_ic/m_wdata[16] u_ic/m_wdata[17] u_ic/m_wdata[18] u_ic/m_wdata[19] u_ic/m_wdata[1]
++ u_ic/m_wdata[20] u_ic/m_wdata[21] u_ic/m_wdata[22] u_ic/m_wdata[23] ANTENNA_45/A
++ u_ic/m_wdata[25] u_ic/m_wdata[26] u_ic/m_wdata[27] u_ic/m_wdata[28] ANTENNA_46/A
++ u_ic/m_wdata[2] u_ic/m_wdata[30] u_ic/m_wdata[31] u_ic/m_wdata[3] u_ic/m_wdata[4]
++ u_ic/m_wdata[5] u_ic/m_wdata[6] u_ic/m_wdata[7] u_ic/m_wdata[8] u_ic/m_wdata[9]
++ ANTENNA_47/A u_ic/m_wstrb[0] u_ic/m_wstrb[1] ANTENNA_48/A u_ic/m_wstrb[3] u_ic/m_wvalid
++ u_cpu/rst_ni u_cpu/trap picorv32_macro
+XANTENNA_319 ANTENNA_319/A ANTENNA_319/VDD ANTENNA_319/VSS sg13g2_antennanp
+XANTENNA_308 ANTENNA_308/A ANTENNA_308/VDD ANTENNA_308/VSS sg13g2_antennanp
+XANTENNA_105 gpio1_in[29] ANTENNA_108/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_116 gpio2_in[0] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_149 gpio2_in[31] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_138 gpio2_in[26] ANTENNA_142/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_127 gpio2_in[18] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_49 gpio0_in[0] ANTENNA_83/VDD ANTENNA_83/VSS sg13g2_antennanp
+XANTENNA_38 ANTENNA_38/A ANTENNA_38/VDD ANTENNA_38/VSS sg13g2_antennanp
+XANTENNA_27 ANTENNA_27/A ANTENNA_27/VDD ANTENNA_27/VSS sg13g2_antennanp
+XANTENNA_16 ANTENNA_16/A ANTENNA_16/VDD ANTENNA_16/VSS sg13g2_antennanp
+XANTENNA_309 ANTENNA_309/A ANTENNA_319/VDD ANTENNA_319/VSS sg13g2_antennanp
+Xu_ram VSS VDD u_ram/boot_addr[0] ANTENNA_2/A ANTENNA_4/A u_ram/boot_addr[12] u_ram/boot_addr[13]
++ u_ram/boot_addr[14] u_ram/boot_addr[15] u_ram/boot_addr[16] u_ram/boot_addr[17]
++ u_ram/boot_addr[18] u_ram/boot_addr[19] u_ram/boot_addr[1] u_ram/boot_addr[20] u_ram/boot_addr[21]
++ u_ram/boot_addr[22] u_ram/boot_addr[23] u_ram/boot_addr[24] u_ram/boot_addr[25]
++ u_ram/boot_addr[26] u_ram/boot_addr[27] u_ram/boot_addr[28] u_ram/boot_addr[29]
++ u_ram/boot_addr[2] u_ram/boot_addr[30] u_ram/boot_addr[31] ANTENNA_5/A u_ram/boot_addr[4]
++ ANTENNA_7/A ANTENNA_9/A u_ram/boot_addr[7] u_ram/boot_addr[8] ANTENNA_10/A ANTENNA_11/A
++ ANTENNA_12/A u_ram/boot_wdata[11] u_ram/boot_wdata[12] ANTENNA_13/A u_ram/boot_wdata[14]
++ u_ram/boot_wdata[15] u_ram/boot_wdata[16] ANTENNA_14/A u_ram/boot_wdata[18] u_ram/boot_wdata[19]
++ ANTENNA_16/A u_ram/boot_wdata[20] u_ram/boot_wdata[21] ANTENNA_18/A ANTENNA_19/A
++ ANTENNA_20/A u_ram/boot_wdata[25] ANTENNA_21/A ANTENNA_22/A u_ram/boot_wdata[28]
++ u_ram/boot_wdata[29] ANTENNA_23/A ANTENNA_24/A ANTENNA_25/A u_ram/boot_wdata[3]
++ u_ram/boot_wdata[4] ANTENNA_26/A u_ram/boot_wdata[6] u_ram/boot_wdata[7] u_ram/boot_wdata[8]
++ ANTENNA_27/A ANTENNA_28/A u_ic/clk_i rst_ni ANTENNA_194/A u_ic/s_araddr[10] ANTENNA_196/A
++ u_ic/s_araddr[12] ANTENNA_198/A u_ic/s_araddr[14] u_ic/s_araddr[15] ANTENNA_199/A
++ ANTENNA_200/A ANTENNA_201/A u_ic/s_araddr[19] ANTENNA_202/A ANTENNA_204/A ANTENNA_206/A
++ ANTENNA_208/A u_ic/s_araddr[23] ANTENNA_210/A u_ic/s_araddr[25] u_ic/s_araddr[26]
++ u_ic/s_araddr[27] u_ic/s_araddr[28] u_ic/s_araddr[29] ANTENNA_211/A u_ic/s_araddr[30]
++ ANTENNA_213/A ANTENNA_214/A ANTENNA_216/A ANTENNA_218/A ANTENNA_220/A ANTENNA_222/A
++ u_ic/s_araddr[8] ANTENNA_223/A u_ic/s_arready[0] u_ic/s_arvalid[0] u_ic/s_awaddr[0]
++ ANTENNA_224/A u_ic/s_awaddr[11] u_ic/s_awaddr[12] u_ic/s_awaddr[13] u_ic/s_awaddr[14]
++ ANTENNA_226/A ANTENNA_228/A ANTENNA_230/A ANTENNA_231/A ANTENNA_232/A u_ic/s_awaddr[1]
++ u_ic/s_awaddr[20] ANTENNA_234/A ANTENNA_236/A ANTENNA_238/A ANTENNA_240/A ANTENNA_242/A
++ u_ic/s_awaddr[26] u_ic/s_awaddr[27] ANTENNA_244/A ANTENNA_246/A u_ic/s_awaddr[2]
++ ANTENNA_248/A ANTENNA_250/A ANTENNA_252/A u_ic/s_awaddr[4] u_ic/s_awaddr[5] u_ic/s_awaddr[6]
++ ANTENNA_255/A ANTENNA_256/A u_ic/s_awaddr[9] ANTENNA_257/A u_ic/s_awvalid[0] u_ic/s_bready[0]
++ ANTENNA_260/A u_ic/s_bresp[1] ANTENNA_261/A u_ic/s_rdata[0] u_ic/s_rdata[10] u_ic/s_rdata[11]
++ u_ic/s_rdata[12] ANTENNA_271/A u_ic/s_rdata[14] u_ic/s_rdata[15] u_ic/s_rdata[16]
++ u_ic/s_rdata[17] u_ic/s_rdata[18] ANTENNA_272/A ANTENNA_273/A u_ic/s_rdata[20] ANTENNA_274/A
++ ANTENNA_275/A u_ic/s_rdata[23] ANTENNA_276/A ANTENNA_277/A u_ic/s_rdata[26] u_ic/s_rdata[27]
++ u_ic/s_rdata[28] u_ic/s_rdata[29] ANTENNA_278/A ANTENNA_279/A ANTENNA_280/A u_ic/s_rdata[3]
++ ANTENNA_283/A u_ic/s_rdata[5] ANTENNA_287/A u_ic/s_rdata[7] u_ic/s_rdata[8] u_ic/s_rdata[9]
++ u_ic/s_rready[0] u_ic/s_rresp[0] u_ic/s_rresp[1] u_ic/s_rvalid[0] ANTENNA_302/A
++ u_ic/s_wdata[10] ANTENNA_321/A ANTENNA_328/A ANTENNA_330/A ANTENNA_331/A u_ic/s_wdata[15]
++ ANTENNA_332/A ANTENNA_333/A ANTENNA_335/A u_ic/s_wdata[19] u_ic/s_wdata[1] ANTENNA_336/A
++ ANTENNA_338/A u_ic/s_wdata[22] u_ic/s_wdata[23] u_ic/s_wdata[24] ANTENNA_340/A u_ic/s_wdata[26]
++ ANTENNA_341/A ANTENNA_343/A ANTENNA_344/A ANTENNA_346/A u_ic/s_wdata[30] ANTENNA_347/A
++ ANTENNA_350/A u_ic/s_wdata[4] u_ic/s_wdata[5] u_ic/s_wdata[6] u_ic/s_wdata[7] ANTENNA_372/A
++ u_ic/s_wdata[9] u_ic/s_wready[0] ANTENNA_387/A u_ic/s_wstrb[1] ANTENNA_391/A ANTENNA_392/A
++ u_ic/s_wvalid[0] ram_macro
+XANTENNA_106 gpio1_in[29] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_117 gpio2_in[10] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_139 gpio2_in[26] ANTENNA_139/VDD ANTENNA_139/VSS sg13g2_antennanp
+XANTENNA_128 gpio2_in[19] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_39 ANTENNA_39/A ANTENNA_39/VDD ANTENNA_39/VSS sg13g2_antennanp
+XANTENNA_28 ANTENNA_28/A ANTENNA_28/VDD ANTENNA_28/VSS sg13g2_antennanp
+XANTENNA_17 ANTENNA_18/A ANTENNA_17/VDD ANTENNA_17/VSS sg13g2_antennanp
+XANTENNA_107 gpio1_in[2] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_118 gpio2_in[11] ANTENNA_155/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_129 gpio2_in[1] ANTENNA_129/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_29 ANTENNA_29/A ANTENNA_29/VDD ANTENNA_29/VSS sg13g2_antennanp
+XANTENNA_18 ANTENNA_18/A ANTENNA_18/VDD ANTENNA_18/VSS sg13g2_antennanp
+XANTENNA_290 ANTENNA_290/A ANTENNA_290/VDD ANTENNA_290/VSS sg13g2_antennanp
+XANTENNA_108 gpio1_in[30] ANTENNA_108/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_119 gpio2_in[12] ANTENNA_157/VDD ANTENNA_157/VSS sg13g2_antennanp
+XANTENNA_19 ANTENNA_19/A ANTENNA_19/VDD ANTENNA_19/VSS sg13g2_antennanp
+XANTENNA_291 ANTENNA_291/A ANTENNA_297/VDD ANTENNA_297/VSS sg13g2_antennanp
+XANTENNA_280 ANTENNA_280/A ANTENNA_293/VDD ANTENNA_282/VSS sg13g2_antennanp
+XANTENNA_109 gpio1_in[30] ANTENNA_98/VDD ANTENNA_99/VSS sg13g2_antennanp
+XANTENNA_292 ANTENNA_292/A ANTENNA_292/VDD ANTENNA_292/VSS sg13g2_antennanp
+XANTENNA_281 ANTENNA_281/A ANTENNA_281/VDD ANTENNA_281/VSS sg13g2_antennanp
+XANTENNA_270 ANTENNA_270/A ANTENNA_270/VDD ANTENNA_270/VSS sg13g2_antennanp
+XANTENNA_293 ANTENNA_293/A ANTENNA_293/VDD ANTENNA_293/VSS sg13g2_antennanp
+XANTENNA_282 ANTENNA_283/A ANTENNA_298/VDD ANTENNA_282/VSS sg13g2_antennanp
+XANTENNA_271 ANTENNA_271/A ANTENNA_35/VDD ANTENNA_271/VSS sg13g2_antennanp
+XANTENNA_260 ANTENNA_260/A ANTENNA_261/VDD ANTENNA_261/VSS sg13g2_antennanp
+XANTENNA_294 ANTENNA_294/A ANTENNA_294/VDD ANTENNA_294/VSS sg13g2_antennanp
+XANTENNA_283 ANTENNA_283/A ANTENNA_284/VDD ANTENNA_293/VSS sg13g2_antennanp
+XANTENNA_272 ANTENNA_272/A ANTENNA_278/VDD ANTENNA_278/VSS sg13g2_antennanp
+XANTENNA_261 ANTENNA_261/A ANTENNA_261/VDD ANTENNA_261/VSS sg13g2_antennanp
+XANTENNA_250 ANTENNA_250/A ANTENNA_250/VDD ANTENNA_250/VSS sg13g2_antennanp
+XANTENNA_251 ANTENNA_251/A ANTENNA_251/VDD ANTENNA_251/VSS sg13g2_antennanp
+XANTENNA_240 ANTENNA_240/A ANTENNA_240/VDD ANTENNA_240/VSS sg13g2_antennanp
+XANTENNA_295 ANTENNA_296/A ANTENNA_295/VDD ANTENNA_295/VSS sg13g2_antennanp
+XANTENNA_284 ANTENNA_284/A ANTENNA_284/VDD ANTENNA_284/VSS sg13g2_antennanp
+XANTENNA_273 ANTENNA_273/A ANTENNA_273/VDD ANTENNA_273/VSS sg13g2_antennanp
+XANTENNA_262 ANTENNA_262/A ANTENNA_262/VDD ANTENNA_262/VSS sg13g2_antennanp
+Xu_boot_spi VDD VSS u_ram/boot_addr[0] ANTENNA_2/A ANTENNA_4/A u_ram/boot_addr[12]
++ u_ram/boot_addr[13] u_ram/boot_addr[14] u_ram/boot_addr[15] u_ram/boot_addr[16]
++ u_ram/boot_addr[17] u_ram/boot_addr[18] u_ram/boot_addr[19] u_ram/boot_addr[1] u_ram/boot_addr[20]
++ u_ram/boot_addr[21] u_ram/boot_addr[22] u_ram/boot_addr[23] u_ram/boot_addr[24]
++ u_ram/boot_addr[25] u_ram/boot_addr[26] u_ram/boot_addr[27] u_ram/boot_addr[28]
++ u_ram/boot_addr[29] u_ram/boot_addr[2] u_ram/boot_addr[30] u_ram/boot_addr[31] ANTENNA_5/A
++ u_ram/boot_addr[4] ANTENNA_7/A ANTENNA_9/A u_ram/boot_addr[7] u_ram/boot_addr[8]
++ ANTENNA_10/A u_boot_spi/boot_done ANTENNA_11/A ANTENNA_12/A u_ram/boot_wdata[11]
++ u_ram/boot_wdata[12] ANTENNA_13/A u_ram/boot_wdata[14] u_ram/boot_wdata[15] u_ram/boot_wdata[16]
++ ANTENNA_14/A u_ram/boot_wdata[18] u_ram/boot_wdata[19] ANTENNA_16/A u_ram/boot_wdata[20]
++ u_ram/boot_wdata[21] ANTENNA_18/A ANTENNA_19/A ANTENNA_20/A u_ram/boot_wdata[25]
++ ANTENNA_21/A ANTENNA_22/A u_ram/boot_wdata[28] u_ram/boot_wdata[29] ANTENNA_23/A
++ ANTENNA_24/A ANTENNA_25/A u_ram/boot_wdata[3] u_ram/boot_wdata[4] ANTENNA_26/A u_ram/boot_wdata[6]
++ u_ram/boot_wdata[7] u_ram/boot_wdata[8] ANTENNA_27/A ANTENNA_28/A u_ic/clk_i u_cpu/rst_ni
++ rst_ni spi_cs_n spi_miso spi_mosi spi_sclk boot_spi_macro
+XANTENNA_296 ANTENNA_296/A ANTENNA_296/VDD ANTENNA_296/VSS sg13g2_antennanp
+XANTENNA_285 ANTENNA_285/A ANTENNA_285/VDD ANTENNA_292/VSS sg13g2_antennanp
+XANTENNA_274 ANTENNA_274/A ANTENNA_274/VDD ANTENNA_274/VSS sg13g2_antennanp
+XANTENNA_263 ANTENNA_264/A ANTENNA_263/VDD ANTENNA_286/VSS sg13g2_antennanp
+XANTENNA_252 ANTENNA_252/A ANTENNA_252/VDD ANTENNA_252/VSS sg13g2_antennanp
+XANTENNA_241 ANTENNA_242/A ANTENNA_241/VDD ANTENNA_241/VSS sg13g2_antennanp
+XANTENNA_230 ANTENNA_230/A ANTENNA_230/VDD ANTENNA_230/VSS sg13g2_antennanp
+Xclkbuf_1_1__f_clk_i u_periph2/clk_i clkbuf_0_clk_i/X clkbuf_1_1__f_clk_i/VDD clkbuf_1_1__f_clk_i/VSS
++ sg13g2_buf_16
+Xu_ic VDD u_ic/VSS u_ic/clk_i u_ic/m_araddr[0] u_ic/m_araddr[10] u_ic/m_araddr[11]
++ u_ic/m_araddr[12] u_ic/m_araddr[13] u_ic/m_araddr[14] u_ic/m_araddr[15] u_ic/m_araddr[16]
++ u_ic/m_araddr[17] u_ic/m_araddr[18] u_ic/m_araddr[19] ANTENNA_29/A u_ic/m_araddr[20]
++ u_ic/m_araddr[21] u_ic/m_araddr[22] u_ic/m_araddr[23] u_ic/m_araddr[24] u_ic/m_araddr[25]
++ u_ic/m_araddr[26] u_ic/m_araddr[27] u_ic/m_araddr[28] u_ic/m_araddr[29] ANTENNA_30/A
++ ANTENNA_31/A u_ic/m_araddr[31] u_ic/m_araddr[3] ANTENNA_33/A u_ic/m_araddr[5] u_ic/m_araddr[6]
++ u_ic/m_araddr[7] u_ic/m_araddr[8] u_ic/m_araddr[9] u_ic/m_arprot[0] ANTENNA_34/A
++ u_ic/m_arprot[2] u_ic/m_arready u_ic/m_arvalid u_ic/m_awaddr[0] u_ic/m_awaddr[10]
++ u_ic/m_awaddr[11] u_ic/m_awaddr[12] u_ic/m_awaddr[13] u_ic/m_awaddr[14] u_ic/m_awaddr[15]
++ u_ic/m_awaddr[16] u_ic/m_awaddr[17] u_ic/m_awaddr[18] u_ic/m_awaddr[19] u_ic/m_awaddr[1]
++ u_ic/m_awaddr[20] u_ic/m_awaddr[21] u_ic/m_awaddr[22] u_ic/m_awaddr[23] u_ic/m_awaddr[24]
++ u_ic/m_awaddr[25] u_ic/m_awaddr[26] u_ic/m_awaddr[27] u_ic/m_awaddr[28] u_ic/m_awaddr[29]
++ u_ic/m_awaddr[2] u_ic/m_awaddr[30] u_ic/m_awaddr[31] u_ic/m_awaddr[3] u_ic/m_awaddr[4]
++ u_ic/m_awaddr[5] u_ic/m_awaddr[6] u_ic/m_awaddr[7] u_ic/m_awaddr[8] u_ic/m_awaddr[9]
++ u_ic/m_awprot[0] u_ic/m_awprot[1] u_ic/m_awprot[2] u_ic/m_awready u_ic/m_awvalid
++ ANTENNA_35/A u_ic/m_bresp[0] u_ic/m_bresp[1] u_ic/m_bvalid ANTENNA_37/A u_ic/m_rdata[10]
++ u_ic/m_rdata[11] ANTENNA_38/A u_ic/m_rdata[13] ANTENNA_39/A ANTENNA_40/A u_ic/m_rdata[16]
++ u_ic/m_rdata[17] u_ic/m_rdata[18] u_ic/m_rdata[19] u_ic/m_rdata[1] u_ic/m_rdata[20]
++ ANTENNA_41/A u_ic/m_rdata[22] u_ic/m_rdata[23] u_ic/m_rdata[24] u_ic/m_rdata[25]
++ u_ic/m_rdata[26] u_ic/m_rdata[27] u_ic/m_rdata[28] u_ic/m_rdata[29] u_ic/m_rdata[2]
++ u_ic/m_rdata[30] u_ic/m_rdata[31] u_ic/m_rdata[3] u_ic/m_rdata[4] u_ic/m_rdata[5]
++ u_ic/m_rdata[6] u_ic/m_rdata[7] u_ic/m_rdata[8] u_ic/m_rdata[9] u_ic/m_rready u_ic/m_rresp[0]
++ u_ic/m_rresp[1] ANTENNA_42/A u_ic/m_wdata[0] u_ic/m_wdata[10] u_ic/m_wdata[11] u_ic/m_wdata[12]
++ u_ic/m_wdata[13] u_ic/m_wdata[14] ANTENNA_43/A u_ic/m_wdata[16] u_ic/m_wdata[17]
++ u_ic/m_wdata[18] u_ic/m_wdata[19] u_ic/m_wdata[1] u_ic/m_wdata[20] u_ic/m_wdata[21]
++ u_ic/m_wdata[22] u_ic/m_wdata[23] ANTENNA_45/A u_ic/m_wdata[25] u_ic/m_wdata[26]
++ u_ic/m_wdata[27] u_ic/m_wdata[28] ANTENNA_46/A u_ic/m_wdata[2] u_ic/m_wdata[30]
++ u_ic/m_wdata[31] u_ic/m_wdata[3] u_ic/m_wdata[4] u_ic/m_wdata[5] u_ic/m_wdata[6]
++ u_ic/m_wdata[7] u_ic/m_wdata[8] u_ic/m_wdata[9] ANTENNA_47/A u_ic/m_wstrb[0] u_ic/m_wstrb[1]
++ ANTENNA_48/A u_ic/m_wstrb[3] u_ic/m_wvalid rst_ni ANTENNA_194/A u_ic/s_araddr[100]
++ u_ic/s_araddr[101] u_ic/s_araddr[102] u_ic/s_araddr[103] u_ic/s_araddr[104] u_ic/s_araddr[105]
++ u_ic/s_araddr[106] u_ic/s_araddr[107] u_ic/s_araddr[108] u_ic/s_araddr[109] u_ic/s_araddr[10]
++ u_ic/s_araddr[110] u_ic/s_araddr[111] u_ic/s_araddr[112] u_ic/s_araddr[113] u_ic/s_araddr[114]
++ u_ic/s_araddr[115] u_ic/s_araddr[116] u_ic/s_araddr[117] u_ic/s_araddr[118] u_ic/s_araddr[119]
++ ANTENNA_196/A u_ic/s_araddr[120] u_ic/s_araddr[121] u_ic/s_araddr[122] u_ic/s_araddr[123]
++ u_ic/s_araddr[124] u_ic/s_araddr[125] u_ic/s_araddr[126] u_ic/s_araddr[127] u_ic/s_araddr[12]
++ ANTENNA_198/A u_ic/s_araddr[14] u_ic/s_araddr[15] ANTENNA_199/A ANTENNA_200/A ANTENNA_201/A
++ u_ic/s_araddr[19] ANTENNA_202/A ANTENNA_204/A ANTENNA_206/A ANTENNA_208/A u_ic/s_araddr[23]
++ ANTENNA_210/A u_ic/s_araddr[25] u_ic/s_araddr[26] u_ic/s_araddr[27] u_ic/s_araddr[28]
++ u_ic/s_araddr[29] ANTENNA_211/A u_ic/s_araddr[30] ANTENNA_213/A u_ic/s_araddr[32]
++ u_ic/s_araddr[33] u_ic/s_araddr[34] u_ic/s_araddr[35] u_ic/s_araddr[36] u_ic/s_araddr[37]
++ u_ic/s_araddr[38] u_ic/s_araddr[39] ANTENNA_214/A u_ic/s_araddr[40] u_ic/s_araddr[41]
++ u_ic/s_araddr[42] u_ic/s_araddr[43] u_ic/s_araddr[44] u_ic/s_araddr[45] u_ic/s_araddr[46]
++ u_ic/s_araddr[47] u_ic/s_araddr[48] u_ic/s_araddr[49] ANTENNA_216/A u_ic/s_araddr[50]
++ u_ic/s_araddr[51] u_ic/s_araddr[52] u_ic/s_araddr[53] u_ic/s_araddr[54] u_ic/s_araddr[55]
++ u_ic/s_araddr[56] u_ic/s_araddr[57] u_ic/s_araddr[58] u_ic/s_araddr[59] ANTENNA_218/A
++ u_ic/s_araddr[60] u_ic/s_araddr[61] u_ic/s_araddr[62] u_ic/s_araddr[63] u_ic/s_araddr[64]
++ u_ic/s_araddr[65] u_ic/s_araddr[66] u_ic/s_araddr[67] u_ic/s_araddr[68] u_ic/s_araddr[69]
++ ANTENNA_220/A u_ic/s_araddr[70] u_ic/s_araddr[71] u_ic/s_araddr[72] u_ic/s_araddr[73]
++ u_ic/s_araddr[74] u_ic/s_araddr[75] u_ic/s_araddr[76] u_ic/s_araddr[77] u_ic/s_araddr[78]
++ u_ic/s_araddr[79] ANTENNA_222/A u_ic/s_araddr[80] u_ic/s_araddr[81] u_ic/s_araddr[82]
++ u_ic/s_araddr[83] u_ic/s_araddr[84] u_ic/s_araddr[85] u_ic/s_araddr[86] u_ic/s_araddr[87]
++ u_ic/s_araddr[88] u_ic/s_araddr[89] u_ic/s_araddr[8] u_ic/s_araddr[90] u_ic/s_araddr[91]
++ u_ic/s_araddr[92] u_ic/s_araddr[93] u_ic/s_araddr[94] u_ic/s_araddr[95] u_ic/s_araddr[96]
++ u_ic/s_araddr[97] u_ic/s_araddr[98] u_ic/s_araddr[99] ANTENNA_223/A u_ic/s_arprot[0]
++ u_ic/s_arprot[10] u_ic/s_arprot[11] u_ic/s_arprot[1] u_ic/s_arprot[2] u_ic/s_arprot[3]
++ u_ic/s_arprot[4] u_ic/s_arprot[5] u_ic/s_arprot[6] u_ic/s_arprot[7] u_ic/s_arprot[8]
++ u_ic/s_arprot[9] u_ic/s_arready[0] u_ic/s_arready[1] u_ic/s_arready[2] u_ic/s_arready[3]
++ u_ic/s_arvalid[0] u_ic/s_arvalid[1] u_ic/s_arvalid[2] u_ic/s_arvalid[3] u_ic/s_awaddr[0]
++ u_ic/s_awaddr[100] u_ic/s_awaddr[101] u_ic/s_awaddr[102] u_ic/s_awaddr[103] u_ic/s_awaddr[104]
++ u_ic/s_awaddr[105] u_ic/s_awaddr[106] u_ic/s_awaddr[107] u_ic/s_awaddr[108] u_ic/s_awaddr[109]
++ ANTENNA_224/A u_ic/s_awaddr[110] u_ic/s_awaddr[111] u_ic/s_awaddr[112] u_ic/s_awaddr[113]
++ u_ic/s_awaddr[114] u_ic/s_awaddr[115] u_ic/s_awaddr[116] u_ic/s_awaddr[117] u_ic/s_awaddr[118]
++ u_ic/s_awaddr[119] u_ic/s_awaddr[11] u_ic/s_awaddr[120] u_ic/s_awaddr[121] u_ic/s_awaddr[122]
++ u_ic/s_awaddr[123] u_ic/s_awaddr[124] u_ic/s_awaddr[125] u_ic/s_awaddr[126] u_ic/s_awaddr[127]
++ u_ic/s_awaddr[12] u_ic/s_awaddr[13] u_ic/s_awaddr[14] ANTENNA_226/A ANTENNA_228/A
++ ANTENNA_230/A ANTENNA_231/A ANTENNA_232/A u_ic/s_awaddr[1] u_ic/s_awaddr[20] ANTENNA_234/A
++ ANTENNA_236/A ANTENNA_238/A ANTENNA_240/A ANTENNA_242/A u_ic/s_awaddr[26] u_ic/s_awaddr[27]
++ ANTENNA_244/A ANTENNA_246/A u_ic/s_awaddr[2] ANTENNA_248/A ANTENNA_250/A u_ic/s_awaddr[32]
++ u_ic/s_awaddr[33] u_ic/s_awaddr[34] ANTENNA_251/A u_ic/s_awaddr[36] u_ic/s_awaddr[37]
++ u_ic/s_awaddr[38] u_ic/s_awaddr[39] ANTENNA_252/A u_ic/s_awaddr[40] u_ic/s_awaddr[41]
++ u_ic/s_awaddr[42] u_ic/s_awaddr[43] u_ic/s_awaddr[44] u_ic/s_awaddr[45] u_ic/s_awaddr[46]
++ u_ic/s_awaddr[47] u_ic/s_awaddr[48] u_ic/s_awaddr[49] u_ic/s_awaddr[4] u_ic/s_awaddr[50]
++ u_ic/s_awaddr[51] u_ic/s_awaddr[52] u_ic/s_awaddr[53] u_ic/s_awaddr[54] u_ic/s_awaddr[55]
++ u_ic/s_awaddr[56] u_ic/s_awaddr[57] u_ic/s_awaddr[58] u_ic/s_awaddr[59] u_ic/s_awaddr[5]
++ u_ic/s_awaddr[60] u_ic/s_awaddr[61] u_ic/s_awaddr[62] u_ic/s_awaddr[63] u_ic/s_awaddr[64]
++ u_ic/s_awaddr[65] ANTENNA_254/A u_ic/s_awaddr[67] u_ic/s_awaddr[68] u_ic/s_awaddr[69]
++ u_ic/s_awaddr[6] u_ic/s_awaddr[70] u_ic/s_awaddr[71] u_ic/s_awaddr[72] u_ic/s_awaddr[73]
++ u_ic/s_awaddr[74] u_ic/s_awaddr[75] u_ic/s_awaddr[76] u_ic/s_awaddr[77] u_ic/s_awaddr[78]
++ u_ic/s_awaddr[79] ANTENNA_255/A u_ic/s_awaddr[80] u_ic/s_awaddr[81] u_ic/s_awaddr[82]
++ u_ic/s_awaddr[83] u_ic/s_awaddr[84] u_ic/s_awaddr[85] u_ic/s_awaddr[86] u_ic/s_awaddr[87]
++ u_ic/s_awaddr[88] u_ic/s_awaddr[89] ANTENNA_256/A u_ic/s_awaddr[90] u_ic/s_awaddr[91]
++ u_ic/s_awaddr[92] u_ic/s_awaddr[93] u_ic/s_awaddr[94] u_ic/s_awaddr[95] u_ic/s_awaddr[96]
++ u_ic/s_awaddr[97] u_ic/s_awaddr[98] u_ic/s_awaddr[99] u_ic/s_awaddr[9] u_ic/s_awprot[0]
++ u_ic/s_awprot[10] u_ic/s_awprot[11] u_ic/s_awprot[1] u_ic/s_awprot[2] u_ic/s_awprot[3]
++ u_ic/s_awprot[4] u_ic/s_awprot[5] u_ic/s_awprot[6] u_ic/s_awprot[7] u_ic/s_awprot[8]
++ u_ic/s_awprot[9] ANTENNA_257/A u_ic/s_awready[1] u_ic/s_awready[2] u_ic/s_awready[3]
++ u_ic/s_awvalid[0] u_ic/s_awvalid[1] u_ic/s_awvalid[2] ANTENNA_258/A u_ic/s_bready[0]
++ u_ic/s_bready[1] ANTENNA_259/A u_ic/s_bready[3] ANTENNA_260/A u_ic/s_bresp[1] u_ic/s_bresp[2]
++ u_ic/s_bresp[3] u_ic/s_bresp[4] u_ic/s_bresp[5] u_ic/s_bresp[6] u_ic/s_bresp[7]
++ ANTENNA_261/A u_ic/s_bvalid[1] u_ic/s_bvalid[2] u_ic/s_bvalid[3] u_ic/s_rdata[0]
++ u_ic/s_rdata[100] ANTENNA_262/A ANTENNA_264/A u_ic/s_rdata[103] u_ic/s_rdata[104]
++ u_ic/s_rdata[105] u_ic/s_rdata[106] ANTENNA_265/A u_ic/s_rdata[108] ANTENNA_266/A
++ u_ic/s_rdata[10] u_ic/s_rdata[110] u_ic/s_rdata[111] u_ic/s_rdata[112] u_ic/s_rdata[113]
++ ANTENNA_267/A u_ic/s_rdata[115] ANTENNA_268/A ANTENNA_269/A u_ic/s_rdata[118] ANTENNA_270/A
++ u_ic/s_rdata[11] u_ic/s_rdata[120] u_ic/s_rdata[121] u_ic/s_rdata[122] u_ic/s_rdata[123]
++ u_ic/s_rdata[124] u_ic/s_rdata[125] u_ic/s_rdata[126] u_ic/s_rdata[127] u_ic/s_rdata[12]
++ ANTENNA_271/A u_ic/s_rdata[14] u_ic/s_rdata[15] u_ic/s_rdata[16] u_ic/s_rdata[17]
++ u_ic/s_rdata[18] ANTENNA_272/A ANTENNA_273/A u_ic/s_rdata[20] ANTENNA_274/A ANTENNA_275/A
++ u_ic/s_rdata[23] ANTENNA_276/A ANTENNA_277/A u_ic/s_rdata[26] u_ic/s_rdata[27] u_ic/s_rdata[28]
++ u_ic/s_rdata[29] ANTENNA_278/A ANTENNA_279/A ANTENNA_280/A u_ic/s_rdata[32] u_ic/s_rdata[33]
++ u_ic/s_rdata[34] u_ic/s_rdata[35] u_ic/s_rdata[36] u_ic/s_rdata[37] u_ic/s_rdata[38]
++ u_ic/s_rdata[39] u_ic/s_rdata[3] u_ic/s_rdata[40] u_ic/s_rdata[41] u_ic/s_rdata[42]
++ u_ic/s_rdata[43] ANTENNA_281/A u_ic/s_rdata[45] u_ic/s_rdata[46] u_ic/s_rdata[47]
++ u_ic/s_rdata[48] u_ic/s_rdata[49] ANTENNA_283/A u_ic/s_rdata[50] u_ic/s_rdata[51]
++ u_ic/s_rdata[52] u_ic/s_rdata[53] ANTENNA_284/A u_ic/s_rdata[55] u_ic/s_rdata[56]
++ u_ic/s_rdata[57] u_ic/s_rdata[58] u_ic/s_rdata[59] u_ic/s_rdata[5] ANTENNA_285/A
++ u_ic/s_rdata[61] u_ic/s_rdata[62] u_ic/s_rdata[63] u_ic/s_rdata[64] u_ic/s_rdata[65]
++ u_ic/s_rdata[66] u_ic/s_rdata[67] u_ic/s_rdata[68] u_ic/s_rdata[69] ANTENNA_287/A
++ u_ic/s_rdata[70] u_ic/s_rdata[71] u_ic/s_rdata[72] u_ic/s_rdata[73] u_ic/s_rdata[74]
++ u_ic/s_rdata[75] ANTENNA_288/A u_ic/s_rdata[77] u_ic/s_rdata[78] u_ic/s_rdata[79]
++ u_ic/s_rdata[7] u_ic/s_rdata[80] u_ic/s_rdata[81] u_ic/s_rdata[82] u_ic/s_rdata[83]
++ ANTENNA_289/A ANTENNA_290/A ANTENNA_291/A u_ic/s_rdata[87] u_ic/s_rdata[88] u_ic/s_rdata[89]
++ u_ic/s_rdata[8] u_ic/s_rdata[90] u_ic/s_rdata[91] ANTENNA_292/A u_ic/s_rdata[93]
++ u_ic/s_rdata[94] ANTENNA_293/A ANTENNA_294/A u_ic/s_rdata[97] ANTENNA_296/A u_ic/s_rdata[99]
++ u_ic/s_rdata[9] u_ic/s_rready[0] u_ic/s_rready[1] u_ic/s_rready[2] u_ic/s_rready[3]
++ u_ic/s_rresp[0] u_ic/s_rresp[1] u_ic/s_rresp[2] u_ic/s_rresp[3] ANTENNA_297/A ANTENNA_298/A
++ u_ic/s_rresp[6] u_ic/s_rresp[7] u_ic/s_rvalid[0] u_ic/s_rvalid[1] ANTENNA_299/A
++ ANTENNA_300/A ANTENNA_302/A u_ic/s_wdata[100] ANTENNA_303/A ANTENNA_304/A ANTENNA_305/A
++ u_ic/s_wdata[104] ANTENNA_306/A u_ic/s_wdata[106] ANTENNA_307/A ANTENNA_308/A u_ic/s_wdata[109]
++ u_ic/s_wdata[10] ANTENNA_309/A u_ic/s_wdata[111] ANTENNA_312/A ANTENNA_315/A ANTENNA_317/A
++ ANTENNA_318/A u_ic/s_wdata[116] ANTENNA_319/A u_ic/s_wdata[118] ANTENNA_320/A ANTENNA_321/A
++ ANTENNA_322/A ANTENNA_323/A ANTENNA_324/A ANTENNA_325/A ANTENNA_326/A u_ic/s_wdata[125]
++ u_ic/s_wdata[126] ANTENNA_327/A ANTENNA_328/A ANTENNA_330/A ANTENNA_331/A u_ic/s_wdata[15]
++ ANTENNA_332/A ANTENNA_333/A ANTENNA_335/A u_ic/s_wdata[19] u_ic/s_wdata[1] ANTENNA_336/A
++ ANTENNA_338/A u_ic/s_wdata[22] u_ic/s_wdata[23] u_ic/s_wdata[24] ANTENNA_340/A u_ic/s_wdata[26]
++ ANTENNA_341/A ANTENNA_343/A ANTENNA_344/A ANTENNA_346/A u_ic/s_wdata[30] ANTENNA_347/A
++ u_ic/s_wdata[32] u_ic/s_wdata[33] u_ic/s_wdata[34] ANTENNA_348/A u_ic/s_wdata[36]
++ u_ic/s_wdata[37] u_ic/s_wdata[38] u_ic/s_wdata[39] ANTENNA_350/A u_ic/s_wdata[40]
++ u_ic/s_wdata[41] u_ic/s_wdata[42] u_ic/s_wdata[43] u_ic/s_wdata[44] u_ic/s_wdata[45]
++ u_ic/s_wdata[46] u_ic/s_wdata[47] u_ic/s_wdata[48] u_ic/s_wdata[49] u_ic/s_wdata[4]
++ u_ic/s_wdata[50] ANTENNA_351/A u_ic/s_wdata[52] u_ic/s_wdata[53] u_ic/s_wdata[54]
++ u_ic/s_wdata[55] ANTENNA_352/A u_ic/s_wdata[57] u_ic/s_wdata[58] u_ic/s_wdata[59]
++ u_ic/s_wdata[5] u_ic/s_wdata[60] u_ic/s_wdata[61] u_ic/s_wdata[62] u_ic/s_wdata[63]
++ ANTENNA_353/A u_ic/s_wdata[65] u_ic/s_wdata[66] ANTENNA_355/A u_ic/s_wdata[68] u_ic/s_wdata[69]
++ u_ic/s_wdata[6] ANTENNA_356/A u_ic/s_wdata[71] ANTENNA_357/A ANTENNA_358/A u_ic/s_wdata[74]
++ ANTENNA_359/A ANTENNA_360/A ANTENNA_364/A ANTENNA_365/A ANTENNA_366/A u_ic/s_wdata[7]
++ ANTENNA_367/A ANTENNA_368/A u_ic/s_wdata[82] u_ic/s_wdata[83] u_ic/s_wdata[84] ANTENNA_371/A
++ ANTENNA_398/A u_ic/s_wdata[87] u_ic/s_wdata[88] u_ic/s_wdata[89] ANTENNA_372/A ANTENNA_374/A
++ ANTENNA_375/A ANTENNA_376/A ANTENNA_377/A u_ic/s_wdata[94] ANTENNA_378/A ANTENNA_380/A
++ ANTENNA_381/A u_ic/s_wdata[98] ANTENNA_382/A u_ic/s_wdata[9] u_ic/s_wready[0] ANTENNA_384/A
++ ANTENNA_385/A u_ic/s_wready[3] ANTENNA_387/A ANTENNA_388/A u_ic/s_wstrb[11] ANTENNA_389/A
++ u_ic/s_wstrb[13] ANTENNA_390/A u_ic/s_wstrb[15] u_ic/s_wstrb[1] ANTENNA_391/A ANTENNA_392/A
++ ANTENNA_393/A u_ic/s_wstrb[5] u_ic/s_wstrb[6] ANTENNA_395/A u_ic/s_wstrb[8] u_ic/s_wstrb[9]
++ u_ic/s_wvalid[0] u_ic/s_wvalid[1] ANTENNA_396/A u_ic/s_wvalid[3] interconnect_macro
+XANTENNA_297 ANTENNA_297/A ANTENNA_297/VDD ANTENNA_297/VSS sg13g2_antennanp
+XANTENNA_286 ANTENNA_287/A ANTENNA_286/VDD ANTENNA_286/VSS sg13g2_antennanp
+XANTENNA_275 ANTENNA_275/A ANTENNA_297/VDD ANTENNA_284/VSS sg13g2_antennanp
+XANTENNA_264 ANTENNA_264/A ANTENNA_286/VDD ANTENNA_287/VSS sg13g2_antennanp
+XANTENNA_253 ANTENNA_254/A ANTENNA_253/VDD ANTENNA_253/VSS sg13g2_antennanp
+XANTENNA_242 ANTENNA_242/A ANTENNA_242/VDD ANTENNA_242/VSS sg13g2_antennanp
+XANTENNA_231 ANTENNA_231/A ANTENNA_231/VDD ANTENNA_231/VSS sg13g2_antennanp
+XANTENNA_220 ANTENNA_220/A ANTENNA_220/VDD ANTENNA_220/VSS sg13g2_antennanp
+XANTENNA_1 ANTENNA_2/A ANTENNA_1/VDD ANTENNA_1/VSS sg13g2_antennanp
+XANTENNA_298 ANTENNA_298/A ANTENNA_298/VDD ANTENNA_298/VSS sg13g2_antennanp
+XANTENNA_287 ANTENNA_287/A ANTENNA_287/VDD ANTENNA_287/VSS sg13g2_antennanp
+XANTENNA_276 ANTENNA_276/A ANTENNA_285/VDD ANTENNA_297/VSS sg13g2_antennanp
+XANTENNA_265 ANTENNA_265/A ANTENNA_296/VDD ANTENNA_265/VSS sg13g2_antennanp
+XANTENNA_254 ANTENNA_254/A ANTENNA_254/VDD ANTENNA_254/VSS sg13g2_antennanp
+XANTENNA_243 ANTENNA_244/A ANTENNA_248/VDD ANTENNA_248/VSS sg13g2_antennanp
+XANTENNA_232 ANTENNA_232/A ANTENNA_234/VDD ANTENNA_234/VSS sg13g2_antennanp
+XANTENNA_221 ANTENNA_222/A ANTENNA_221/VDD ANTENNA_221/VSS sg13g2_antennanp
+XANTENNA_210 ANTENNA_210/A ANTENNA_210/VDD ANTENNA_210/VSS sg13g2_antennanp
+XANTENNA_2 ANTENNA_2/A ANTENNA_2/VDD ANTENNA_2/VSS sg13g2_antennanp
+XANTENNA_299 ANTENNA_299/A ANTENNA_299/VDD ANTENNA_299/VSS sg13g2_antennanp
+XANTENNA_288 ANTENNA_288/A ANTENNA_46/VDD ANTENNA_46/VSS sg13g2_antennanp
+XANTENNA_277 ANTENNA_277/A ANTENNA_277/VDD ANTENNA_277/VSS sg13g2_antennanp
+XANTENNA_266 ANTENNA_266/A ANTENNA_35/VDD ANTENNA_271/VSS sg13g2_antennanp
+XANTENNA_255 ANTENNA_255/A ANTENNA_255/VDD ANTENNA_255/VSS sg13g2_antennanp
+XANTENNA_244 ANTENNA_244/A ANTENNA_244/VDD ANTENNA_244/VSS sg13g2_antennanp
+XANTENNA_233 ANTENNA_234/A ANTENNA_238/VDD ANTENNA_238/VSS sg13g2_antennanp
+XANTENNA_222 ANTENNA_222/A ANTENNA_222/VDD ANTENNA_222/VSS sg13g2_antennanp
+XANTENNA_211 ANTENNA_211/A ANTENNA_211/VDD ANTENNA_211/VSS sg13g2_antennanp
+XANTENNA_200 ANTENNA_200/A ANTENNA_200/VDD ANTENNA_200/VSS sg13g2_antennanp
+XANTENNA_3 ANTENNA_4/A ANTENNA_3/VDD ANTENNA_3/VSS sg13g2_antennanp
+XANTENNA_267 ANTENNA_267/A ANTENNA_267/VDD ANTENNA_267/VSS sg13g2_antennanp
+XANTENNA_256 ANTENNA_256/A ANTENNA_256/VDD ANTENNA_256/VSS sg13g2_antennanp
+XANTENNA_245 ANTENNA_246/A ANTENNA_250/VDD ANTENNA_250/VSS sg13g2_antennanp
+XANTENNA_234 ANTENNA_234/A ANTENNA_234/VDD ANTENNA_234/VSS sg13g2_antennanp
+XANTENNA_223 ANTENNA_223/A ANTENNA_223/VDD ANTENNA_223/VSS sg13g2_antennanp
+XANTENNA_212 ANTENNA_213/A ANTENNA_212/VDD ANTENNA_212/VSS sg13g2_antennanp
+XANTENNA_201 ANTENNA_201/A ANTENNA_204/VDD ANTENNA_204/VSS sg13g2_antennanp
+XANTENNA_289 ANTENNA_289/A ANTENNA_289/VDD ANTENNA_289/VSS sg13g2_antennanp
+XANTENNA_278 ANTENNA_278/A ANTENNA_278/VDD ANTENNA_278/VSS sg13g2_antennanp
+XANTENNA_4 ANTENNA_4/A ANTENNA_4/VDD ANTENNA_4/VSS sg13g2_antennanp
+.ends
+

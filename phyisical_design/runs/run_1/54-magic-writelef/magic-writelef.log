@@ -1,0 +1,892 @@
+
+Magic 8.3 revision 623 - Compiled on Tue Mar 17 08:19:38 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "/nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef
+Reading LEF data from file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef.
+This action cannot be undone.
+LEF read, Line 79 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 80 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 81 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 87 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 91 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 92 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 129 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 134 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 135 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 162 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 163 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 170 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 175 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 176 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 204 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 205 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 212 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 217 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 218 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 245 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 246 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 247 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 258 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 259 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 285 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 286 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 287 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 292 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 293 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 319 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 320 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 321 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 330 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 331 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read: Processed 1200 lines.
+> gds read /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 5.0
+Library name: sg13g2_stdcell
+Reading "sg13g2_a21o_1".
+Reading "sg13g2_a21o_2".
+Reading "sg13g2_a21oi_1".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "sg13g2_a21oi_2".
+Reading "sg13g2_a221oi_1".
+Reading "sg13g2_a22oi_1".
+Reading "sg13g2_and2_1".
+Reading "sg13g2_and2_2".
+Reading "sg13g2_and3_1".
+Reading "sg13g2_and3_2".
+Reading "sg13g2_and4_1".
+Reading "sg13g2_and4_2".
+Reading "sg13g2_antennanp".
+Reading "sg13g2_buf_1".
+Reading "sg13g2_buf_16".
+Reading "sg13g2_buf_2".
+Reading "sg13g2_buf_4".
+Reading "sg13g2_buf_8".
+Reading "sg13g2_decap_4".
+Reading "sg13g2_decap_8".
+Reading "sg13g2_dfrbp_1".
+Reading "sg13g2_dfrbp_2".
+Reading "sg13g2_dfrbpq_1".
+Reading "sg13g2_dfrbpq_2".
+Reading "sg13g2_dlhq_1".
+Reading "sg13g2_dlhr_1".
+Reading "sg13g2_dlhrq_1".
+Reading "sg13g2_dllr_1".
+Reading "sg13g2_dllrq_1".
+Reading "sg13g2_dlygate4sd1_1".
+Reading "sg13g2_dlygate4sd2_1".
+Reading "sg13g2_dlygate4sd3_1".
+Reading "sg13g2_ebufn_2".
+Reading "sg13g2_ebufn_4".
+Reading "sg13g2_ebufn_8".
+Reading "sg13g2_einvn_2".
+Reading "sg13g2_einvn_4".
+Reading "sg13g2_einvn_8".
+Reading "sg13g2_fill_1".
+Reading "sg13g2_fill_2".
+Reading "sg13g2_fill_4".
+Reading "sg13g2_fill_8".
+Reading "sg13g2_inv_1".
+Reading "sg13g2_inv_16".
+Reading "sg13g2_inv_2".
+Reading "sg13g2_inv_4".
+Reading "sg13g2_inv_8".
+Reading "sg13g2_lgcp_1".
+Reading "sg13g2_mux2_1".
+Reading "sg13g2_mux2_2".
+Reading "sg13g2_mux4_1".
+Reading "sg13g2_nand2_1".
+Reading "sg13g2_nand2_2".
+Reading "sg13g2_nand2b_1".
+Reading "sg13g2_nand2b_2".
+Reading "sg13g2_nand3_1".
+Reading "sg13g2_nand3b_1".
+Reading "sg13g2_nand4_1".
+Reading "sg13g2_nor2_1".
+Reading "sg13g2_nor2_2".
+Reading "sg13g2_nor2b_1".
+Reading "sg13g2_nor2b_2".
+Reading "sg13g2_nor3_1".
+Reading "sg13g2_nor3_2".
+Reading "sg13g2_nor4_1".
+Reading "sg13g2_nor4_2".
+Reading "sg13g2_o21ai_1".
+Reading "sg13g2_or2_1".
+Reading "sg13g2_or2_2".
+Reading "sg13g2_or3_1".
+Reading "sg13g2_or3_2".
+Reading "sg13g2_or4_1".
+Reading "sg13g2_or4_2".
+Reading "sg13g2_sdfbbp_1".
+Reading "sg13g2_sdfrbp_1".
+Reading "sg13g2_sdfrbp_2".
+Reading "sg13g2_sdfrbpq_1".
+Reading "sg13g2_sdfrbpq_2".
+Reading "sg13g2_sighold".
+Reading "sg13g2_slgcp_1".
+Reading "sg13g2_tiehi".
+Reading "sg13g2_tielo".
+Reading "sg13g2_xnor2_1".
+Reading "sg13g2_xor2_1".
+> gds read /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/gds/picorv32_macro.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "VIA_TopVia1EWNS".
+Reading "VIA_Via1_YY".
+Reading "VIA_Via4_YX".
+Reading "VIA_Via3_XY".
+Reading "VIA_Via2_YX".
+Reading "VIA_Via1_XY".
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Reading "sg13g2_tielo".
+Warning:  cell sg13g2_tielo already existed before reading GDS!
+Reading "sg13g2_dlygate4sd3_1".
+Warning:  cell sg13g2_dlygate4sd3_1 already existed before reading GDS!
+Reading "sg13g2_inv_4".
+Warning:  cell sg13g2_inv_4 already existed before reading GDS!
+Reading "sg13g2_inv_2".
+Warning:  cell sg13g2_inv_2 already existed before reading GDS!
+Reading "sg13g2_buf_8".
+Warning:  cell sg13g2_buf_8 already existed before reading GDS!
+Reading "sg13g2_buf_16".
+Warning:  cell sg13g2_buf_16 already existed before reading GDS!
+Reading "sg13g2_tiehi".
+Warning:  cell sg13g2_tiehi already existed before reading GDS!
+Reading "sg13g2_dfrbpq_1".
+Warning:  cell sg13g2_dfrbpq_1 already existed before reading GDS!
+Reading "sg13g2_buf_1".
+Warning:  cell sg13g2_buf_1 already existed before reading GDS!
+Reading "sg13g2_and3_1".
+Warning:  cell sg13g2_and3_1 already existed before reading GDS!
+Reading "sg13g2_mux2_1".
+Warning:  cell sg13g2_mux2_1 already existed before reading GDS!
+Reading "sg13g2_mux4_1".
+Warning:  cell sg13g2_mux4_1 already existed before reading GDS!
+Reading "sg13g2_a221oi_1".
+Warning:  cell sg13g2_a221oi_1 already existed before reading GDS!
+Reading "sg13g2_xnor2_1".
+Warning:  cell sg13g2_xnor2_1 already existed before reading GDS!
+Reading "sg13g2_xor2_1".
+Warning:  cell sg13g2_xor2_1 already existed before reading GDS!
+Reading "sg13g2_and4_1".
+Warning:  cell sg13g2_and4_1 already existed before reading GDS!
+Reading "sg13g2_or4_1".
+Warning:  cell sg13g2_or4_1 already existed before reading GDS!
+Reading "sg13g2_or3_1".
+Warning:  cell sg13g2_or3_1 already existed before reading GDS!
+Reading "sg13g2_a22oi_1".
+Warning:  cell sg13g2_a22oi_1 already existed before reading GDS!
+Reading "sg13g2_nand3b_1".
+Warning:  cell sg13g2_nand3b_1 already existed before reading GDS!
+Reading "sg13g2_nand4_1".
+Warning:  cell sg13g2_nand4_1 already existed before reading GDS!
+Reading "sg13g2_a21o_1".
+Warning:  cell sg13g2_a21o_1 already existed before reading GDS!
+Reading "sg13g2_a21oi_1".
+Warning:  cell sg13g2_a21oi_1 already existed before reading GDS!
+Reading "sg13g2_nand3_1".
+Warning:  cell sg13g2_nand3_1 already existed before reading GDS!
+Reading "sg13g2_nand2_1".
+Warning:  cell sg13g2_nand2_1 already existed before reading GDS!
+Reading "sg13g2_nor3_1".
+Warning:  cell sg13g2_nor3_1 already existed before reading GDS!
+Reading "sg13g2_or2_1".
+Warning:  cell sg13g2_or2_1 already existed before reading GDS!
+Reading "sg13g2_o21ai_1".
+Warning:  cell sg13g2_o21ai_1 already existed before reading GDS!
+Reading "sg13g2_nor2_1".
+Warning:  cell sg13g2_nor2_1 already existed before reading GDS!
+Reading "sg13g2_nand2b_1".
+Warning:  cell sg13g2_nand2b_1 already existed before reading GDS!
+Reading "sg13g2_nor2b_1".
+Warning:  cell sg13g2_nor2b_1 already existed before reading GDS!
+Reading "sg13g2_and2_1".
+Warning:  cell sg13g2_and2_1 already existed before reading GDS!
+Reading "sg13g2_nor4_1".
+Warning:  cell sg13g2_nor4_1 already existed before reading GDS!
+Reading "sg13g2_inv_1".
+Warning:  cell sg13g2_inv_1 already existed before reading GDS!
+Reading "sg13g2_decap_4".
+Warning:  cell sg13g2_decap_4 already existed before reading GDS!
+Reading "sg13g2_fill_2".
+Warning:  cell sg13g2_fill_2 already existed before reading GDS!
+Reading "sg13g2_fill_1".
+Warning:  cell sg13g2_fill_1 already existed before reading GDS!
+Reading "sg13g2_decap_8".
+Warning:  cell sg13g2_decap_8 already existed before reading GDS!
+Reading "sg13g2_antennanp".
+Warning:  cell sg13g2_antennanp already existed before reading GDS!
+Reading "picorv32_macro".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+> gds read /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/gds/interconnect_macro.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "VIA_TopVia1EWNS".
+Warning:  cell VIA_TopVia1EWNS already existed before reading GDS!
+Reading "VIA_Via4_YX".
+Warning:  cell VIA_Via4_YX already existed before reading GDS!
+Reading "VIA_Via3_XY".
+Warning:  cell VIA_Via3_XY already existed before reading GDS!
+Reading "VIA_Via1_XY".
+Warning:  cell VIA_Via1_XY already existed before reading GDS!
+Reading "VIA_Via2_YX".
+Warning:  cell VIA_Via2_YX already existed before reading GDS!
+Reading "VIA_Via1_YY".
+Warning:  cell VIA_Via1_YY already existed before reading GDS!
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Warning:  cell VIA_via1_2_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Warning:  cell VIA_via2_3_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Warning:  cell VIA_via3_4_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Warning:  cell VIA_via4_5_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Warning:  cell VIA_via5_6_2200_440_1_2_840_840 already existed before reading GDS!
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Warning:  cell VIA_via6_7_2200_2200_1_1_1960_1960 already existed before reading GDS!
+Reading "sg13g2_dlygate4sd3_1".
+Warning:  cell sg13g2_dlygate4sd3_1 already existed before reading GDS!
+Reading "sg13g2_buf_1".
+Warning:  cell sg13g2_buf_1 already existed before reading GDS!
+Reading "sg13g2_a221oi_1".
+Warning:  cell sg13g2_a221oi_1 already existed before reading GDS!
+Reading "sg13g2_nor2b_1".
+Warning:  cell sg13g2_nor2b_1 already existed before reading GDS!
+Reading "sg13g2_and2_1".
+Warning:  cell sg13g2_and2_1 already existed before reading GDS!
+Reading "sg13g2_or2_1".
+Warning:  cell sg13g2_or2_1 already existed before reading GDS!
+Reading "sg13g2_and3_1".
+Warning:  cell sg13g2_and3_1 already existed before reading GDS!
+Reading "sg13g2_a22oi_1".
+Warning:  cell sg13g2_a22oi_1 already existed before reading GDS!
+Reading "sg13g2_o21ai_1".
+Warning:  cell sg13g2_o21ai_1 already existed before reading GDS!
+Reading "sg13g2_nand3b_1".
+Warning:  cell sg13g2_nand3b_1 already existed before reading GDS!
+Reading "sg13g2_and4_1".
+Warning:  cell sg13g2_and4_1 already existed before reading GDS!
+Reading "sg13g2_nand4_1".
+Warning:  cell sg13g2_nand4_1 already existed before reading GDS!
+Reading "sg13g2_nand3_1".
+Warning:  cell sg13g2_nand3_1 already existed before reading GDS!
+Reading "sg13g2_nor3_1".
+Warning:  cell sg13g2_nor3_1 already existed before reading GDS!
+Reading "sg13g2_nand2_1".
+Warning:  cell sg13g2_nand2_1 already existed before reading GDS!
+Reading "sg13g2_nor4_1".
+Warning:  cell sg13g2_nor4_1 already existed before reading GDS!
+Reading "sg13g2_nor2_1".
+Warning:  cell sg13g2_nor2_1 already existed before reading GDS!
+Reading "sg13g2_inv_1".
+Warning:  cell sg13g2_inv_1 already existed before reading GDS!
+Reading "sg13g2_decap_4".
+Warning:  cell sg13g2_decap_4 already existed before reading GDS!
+Reading "sg13g2_decap_8".
+Warning:  cell sg13g2_decap_8 already existed before reading GDS!
+Reading "sg13g2_fill_1".
+Warning:  cell sg13g2_fill_1 already existed before reading GDS!
+Reading "sg13g2_fill_2".
+Warning:  cell sg13g2_fill_2 already existed before reading GDS!
+Reading "interconnect_macro".
+    5000 uses
+    10000 uses
+> gds read /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/gds/peripherals_macro.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "VIA_Via4_YX".
+Warning:  cell VIA_Via4_YX already existed before reading GDS!
+Reading "VIA_Via3_XY".
+Warning:  cell VIA_Via3_XY already existed before reading GDS!
+Reading "VIA_Via1_XY".
+Warning:  cell VIA_Via1_XY already existed before reading GDS!
+Reading "VIA_Via2_YX".
+Warning:  cell VIA_Via2_YX already existed before reading GDS!
+Reading "VIA_Via1_YY".
+Warning:  cell VIA_Via1_YY already existed before reading GDS!
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Warning:  cell VIA_via1_2_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Warning:  cell VIA_via2_3_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Warning:  cell VIA_via3_4_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Warning:  cell VIA_via4_5_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Warning:  cell VIA_via5_6_2200_440_1_2_840_840 already existed before reading GDS!
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Warning:  cell VIA_via6_7_2200_2200_1_1_1960_1960 already existed before reading GDS!
+Reading "sg13g2_tielo".
+Warning:  cell sg13g2_tielo already existed before reading GDS!
+Reading "sg13g2_dlygate4sd3_1".
+Warning:  cell sg13g2_dlygate4sd3_1 already existed before reading GDS!
+Reading "sg13g2_buf_8".
+Warning:  cell sg13g2_buf_8 already existed before reading GDS!
+Reading "sg13g2_buf_16".
+Warning:  cell sg13g2_buf_16 already existed before reading GDS!
+Reading "sg13g2_buf_1".
+Warning:  cell sg13g2_buf_1 already existed before reading GDS!
+Reading "sg13g2_tiehi".
+Warning:  cell sg13g2_tiehi already existed before reading GDS!
+Reading "sg13g2_dfrbpq_1".
+Warning:  cell sg13g2_dfrbpq_1 already existed before reading GDS!
+Reading "sg13g2_nand3_1".
+Warning:  cell sg13g2_nand3_1 already existed before reading GDS!
+Reading "sg13g2_and3_1".
+Warning:  cell sg13g2_and3_1 already existed before reading GDS!
+Reading "sg13g2_a21o_1".
+Warning:  cell sg13g2_a21o_1 already existed before reading GDS!
+Reading "sg13g2_and2_1".
+Warning:  cell sg13g2_and2_1 already existed before reading GDS!
+Reading "sg13g2_nand4_1".
+Warning:  cell sg13g2_nand4_1 already existed before reading GDS!
+Reading "sg13g2_nor3_1".
+Warning:  cell sg13g2_nor3_1 already existed before reading GDS!
+Reading "sg13g2_nand3b_1".
+Warning:  cell sg13g2_nand3b_1 already existed before reading GDS!
+Reading "sg13g2_o21ai_1".
+Warning:  cell sg13g2_o21ai_1 already existed before reading GDS!
+Reading "sg13g2_a22oi_1".
+Warning:  cell sg13g2_a22oi_1 already existed before reading GDS!
+Reading "sg13g2_a21oi_1".
+Warning:  cell sg13g2_a21oi_1 already existed before reading GDS!
+Reading "sg13g2_nor2_1".
+Warning:  cell sg13g2_nor2_1 already existed before reading GDS!
+Reading "sg13g2_nand2_1".
+Warning:  cell sg13g2_nand2_1 already existed before reading GDS!
+Reading "sg13g2_nand2b_1".
+Warning:  cell sg13g2_nand2b_1 already existed before reading GDS!
+Reading "sg13g2_nor2b_1".
+Warning:  cell sg13g2_nor2b_1 already existed before reading GDS!
+Reading "sg13g2_inv_1".
+Warning:  cell sg13g2_inv_1 already existed before reading GDS!
+Reading "sg13g2_decap_4".
+Warning:  cell sg13g2_decap_4 already existed before reading GDS!
+Reading "sg13g2_fill_1".
+Warning:  cell sg13g2_fill_1 already existed before reading GDS!
+Reading "sg13g2_fill_2".
+Warning:  cell sg13g2_fill_2 already existed before reading GDS!
+Reading "sg13g2_decap_8".
+Warning:  cell sg13g2_decap_8 already existed before reading GDS!
+Reading "peripherals_macro".
+    5000 uses
+> gds read /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/gds/boot_spi_macro.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "VIA_Via3_XY".
+Warning:  cell VIA_Via3_XY already existed before reading GDS!
+Reading "VIA_Via2_YX".
+Warning:  cell VIA_Via2_YX already existed before reading GDS!
+Reading "VIA_Via1_XY".
+Warning:  cell VIA_Via1_XY already existed before reading GDS!
+Reading "VIA_Via1_YY".
+Warning:  cell VIA_Via1_YY already existed before reading GDS!
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Warning:  cell VIA_via1_2_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Warning:  cell VIA_via2_3_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Warning:  cell VIA_via3_4_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Warning:  cell VIA_via4_5_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Warning:  cell VIA_via5_6_2200_440_1_2_840_840 already existed before reading GDS!
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Warning:  cell VIA_via6_7_2200_2200_1_1_1960_1960 already existed before reading GDS!
+Reading "sg13g2_dlygate4sd3_1".
+Warning:  cell sg13g2_dlygate4sd3_1 already existed before reading GDS!
+Reading "sg13g2_buf_1".
+Warning:  cell sg13g2_buf_1 already existed before reading GDS!
+Reading "sg13g2_buf_8".
+Warning:  cell sg13g2_buf_8 already existed before reading GDS!
+Reading "sg13g2_tielo".
+Warning:  cell sg13g2_tielo already existed before reading GDS!
+Reading "sg13g2_tiehi".
+Warning:  cell sg13g2_tiehi already existed before reading GDS!
+Reading "sg13g2_dfrbpq_1".
+Warning:  cell sg13g2_dfrbpq_1 already existed before reading GDS!
+Reading "sg13g2_or3_1".
+Warning:  cell sg13g2_or3_1 already existed before reading GDS!
+Reading "sg13g2_or4_1".
+Warning:  cell sg13g2_or4_1 already existed before reading GDS!
+Reading "sg13g2_nand3b_1".
+Warning:  cell sg13g2_nand3b_1 already existed before reading GDS!
+Reading "sg13g2_a221oi_1".
+Warning:  cell sg13g2_a221oi_1 already existed before reading GDS!
+Reading "sg13g2_or2_1".
+Warning:  cell sg13g2_or2_1 already existed before reading GDS!
+Reading "sg13g2_nand2b_1".
+Warning:  cell sg13g2_nand2b_1 already existed before reading GDS!
+Reading "sg13g2_mux2_1".
+Warning:  cell sg13g2_mux2_1 already existed before reading GDS!
+Reading "sg13g2_nor2b_1".
+Warning:  cell sg13g2_nor2b_1 already existed before reading GDS!
+Reading "sg13g2_a22oi_1".
+Warning:  cell sg13g2_a22oi_1 already existed before reading GDS!
+Reading "sg13g2_o21ai_1".
+Warning:  cell sg13g2_o21ai_1 already existed before reading GDS!
+Reading "sg13g2_a21oi_1".
+Warning:  cell sg13g2_a21oi_1 already existed before reading GDS!
+Reading "sg13g2_nor3_1".
+Warning:  cell sg13g2_nor3_1 already existed before reading GDS!
+Reading "sg13g2_nand4_1".
+Warning:  cell sg13g2_nand4_1 already existed before reading GDS!
+Reading "sg13g2_and4_1".
+Warning:  cell sg13g2_and4_1 already existed before reading GDS!
+Reading "sg13g2_nor4_1".
+Warning:  cell sg13g2_nor4_1 already existed before reading GDS!
+Reading "sg13g2_a21o_1".
+Warning:  cell sg13g2_a21o_1 already existed before reading GDS!
+Reading "sg13g2_and3_1".
+Warning:  cell sg13g2_and3_1 already existed before reading GDS!
+Reading "sg13g2_and2_1".
+Warning:  cell sg13g2_and2_1 already existed before reading GDS!
+Reading "sg13g2_nor2_1".
+Warning:  cell sg13g2_nor2_1 already existed before reading GDS!
+Reading "sg13g2_nand3_1".
+Warning:  cell sg13g2_nand3_1 already existed before reading GDS!
+Reading "sg13g2_nand2_1".
+Warning:  cell sg13g2_nand2_1 already existed before reading GDS!
+Reading "sg13g2_inv_1".
+Warning:  cell sg13g2_inv_1 already existed before reading GDS!
+Reading "sg13g2_fill_2".
+Warning:  cell sg13g2_fill_2 already existed before reading GDS!
+Reading "sg13g2_fill_1".
+Warning:  cell sg13g2_fill_1 already existed before reading GDS!
+Reading "sg13g2_decap_4".
+Warning:  cell sg13g2_decap_4 already existed before reading GDS!
+Reading "sg13g2_decap_8".
+Warning:  cell sg13g2_decap_8 already existed before reading GDS!
+Reading "boot_spi_macro".
+    5000 uses
+    10000 uses
+> gds read /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/gds/ram_macro.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "VIA_M1_Activ_db_0x02835b9b".
+Reading "M1_GatPoly_CDNS_7558030484048".
+Saving contents of cell M1_GatPoly_CDNS_7558030484048
+Reading "lvsres_db_0x0283509a".
+Reading "lvsres_db_0x02834b9a".
+Reading "RM_IHPSG13_1P_BITKIT_CELL_SUB".
+Reading "RM_IHPSG13_1P_BITKIT_CELL".
+Reading "RM_IHPSG13_1P_BITKIT_TAP".
+Reading "RM_IHPSG13_1P_BITKIT_CELL_2x1".
+Reading "M2_M1_CDNS_7558030484011".
+Saving contents of cell M2_M1_CDNS_7558030484011
+Reading "M2_M1_CDNS_7558030484018".
+Saving contents of cell M2_M1_CDNS_7558030484018
+Reading "RSC_IHPSG13_FILLCAP4".
+Reading "RSC_IHPSG13_CINVX2".
+Reading "RSC_IHPSG13_DFPQD_MSAFFX2N_half".
+Reading "viagen23_CDNS_7558030484020".
+Saving contents of cell viagen23_CDNS_7558030484020
+Reading "viagen12_CDNS_7558030484021".
+Saving contents of cell viagen12_CDNS_7558030484021
+Reading "viagen12_CDNS_7558030484022".
+Saving contents of cell viagen12_CDNS_7558030484022
+Reading "M2_M1_CDNS_7558030484023".
+Saving contents of cell M2_M1_CDNS_7558030484023
+Reading "viagen23_CDNS_7558030484024".
+Saving contents of cell viagen23_CDNS_7558030484024
+Reading "viagen23_CDNS_7558030484025".
+Saving contents of cell viagen23_CDNS_7558030484025
+Reading "viagen12_CDNS_7558030484026".
+Saving contents of cell viagen12_CDNS_7558030484026
+Reading "viagen12_CDNS_7558030484027".
+Saving contents of cell viagen12_CDNS_7558030484027
+Reading "viagen23_CDNS_7558030484028".
+Saving contents of cell viagen23_CDNS_7558030484028
+Reading "viagen12_CDNS_7558030484029".
+Saving contents of cell viagen12_CDNS_7558030484029
+Reading "RSC_IHPSG13_INVX2".
+Reading "RSC_IHPSG13_INVX4".
+Reading "RSC_IHPSG13_FILL1".
+Reading "viagen23_CDNS_7558030484032".
+Saving contents of cell viagen23_CDNS_7558030484032
+Reading "viagen34_CDNS_7558030484033".
+Saving contents of cell viagen34_CDNS_7558030484033
+Reading "M3_M2_CDNS_7558030484034".
+Saving contents of cell M3_M2_CDNS_7558030484034
+Reading "viagen34_CDNS_7558030484035".
+Saving contents of cell viagen34_CDNS_7558030484035
+Reading "M3_M2_CDNS_7558030484036".
+Saving contents of cell M3_M2_CDNS_7558030484036
+Reading "M3_M2_CDNS_7558030484037".
+Saving contents of cell M3_M2_CDNS_7558030484037
+Reading "RSC_IHPSG13_NAND3X2".
+Reading "RSC_IHPSG13_LHPQX2".
+Reading "RSC_IHPSG13_NOR3X2".
+Reading "RSC_IHPSG13_NAND2X2".
+Reading "lvsres_db_0x0400b71a".
+Reading "RSC_IHPSG13_FILL2".
+Reading "RSC_IHPSG13_FILLCAP8".
+Reading "viagen23_CDNS_7558030484038".
+Saving contents of cell viagen23_CDNS_7558030484038
+Reading "lvsres_db_0x04007e9a".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_SRAM".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_TAP".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_EDGE_TB".
+Reading "RM_IHPSG13_1P_BITKIT_EDGE_LR".
+Reading "RM_IHPSG13_1P_BITKIT_CELL_CORNER".
+Reading "viagen34_CDNS_7558030484049".
+Saving contents of cell viagen34_CDNS_7558030484049
+Reading "viagen12_CDNS_755803048400".
+Saving contents of cell viagen12_CDNS_755803048400
+Reading "M2_M1_CDNS_755803048401".
+Saving contents of cell M2_M1_CDNS_755803048401
+Reading "M2_M1_CDNS_755803048402".
+Saving contents of cell M2_M1_CDNS_755803048402
+Reading "M2_M1_CDNS_755803048403".
+Saving contents of cell M2_M1_CDNS_755803048403
+Reading "viagen23_CDNS_755803048404".
+Saving contents of cell viagen23_CDNS_755803048404
+Reading "M3_M2_CDNS_755803048405".
+Saving contents of cell M3_M2_CDNS_755803048405
+Reading "M3_M2_CDNS_755803048406".
+Saving contents of cell M3_M2_CDNS_755803048406
+Reading "M2_M1_CDNS_755803048407".
+Saving contents of cell M2_M1_CDNS_755803048407
+Reading "viagen23_CDNS_755803048408".
+Saving contents of cell viagen23_CDNS_755803048408
+Reading "viagen34_CDNS_755803048409".
+Saving contents of cell viagen34_CDNS_755803048409
+Reading "M3_M2_CDNS_7558030484010".
+Saving contents of cell M3_M2_CDNS_7558030484010
+Reading "M2_M1_CDNS_7558030484012".
+Saving contents of cell M2_M1_CDNS_7558030484012
+Reading "M3_M2_CDNS_7558030484013".
+Saving contents of cell M3_M2_CDNS_7558030484013
+Reading "M3_M2_CDNS_7558030484014".
+Saving contents of cell M3_M2_CDNS_7558030484014
+Reading "viagen23_CDNS_7558030484015".
+Saving contents of cell viagen23_CDNS_7558030484015
+Reading "viagen23_CDNS_7558030484016".
+Saving contents of cell viagen23_CDNS_7558030484016
+Reading "M3_M2_CDNS_7558030484017".
+Saving contents of cell M3_M2_CDNS_7558030484017
+Reading "viagen12_CDNS_7558030484019".
+Saving contents of cell viagen12_CDNS_7558030484019
+Reading "RSC_IHPSG13_DFNQMX2IX1".
+Reading "RSC_IHPSG13_AND2X2".
+Reading "RSC_IHPSG13_DFPQD_MSAFFX2N".
+Reading "lvsres_db_0x0283151a".
+Reading "RSC_IHPSG13_NOR2X2".
+Reading "RSC_IHPSG13_CINVX4_WN".
+Reading "RM_IHPSG13_1P_BLDRV".
+Reading "RSC_IHPSG13_TIEH".
+Reading "RSC_IHPSG13_CBUFX2".
+Reading "viagen23_CDNS_7558030484030".
+Saving contents of cell viagen23_CDNS_7558030484030
+Reading "M3_M2_CDNS_7558030484031".
+Saving contents of cell M3_M2_CDNS_7558030484031
+Reading "RM_IHPSG13_1P_ROWDEC0".
+Reading "RM_IHPSG13_1P_DEC_LE_tap".
+Reading "RM_IHPSG13_1P_DEC_LE_l0wire".
+Reading "RM_IHPSG13_1P_DEC04".
+Reading "RM_IHPSG13_1P_DEC00".
+Reading "RM_IHPSG13_1P_DEC02".
+Reading "RM_IHPSG13_1P_DEC_LE_l2empty".
+Reading "RM_IHPSG13_1P_DEC03".
+Reading "RM_IHPSG13_1P_DEC01".
+Reading "RM_IHPSG13_1P_DEC_LE_l1empty".
+Reading "RM_IHPSG13_1P_DEC_LE_l1wire".
+Reading "RM_IHPSG13_1P_DEC_LE_l2wire".
+Reading "RSC_IHPSG13_CINVX8".
+Reading "RM_IHPSG13_1P_ROWREG0".
+Reading "M3_M2_CDNS_7558030484039".
+Saving contents of cell M3_M2_CDNS_7558030484039
+Reading "viagen12_CDNS_7558030484040".
+Saving contents of cell viagen12_CDNS_7558030484040
+Reading "viagen12_CDNS_7558030484041".
+Saving contents of cell viagen12_CDNS_7558030484041
+Reading "RSC_IHPSG13_CDLYX2".
+Reading "RSC_IHPSG13_MX2X2".
+Reading "RSC_IHPSG13_CGATEPX4".
+Reading "RSC_IHPSG13_CINVX4".
+Reading "RSC_IHPSG13_XOR2X2".
+Reading "RSC_IHPSG13_DFNQX2".
+Reading "RSC_IHPSG13_CNAND2X2".
+Reading "RSC_IHPSG13_OA12X1".
+Reading "RSC_IHPSG13_TIEL".
+Reading "RSC_IHPSG13_CBUFX8".
+Reading "RSC_IHPSG13_MX2IX1".
+Reading "RSC_IHPSG13_CDLYX1".
+Reading "RSC_IHPSG13_CDLYX1_DUMMY".
+Reading "viagen23_CDNS_7558030484042".
+Saving contents of cell viagen23_CDNS_7558030484042
+Reading "M3_M2_CDNS_7558030484043".
+Saving contents of cell M3_M2_CDNS_7558030484043
+Reading "RSC_IHPSG13_CBUFX4".
+Reading "M3_M2_CDNS_7558030484044".
+Saving contents of cell M3_M2_CDNS_7558030484044
+Reading "M3_M2_CDNS_7558030484045".
+Saving contents of cell M3_M2_CDNS_7558030484045
+Reading "M2_M1_CDNS_7558030484046".
+Saving contents of cell M2_M1_CDNS_7558030484046
+Reading "viagen12_CDNS_7558030484047".
+Saving contents of cell viagen12_CDNS_7558030484047
+Reading "RSC_IHPSG13_WLDRVX4".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_edge_lr".
+Reading "RM_IHPSG13_1P_COLUMN_256".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_EDGE_LR".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_POWER_ramblk".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_tap_lr".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_TAP_LR".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_POWER_ramtap".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_corner".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_CORNER".
+Reading "RM_IHPSG13_1P_COLCTRL2_end".
+Reading "RM_IHPSG13_1P_COLCTRL2".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL4".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL1C2".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL4C2".
+Reading "RM_IHPSG13_1P_ROWDEC8".
+Reading "RM_IHPSG13_1P_ROWREG8".
+Reading "RM_IHPSG13_1P_CTRL".
+Reading "RM_IHPSG13_1P_COLDEC2".
+Reading "RM_IHPSG13_1P_DLY_MUX".
+Reading "RM_IHPSG13_1P_DLY_2".
+Reading "RM_IHPSG13_1P_COLDRV13X4".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL1".
+Reading "RM_IHPSG13_1P_WLDRV16X4".
+Reading "RM_IHPSG13_1P_WLDRV16X4_tap".
+Reading "RM_IHPSG13_1P_DLY_4".
+Reading "RM_IHPSG13_1P_MATRIX_256x64".
+Reading "VIA_Via3_XY".
+Warning:  cell VIA_Via3_XY already existed before reading GDS!
+Reading "VIA_Via1_XY".
+Warning:  cell VIA_Via1_XY already existed before reading GDS!
+Reading "VIA_Via2_YX".
+Warning:  cell VIA_Via2_YX already existed before reading GDS!
+Reading "VIA_Via1_YY".
+Warning:  cell VIA_Via1_YY already existed before reading GDS!
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Warning:  cell VIA_via1_2_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Warning:  cell VIA_via2_3_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Warning:  cell VIA_via3_4_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Warning:  cell VIA_via4_5_2200_440_1_5_410_410 already existed before reading GDS!
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Warning:  cell VIA_via5_6_2200_440_1_2_840_840 already existed before reading GDS!
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Warning:  cell VIA_via6_7_2200_2200_1_1_1960_1960 already existed before reading GDS!
+Reading "VIA_via4_5_2810_2810_6_6_480_480".
+Reading "VIA_via5_6_2200_2810_2_2_840_840".
+Reading "sg13g2_tiehi".
+Warning:  cell sg13g2_tiehi already existed before reading GDS!
+Reading "sg13g2_tielo".
+Warning:  cell sg13g2_tielo already existed before reading GDS!
+Reading "RM_IHPSG13_1P_1024x32_c2_bm_bist".
+Reading "sg13g2_dlygate4sd3_1".
+Warning:  cell sg13g2_dlygate4sd3_1 already existed before reading GDS!
+Reading "sg13g2_dfrbpq_1".
+Warning:  cell sg13g2_dfrbpq_1 already existed before reading GDS!
+Reading "sg13g2_mux2_1".
+Warning:  cell sg13g2_mux2_1 already existed before reading GDS!
+Reading "sg13g2_a22oi_1".
+Warning:  cell sg13g2_a22oi_1 already existed before reading GDS!
+Reading "sg13g2_buf_2".
+Warning:  cell sg13g2_buf_2 already existed before reading GDS!
+Reading "sg13g2_nand2b_1".
+Warning:  cell sg13g2_nand2b_1 already existed before reading GDS!
+Reading "sg13g2_a21o_1".
+Warning:  cell sg13g2_a21o_1 already existed before reading GDS!
+Reading "sg13g2_inv_4".
+Warning:  cell sg13g2_inv_4 already existed before reading GDS!
+Reading "sg13g2_nor3_1".
+Warning:  cell sg13g2_nor3_1 already existed before reading GDS!
+Reading "sg13g2_nor2_2".
+Warning:  cell sg13g2_nor2_2 already existed before reading GDS!
+Reading "sg13g2_nor2b_1".
+Warning:  cell sg13g2_nor2b_1 already existed before reading GDS!
+Reading "sg13g2_and3_1".
+Warning:  cell sg13g2_and3_1 already existed before reading GDS!
+Reading "sg13g2_buf_4".
+Warning:  cell sg13g2_buf_4 already existed before reading GDS!
+Reading "sg13g2_nand4_1".
+Warning:  cell sg13g2_nand4_1 already existed before reading GDS!
+Reading "sg13g2_o21ai_1".
+Warning:  cell sg13g2_o21ai_1 already existed before reading GDS!
+Reading "sg13g2_nand2_1".
+Warning:  cell sg13g2_nand2_1 already existed before reading GDS!
+Reading "sg13g2_nand2_2".
+Warning:  cell sg13g2_nand2_2 already existed before reading GDS!
+Reading "sg13g2_buf_8".
+Warning:  cell sg13g2_buf_8 already existed before reading GDS!
+Reading "sg13g2_or4_1".
+Warning:  cell sg13g2_or4_1 already existed before reading GDS!
+Reading "sg13g2_nand3b_1".
+Warning:  cell sg13g2_nand3b_1 already existed before reading GDS!
+Reading "sg13g2_buf_1".
+Warning:  cell sg13g2_buf_1 already existed before reading GDS!
+Reading "sg13g2_or2_1".
+Warning:  cell sg13g2_or2_1 already existed before reading GDS!
+Reading "sg13g2_buf_16".
+Warning:  cell sg13g2_buf_16 already existed before reading GDS!
+Reading "sg13g2_a21oi_1".
+Warning:  cell sg13g2_a21oi_1 already existed before reading GDS!
+Reading "sg13g2_nand3_1".
+Warning:  cell sg13g2_nand3_1 already existed before reading GDS!
+Reading "sg13g2_and4_1".
+Warning:  cell sg13g2_and4_1 already existed before reading GDS!
+Reading "sg13g2_nor4_2".
+Warning:  cell sg13g2_nor4_2 already existed before reading GDS!
+Reading "sg13g2_and2_1".
+Warning:  cell sg13g2_and2_1 already existed before reading GDS!
+Reading "sg13g2_nor4_1".
+Warning:  cell sg13g2_nor4_1 already existed before reading GDS!
+Reading "sg13g2_nor2_1".
+Warning:  cell sg13g2_nor2_1 already existed before reading GDS!
+Reading "sg13g2_inv_1".
+Warning:  cell sg13g2_inv_1 already existed before reading GDS!
+Reading "sg13g2_decap_4".
+Warning:  cell sg13g2_decap_4 already existed before reading GDS!
+Reading "sg13g2_fill_2".
+Warning:  cell sg13g2_fill_2 already existed before reading GDS!
+Reading "sg13g2_fill_1".
+Warning:  cell sg13g2_fill_1 already existed before reading GDS!
+Reading "sg13g2_decap_8".
+Warning:  cell sg13g2_decap_8 already existed before reading GDS!
+Reading "sg13g2_antennanp".
+Warning:  cell sg13g2_antennanp already existed before reading GDS!
+Reading "ram_macro".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+> gds read /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 5.0
+Library name: sg13g2_io
+Reading "sg13g2_Corner".
+Reading "sg13g2_Filler1000".
+Reading "sg13g2_Filler10000".
+Reading "sg13g2_Filler200".
+Reading "sg13g2_Filler2000".
+Reading "sg13g2_Filler400".
+Reading "sg13g2_Filler4000".
+Reading "sg13g2_Clamp_N20N0D".
+Reading "sg13g2_Clamp_P20N0D".
+Reading "sg13g2_DCNDiode".
+Reading "sg13g2_DCPDiode".
+Reading "sg13g2_SecondaryProtection".
+Reading "sg13g2_IOPadAnalog".
+Reading "sg13g2_RCClampInverter".
+Reading "sg13g2_Clamp_N43N43D4R".
+Reading "sg13g2_RCClampResistor".
+Reading "sg13g2_IOPadIOVdd".
+Reading "sg13g2_IOPadIOVss".
+Reading "M2_M1_CDNS_777302434540".
+Saving contents of cell M2_M1_CDNS_777302434540
+Reading "M2_M1_CDNS_777302434541".
+Saving contents of cell M2_M1_CDNS_777302434541
+Reading "sg13g2_LevelDown".
+Reading "sg13g2_IOPadIn".
+Reading "sg13g2_Clamp_P15N15D".
+Reading "sg13g2_io_inv_x1".
+Reading "sg13g2_LevelUp".
+Reading "sg13g2_io_nor2_x1".
+Reading "sg13g2_io_tie".
+Reading "sg13g2_io_nand2_x1".
+Reading "sg13g2_GateDecode".
+Reading "sg13g2_Clamp_N15N15D".
+Reading "sg13g2_IOPadInOut30mA".
+Reading "sg13g2_Clamp_N8N8D".
+Reading "sg13g2_Clamp_P8N8D".
+Reading "sg13g2_IOPadInOut16mA".
+Reading "sg13g2_Clamp_N2N2D".
+Reading "sg13g2_Clamp_P2N2D".
+Reading "sg13g2_IOPadInOut4mA".
+Reading "sg13g2_LevelUpInv".
+Reading "sg13g2_GateLevelUpInv".
+Reading "sg13g2_IOPadOut16mA".
+Reading "sg13g2_IOPadOut30mA".
+Reading "sg13g2_IOPadOut4mA".
+Reading "sg13g2_IOPadTriOut16mA".
+Reading "sg13g2_IOPadTriOut30mA".
+Reading "sg13g2_IOPadTriOut4mA".
+Reading "sg13g2_IOPadVdd".
+Reading "sg13g2_IOPadVss".
+Cell (REFRESHLAYOUT?) couldn't be read
+No such file or directory
+Creating new cell
+> def read /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/48-odb-cellfrequencytables/soc_top.def -noblockage
+Reading DEF data from file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/48-odb-cellfrequencytables/soc_top.def.
+This action cannot be undone.
+  Processed 1 vias total.
+  Processed 1 non-default rules total.
+  Processed 408 subcell instances total.
+  Processed 296 pins total.
+  Processed 2 special nets total.
+  Processed 1125 nets total.
+DEF read: Processed 23854 lines.
+[INFO] Ignoring 'VDD VSS'
+[INFO] Writing abstract LEF…
+[INFO] Not specifiying -pinonly (nets connected to pins on the same layer are declared as part of the pin)…
+Generating LEF output /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/54-magic-writelef/soc_top.lef for cell soc_top:
+Diagnostic:  Write LEF header for cell soc_top
+Diagnostic:  Writing LEF output for cell soc_top
+Diagnostic:  Scale value is 0.005000
+[INFO] LEF Write Complete.

@@ -1,0 +1,288 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: clk_i (clock source 'clk_i')
+Endpoint: u_ram/clk_i (internal pin)
+Path Group: unconstrained
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+     1    0.217019    0.087718    0.319114    5.319114 v clk_i (in)
+                                                         clk_i (net)
+                      0.510755    0.000000    5.319114 v clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.162194    0.059061    0.220461    5.539575 v clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.086048    0.031808    5.571383 v clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.374279    0.049717    0.129915    5.701297 v clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.363958    0.191555    5.892852 v u_ram/clk_i (ram_macro)
+                                              5.892852   data arrival time
+---------------------------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 30 unannotated drivers.
+ u_boot_spi/boot_done
+ u_cpu/trap
+ u_ic/m_bresp[0]
+ u_ic/m_bresp[1]
+ u_ic/m_rresp[0]
+ u_ic/m_rresp[1]
+ u_ic/s_arprot[0]
+ u_ic/s_arprot[10]
+ u_ic/s_arprot[11]
+ u_ic/s_arprot[1]
+ u_ic/s_arprot[2]
+ u_ic/s_arprot[3]
+ u_ic/s_arprot[4]
+ u_ic/s_arprot[5]
+ u_ic/s_arprot[6]
+ u_ic/s_arprot[7]
+ u_ic/s_arprot[8]
+ u_ic/s_arprot[9]
+ u_ic/s_awprot[0]
+ u_ic/s_awprot[10]
+ u_ic/s_awprot[11]
+ u_ic/s_awprot[1]
+ u_ic/s_awprot[2]
+ u_ic/s_awprot[3]
+ u_ic/s_awprot[4]
+ u_ic/s_awprot[5]
+ u_ic/s_awprot[6]
+ u_ic/s_awprot[7]
+ u_ic/s_awprot[8]
+ u_ic/s_awprot[9]
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+Writing metric design__max_slew_violation__count__corner:nom_typ_1p20V_25C: 0
+max fanout violation count 0
+Writing metric design__max_fanout_violation__count__corner:nom_typ_1p20V_25C: 0
+max cap violation count 0
+Writing metric design__max_cap_violation__count__corner:nom_typ_1p20V_25C: 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 195 unconstrained endpoints.
+  gpio0_dir[0]
+  gpio0_dir[10]
+  gpio0_dir[11]
+  gpio0_dir[12]
+  gpio0_dir[13]
+  gpio0_dir[14]
+  gpio0_dir[15]
+  gpio0_dir[16]
+  gpio0_dir[17]
+  gpio0_dir[18]
+  gpio0_dir[19]
+  gpio0_dir[1]
+  gpio0_dir[20]
+  gpio0_dir[21]
+  gpio0_dir[22]
+  gpio0_dir[23]
+  gpio0_dir[24]
+  gpio0_dir[25]
+  gpio0_dir[26]
+  gpio0_dir[27]
+  gpio0_dir[28]
+  gpio0_dir[29]
+  gpio0_dir[2]
+  gpio0_dir[30]
+  gpio0_dir[31]
+  gpio0_dir[3]
+  gpio0_dir[4]
+  gpio0_dir[5]
+  gpio0_dir[6]
+  gpio0_dir[7]
+  gpio0_dir[8]
+  gpio0_dir[9]
+  gpio0_out[0]
+  gpio0_out[10]
+  gpio0_out[11]
+  gpio0_out[12]
+  gpio0_out[13]
+  gpio0_out[14]
+  gpio0_out[15]
+  gpio0_out[16]
+  gpio0_out[17]
+  gpio0_out[18]
+  gpio0_out[19]
+  gpio0_out[1]
+  gpio0_out[20]
+  gpio0_out[21]
+  gpio0_out[22]
+  gpio0_out[23]
+  gpio0_out[24]
+  gpio0_out[25]
+  gpio0_out[26]
+  gpio0_out[27]
+  gpio0_out[28]
+  gpio0_out[29]
+  gpio0_out[2]
+  gpio0_out[30]
+  gpio0_out[31]
+  gpio0_out[3]
+  gpio0_out[4]
+  gpio0_out[5]
+  gpio0_out[6]
+  gpio0_out[7]
+  gpio0_out[8]
+  gpio0_out[9]
+  gpio1_dir[0]
+  gpio1_dir[10]
+  gpio1_dir[11]
+  gpio1_dir[12]
+  gpio1_dir[13]
+  gpio1_dir[14]
+  gpio1_dir[15]
+  gpio1_dir[16]
+  gpio1_dir[17]
+  gpio1_dir[18]
+  gpio1_dir[19]
+  gpio1_dir[1]
+  gpio1_dir[20]
+  gpio1_dir[21]
+  gpio1_dir[22]
+  gpio1_dir[23]
+  gpio1_dir[24]
+  gpio1_dir[25]
+  gpio1_dir[26]
+  gpio1_dir[27]
+  gpio1_dir[28]
+  gpio1_dir[29]
+  gpio1_dir[2]
+  gpio1_dir[30]
+  gpio1_dir[31]
+  gpio1_dir[3]
+  gpio1_dir[4]
+  gpio1_dir[5]
+  gpio1_dir[6]
+  gpio1_dir[7]
+  gpio1_dir[8]
+  gpio1_dir[9]
+  gpio1_out[0]
+  gpio1_out[10]
+  gpio1_out[11]
+  gpio1_out[12]
+  gpio1_out[13]
+  gpio1_out[14]
+  gpio1_out[15]
+  gpio1_out[16]
+  gpio1_out[17]
+  gpio1_out[18]
+  gpio1_out[19]
+  gpio1_out[1]
+  gpio1_out[20]
+  gpio1_out[21]
+  gpio1_out[22]
+  gpio1_out[23]
+  gpio1_out[24]
+  gpio1_out[25]
+  gpio1_out[26]
+  gpio1_out[27]
+  gpio1_out[28]
+  gpio1_out[29]
+  gpio1_out[2]
+  gpio1_out[30]
+  gpio1_out[31]
+  gpio1_out[3]
+  gpio1_out[4]
+  gpio1_out[5]
+  gpio1_out[6]
+  gpio1_out[7]
+  gpio1_out[8]
+  gpio1_out[9]
+  gpio2_dir[0]
+  gpio2_dir[10]
+  gpio2_dir[11]
+  gpio2_dir[12]
+  gpio2_dir[13]
+  gpio2_dir[14]
+  gpio2_dir[15]
+  gpio2_dir[16]
+  gpio2_dir[17]
+  gpio2_dir[18]
+  gpio2_dir[19]
+  gpio2_dir[1]
+  gpio2_dir[20]
+  gpio2_dir[21]
+  gpio2_dir[22]
+  gpio2_dir[23]
+  gpio2_dir[24]
+  gpio2_dir[25]
+  gpio2_dir[26]
+  gpio2_dir[27]
+  gpio2_dir[28]
+  gpio2_dir[29]
+  gpio2_dir[2]
+  gpio2_dir[30]
+  gpio2_dir[31]
+  gpio2_dir[3]
+  gpio2_dir[4]
+  gpio2_dir[5]
+  gpio2_dir[6]
+  gpio2_dir[7]
+  gpio2_dir[8]
+  gpio2_dir[9]
+  gpio2_out[0]
+  gpio2_out[10]
+  gpio2_out[11]
+  gpio2_out[12]
+  gpio2_out[13]
+  gpio2_out[14]
+  gpio2_out[15]
+  gpio2_out[16]
+  gpio2_out[17]
+  gpio2_out[18]
+  gpio2_out[19]
+  gpio2_out[1]
+  gpio2_out[20]
+  gpio2_out[21]
+  gpio2_out[22]
+  gpio2_out[23]
+  gpio2_out[24]
+  gpio2_out[25]
+  gpio2_out[26]
+  gpio2_out[27]
+  gpio2_out[28]
+  gpio2_out[29]
+  gpio2_out[2]
+  gpio2_out[30]
+  gpio2_out[31]
+  gpio2_out[3]
+  gpio2_out[4]
+  gpio2_out[5]
+  gpio2_out[6]
+  gpio2_out[7]
+  gpio2_out[8]
+  gpio2_out[9]
+  spi_cs_n
+  spi_mosi
+  spi_sclk

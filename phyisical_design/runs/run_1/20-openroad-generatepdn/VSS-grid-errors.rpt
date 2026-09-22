@@ -1,0 +1,15 @@
+violation type: Unconnected shape
+	srcs: net:VSS
+	bbox = (524.4600, 964.4900) - (526.6600, 1127.8800) on Layer TopMetal1
+violation type: Unconnected shape
+	srcs: net:VSS
+	bbox = (600.0600, 964.4900) - (602.2600, 1127.8800) on Layer TopMetal1
+violation type: Unconnected shape
+	srcs: net:VSS
+	bbox = (505.7600, 983.8200) - (670.8800, 986.0200) on Layer TopMetal2
+violation type: Unconnected shape
+	srcs: net:VSS
+	bbox = (505.7600, 1059.4200) - (670.8800, 1061.6200) on Layer TopMetal2
+violation type: Unconnected instance
+	srcs: inst:u_ic
+	bbox = (500.0000, 950.0000) - (676.9750, 1145.6950) on Layer -

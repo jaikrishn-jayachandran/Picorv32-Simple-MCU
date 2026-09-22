@@ -1,0 +1,67 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/19-odb-addpdnobstructions/soc_top.odb'…
+Reading design constraints file at '/nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk_i…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5.0%
+[INFO] Setting global connections...
+u_cpu matched with u_cpu
+u_ram matched with u_ram
+u_ic matched with u_ic
+u_boot_spi matched with u_boot_spi
+u_periph0 matched with u_periph0
+u_periph1 matched with u_periph1
+u_periph2 matched with u_periph2
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
++ pdngen 
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[INFO PDN-0001] Inserting grid: macro - u_boot_spi
+[INFO PDN-0001] Inserting grid: macro - u_ic
+[INFO PDN-0001] Inserting grid: macro - u_periph0
+[INFO PDN-0001] Inserting grid: macro - u_periph1
+[INFO PDN-0001] Inserting grid: macro - u_periph2
+[INFO PDN-0001] Inserting grid: macro - u_cpu
+[INFO PDN-0001] Inserting grid: macro - u_ram
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (118.2600, 821.4200) - (120.4600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (193.8600, 821.4200) - (196.0600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (269.4600, 821.4200) - (271.6600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (345.0600, 821.4200) - (347.2600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (420.6600, 821.4200) - (422.8600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (496.2600, 821.4200) - (498.4600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (571.8600, 821.4200) - (574.0600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (647.4600, 821.4200) - (649.6600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (723.0600, 821.4200) - (725.2600, 822.6100) on VDD
+[WARNING PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (798.6600, 821.4200) - (800.8600, 822.6100) on VDD
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_cpu matched with u_cpu
+u_ram matched with u_ram
+u_ic matched with u_ic
+u_boot_spi matched with u_boot_spi
+u_periph0 matched with u_periph0
+u_periph1 matched with u_periph1
+u_periph2 matched with u_periph2
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     7 1198462.38
+  Total                                     7 1198462.38
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/20-openroad-generatepdn/soc_top.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/20-openroad-generatepdn/soc_top.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/20-openroad-generatepdn/soc_top.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/20-openroad-generatepdn/soc_top.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/RUN_2026-09-22_20-10-13/20-openroad-generatepdn/soc_top.sdc'…
+[INFO PSM-0040] All shapes on net VDD are connected.
+[WARNING PSM-0038] Unconnected shape on net VSS at (524.460um, 964.490um) - (526.660um, 1127.880um), layer: TopMetal1.
+[WARNING PSM-0038] Unconnected shape on net VSS at (600.060um, 964.490um) - (602.260um, 1127.880um), layer: TopMetal1.
+[WARNING PSM-0038] Unconnected shape on net VSS at (505.760um, 983.820um) - (670.880um, 986.020um), layer: TopMetal2.
+[WARNING PSM-0038] Unconnected shape on net VSS at (505.760um, 1059.420um) - (670.880um, 1061.620um), layer: TopMetal2.
+[WARNING PSM-0039] Unconnected instance u_ic/VSS at location (575.840um, 1034.452um).
+[ERROR PSM-0069] Check connectivity failed on VSS.
+[WARNING] Grid check for VSS failed: PSM-0069

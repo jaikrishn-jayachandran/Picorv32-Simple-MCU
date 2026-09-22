@@ -1,43 +1,146 @@
 {
-  "DESIGN_NAME": "soc_top",
-  "PDK": "ihp-sg13g2",
-  "STD_CELL_LIBRARY": "sg13g2_stdcell",
+    "DESIGN_NAME": "soc_top",
+    "VERILOG_FILES": [
+        "dir::../rtl/macros/soc_top.sv"
+    ],
 
-  "VERILOG_FILES": [
-    "dir::../rtl/soc_top.sv",
-    "dir::../rtl/axil_interconnect.sv",
-    "dir::../rtl/gpio_bank.sv",
-    "dir::../rtl/axi_ram.sv",
-    "dir::../rtl/picorv32.v",
-    "dir::../rtl/boot_ctrl.sv",
-    "dir::../rtl/spi_master.sv"
-  ],
+    "PDK": "ihp-sg13g2",
+    "STD_CELL_LIBRARY": "sg13g2_stdcell",
 
-  "VERILOG_DEFINES": ["SYNTHESIS"],
+    "VDD_PIN": "VDD",
+    "GND_PIN": "VSS",
 
-  "CLOCK_PORT": "clk_i",
-  "CLOCK_PERIOD": 20.0,
+    "CLOCK_PORT": "clk_i",
+    "CLOCK_PERIOD": 10.0,
 
-  "DIE_AREA": [0, 0, 2000, 2000],
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 5000 3000",
+    "CORE_AREA": "50 50 1650 2950",
 
-  "FP_CORE_UTIL": 30,
-  "PL_TARGET_DENSITY_PCT": 45,
+    "FP_OBSTRUCTIONS": [
+        [1700, 50, 4950, 2950]
+    ],
 
-  "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    "ROUTING_OBSTRUCTIONS": [
+        ["Metal1",    1700, 50, 4950, 2950],
+        ["Metal2",    1700, 50, 4950, 2950],
+        ["Metal3",    1700, 50, 4950, 2950],
+        ["Metal4",    1700, 50, 4950, 2950],
+        ["Metal5",    1700, 50, 4950, 2950],
+        ["TopMetal1", 1700, 50, 4950, 2950],
+        ["TopMetal2", 1700, 50, 4950, 2950]
+    ],
 
-  "SYNTH_STRATEGY": "DELAY 1",
-  "MAX_FANOUT_CONSTRAINT": 12,
+    "PDN_OBSTRUCTIONS": [
+        ["Metal1",    1700, 50, 4950, 2950],
+        ["Metal2",    1700, 50, 4950, 2950],
+        ["Metal3",    1700, 50, 4950, 2950],
+        ["Metal4",    1700, 50, 4950, 2950],
+        ["Metal5",    1700, 50, 4950, 2950],
+        ["TopMetal1", 1700, 50, 4950, 2950],
+        ["TopMetal2", 1700, 50, 4950, 2950]
+    ],
 
-  "VDD_NETS": ["VDD"],
-  "GND_NETS": ["VSS"],
+    "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
 
-  "RT_MIN_LAYER": "Metal2",
-  "RT_MAX_LAYER": "Metal5",
+    "PL_TARGET_DENSITY_PCT": 25,
+    "PL_RESIZER_SETUP_SLACK_MARGIN": 0.2,
 
-  "GRT_LAYER_ADJUSTMENTS": [0.26, 0.26, 0.26, 0.26],
+    "GPL_CELL_PADDING": 2,
+    "DPL_CELL_PADDING": 2,
 
-  "DRT_OPT_ITERS": 64,
-  "DRT_THREADS": 8,
+    "SYNTH_ELABORATE_ONLY": 1,
+    "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+    "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
+    "GRT_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+    "GRT_RESIZER_TIMING_OPTIMIZATIONS": 0,
+    "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
+    "FP_PDN_ENABLE_RAILS": 0,
+    "GRT_REPAIR_ANTENNAS": 0,
 
-  "FALLBACK_SDC_FILE": "dir::constraint.sdc"
+    "RUN_CTS": true,
+    "RUN_FILL_INSERTION": false,
+    "RUN_TAP_ENDCAP_INSERTION": false,
+    "RUN_HEURISTIC_DIODE_INSERTION": false,
+    "RUN_IRDROP_REPORT": false,
+
+    "PDN_MACRO_CONNECTIONS": [
+        "u_cpu      VDD VSS VDD  VSS",
+        "u_ram      VDD VSS VPWR VGND",
+        "u_ic       VDD VSS VDD  VSS",
+        "u_boot_spi VDD VSS VDD  VSS",
+        "u_periph0  VDD VSS VDD  VSS",
+        "u_periph1  VDD VSS VDD  VSS",
+        "u_periph2  VDD VSS VDD  VSS"
+    ],
+
+    "ERROR_ON_PDN_VIOLATIONS": false,
+
+    "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+
+    "IGNORE_DISCONNECTED_MODULES": [
+        "soc_top"
+    ],
+
+    "MACROS": {
+        "picorv32_macro": {
+            "gds": [
+                "dir::macros/picorv32/runs/run_12/final/gds/picorv32_macro.gds"
+            ],
+            "lef": [
+                "dir::macros/picorv32/runs/run_12/final/lef/picorv32_macro.lef"
+            ],
+            "nl": [
+                "dir::macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v"
+            ]
+        },
+
+        "interconnect_macro": {
+            "gds": [
+                "dir::macros/interconnect/runs/run_1/final/gds/interconnect_macro.gds"
+            ],
+            "lef": [
+                "dir::macros/interconnect/runs/run_1/final/lef/interconnect_macro.lef"
+            ],
+            "nl": [
+                "dir::macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v"
+            ]
+        },
+
+        "peripherals_macro": {
+            "gds": [
+                "dir::macros/peripherals/runs/run_5/final/gds/peripherals_macro.gds"
+            ],
+            "lef": [
+                "dir::macros/peripherals/runs/run_5/final/lef/peripherals_macro.lef"
+            ],
+            "nl": [
+                "dir::macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v"
+            ]
+        },
+
+        "boot_spi_macro": {
+            "gds": [
+                "dir::macros/boot_spi/runs/run_7/final/gds/boot_spi_macro.gds"
+            ],
+            "lef": [
+                "dir::macros/boot_spi/runs/run_7/final/lef/boot_spi_macro.lef"
+            ],
+            "nl": [
+                "dir::macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v"
+            ]
+        },
+
+        "ram_macro": {
+            "gds": [
+                "dir::macros/ram/runs/run_1/final/gds/ram_macro.gds"
+            ],
+            "lef": [
+                "dir::macros/ram/runs/run_1/final/lef/ram_macro.lef"
+            ],
+            "nl": [
+                "dir::macros/ram/runs/run_1/final/nl/ram_macro.nl.v"
+            ]
+        }
+    }
 }
