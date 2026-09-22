@@ -15,30 +15,30 @@
 
     "FP_SIZING": "absolute",
     "DIE_AREA": "0 0 5000 3000",
-    "CORE_AREA": "50 50 1650 2950",
+    "CORE_AREA": "50 50 4950 2950",
 
     "FP_OBSTRUCTIONS": [
-        [1700, 50, 4950, 2950]
+        [2669, 700, 4950, 2950]
     ],
 
     "ROUTING_OBSTRUCTIONS": [
-        ["Metal1",    1700, 50, 4950, 2950],
-        ["Metal2",    1700, 50, 4950, 2950],
-        ["Metal3",    1700, 50, 4950, 2950],
-        ["Metal4",    1700, 50, 4950, 2950],
-        ["Metal5",    1700, 50, 4950, 2950],
-        ["TopMetal1", 1700, 50, 4950, 2950],
-        ["TopMetal2", 1700, 50, 4950, 2950]
+        ["Metal1",    2669, 700, 4950, 2950],
+        ["Metal2",    2669, 700, 4950, 2950],
+        ["Metal3",    2669, 700, 4950, 2950],
+        ["Metal4",    2669, 700, 4950, 2950],
+        ["Metal5",    2669, 700, 4950, 2950],
+        ["TopMetal1", 2669, 700, 4950, 2950],
+        ["TopMetal2", 2669, 700, 4950, 2950]
     ],
 
     "PDN_OBSTRUCTIONS": [
-        ["Metal1",    1700, 50, 4950, 2950],
-        ["Metal2",    1700, 50, 4950, 2950],
-        ["Metal3",    1700, 50, 4950, 2950],
-        ["Metal4",    1700, 50, 4950, 2950],
-        ["Metal5",    1700, 50, 4950, 2950],
-        ["TopMetal1", 1700, 50, 4950, 2950],
-        ["TopMetal2", 1700, 50, 4950, 2950]
+        ["Metal1",    2669, 700, 4950, 2950],
+        ["Metal2",    2669, 700, 4950, 2950],
+        ["Metal3",    2669, 700, 4950, 2950],
+        ["Metal4",    2669, 700, 4950, 2950],
+        ["Metal5",    2669, 700, 4950, 2950],
+        ["TopMetal1", 2669, 700, 4950, 2950],
+        ["TopMetal2", 2669, 700, 4950, 2950]
     ],
 
     "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
@@ -84,63 +84,29 @@
 
     "MACROS": {
         "picorv32_macro": {
-            "gds": [
-                "dir::macros/picorv32/runs/run_12/final/gds/picorv32_macro.gds"
-            ],
-            "lef": [
-                "dir::macros/picorv32/runs/run_12/final/lef/picorv32_macro.lef"
-            ],
-            "nl": [
-                "dir::macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v"
-            ]
+            "gds": ["dir::macros/picorv32/runs/run_12/final/gds/picorv32_macro.gds"],
+            "lef": ["dir::macros/picorv32/runs/run_12/final/lef/picorv32_macro.lef"],
+            "nl":  ["dir::macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v"]
         },
-
         "interconnect_macro": {
-            "gds": [
-                "dir::macros/interconnect/runs/run_1/final/gds/interconnect_macro.gds"
-            ],
-            "lef": [
-                "dir::macros/interconnect/runs/run_1/final/lef/interconnect_macro.lef"
-            ],
-            "nl": [
-                "dir::macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v"
-            ]
+            "gds": ["dir::macros/interconnect/runs/run_1/final/gds/interconnect_macro.gds"],
+            "lef": ["dir::macros/interconnect/runs/run_1/final/lef/interconnect_macro.lef"],
+            "nl":  ["dir::macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v"]
         },
-
         "peripherals_macro": {
-            "gds": [
-                "dir::macros/peripherals/runs/run_5/final/gds/peripherals_macro.gds"
-            ],
-            "lef": [
-                "dir::macros/peripherals/runs/run_5/final/lef/peripherals_macro.lef"
-            ],
-            "nl": [
-                "dir::macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v"
-            ]
+            "gds": ["dir::macros/peripherals/runs/run_5/final/gds/peripherals_macro.gds"],
+            "lef": ["dir::macros/peripherals/runs/run_5/final/lef/peripherals_macro.lef"],
+            "nl":  ["dir::macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v"]
         },
-
         "boot_spi_macro": {
-            "gds": [
-                "dir::macros/boot_spi/runs/run_7/final/gds/boot_spi_macro.gds"
-            ],
-            "lef": [
-                "dir::macros/boot_spi/runs/run_7/final/lef/boot_spi_macro.lef"
-            ],
-            "nl": [
-                "dir::macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v"
-            ]
+            "gds": ["dir::macros/boot_spi/runs/run_7/final/gds/boot_spi_macro.gds"],
+            "lef": ["dir::macros/boot_spi/runs/run_7/final/lef/boot_spi_macro.lef"],
+            "nl":  ["dir::macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v"]
         },
-
         "ram_macro": {
-            "gds": [
-                "dir::macros/ram/runs/run_1/final/gds/ram_macro.gds"
-            ],
-            "lef": [
-                "dir::macros/ram/runs/run_1/final/lef/ram_macro.lef"
-            ],
-            "nl": [
-                "dir::macros/ram/runs/run_1/final/nl/ram_macro.nl.v"
-            ]
+            "gds": ["dir::macros/ram/runs/run_1/final/gds/ram_macro.gds"],
+            "lef": ["dir::macros/ram/runs/run_1/final/lef/ram_macro.lef"],
+            "nl":  ["dir::macros/ram/runs/run_1/final/nl/ram_macro.nl.v"]
         }
     }
 }

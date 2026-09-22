@@ -1,0 +1,191 @@
+Netgen 1.5.316 compiled on Tue Feb 10 11:09:08 UTC 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Reading SPICE netlist file '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice'...
+Call to undefined subcircuit sg13_lv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_lv_pmos
+Creating placeholder cell definition.
+Call to undefined subcircuit dantenna
+Creating placeholder cell definition.
+Call to undefined subcircuit dpantenna
+Creating placeholder cell definition.
+Reading SPICE netlist file '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spice'...
+Call to undefined subcircuit ptap1
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_hv_nmos
+Creating placeholder cell definition.
+Call to undefined subcircuit rppd
+Creating placeholder cell definition.
+Call to undefined subcircuit sg13_hv_pmos
+Creating placeholder cell definition.
+Reading Verilog netlist file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/40-openroad-detailedrouting/soc_top.pnl.v'...
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module boot_spi_macro.
+Creating placeholder cell definition for module picorv32_macro.
+Creating placeholder cell definition for module interconnect_macro.
+Creating placeholder cell definition for module peripherals_macro.
+Creating placeholder cell definition for module ram_macro.
+Treating empty subcircuits as black-box cells
+Generating JSON file result
+
+Reading setup file /nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl
+
+Model ptap1 pin 1 == 2
+No property w found for device ptap1
+No property l found for device ptap1
+No property l found for device ptap1
+No property w found for device ptap1
+No property l found for device ptap1
+No property w found for device ptap1
+No property b found for device ptap1
+Model rppd pin 1 == 2
+No property b found for device rppd
+Model sg13_hv_nmos pin 1 == 3
+No property trise found for device sg13_hv_nmos
+No property z1 found for device sg13_hv_nmos
+No property z2 found for device sg13_hv_nmos
+No property wmin found for device sg13_hv_nmos
+No property rfmode found for device sg13_hv_nmos
+No property pre_layout found for device sg13_hv_nmos
+Model sg13_hv_pmos pin 1 == 3
+No property trise found for device sg13_hv_pmos
+No property z1 found for device sg13_hv_pmos
+No property z2 found for device sg13_hv_pmos
+No property wmin found for device sg13_hv_pmos
+No property rfmode found for device sg13_hv_pmos
+No property pre_layout found for device sg13_hv_pmos
+Model sg13_lv_nmos pin 1 == 3
+No property trise found for device sg13_lv_nmos
+No property z1 found for device sg13_lv_nmos
+No property z2 found for device sg13_lv_nmos
+No property wmin found for device sg13_lv_nmos
+No property rfmode found for device sg13_lv_nmos
+No property pre_layout found for device sg13_lv_nmos
+Model sg13_lv_pmos pin 1 == 3
+No property trise found for device sg13_lv_pmos
+No property z1 found for device sg13_lv_pmos
+No property z2 found for device sg13_lv_pmos
+No property wmin found for device sg13_lv_pmos
+No property rfmode found for device sg13_lv_pmos
+No property pre_layout found for device sg13_lv_pmos
+No property DEV_A found for device dantenna
+No property DEV_P found for device dantenna
+No property DEV_C found for device dantenna
+No property DEV_A found for device dpantenna
+No property DEV_P found for device dpantenna
+No property DEV_C found for device dpantenna
+Comparison output logged to file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/64-netgen-lvs/reports/lvs.netgen.rpt
+Logging to file "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/64-netgen-lvs/reports/lvs.netgen.rpt" enabled
+
+Contents of circuit 1:  Circuit: 'sg13g2_antennanp'
+Circuit sg13g2_antennanp contains 0 device instances.
+Circuit contains 0 nets, and 3 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_antennanp'
+Circuit sg13g2_antennanp contains 2 device instances.
+  Class: dpantenna             instances:   1
+  Class: dantenna              instances:   1
+Circuit contains 3 nets.
+
+Circuit sg13g2_antennanp contains no devices.
+
+Contents of circuit 1:  Circuit: 'peripherals_macro'
+Circuit peripherals_macro contains 0 device instances.
+Circuit contains 0 nets, and 246 disconnected pins.
+Contents of circuit 2:  Circuit: 'peripherals_macro'
+Circuit peripherals_macro contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit peripherals_macro contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_buf_8'
+Circuit sg13g2_buf_8 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_buf_8'
+Circuit sg13g2_buf_8 contains 4 device instances.
+  Class: sg13_lv_pmos          instances:   2
+  Class: sg13_lv_nmos          instances:   2
+Circuit contains 5 nets.
+
+Circuit sg13g2_buf_8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sg13g2_buf_16'
+Circuit sg13g2_buf_16 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sg13g2_buf_16'
+Circuit sg13g2_buf_16 contains 4 device instances.
+  Class: sg13_lv_pmos          instances:   2
+  Class: sg13_lv_nmos          instances:   2
+Circuit contains 5 nets.
+
+Circuit sg13g2_buf_16 contains no devices.
+
+Contents of circuit 1:  Circuit: 'picorv32_macro'
+Circuit picorv32_macro contains 0 device instances.
+Circuit contains 0 nets, and 153 disconnected pins.
+Contents of circuit 2:  Circuit: 'picorv32_macro'
+Circuit picorv32_macro contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit picorv32_macro contains no devices.
+
+Contents of circuit 1:  Circuit: 'ram_macro'
+Circuit ram_macro contains 0 device instances.
+Circuit contains 0 nets, and 215 disconnected pins.
+Contents of circuit 2:  Circuit: 'ram_macro'
+Circuit ram_macro contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit ram_macro contains no devices.
+
+Contents of circuit 1:  Circuit: 'interconnect_macro'
+Circuit interconnect_macro contains 0 device instances.
+Circuit contains 0 nets, and 764 disconnected pins.
+Contents of circuit 2:  Circuit: 'interconnect_macro'
+Circuit interconnect_macro contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit interconnect_macro contains no devices.
+
+Contents of circuit 1:  Circuit: 'boot_spi_macro'
+Circuit boot_spi_macro contains 0 device instances.
+Circuit contains 0 nets, and 75 disconnected pins.
+Contents of circuit 2:  Circuit: 'boot_spi_macro'
+Circuit boot_spi_macro contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit boot_spi_macro contains no devices.
+
+Contents of circuit 1:  Circuit: 'soc_top'
+Circuit soc_top contains 363 device instances.
+  Class: interconnect_macro    instances:   1
+  Class: sg13g2_antennanp      instances: 352
+  Class: sg13g2_buf_16         instances:   2
+  Class: picorv32_macro        instances:   1
+  Class: peripherals_macro     instances:   3
+  Class: ram_macro             instances:   1
+  Class: sg13g2_buf_8          instances:   2
+  Class: boot_spi_macro        instances:   1
+Circuit contains 1499 nets.
+Contents of circuit 2:  Circuit: 'soc_top'
+Circuit soc_top contains 363 device instances.
+  Class: interconnect_macro    instances:   1
+  Class: sg13g2_antennanp      instances: 352
+  Class: sg13g2_buf_16         instances:   2
+  Class: picorv32_macro        instances:   1
+  Class: peripherals_macro     instances:   3
+  Class: ram_macro             instances:   1
+  Class: sg13g2_buf_8          instances:   2
+  Class: boot_spi_macro        instances:   1
+Circuit contains 1128 nets.
+
+Circuit 1 contains 363 devices, Circuit 2 contains 363 devices.
+Circuit 1 contains 1499 nets,    Circuit 2 contains 1128 nets. *** MISMATCH ***
+
+
+Final result: 
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+Logging to file "/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/64-netgen-lvs/reports/lvs.netgen.rpt" disabled
+LVS Done.

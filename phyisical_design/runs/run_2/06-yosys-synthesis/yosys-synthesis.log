@@ -1,0 +1,186 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Imported 84 cell types from liberty file.
+
+2. Executing Liberty frontend: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib
+Imported 22 cell types from liberty file.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\picorv32_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\interconnect_macro'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\peripherals_macro'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\boot_spi_macro'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/nl/ram_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/nl/ram_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\ram_macro'.
+Successfully finished Verilog frontend.
+[INFO] Using SDC file '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+8. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/soc_top.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/soc_top.sv' to AST representation.
+Storing AST representation for module `$abstract\soc_top'.
+Successfully finished Verilog frontend.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+10. Executing AST frontend in derive mode using pre-parsed AST for module `\soc_top'.
+Generating RTLIL representation for module `\soc_top'.
+
+10.1. Analyzing design hierarchy..
+Top module:  \soc_top
+
+10.2. Analyzing design hierarchy..
+Top module:  \soc_top
+Removing unused module `$abstract\soc_top'.
+Removed 1 unused modules.
+Renaming module soc_top to soc_top.
+
+11. Executing ATTRMAP pass (move or copy attributes).
+
+12. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+13. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+14. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+15. Executing PROC_INIT pass (extract init attributes).
+
+16. Executing PROC_ARST pass (detect async resets in processes).
+
+17. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+18. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+19. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+20. Executing PROC_DFF pass (convert process syncs to FFs).
+
+21. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+22. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+23. Executing CHECK pass (checking for obvious problems).
+Checking module soc_top...
+Found and reported 0 problems.
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module soc_top.
+
+25. Executing FLATTEN pass (flatten design).
+
+26. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \soc_top..
+
+28. Executing CHECK pass (checking for obvious problems).
+Checking module soc_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/tmp/deff9ba6d1a6479bb62dc6d199a689fe.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/tmp/46e5e5015c204c338bcaff2e135913c6.lib ",
+   "modules": {
+      "\\soc_top": {
+         "num_wires":         843,
+         "num_wire_bits":     1122,
+         "num_pub_wires":     843,
+         "num_pub_wire_bits": 1122,
+         "num_ports":         15,
+         "num_port_bits":     294,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "boot_spi_macro": 1,
+            "interconnect_macro": 1,
+            "peripherals_macro": 3,
+            "picorv32_macro": 1,
+            "ram_macro": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         843,
+         "num_wire_bits":     1122,
+         "num_pub_wires":     843,
+         "num_pub_wire_bits": 1122,
+         "num_ports":         15,
+         "num_port_bits":     294,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "boot_spi_macro": 1,
+            "interconnect_macro": 1,
+            "peripherals_macro": 3,
+            "picorv32_macro": 1,
+            "ram_macro": 1
+         }
+      }
+}
+
+29. Printing statistics.
+
+=== soc_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      843 wires
+     1122 wire bits
+      843 public wires
+     1122 public wire bits
+       15 ports
+      294 port bits
+        7 cells
+        1   boot_spi_macro
+        1   interconnect_macro
+        3   peripherals_macro
+        1   picorv32_macro
+        1   ram_macro
+
+   Area for cell type \picorv32_macro is unknown!
+   Area for cell type \interconnect_macro is unknown!
+   Area for cell type \peripherals_macro is unknown!
+   Area for cell type \boot_spi_macro is unknown!
+   Area for cell type \ram_macro is unknown!
+
+30. Executing Verilog backend.
+
+30.1. Executing BMUXMAP pass.
+
+30.2. Executing DEMUXMAP pass.
+Dumping module `\soc_top'.
+
+31. Executing JSON backend.

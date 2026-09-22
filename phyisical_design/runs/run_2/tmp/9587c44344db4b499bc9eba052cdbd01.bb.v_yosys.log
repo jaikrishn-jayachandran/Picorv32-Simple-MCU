@@ -1,0 +1,39 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+-- Running command `
+                    verilog_defines -DPDK_ihp-sg13g2;
+verilog_defines -D__librelane__;
+verilog_defines -D__pnr__;
+verilog_defines -DUSE_POWER_PINS;
+verilog_defines -DSCL_sg13g2_stdcell;
+read_verilog -sv -lib /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/tmp/9587c44344db4b499bc9eba052cdbd01.bb.v;
+
+                    blackbox;
+                    write_verilog -noattr -noexpr -nohex -nodec -defparam -blackboxes /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/tmp/9587c44344db4b499bc9eba052cdbd01.bb.v;
+                    ' --
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/tmp/9587c44344db4b499bc9eba052cdbd01.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_2/tmp/9587c44344db4b499bc9eba052cdbd01.bb.v' to AST representation.
+Generating RTLIL representation for module `\picorv32_macro'.
+Generating RTLIL representation for module `\interconnect_macro'.
+Generating RTLIL representation for module `\peripherals_macro'.
+Generating RTLIL representation for module `\boot_spi_macro'.
+Generating RTLIL representation for module `\ram_macro'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog backend.
+Dumping module `\boot_spi_macro'.
+Dumping module `\interconnect_macro'.
+Dumping module `\peripherals_macro'.
+Dumping module `\picorv32_macro'.
+Dumping module `\ram_macro'.
+
+End of script. Logfile hash: 28ace04cab, CPU: user 1.26s system 0.06s, MEM: 175.11 MB peak
+Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+Time spent: 99% 2x read_verilog (1 sec), 0% 2x write_verilog (0 sec), ...
