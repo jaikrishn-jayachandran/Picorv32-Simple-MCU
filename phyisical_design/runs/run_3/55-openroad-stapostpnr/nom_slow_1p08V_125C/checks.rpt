@@ -1,0 +1,184 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Startpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Endpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.182181    0.000000    0.000000    0.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.125952    0.062976    0.062976 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.095055    0.058551    0.164829    0.227805 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.059669    0.005382    0.233187 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.524230    0.202277    0.178216    0.411403 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.272251    0.089064    0.500467 ^ u_cpu/clk_i (picorv32_macro)
+     1    0.303379    1.915367    3.356632    3.857099 ^ u_cpu/mem_axi_araddr[13] (picorv32_macro)
+                                                         cpu_araddr[13] (net)
+                      1.960566    0.234430    4.091528 ^ u_ic/m_araddr[13] (interconnect_macro)
+     1    0.200296    1.263346    4.650438    8.741966 ^ u_ic/m_rvalid (interconnect_macro)
+                                                         cpu_rvalid (net)
+                      1.277777    0.108860    8.850826 ^ u_cpu/mem_axi_rvalid (picorv32_macro)
+                                              8.850826   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock source latency
+     1    0.179858    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.123042    0.061521   10.061521 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.090409    0.056713    0.162520   10.224041 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.057700    0.004970   10.229011 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.524230    0.202255    0.177080   10.406091 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.272237    0.089070   10.495161 ^ u_cpu/clk_i (picorv32_macro)
+                                 -0.200000   10.295160   clock uncertainty
+                                  0.005306   10.300467   clock reconvergence pessimism
+                                 -4.767990    5.532476   library setup time
+                                              5.532476   data required time
+---------------------------------------------------------------------------------------------
+                                              5.532476   data required time
+                                             -8.850826   data arrival time
+---------------------------------------------------------------------------------------------
+                                             -3.318350   slack (VIOLATED)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+Startpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Endpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.182181    0.000000    0.000000    0.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.125952    0.062976    0.062976 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.095055    0.058551    0.164829    0.227805 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.059669    0.005382    0.233187 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.524230    0.202277    0.178216    0.411403 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.272251    0.089064    0.500467 ^ u_cpu/clk_i (picorv32_macro)
+     1    0.303379    1.915367    3.356632    3.857099 ^ u_cpu/mem_axi_araddr[13] (picorv32_macro)
+                                                         cpu_araddr[13] (net)
+                      1.960566    0.234430    4.091528 ^ u_ic/m_araddr[13] (interconnect_macro)
+     1    0.200296    1.263346    4.650438    8.741966 ^ u_ic/m_rvalid (interconnect_macro)
+                                                         cpu_rvalid (net)
+                      1.277777    0.108860    8.850826 ^ u_cpu/mem_axi_rvalid (picorv32_macro)
+                                              8.850826   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock source latency
+     1    0.179858    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.123042    0.061521   10.061521 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.090409    0.056713    0.162520   10.224041 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.057700    0.004970   10.229011 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.524230    0.202255    0.177080   10.406091 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.272237    0.089070   10.495161 ^ u_cpu/clk_i (picorv32_macro)
+                                 -0.200000   10.295160   clock uncertainty
+                                  0.005306   10.300467   clock reconvergence pessimism
+                                 -4.767990    5.532476   library setup time
+                                              5.532476   data required time
+---------------------------------------------------------------------------------------------
+                                              5.532476   data required time
+                                             -8.850826   data arrival time
+---------------------------------------------------------------------------------------------
+                                             -3.318350   slack (VIOLATED)
+
+
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_slow_1p08V_125C Corner ===================================
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+ANTENNA_7/A                             2.507400    4.612842   -2.105442 (VIOLATED)
+ANTENNA_36/A                            2.507400    4.419177   -1.911777 (VIOLATED)
+ANTENNA_37/A                            2.507400    4.419121   -1.911721 (VIOLATED)
+ANTENNA_8/A                             2.507400    4.368292   -1.860892 (VIOLATED)
+ANTENNA_30/A                            2.507400    4.108440   -1.601040 (VIOLATED)
+ANTENNA_31/A                            2.507400    3.966517   -1.459117 (VIOLATED)
+ANTENNA_27/A                            2.507400    3.813137   -1.305737 (VIOLATED)
+ANTENNA_28/A                            2.507400    3.684509   -1.177109 (VIOLATED)
+ANTENNA_29/A                            2.507400    3.684450   -1.177050 (VIOLATED)
+ANTENNA_33/A                            2.507400    3.509638   -1.002238 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 31 unannotated drivers.
+ clkload0/Y
+ u_boot_spi/boot_done
+ u_cpu/trap
+ u_ic/m_bresp[0]
+ u_ic/m_bresp[1]
+ u_ic/m_rresp[0]
+ u_ic/m_rresp[1]
+ u_ic/s_arprot[0]
+ u_ic/s_arprot[10]
+ u_ic/s_arprot[11]
+ u_ic/s_arprot[1]
+ u_ic/s_arprot[2]
+ u_ic/s_arprot[3]
+ u_ic/s_arprot[4]
+ u_ic/s_arprot[5]
+ u_ic/s_arprot[6]
+ u_ic/s_arprot[7]
+ u_ic/s_arprot[8]
+ u_ic/s_arprot[9]
+ u_ic/s_awprot[0]
+ u_ic/s_awprot[10]
+ u_ic/s_awprot[11]
+ u_ic/s_awprot[1]
+ u_ic/s_awprot[2]
+ u_ic/s_awprot[3]
+ u_ic/s_awprot[4]
+ u_ic/s_awprot[5]
+ u_ic/s_awprot[6]
+ u_ic/s_awprot[7]
+ u_ic/s_awprot[8]
+ u_ic/s_awprot[9]
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 10
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 4 unconstrained endpoints.
+  u_ram/s_axil_araddr[0]
+  u_ram/s_axil_araddr[1]
+  u_ram/s_axil_awaddr[0]
+  u_ram/s_axil_awaddr[1]

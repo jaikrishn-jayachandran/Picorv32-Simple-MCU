@@ -1,0 +1,119 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_fast_1p32V_m40C/picorv32_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_fast_1p32V_m40C/interconnect_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_fast_1p32V_m40C/peripherals_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_fast_1p32V_m40C/boot_spi_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_fast_1p32V_m40C/ram_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib line 1, library picorv32_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib line 1, library interconnect_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib line 1, library peripherals_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib line 1, library boot_spi_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib line 1, library ram_macro already exists.
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib line 1, library picorv32_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib line 1, library interconnect_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib line 1, library peripherals_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib line 1, library boot_spi_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib line 1, library ram_macro already exists.
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/35-openroad-cts/soc_top.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
++ repair_timing -verbose -setup -setup_margin 0.1 -max_buffer_percent 50.0
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0094] Found 15 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 15 out of 15 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |   TNS      |  Viol  | Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpt
+--------------------------------------------------------------------------------------------------------------
+        0 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        1 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        2 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        3 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        4 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        5 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        6 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        7 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        8 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+        9 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       10 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       10 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       11 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       12 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       13 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       14 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+       15 |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      16* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      17* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      18* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      19* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      20* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      20* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      21* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      22* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      23* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      24* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      25* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      26* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      27* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      28* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      29* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      30* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+      30* |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+    final |       0 |       0 |        0 |      0 |     0 |    +0.0% |   -2.571 |      -10.3 |     15 | u_cpu/mem_axi_rvalid
+--------------------------------------------------------------------------------------------------------------
+[WARNING RSZ-0062] Unable to repair all setup violations.
++ repair_timing -verbose -hold -setup_margin 0.1 -hold_margin 0.1 -max_buffer_percent 50.0
+[INFO RSZ-0033] No hold violations found.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL         1203798.7 u
+legalized HPWL        1203832.4 u
+delta HPWL                    0 %
+
+[INFO DPL-0020] Mirrored 233 instances
+[INFO DPL-0021] HPWL before          1203832.4 u
+[INFO DPL-0022] HPWL after           1203798.7 u
+[INFO DPL-0023] HPWL delta               -0.0 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_cpu matched with u_cpu
+u_ic matched with u_ic
+u_periph0 matched with u_periph0
+u_periph1 matched with u_periph1
+u_periph2 matched with u_periph2
+u_boot_spi matched with u_boot_spi
+u_ram matched with u_ram
+[INFO ODB-0403] 0 connections made, 12 conflicts skipped, use -force to connect.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     7 1198462.38
+  Clock buffer                              3     136.08
+  Timing Repair Buffer                    294    2150.06
+  Clock inverter                            1      34.47
+  Total                                   305 1200783.00
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/37-openroad-resizertimingpostcts/soc_top.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/37-openroad-resizertimingpostcts/soc_top.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/37-openroad-resizertimingpostcts/soc_top.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/37-openroad-resizertimingpostcts/soc_top.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/37-openroad-resizertimingpostcts/soc_top.sdc'…

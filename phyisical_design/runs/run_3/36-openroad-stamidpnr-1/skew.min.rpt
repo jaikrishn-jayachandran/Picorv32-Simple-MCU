@@ -1,0 +1,15 @@
+
+===========================================================================
+Clock Skew (Hold)
+============================================================================
+Writing metric clock__skew__worst_hold__corner:nom_typ_1p20V_25C: -0.368141166859975
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Clock clk
+0.322713 source latency u_boot_spi/clk_i ^
+-0.485115 target latency u_cpu/clk_i ^
+-0.200000 clock uncertainty
+-0.005739 CRPR
+--------------
+-0.368141 hold skew
+

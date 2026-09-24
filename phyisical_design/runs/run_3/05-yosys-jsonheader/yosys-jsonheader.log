@@ -1,0 +1,203 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
+
+1. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/tmp/5714709d92c341b9881da73b4e07ebe3.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/tmp/5714709d92c341b9881da73b4e07ebe3.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_a21o_1'.
+Generating RTLIL representation for module `\sg13g2_a21o_2'.
+Generating RTLIL representation for module `\sg13g2_a21oi_1'.
+Generating RTLIL representation for module `\sg13g2_a21oi_2'.
+Generating RTLIL representation for module `\sg13g2_a221oi_1'.
+Generating RTLIL representation for module `\sg13g2_a22oi_1'.
+Generating RTLIL representation for module `\sg13g2_and2_1'.
+Generating RTLIL representation for module `\sg13g2_and2_2'.
+Generating RTLIL representation for module `\sg13g2_and3_1'.
+Generating RTLIL representation for module `\sg13g2_and3_2'.
+Generating RTLIL representation for module `\sg13g2_and4_1'.
+Generating RTLIL representation for module `\sg13g2_and4_2'.
+Generating RTLIL representation for module `\sg13g2_antennanp'.
+Generating RTLIL representation for module `\sg13g2_buf_1'.
+Generating RTLIL representation for module `\sg13g2_buf_16'.
+Generating RTLIL representation for module `\sg13g2_buf_2'.
+Generating RTLIL representation for module `\sg13g2_buf_4'.
+Generating RTLIL representation for module `\sg13g2_buf_8'.
+Generating RTLIL representation for module `\sg13g2_decap_4'.
+Generating RTLIL representation for module `\sg13g2_decap_8'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_dfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_dlhq_1'.
+Generating RTLIL representation for module `\sg13g2_dlhr_1'.
+Generating RTLIL representation for module `\sg13g2_dlhrq_1'.
+Generating RTLIL representation for module `\sg13g2_dllr_1'.
+Generating RTLIL representation for module `\sg13g2_dllrq_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd1_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd2_1'.
+Generating RTLIL representation for module `\sg13g2_dlygate4sd3_1'.
+Generating RTLIL representation for module `\sg13g2_ebufn_2'.
+Generating RTLIL representation for module `\sg13g2_ebufn_4'.
+Generating RTLIL representation for module `\sg13g2_ebufn_8'.
+Generating RTLIL representation for module `\sg13g2_einvn_2'.
+Generating RTLIL representation for module `\sg13g2_einvn_4'.
+Generating RTLIL representation for module `\sg13g2_einvn_8'.
+Generating RTLIL representation for module `\sg13g2_fill_1'.
+Generating RTLIL representation for module `\sg13g2_fill_2'.
+Generating RTLIL representation for module `\sg13g2_fill_4'.
+Generating RTLIL representation for module `\sg13g2_fill_8'.
+Generating RTLIL representation for module `\sg13g2_inv_1'.
+Generating RTLIL representation for module `\sg13g2_inv_16'.
+Generating RTLIL representation for module `\sg13g2_inv_2'.
+Generating RTLIL representation for module `\sg13g2_inv_4'.
+Generating RTLIL representation for module `\sg13g2_inv_8'.
+Generating RTLIL representation for module `\sg13g2_lgcp_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_1'.
+Generating RTLIL representation for module `\sg13g2_mux2_2'.
+Generating RTLIL representation for module `\sg13g2_mux4_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_1'.
+Generating RTLIL representation for module `\sg13g2_nand2_2'.
+Generating RTLIL representation for module `\sg13g2_nand2b_1'.
+Generating RTLIL representation for module `\sg13g2_nand2b_2'.
+Generating RTLIL representation for module `\sg13g2_nand3_1'.
+Generating RTLIL representation for module `\sg13g2_nand3b_1'.
+Generating RTLIL representation for module `\sg13g2_nand4_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_1'.
+Generating RTLIL representation for module `\sg13g2_nor2_2'.
+Generating RTLIL representation for module `\sg13g2_nor2b_1'.
+Generating RTLIL representation for module `\sg13g2_nor2b_2'.
+Generating RTLIL representation for module `\sg13g2_nor3_1'.
+Generating RTLIL representation for module `\sg13g2_nor3_2'.
+Generating RTLIL representation for module `\sg13g2_nor4_1'.
+Generating RTLIL representation for module `\sg13g2_nor4_2'.
+Generating RTLIL representation for module `\sg13g2_o21ai_1'.
+Generating RTLIL representation for module `\sg13g2_or2_1'.
+Generating RTLIL representation for module `\sg13g2_or2_2'.
+Generating RTLIL representation for module `\sg13g2_or3_1'.
+Generating RTLIL representation for module `\sg13g2_or3_2'.
+Generating RTLIL representation for module `\sg13g2_or4_1'.
+Generating RTLIL representation for module `\sg13g2_or4_2'.
+Generating RTLIL representation for module `\sg13g2_sdfbbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbp_2'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_1'.
+Generating RTLIL representation for module `\sg13g2_sdfrbpq_2'.
+Generating RTLIL representation for module `\sg13g2_sighold'.
+Generating RTLIL representation for module `\sg13g2_slgcp_1'.
+Generating RTLIL representation for module `\sg13g2_tiehi'.
+Generating RTLIL representation for module `\sg13g2_tielo'.
+Generating RTLIL representation for module `\sg13g2_xnor2_1'.
+Generating RTLIL representation for module `\sg13g2_xor2_1'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/tmp/fc5b624f21fe48c5aadc4a4ca2e2fb93.bb.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/tmp/fc5b624f21fe48c5aadc4a4ca2e2fb93.bb.v' to AST representation.
+Generating RTLIL representation for module `\sg13g2_Corner'.
+Generating RTLIL representation for module `\sg13g2_Filler1000'.
+Generating RTLIL representation for module `\sg13g2_Filler10000'.
+Generating RTLIL representation for module `\sg13g2_Filler200'.
+Generating RTLIL representation for module `\sg13g2_Filler2000'.
+Generating RTLIL representation for module `\sg13g2_Filler400'.
+Generating RTLIL representation for module `\sg13g2_Filler4000'.
+Generating RTLIL representation for module `\sg13g2_IOPadAnalog'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadIOVss'.
+Generating RTLIL representation for module `\sg13g2_IOPadIn'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadInOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut16mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut30mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadTriOut4mA'.
+Generating RTLIL representation for module `\sg13g2_IOPadVdd'.
+Generating RTLIL representation for module `\sg13g2_IOPadVss'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/nl/picorv32_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\picorv32_macro'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/nl/interconnect_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\interconnect_macro'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/nl/peripherals_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\peripherals_macro'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/nl/boot_spi_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\boot_spi_macro'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/nl/ram_macro.nl.v
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/nl/ram_macro.nl.v' to AST representation.
+Generating RTLIL representation for module `\ram_macro'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/soc_top.sv
+Parsing SystemVerilog input from `/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/rtl/macros/soc_top.sv' to AST representation.
+Storing AST representation for module `$abstract\soc_top'.
+Successfully finished Verilog frontend.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+10. Executing AST frontend in derive mode using pre-parsed AST for module `\soc_top'.
+Generating RTLIL representation for module `\soc_top'.
+
+10.1. Analyzing design hierarchy..
+Top module:  \soc_top
+
+10.2. Analyzing design hierarchy..
+Top module:  \soc_top
+Removing unused module `$abstract\soc_top'.
+Removed 1 unused modules.
+Renaming module soc_top to soc_top.
+
+11. Executing PROC pass (convert processes to netlists).
+
+11.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+11.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+11.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+11.4. Executing PROC_INIT pass (extract init attributes).
+
+11.5. Executing PROC_ARST pass (detect async resets in processes).
+
+11.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+11.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+11.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+11.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+11.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+11.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+11.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module soc_top.
+
+12. Executing FLATTEN pass (flatten design).
+
+13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \soc_top..

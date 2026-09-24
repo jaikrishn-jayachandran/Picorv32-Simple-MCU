@@ -1,0 +1,125 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+Startpoint: u_boot_spi (rising edge-triggered flip-flop clocked by clk)
+Endpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.184976    0.000000    0.000000    0.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.129454    0.064727    0.064727 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.100646    0.028561    0.087921    0.152648 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.030762    0.005793    0.158441 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.536830    0.038339    0.059773    0.218214 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.233922    0.111702    0.329916 ^ u_boot_spi/clk_i (boot_spi_macro)
+     2    0.281317    0.591579    0.737904    1.067820 v u_boot_spi/boot_we (boot_spi_macro)
+                                                         boot_we (net)
+                      0.682704    0.177939    1.245759 v u_ram/boot_we (ram_macro)
+     1    0.378573    0.952215    2.350170    3.595929 ^ u_ram/s_axil_awready (ram_macro)
+                                                         s_awready[0] (net)
+                      1.208187    0.383626    3.979555 ^ u_ic/s_awready[0] (interconnect_macro)
+     1    0.353200    0.907365    0.777335    4.756891 ^ u_ic/m_awready (interconnect_macro)
+                                                         cpu_awready (net)
+                      1.044962    0.267788    5.024679 ^ u_cpu/mem_axi_awready (picorv32_macro)
+                                              5.024679   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock source latency
+     1    0.181720    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.125375    0.062688   10.062688 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.094134    0.027717    0.086433   10.149121 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.029396    0.005237   10.154358 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.536830    0.038278    0.059233   10.213591 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.188039    0.084808   10.298398 ^ u_cpu/clk_i (picorv32_macro)
+                                 -0.200000   10.098398   clock uncertainty
+                                  0.004624   10.103023   clock reconvergence pessimism
+                                 -0.790460    9.312563   library setup time
+                                              9.312563   data required time
+---------------------------------------------------------------------------------------------
+                                              9.312563   data required time
+                                             -5.024679   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.287884   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 31 unannotated drivers.
+ clkload0/Y
+ u_boot_spi/boot_done
+ u_cpu/trap
+ u_ic/m_bresp[0]
+ u_ic/m_bresp[1]
+ u_ic/m_rresp[0]
+ u_ic/m_rresp[1]
+ u_ic/s_arprot[0]
+ u_ic/s_arprot[10]
+ u_ic/s_arprot[11]
+ u_ic/s_arprot[1]
+ u_ic/s_arprot[2]
+ u_ic/s_arprot[3]
+ u_ic/s_arprot[4]
+ u_ic/s_arprot[5]
+ u_ic/s_arprot[6]
+ u_ic/s_arprot[7]
+ u_ic/s_arprot[8]
+ u_ic/s_arprot[9]
+ u_ic/s_awprot[0]
+ u_ic/s_awprot[10]
+ u_ic/s_awprot[11]
+ u_ic/s_awprot[1]
+ u_ic/s_awprot[2]
+ u_ic/s_awprot[3]
+ u_ic/s_awprot[4]
+ u_ic/s_awprot[5]
+ u_ic/s_awprot[6]
+ u_ic/s_awprot[7]
+ u_ic/s_awprot[8]
+ u_ic/s_awprot[9]
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 4 unconstrained endpoints.
+  u_ram/s_axil_araddr[0]
+  u_ram/s_axil_araddr[1]
+  u_ram/s_axil_awaddr[0]
+  u_ram/s_axil_awaddr[1]

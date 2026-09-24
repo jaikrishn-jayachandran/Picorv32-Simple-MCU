@@ -1,0 +1,47 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/tmp/c532cc9c1ca44318aaff6f019ffb0fc9.lib -liberty /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/tmp/7a577706fea94061b8874647e9eea6f3.lib ",
+   "modules": {
+      "\\soc_top": {
+         "num_wires":         59,
+         "num_wire_bits":     1122,
+         "num_pub_wires":     59,
+         "num_pub_wire_bits": 1122,
+         "num_ports":         15,
+         "num_port_bits":     294,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "boot_spi_macro": 1,
+            "interconnect_macro": 1,
+            "peripherals_macro": 3,
+            "picorv32_macro": 1,
+            "ram_macro": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         59,
+         "num_wire_bits":     1122,
+         "num_pub_wires":     59,
+         "num_pub_wire_bits": 1122,
+         "num_ports":         15,
+         "num_port_bits":     294,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         7,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "boot_spi_macro": 1,
+            "interconnect_macro": 1,
+            "peripherals_macro": 3,
+            "picorv32_macro": 1,
+            "ram_macro": 1
+         }
+      }
+}
+

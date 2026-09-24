@@ -1,0 +1,74 @@
+Reading technology LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Reading cell LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+Reading macro LEF file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lef/picorv32_macro.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lef/picorv32_macro.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lef/picorv32_macro.lef, created 1 library cells
+Reading macro LEF file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lef/interconnect_macro.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lef/interconnect_macro.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lef/interconnect_macro.lef, created 1 library cells
+Reading macro LEF file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lef/peripherals_macro.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lef/peripherals_macro.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lef/peripherals_macro.lef, created 1 library cells
+Reading macro LEF file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lef/boot_spi_macro.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lef/boot_spi_macro.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lef/boot_spi_macro.lef, created 1 library cells
+Reading macro LEF file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lef/ram_macro.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lef/ram_macro.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lef/ram_macro.lef, created 1 library cells
+Reading gpio pad LEF file at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef'…
+[INFO ODB-0227] LEF file: /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0127] Reading DEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/53-odb-cellfrequencytables/soc_top.def
+[INFO ODB-0128] Design: soc_top
+[INFO ODB-0130]     Created 296 pins.
+[INFO ODB-0131]     Created 79885 components and 162334 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 159770 connections.
+[INFO ODB-0133]     Created 1419 nets and 2563 connections.
+[INFO ODB-0134] Finished DEF file: /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/53-odb-cellfrequencytables/soc_top.def
+Using RCX ruleset '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules -lef_res
+[INFO RCX-0435] Reading extraction model file /home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.tech/librelane/openrcx/IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation soc_top (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 6875 rc segments
+[INFO RCX-0439] Coupling Cap extraction soc_top ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 15% of 16854 wires extracted
+[INFO RCX-0442] 23% of 16854 wires extracted
+[INFO RCX-0442] 28% of 16854 wires extracted
+[INFO RCX-0442] 74% of 16854 wires extracted
+[INFO RCX-0442] 81% of 16854 wires extracted
+[INFO RCX-0442] 89% of 16854 wires extracted
+[INFO RCX-0442] 100% of 16854 wires extracted
+[INFO RCX-0045] Extract 1421 nets, 8264 rsegs, 8264 caps, 8542 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_cpu matched with u_cpu
+u_ic matched with u_ic
+u_periph0 matched with u_periph0
+u_periph1 matched with u_periph1
+u_periph2 matched with u_periph2
+u_boot_spi matched with u_boot_spi
+u_ram matched with u_ram
+[INFO ODB-0403] 0 connections made, 12 conflicts skipped, use -force to connect.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     7 1198462.38
+  Fill cell                             79543  993309.61
+  Antenna cell                             37     201.40
+  Standard cell                           298    2320.62
+  Total                                 79885 2194294.00
+Writing extracted parasitics to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/54-openroad-rcx/nom/soc_top.nom.spef'…
+[INFO RCX-0443] 1419 nets finished

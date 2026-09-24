@@ -1,0 +1,223 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_fast_1p32V_m40C/picorv32_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_fast_1p32V_m40C/interconnect_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_fast_1p32V_m40C/peripherals_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_fast_1p32V_m40C/boot_spi_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_fast_1p32V_m40C/ram_macro__nom_fast_1p32V_m40C.lib'…
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib line 1, library picorv32_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib line 1, library interconnect_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib line 1, library peripherals_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib line 1, library boot_spi_macro already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib line 1, library ram_macro already exists.
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib line 1, library picorv32_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib line 1, library interconnect_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib line 1, library peripherals_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib line 1, library boot_spi_macro already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib line 1, library ram_macro already exists.
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/28-openroad-globalplacement/soc_top.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO RSZ-0027] Inserted 98 sg13g2_buf_1 input buffers.
+[INFO RSZ-0028] Inserted 195 sg13g2_buf_1 output buffers.
++ repair_design -verbose -max_wire_length 0.0 -slew_margin 20.0 -cap_margin 20.0
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |      1415
+       10 |     +0.0% |       0 |       0 |             0 |      1405
+       20 |     +0.0% |       0 |       0 |             0 |      1395
+       30 |     +0.0% |       0 |       0 |             0 |      1385
+       40 |     +0.0% |       0 |       0 |             0 |      1375
+       50 |     +0.0% |       0 |       0 |             0 |      1365
+       60 |     +0.0% |       0 |       0 |             0 |      1355
+       70 |     +0.0% |       0 |       0 |             0 |      1345
+       80 |     +0.0% |       0 |       0 |             0 |      1335
+       90 |     +0.0% |       0 |       0 |             0 |      1325
+      100 |     +0.0% |       0 |       0 |             0 |      1315
+      110 |     +0.0% |       0 |       0 |             0 |      1305
+      120 |     +0.0% |       0 |       0 |             0 |      1295
+      130 |     +0.0% |       0 |       0 |             0 |      1285
+      140 |     +0.0% |       0 |       0 |             0 |      1275
+      150 |     +0.0% |       0 |       0 |             0 |      1265
+      160 |     +0.0% |       0 |       0 |             0 |      1255
+      170 |     +0.0% |       0 |       0 |             0 |      1245
+      180 |     +0.0% |       0 |       0 |             0 |      1235
+      190 |     +0.0% |       0 |       0 |             0 |      1225
+      200 |     +0.0% |       0 |       0 |             0 |      1215
+      210 |     +0.0% |       0 |       0 |             0 |      1205
+      220 |     +0.0% |       0 |       0 |             0 |      1195
+      230 |     +0.0% |       0 |       0 |             0 |      1185
+      240 |     +0.0% |       0 |       0 |             0 |      1175
+      250 |     +0.0% |       0 |       0 |             0 |      1165
+      260 |     +0.0% |       0 |       0 |             0 |      1155
+      270 |     +0.0% |       0 |       0 |             0 |      1145
+      280 |     +0.0% |       0 |       0 |             0 |      1135
+      290 |     +0.0% |       0 |       0 |             0 |      1125
+      300 |     +0.0% |       0 |       0 |             0 |      1115
+      310 |     +0.0% |       0 |       0 |             0 |      1105
+      320 |     +0.0% |       0 |       0 |             0 |      1095
+      330 |     +0.0% |       0 |       0 |             0 |      1085
+      340 |     +0.0% |       0 |       0 |             0 |      1075
+      350 |     +0.0% |       0 |       0 |             0 |      1065
+      360 |     +0.0% |       0 |       0 |             0 |      1055
+      370 |     +0.0% |       0 |       0 |             0 |      1045
+      380 |     +0.0% |       0 |       0 |             0 |      1035
+      390 |     +0.0% |       0 |       0 |             0 |      1025
+      400 |     +0.0% |       0 |       0 |             0 |      1015
+      410 |     +0.0% |       0 |       0 |             0 |      1005
+      420 |     +0.0% |       0 |       0 |             0 |       995
+      430 |     +0.0% |       0 |       0 |             0 |       985
+      440 |     +0.0% |       0 |       0 |             0 |       975
+      450 |     +0.0% |       0 |       0 |             0 |       965
+      460 |     +0.0% |       0 |       0 |             0 |       955
+      470 |     +0.0% |       0 |       0 |             0 |       945
+      480 |     +0.0% |       0 |       0 |             0 |       935
+      490 |     +0.0% |       0 |       0 |             0 |       925
+      500 |     +0.0% |       0 |       0 |             0 |       915
+      510 |     +0.0% |       0 |       0 |             0 |       905
+      520 |     +0.0% |       0 |       0 |             0 |       895
+      530 |     +0.0% |       0 |       0 |             0 |       885
+      540 |     +0.0% |       0 |       0 |             0 |       875
+      550 |     +0.0% |       0 |       0 |             0 |       865
+      560 |     +0.0% |       0 |       0 |             0 |       855
+      570 |     +0.0% |       0 |       0 |             0 |       845
+      580 |     +0.0% |       0 |       0 |             0 |       835
+      590 |     +0.0% |       0 |       0 |             0 |       825
+      600 |     +0.0% |       0 |       0 |             0 |       815
+      610 |     +0.0% |       0 |       0 |             0 |       805
+      620 |     +0.0% |       0 |       0 |             0 |       795
+      630 |     +0.0% |       0 |       0 |             0 |       785
+      640 |     +0.0% |       0 |       0 |             0 |       775
+      650 |     +0.0% |       0 |       0 |             0 |       765
+      660 |     +0.0% |       0 |       0 |             0 |       755
+      670 |     +0.0% |       0 |       0 |             0 |       745
+      680 |     +0.0% |       0 |       0 |             0 |       735
+      690 |     +0.0% |       0 |       0 |             0 |       725
+      700 |     +0.0% |       0 |       0 |             0 |       715
+      710 |     +0.0% |       0 |       0 |             0 |       705
+      720 |     +0.0% |       0 |       0 |             0 |       695
+      730 |     +0.0% |       0 |       0 |             0 |       685
+      740 |     +0.0% |       0 |       0 |             0 |       675
+      750 |     +0.0% |       0 |       0 |             0 |       665
+      760 |     +0.0% |       0 |       0 |             0 |       655
+      770 |     +0.0% |       0 |       0 |             0 |       645
+      780 |     +0.0% |       0 |       0 |             0 |       635
+      790 |     +0.0% |       0 |       0 |             0 |       625
+      800 |     +0.0% |       0 |       0 |             0 |       615
+      810 |     +0.0% |       0 |       0 |             0 |       605
+      820 |     +0.0% |       0 |       0 |             0 |       595
+      830 |     +0.0% |       0 |       0 |             0 |       585
+      840 |     +0.0% |       0 |       0 |             0 |       575
+      850 |     +0.0% |       0 |       0 |             0 |       565
+      860 |     +0.0% |       0 |       0 |             0 |       555
+      870 |     +0.0% |       0 |       0 |             0 |       545
+      880 |     +0.0% |       0 |       0 |             0 |       535
+      890 |     +0.0% |       0 |       0 |             0 |       525
+      900 |     +0.0% |       0 |       0 |             0 |       515
+      910 |     +0.0% |       0 |       0 |             0 |       505
+      920 |     +0.0% |       0 |       0 |             0 |       495
+      930 |     +0.0% |       0 |       0 |             0 |       485
+      940 |     +0.0% |       0 |       0 |             0 |       475
+      950 |     +0.0% |       0 |       0 |             0 |       465
+      960 |     +0.0% |       0 |       0 |             0 |       455
+      970 |     +0.0% |       0 |       0 |             0 |       445
+      980 |     +0.0% |       0 |       0 |             0 |       435
+      990 |     +0.0% |       0 |       0 |             0 |       425
+     1000 |     +0.0% |       0 |       0 |             0 |       415
+     1010 |     +0.0% |       0 |       0 |             0 |       405
+     1020 |     +0.0% |       0 |       0 |             0 |       395
+     1030 |     +0.0% |       0 |       0 |             0 |       385
+     1040 |     +0.0% |       0 |       0 |             0 |       375
+     1050 |     +0.0% |       0 |       0 |             0 |       365
+     1060 |     +0.0% |       0 |       0 |             0 |       355
+     1070 |     +0.0% |       0 |       0 |             0 |       345
+     1080 |     +0.0% |       0 |       0 |             0 |       335
+     1090 |     +0.0% |       0 |       0 |             0 |       325
+     1100 |     +0.0% |       0 |       0 |             0 |       315
+     1110 |     +0.0% |       0 |       0 |             0 |       305
+     1120 |     +0.0% |       0 |       0 |             0 |       295
+     1130 |     +0.0% |       0 |       0 |             0 |       285
+     1140 |     +0.0% |       0 |       0 |             0 |       275
+     1150 |     +0.0% |       0 |       0 |             0 |       265
+     1160 |     +0.0% |       0 |       0 |             0 |       255
+     1170 |     +0.0% |       0 |       0 |             0 |       245
+     1180 |     +0.0% |       0 |       0 |             0 |       235
+     1190 |     +0.0% |       0 |       0 |             0 |       225
+     1200 |     +0.0% |       0 |       1 |             1 |       215
+     1210 |     +0.0% |       0 |       1 |             1 |       205
+     1220 |     +0.0% |       0 |       1 |             1 |       195
+     1230 |     +0.0% |       0 |       1 |             1 |       185
+     1240 |     +0.0% |       0 |       1 |             1 |       175
+     1250 |     +0.0% |       0 |       1 |             1 |       165
+     1260 |     +0.0% |       0 |       1 |             1 |       155
+     1270 |     +0.0% |       0 |       1 |             1 |       145
+     1280 |     +0.0% |       0 |       1 |             1 |       135
+     1290 |     +0.0% |       0 |       1 |             1 |       125
+     1300 |     +0.0% |       0 |       1 |             1 |       115
+     1310 |     +0.0% |       0 |       1 |             1 |       105
+     1320 |     +0.0% |       0 |       1 |             1 |        95
+     1330 |     +0.0% |       0 |       1 |             1 |        85
+     1340 |     +0.0% |       0 |       1 |             1 |        75
+     1350 |     +0.0% |       0 |       1 |             1 |        65
+     1360 |     +0.0% |       0 |       1 |             1 |        55
+     1370 |     +0.0% |       0 |       1 |             1 |        45
+     1380 |     +0.0% |       0 |       1 |             1 |        35
+     1390 |     +0.0% |       0 |       1 |             1 |        25
+     1400 |     +0.0% |       0 |       1 |             1 |        15
+     1410 |     +0.0% |       0 |       1 |             1 |         5
+    final |     +0.0% |       0 |       1 |             1 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 1 slew violations.
+[INFO RSZ-0036] Found 1 capacitance violations.
+[INFO RSZ-0038] Inserted 1 buffers in 1 nets.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       5226.4 u
+average displacement       17.4 u
+max displacement           18.4 u
+original HPWL         1201731.6 u
+legalized HPWL        1201249.8 u
+delta HPWL                    0 %
+
+[INFO DPL-0020] Mirrored 231 instances
+[INFO DPL-0021] HPWL before          1201249.8 u
+[INFO DPL-0022] HPWL after           1201231.9 u
+[INFO DPL-0023] HPWL delta               -0.0 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+u_cpu matched with u_cpu
+u_ic matched with u_ic
+u_periph0 matched with u_periph0
+u_periph1 matched with u_periph1
+u_periph2 matched with u_periph2
+u_boot_spi matched with u_boot_spi
+u_ram matched with u_ram
+[INFO ODB-0403] 588 connections made, 12 conflicts skipped, use -force to connect.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     7 1198462.38
+  Timing Repair Buffer                    294    2150.06
+  Total                                   301 1200612.44
+Writing OpenROAD database to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/32-openroad-repairdesignpostgpl/soc_top.odb'…
+Writing netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/32-openroad-repairdesignpostgpl/soc_top.nl.v'…
+Writing powered netlist to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/32-openroad-repairdesignpostgpl/soc_top.pnl.v'…
+Writing layout to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/32-openroad-repairdesignpostgpl/soc_top.def'…
+Writing timing constraints to '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/32-openroad-repairdesignpostgpl/soc_top.sdc'…

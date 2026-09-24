@@ -1,0 +1,94 @@
+119 Lint warnings found.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+[IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.080, 11.340).
+Cell 'interconnect_macro' has (2) input pin(s) without antenna gate information. They might not be connected to a gate.
+Cell 'peripherals_macro' has (61) input pin(s) without antenna gate information. They might not be connected to a gate.
+Cell 'ram_macro' has (22) input pin(s) without antenna gate information. They might not be connected to a gate.
+Using 'MACRO_PLACEMENT_CFG' is deprecated. It is recommended to use the new 'MACROS' configuration variable.
+[PDN-0231] u_boot_spi is not connected to any power/ground nets.
+[PDN-0231] u_ic is not connected to any power/ground nets.
+[PDN-0231] u_periph0 is not connected to any power/ground nets.
+[PDN-0231] u_periph1 is not connected to any power/ground nets.
+[PDN-0231] u_periph2 is not connected to any power/ground nets.
+[PDN-0231] u_cpu is not connected to any power/ground nets.
+[PDN-0110] No via inserted between TopMetal1 and TopMetal2 at (582.6800, 1985.8900) - (584.6800, 1985.9400) on VPWR
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib line 1, library picorv32_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib line 1, library interconnect_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib line 1, library peripherals_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib line 1, library boot_spi_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib line 1, library ram_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib line 1, library picorv32_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib line 1, library interconnect_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib line 1, library peripherals_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib line 1, library boot_spi_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib line 1, library ram_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib line 1, library picorv32_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib line 1, library interconnect_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib line 1, library peripherals_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib line 1, library boot_spi_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib line 1, library ram_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib line 1, library picorv32_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib line 1, library interconnect_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib line 1, library peripherals_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib line 1, library boot_spi_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib line 1, library ram_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_slow_1p08V_125C/picorv32_macro__nom_slow_1p08V_125C.lib line 1, library picorv32_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_slow_1p08V_125C/interconnect_macro__nom_slow_1p08V_125C.lib line 1, library interconnect_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_slow_1p08V_125C/peripherals_macro__nom_slow_1p08V_125C.lib line 1, library peripherals_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_slow_1p08V_125C/boot_spi_macro__nom_slow_1p08V_125C.lib line 1, library boot_spi_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_slow_1p08V_125C/ram_macro__nom_slow_1p08V_125C.lib line 1, library ram_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib line 1, library picorv32_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib line 1, library interconnect_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib line 1, library peripherals_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib line 1, library boot_spi_macro already exists.
+[STA-1140] /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib line 1, library ram_macro already exists.
+[RSZ-0062] Unable to repair all setup violations.
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Cont
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via3
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer Via4
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia1
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+[DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer TopVia2
+Threshold for Threshold-surpassing long wires is not set. The checker will be skipped.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_fast_1p32V_m40C. The netlist cannot be used for timing on this module.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_slow_1p08V_125C. The netlist cannot be used for timing on this module.
+Netlists found for macro picorv32_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro interconnect_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro peripherals_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro boot_spi_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+Netlists found for macro ram_macro, but no parasitics extraction found at corner nom_typ_1p20V_25C. The netlist cannot be used for timing on this module.
+'VSRC_LOC_FILES' was not given a value, which may make the results of IR drop analysis inaccurate. If you are not integrating a top-level chip for manufacture, you may ignore this warning, otherwise, see the documentation for 'VSRC_LOC_FILES'.
+Max Slew violations found in the following corners:
+* nom_slow_1p08V_125C
+* nom_typ_1p20V_25C

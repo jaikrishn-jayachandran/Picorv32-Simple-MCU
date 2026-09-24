@@ -1,0 +1,40 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/IHP-Open-PDK/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/picorv32/runs/run_12/final/lib/nom_typ_1p20V_25C/picorv32_macro__nom_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/interconnect/runs/run_1/final/lib/nom_typ_1p20V_25C/interconnect_macro__nom_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/peripherals/runs/run_5/final/lib/nom_typ_1p20V_25C/peripherals_macro__nom_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/boot_spi/runs/run_7/final/lib/nom_typ_1p20V_25C/boot_spi_macro__nom_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/macros/ram/runs/run_1/final/lib/nom_typ_1p20V_25C/ram_macro__nom_typ_1p20V_25C.lib'…
+Reading OpenROAD database at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/53-odb-cellfrequencytables/soc_top.odb'…
+Reading design constraints file at '/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/constraint.sdc'…
+[INFO] No information on clock propagation in input SDC file-- propagating all clocks.
+[INFO] Using voltage extracted from lib (1.2V) for power nets and 0V for ground nets…
+%OL_CREATE_REPORT irdrop.rpt
++ analyze_power_grid -net VPWR -voltage_file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/56-openroad-irdropreport/net-VPWR.csv
+[INFO PSM-0040] All shapes on net VPWR are connected.
+########## IR report #################
+Net              : VPWR
+Corner           : nom_typ_1p20V_25C
+Total power      : 2.68e-04 W
+Supply voltage   : 1.20e+00 V
+Worstcase voltage: 1.20e+00 V
+Average voltage  : 1.20e+00 V
+Average IR drop  : 4.36e-07 V
+Worstcase IR drop: 8.61e-04 V
+Percentage drop  : 0.07 %
+######################################
++ analyze_power_grid -net VGND -voltage_file /home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/56-openroad-irdropreport/net-VGND.csv
+[INFO PSM-0040] All shapes on net VGND are connected.
+########## IR report #################
+Net              : VGND
+Corner           : nom_typ_1p20V_25C
+Total power      : 2.68e-04 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 2.72e-04 V
+Average voltage  : 2.52e-07 V
+Average IR drop  : 2.52e-07 V
+Worstcase IR drop: 2.72e-04 V
+Percentage drop  : 0.02 %
+######################################
+%OL_END_REPORT

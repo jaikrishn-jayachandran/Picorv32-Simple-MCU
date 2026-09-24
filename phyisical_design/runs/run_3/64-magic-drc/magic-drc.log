@@ -1,0 +1,851 @@
+
+Magic 8.3 revision 623 - Compiled on Tue Mar 17 08:19:38 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "/nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "M1_GatPoly_CDNS_7558030484048".
+Saving contents of cell M1_GatPoly_CDNS_7558030484048
+Reading "VIA_M1_Activ_db_0x02835b9b".
+Reading "RM_IHPSG13_1P_BITKIT_CELL_SUB".
+Reading "lvsres_db_0x02834b9a".
+Reading "lvsres_db_0x0283509a".
+Reading "RM_IHPSG13_1P_BITKIT_CELL".
+Reading "RM_IHPSG13_1P_BITKIT_CELL_2x1".
+Reading "RM_IHPSG13_1P_BITKIT_TAP".
+Reading "viagen34_CDNS_7558030484049".
+Saving contents of cell viagen34_CDNS_7558030484049
+Reading "RM_IHPSG13_1P_BITKIT_CELL_CORNER".
+Reading "RM_IHPSG13_1P_BITKIT_EDGE_LR".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_EDGE_TB".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_TAP".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_SRAM".
+Reading "lvsres_db_0x04007e9a".
+Reading "viagen23_CDNS_7558030484038".
+Saving contents of cell viagen23_CDNS_7558030484038
+Reading "RSC_IHPSG13_FILLCAP8".
+Reading "RSC_IHPSG13_FILL2".
+Reading "lvsres_db_0x0400b71a".
+Reading "RSC_IHPSG13_NAND2X2".
+Reading "RSC_IHPSG13_NOR3X2".
+Reading "RSC_IHPSG13_LHPQX2".
+Reading "RSC_IHPSG13_NAND3X2".
+Reading "M3_M2_CDNS_7558030484037".
+Saving contents of cell M3_M2_CDNS_7558030484037
+Reading "M3_M2_CDNS_7558030484036".
+Saving contents of cell M3_M2_CDNS_7558030484036
+Reading "viagen34_CDNS_7558030484035".
+Saving contents of cell viagen34_CDNS_7558030484035
+Reading "M3_M2_CDNS_7558030484034".
+Saving contents of cell M3_M2_CDNS_7558030484034
+Reading "viagen34_CDNS_7558030484033".
+Saving contents of cell viagen34_CDNS_7558030484033
+Reading "viagen23_CDNS_7558030484032".
+Saving contents of cell viagen23_CDNS_7558030484032
+Reading "RSC_IHPSG13_FILL1".
+Reading "RSC_IHPSG13_INVX4".
+Reading "RSC_IHPSG13_INVX2".
+Reading "viagen12_CDNS_7558030484029".
+Saving contents of cell viagen12_CDNS_7558030484029
+Reading "viagen23_CDNS_7558030484028".
+Saving contents of cell viagen23_CDNS_7558030484028
+Reading "viagen12_CDNS_7558030484027".
+Saving contents of cell viagen12_CDNS_7558030484027
+Reading "viagen12_CDNS_7558030484026".
+Saving contents of cell viagen12_CDNS_7558030484026
+Reading "viagen23_CDNS_7558030484025".
+Saving contents of cell viagen23_CDNS_7558030484025
+Reading "viagen23_CDNS_7558030484024".
+Saving contents of cell viagen23_CDNS_7558030484024
+Reading "M2_M1_CDNS_7558030484023".
+Saving contents of cell M2_M1_CDNS_7558030484023
+Reading "viagen12_CDNS_7558030484022".
+Saving contents of cell viagen12_CDNS_7558030484022
+Reading "viagen12_CDNS_7558030484021".
+Saving contents of cell viagen12_CDNS_7558030484021
+Reading "viagen23_CDNS_7558030484020".
+Saving contents of cell viagen23_CDNS_7558030484020
+Reading "RSC_IHPSG13_DFPQD_MSAFFX2N_half".
+Reading "RSC_IHPSG13_CINVX2".
+Reading "RSC_IHPSG13_FILLCAP4".
+Reading "M2_M1_CDNS_7558030484018".
+Saving contents of cell M2_M1_CDNS_7558030484018
+Reading "M2_M1_CDNS_7558030484011".
+Saving contents of cell M2_M1_CDNS_7558030484011
+Reading "RM_IHPSG13_1P_BITKIT_16x2_CORNER".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_corner".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_POWER_ramtap".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_TAP_LR".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_tap_lr".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_POWER_ramblk".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_EDGE_LR".
+Reading "RM_IHPSG13_1P_COLUMN_256".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_edge_lr".
+Reading "RSC_IHPSG13_WLDRVX4".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "viagen12_CDNS_7558030484047".
+Saving contents of cell viagen12_CDNS_7558030484047
+Reading "M2_M1_CDNS_7558030484046".
+Saving contents of cell M2_M1_CDNS_7558030484046
+Reading "M3_M2_CDNS_7558030484045".
+Saving contents of cell M3_M2_CDNS_7558030484045
+Reading "M3_M2_CDNS_7558030484044".
+Saving contents of cell M3_M2_CDNS_7558030484044
+Reading "RSC_IHPSG13_CBUFX4".
+Reading "M3_M2_CDNS_7558030484043".
+Saving contents of cell M3_M2_CDNS_7558030484043
+Reading "viagen23_CDNS_7558030484042".
+Saving contents of cell viagen23_CDNS_7558030484042
+Reading "RSC_IHPSG13_CDLYX1_DUMMY".
+Reading "RSC_IHPSG13_CDLYX1".
+Reading "RSC_IHPSG13_MX2IX1".
+Reading "RSC_IHPSG13_CBUFX8".
+Reading "RSC_IHPSG13_TIEL".
+Reading "RSC_IHPSG13_OA12X1".
+Reading "RSC_IHPSG13_CNAND2X2".
+Reading "RSC_IHPSG13_DFNQX2".
+Reading "RSC_IHPSG13_XOR2X2".
+Reading "RSC_IHPSG13_CINVX4".
+Reading "RSC_IHPSG13_CGATEPX4".
+Reading "RSC_IHPSG13_MX2X2".
+Reading "RSC_IHPSG13_CDLYX2".
+Reading "viagen12_CDNS_7558030484041".
+Saving contents of cell viagen12_CDNS_7558030484041
+Reading "viagen12_CDNS_7558030484040".
+Saving contents of cell viagen12_CDNS_7558030484040
+Reading "M3_M2_CDNS_7558030484039".
+Saving contents of cell M3_M2_CDNS_7558030484039
+Reading "RM_IHPSG13_1P_ROWREG0".
+Reading "RSC_IHPSG13_CINVX8".
+Reading "RM_IHPSG13_1P_DEC_LE_l2wire".
+Reading "RM_IHPSG13_1P_DEC_LE_l1wire".
+Reading "RM_IHPSG13_1P_DEC_LE_l1empty".
+Reading "RM_IHPSG13_1P_DEC01".
+Reading "RM_IHPSG13_1P_DEC03".
+Reading "RM_IHPSG13_1P_DEC_LE_l2empty".
+Reading "RM_IHPSG13_1P_DEC02".
+Reading "RM_IHPSG13_1P_DEC00".
+Reading "RM_IHPSG13_1P_DEC04".
+Reading "RM_IHPSG13_1P_DEC_LE_l0wire".
+Reading "RM_IHPSG13_1P_DEC_LE_tap".
+Reading "RM_IHPSG13_1P_ROWDEC0".
+Reading "M3_M2_CDNS_7558030484031".
+Saving contents of cell M3_M2_CDNS_7558030484031
+Reading "viagen23_CDNS_7558030484030".
+Saving contents of cell viagen23_CDNS_7558030484030
+Reading "RSC_IHPSG13_CBUFX2".
+Reading "RSC_IHPSG13_TIEH".
+Reading "RM_IHPSG13_1P_BLDRV".
+Reading "RSC_IHPSG13_CINVX4_WN".
+Reading "RSC_IHPSG13_NOR2X2".
+Reading "lvsres_db_0x0283151a".
+Reading "RSC_IHPSG13_DFPQD_MSAFFX2N".
+Reading "RSC_IHPSG13_AND2X2".
+Reading "RSC_IHPSG13_DFNQMX2IX1".
+Reading "viagen12_CDNS_7558030484019".
+Saving contents of cell viagen12_CDNS_7558030484019
+Reading "M3_M2_CDNS_7558030484017".
+Saving contents of cell M3_M2_CDNS_7558030484017
+Reading "viagen23_CDNS_7558030484016".
+Saving contents of cell viagen23_CDNS_7558030484016
+Reading "viagen23_CDNS_7558030484015".
+Saving contents of cell viagen23_CDNS_7558030484015
+Reading "M3_M2_CDNS_7558030484014".
+Saving contents of cell M3_M2_CDNS_7558030484014
+Reading "M3_M2_CDNS_7558030484013".
+Saving contents of cell M3_M2_CDNS_7558030484013
+Reading "M2_M1_CDNS_7558030484012".
+Saving contents of cell M2_M1_CDNS_7558030484012
+Reading "M3_M2_CDNS_7558030484010".
+Saving contents of cell M3_M2_CDNS_7558030484010
+Reading "viagen34_CDNS_755803048409".
+Saving contents of cell viagen34_CDNS_755803048409
+Reading "viagen23_CDNS_755803048408".
+Saving contents of cell viagen23_CDNS_755803048408
+Reading "M2_M1_CDNS_755803048407".
+Saving contents of cell M2_M1_CDNS_755803048407
+Reading "M3_M2_CDNS_755803048406".
+Saving contents of cell M3_M2_CDNS_755803048406
+Reading "M3_M2_CDNS_755803048405".
+Saving contents of cell M3_M2_CDNS_755803048405
+Reading "viagen23_CDNS_755803048404".
+Saving contents of cell viagen23_CDNS_755803048404
+Reading "M2_M1_CDNS_755803048403".
+Saving contents of cell M2_M1_CDNS_755803048403
+Reading "M2_M1_CDNS_755803048402".
+Saving contents of cell M2_M1_CDNS_755803048402
+Reading "M2_M1_CDNS_755803048401".
+Saving contents of cell M2_M1_CDNS_755803048401
+Reading "viagen12_CDNS_755803048400".
+Saving contents of cell viagen12_CDNS_755803048400
+Reading "RM_IHPSG13_1P_MATRIX_256x64".
+Reading "RM_IHPSG13_1P_DLY_4".
+Reading "RM_IHPSG13_1P_WLDRV16X4_tap".
+Reading "RM_IHPSG13_1P_WLDRV16X4".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL1".
+Reading "RM_IHPSG13_1P_COLDRV13X4".
+Reading "RM_IHPSG13_1P_DLY_2".
+Reading "RM_IHPSG13_1P_DLY_MUX".
+Reading "RM_IHPSG13_1P_COLDEC2".
+Reading "RM_IHPSG13_1P_CTRL".
+Reading "RM_IHPSG13_1P_ROWREG8".
+Reading "RM_IHPSG13_1P_ROWDEC8".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL4C2".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL1C2".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL4".
+Reading "RM_IHPSG13_1P_COLCTRL2".
+Reading "RM_IHPSG13_1P_COLCTRL2_end".
+Reading "sg13g2_antennanp$2".
+Reading "sg13g2_decap_8$5".
+Reading "sg13g2_fill_1$5".
+Reading "sg13g2_fill_2$5".
+Reading "sg13g2_decap_4$5".
+Reading "sg13g2_inv_1$5".
+Reading "sg13g2_nor2_1$5".
+Reading "sg13g2_nor4_1$4".
+Reading "sg13g2_and2_1$5".
+Reading "sg13g2_nor4_2$1".
+Reading "sg13g2_and4_1$4".
+Reading "sg13g2_nand3_1$5".
+Reading "sg13g2_a21oi_1$4".
+Reading "sg13g2_buf_16$3".
+Reading "sg13g2_or2_1$4".
+Reading "sg13g2_buf_1$5".
+Reading "sg13g2_nand3b_1$5".
+Reading "sg13g2_or4_1$3".
+Reading "sg13g2_buf_8$4".
+Reading "sg13g2_nand2_2$1".
+Reading "sg13g2_nand2_1$5".
+Reading "sg13g2_o21ai_1$5".
+Reading "sg13g2_nand4_1$5".
+Reading "sg13g2_buf_4$1".
+Reading "sg13g2_and3_1$5".
+Reading "sg13g2_nor2b_1$5".
+Reading "sg13g2_nor2_2$1".
+Reading "sg13g2_nor3_1$5".
+Reading "sg13g2_inv_4$2".
+Reading "sg13g2_a21o_1$4".
+Reading "sg13g2_nand2b_1$4".
+Reading "sg13g2_buf_2$1".
+Reading "sg13g2_a22oi_1$5".
+Reading "sg13g2_mux2_1$3".
+Reading "sg13g2_dfrbpq_1$4".
+Reading "sg13g2_dlygate4sd3_1$5".
+Reading "RM_IHPSG13_1P_1024x32_c2_bm_bist".
+Reading "sg13g2_tielo$4".
+Reading "sg13g2_tiehi$4".
+Reading "VIA_via5_6_2200_2810_2_2_840_840".
+Reading "VIA_via4_5_2810_2810_6_6_480_480".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960$5".
+Reading "VIA_via5_6_2200_440_1_2_840_840$4".
+Reading "VIA_via4_5_2200_440_1_5_410_410$4".
+Reading "VIA_via3_4_2200_440_1_5_410_410$4".
+Reading "VIA_via2_3_2200_440_1_5_410_410$4".
+Reading "VIA_via1_2_2200_440_1_5_410_410$4".
+Reading "VIA_Via1_YY$5".
+Reading "VIA_Via2_YX$5".
+Reading "VIA_Via1_XY$5".
+Reading "VIA_Via3_XY$5".
+Reading "sg13g2_decap_8$4".
+Reading "sg13g2_decap_4$4".
+Reading "sg13g2_fill_1$4".
+Reading "sg13g2_fill_2$4".
+Reading "sg13g2_inv_1$4".
+Reading "sg13g2_nand2_1$4".
+Reading "sg13g2_nand3_1$4".
+Reading "sg13g2_nor2_1$4".
+Reading "sg13g2_and2_1$4".
+Reading "sg13g2_and3_1$4".
+Reading "sg13g2_a21o_1$3".
+Reading "sg13g2_nor4_1$3".
+Reading "sg13g2_and4_1$3".
+Reading "sg13g2_nand4_1$4".
+Reading "sg13g2_nor3_1$4".
+Reading "sg13g2_a21oi_1$3".
+Reading "sg13g2_o21ai_1$4".
+Reading "sg13g2_a22oi_1$4".
+Reading "sg13g2_nor2b_1$4".
+Reading "sg13g2_mux2_1$2".
+Reading "sg13g2_nand2b_1$3".
+Reading "sg13g2_or2_1$3".
+Reading "sg13g2_a221oi_1$3".
+Reading "sg13g2_nand3b_1$4".
+Reading "sg13g2_or4_1$2".
+Reading "sg13g2_or3_1$2".
+Reading "sg13g2_dfrbpq_1$3".
+Reading "sg13g2_tiehi$3".
+Reading "sg13g2_tielo$3".
+Reading "sg13g2_buf_8$3".
+Reading "sg13g2_buf_1$4".
+Reading "sg13g2_dlygate4sd3_1$4".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960$4".
+Reading "VIA_via5_6_2200_440_1_2_840_840$3".
+Reading "VIA_via4_5_2200_440_1_5_410_410$3".
+Reading "VIA_via3_4_2200_440_1_5_410_410$3".
+Reading "VIA_via2_3_2200_440_1_5_410_410$3".
+Reading "VIA_via1_2_2200_440_1_5_410_410$3".
+Reading "VIA_Via1_YY$4".
+Reading "VIA_Via1_XY$4".
+Reading "VIA_Via2_YX$4".
+Reading "VIA_Via3_XY$4".
+Reading "sg13g2_decap_8$3".
+Reading "sg13g2_fill_2$3".
+Reading "sg13g2_fill_1$3".
+Reading "sg13g2_decap_4$3".
+Reading "sg13g2_inv_1$3".
+Reading "sg13g2_nor2b_1$3".
+Reading "sg13g2_nand2b_1$2".
+Reading "sg13g2_nand2_1$3".
+Reading "sg13g2_nor2_1$3".
+Reading "sg13g2_a21oi_1$2".
+Reading "sg13g2_a22oi_1$3".
+Reading "sg13g2_o21ai_1$3".
+Reading "sg13g2_nand3b_1$3".
+Reading "sg13g2_nor3_1$3".
+Reading "sg13g2_nand4_1$3".
+Reading "sg13g2_and2_1$3".
+Reading "sg13g2_a21o_1$2".
+Reading "sg13g2_and3_1$3".
+Reading "sg13g2_nand3_1$3".
+Reading "sg13g2_dfrbpq_1$2".
+Reading "sg13g2_tiehi$2".
+Reading "sg13g2_buf_1$3".
+Reading "sg13g2_buf_16$2".
+Reading "sg13g2_buf_8$2".
+Reading "sg13g2_dlygate4sd3_1$3".
+Reading "sg13g2_tielo$2".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960$3".
+Reading "VIA_via5_6_2200_440_1_2_840_840$2".
+Reading "VIA_via4_5_2200_440_1_5_410_410$2".
+Reading "VIA_via3_4_2200_440_1_5_410_410$2".
+Reading "VIA_via2_3_2200_440_1_5_410_410$2".
+Reading "VIA_via1_2_2200_440_1_5_410_410$2".
+Reading "VIA_Via1_YY$3".
+Reading "VIA_Via2_YX$3".
+Reading "VIA_Via1_XY$3".
+Reading "VIA_Via3_XY$3".
+Reading "VIA_Via4_YX$3".
+Reading "sg13g2_fill_2$2".
+Reading "sg13g2_fill_1$2".
+Reading "sg13g2_decap_8$2".
+Reading "sg13g2_decap_4$2".
+Reading "sg13g2_inv_1$2".
+Reading "sg13g2_nor2_1$2".
+Reading "sg13g2_nor4_1$2".
+Reading "sg13g2_nand2_1$2".
+Reading "sg13g2_nor3_1$2".
+Reading "sg13g2_nand3_1$2".
+Reading "sg13g2_nand4_1$2".
+Reading "sg13g2_and4_1$2".
+Reading "sg13g2_nand3b_1$2".
+Reading "sg13g2_o21ai_1$2".
+Reading "sg13g2_a22oi_1$2".
+Reading "sg13g2_and3_1$2".
+Reading "sg13g2_or2_1$2".
+Reading "sg13g2_and2_1$2".
+Reading "sg13g2_nor2b_1$2".
+Reading "sg13g2_a221oi_1$2".
+Reading "sg13g2_buf_1$2".
+Reading "sg13g2_dlygate4sd3_1$2".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960$2".
+Reading "VIA_via5_6_2200_440_1_2_840_840$1".
+Reading "VIA_via4_5_2200_440_1_5_410_410$1".
+Reading "VIA_via3_4_2200_440_1_5_410_410$1".
+Reading "VIA_via2_3_2200_440_1_5_410_410$1".
+Reading "VIA_via1_2_2200_440_1_5_410_410$1".
+Reading "VIA_Via1_YY$2".
+Reading "VIA_Via2_YX$2".
+Reading "VIA_Via1_XY$2".
+Reading "VIA_Via3_XY$2".
+Reading "VIA_Via4_YX$2".
+Reading "VIA_TopVia1EWNS$2".
+Reading "sg13g2_antennanp$1".
+Reading "sg13g2_decap_8$1".
+Reading "sg13g2_fill_1$1".
+Reading "sg13g2_fill_2$1".
+Reading "sg13g2_decap_4$1".
+Reading "sg13g2_inv_1$1".
+Reading "sg13g2_nor4_1$1".
+Reading "sg13g2_and2_1$1".
+Reading "sg13g2_nor2b_1$1".
+Reading "sg13g2_nand2b_1$1".
+Reading "sg13g2_nor2_1$1".
+Reading "sg13g2_o21ai_1$1".
+Reading "sg13g2_or2_1$1".
+Reading "sg13g2_nor3_1$1".
+Reading "sg13g2_nand2_1$1".
+Reading "sg13g2_nand3_1$1".
+Reading "sg13g2_a21oi_1$1".
+Reading "sg13g2_a21o_1$1".
+Reading "sg13g2_nand4_1$1".
+Reading "sg13g2_nand3b_1$1".
+Reading "sg13g2_a22oi_1$1".
+Reading "sg13g2_or3_1$1".
+Reading "sg13g2_or4_1$1".
+Reading "sg13g2_and4_1$1".
+Reading "sg13g2_xor2_1$1".
+Reading "sg13g2_xnor2_1$1".
+Reading "sg13g2_a221oi_1$1".
+Reading "sg13g2_mux4_1$1".
+Reading "sg13g2_mux2_1$1".
+Reading "sg13g2_and3_1$1".
+Reading "sg13g2_buf_1$1".
+Reading "sg13g2_dfrbpq_1$1".
+Reading "sg13g2_tiehi$1".
+Reading "sg13g2_buf_16$1".
+Reading "sg13g2_buf_8$1".
+Reading "sg13g2_inv_2$1".
+Reading "sg13g2_inv_4$1".
+Reading "sg13g2_dlygate4sd3_1$1".
+Reading "sg13g2_tielo$1".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960$1".
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Reading "VIA_Via1_XY$1".
+Reading "VIA_Via2_YX$1".
+Reading "VIA_Via3_XY$1".
+Reading "VIA_Via4_YX$1".
+Reading "VIA_Via1_YY$1".
+Reading "VIA_TopVia1EWNS$1".
+Reading "VIA_TopVia2EWNS".
+Reading "VIA_TopVia1EWNS".
+Reading "VIA_Via1_XY".
+Reading "VIA_Via1_YY".
+Reading "VIA_Via3_YY".
+Reading "VIA_Via4_YX".
+Reading "VIA_Via2_YX".
+Reading "VIA_Via3_XY".
+Reading "VIA_Via2_XX".
+Reading "VIA_via1_2_2000_440_1_5_410_410".
+Reading "VIA_via2_3_2000_440_1_5_410_410".
+Reading "VIA_via3_4_2000_440_1_5_410_410".
+Reading "VIA_via4_5_2000_440_1_5_410_410".
+Reading "VIA_via5_6_2000_440_1_1_840_840".
+Reading "VIA_via6_7_2000_2200_1_1_1960_1960".
+Reading "VIA_via6_7_2200_2000_1_1_1960_1960".
+Reading "VIA_via6_7_2200_2200_1_1_1960_1960".
+Reading "VIA_via6_7_2000_2000_1_1_1960_1960".
+Reading "ram_macro".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+Reading "peripherals_macro".
+    5000 uses
+Reading "interconnect_macro".
+    5000 uses
+    10000 uses
+Reading "picorv32_macro".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+Reading "boot_spi_macro".
+    5000 uses
+    10000 uses
+Reading "sg13g2_buf_8".
+Reading "sg13g2_buf_1".
+Reading "sg13g2_inv_16".
+Reading "sg13g2_buf_16".
+Reading "sg13g2_fill_1".
+Reading "sg13g2_fill_2".
+Reading "sg13g2_decap_4".
+Reading "sg13g2_decap_8".
+Reading "sg13g2_antennanp".
+Reading "soc_top".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+Error while reading cell "soc_top" (byte position 20531120): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20578514): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20579502): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20579870): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20581234): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20581992): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20582108): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20583104): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20583786): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20583880): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20584306): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20584574): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20588670): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20588822): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20589024): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20589414): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20589808): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20590284): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20590342): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20591548): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20592674): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20592804): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20593274): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20593404): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    65000 uses
+Error while reading cell "soc_top" (byte position 20695472): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20695776): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20696310): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20697304): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20829256): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20829358): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20831774): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20831914): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    70000 uses
+Error while reading cell "soc_top" (byte position 20835096): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20835228): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20835446): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20835882): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20835940): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20968666): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20968762): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20970016): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20970190): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20970306): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20970364): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20970458): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20970970): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20971086): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20971336): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20972534): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20974458): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20974560): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 20974618): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21046986): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21047044): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21047102): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21047160): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21047856): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21047914): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21048088): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21048320): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21049480): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21049770): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21049886): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050002): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050060): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050176): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050234): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050408): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050466): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050524): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050582): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21050640): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21051162): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21051684): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21052438): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21052670): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21052728): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21053134): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21053192): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21053424): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21053714): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054062): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054120): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054410): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054584): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054642): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054700): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054758): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054816): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21054932): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21055048): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21055106): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21055802): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21056440): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21056498): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057020): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057078): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057252): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057368): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057426): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057716): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21057774): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21058198): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21058256): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21058314): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21058372): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21058430): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21059974): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21060264): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21060554): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21060612): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21060670): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21060786): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21060902): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061308): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061366): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061540): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061772): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061830): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061888): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21061946): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21062694): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21062752): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    75000 uses
+Error while reading cell "soc_top" (byte position 21073290): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21084200): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21084664): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21084780): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21085588): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21085762): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21085820): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21096786): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21107862): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21108268): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21108442): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110008): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110240): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110298): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110356): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110414): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110472): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110530): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21110994): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111400): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111516): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111574): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111690): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111748): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111864): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111922): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21111980): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21112038): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21112910): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21112968): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21113026): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21113084): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21113142): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21113200): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21113258): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21115086): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21115144): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21115202): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116014): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116072): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116130): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116420): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116478): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116536): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116594): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116652): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116710): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116768): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116826): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116884): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21116942): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117000): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117464): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117522): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117580): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117638): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117696): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117754): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21117812): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21118680): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21118738): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21119230): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21119578): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21119636): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21120704): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21140986): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21141508): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21141682): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21141740): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21142584): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21142700): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21142758): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21142874): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21143544): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21154174): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21154786): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21165336): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21165626): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21165742): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21165800): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21166960): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21167018): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21167134): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21167366): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21167714): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21167772): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21168120): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21168352): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21168468): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21168584): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21168642): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21168758): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21169048): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21169106): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21169338): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21169454): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21169744): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170092): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170208): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170324): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170382): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170440): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170614): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170672): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21170730): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21172296): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21172354): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21172412): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21172934): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21172992): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173050): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173108): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173166): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173224): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173282): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173340): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173398): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173456): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21173514): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21175312): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21175370): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21175428): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21175602): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21175660): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176240): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176414): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176704): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176762): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176820): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176936): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21176994): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21177168): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21177574): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21177806): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21177922): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21177980): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178038): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178096): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178154): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178270): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178328): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178386): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178444): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21178502): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21179430): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21180590): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21180648): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21180706): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21180764): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21180822): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21180938): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181054): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181286): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181518): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181576): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181634): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181808): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21181924): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182098): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182156): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182214): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182272): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182330): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182388): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182446): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182620): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182678): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182736): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21182910): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21183316): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21184534): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21184940): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21184998): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185230): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185346): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185404): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185462): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185520): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185578): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21185694): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21186042): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21186100): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21198374): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21217246): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21217360): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21217922): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21274250): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21275752): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21276302): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    80000 uses
+    85000 uses
+Error while reading cell "soc_top" (byte position 21556730): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21557728): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21559270): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21559472): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21615410): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 21625830): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+Error while reading cell "soc_top" (byte position 22815224): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 22817622): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "soc_top" (byte position 22818604): Warning: cell "VIA_via6_7_2000_2000_1_1_1960_1960" placed on top of itself.  Ignoring the extra one.
+    115000 uses
+    120000 uses
+    125000 uses
+[INFO] Loading soc_top
+
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+[INFO] COUNT: 229435
+[INFO] Should be divided by 3 or 4
+[INFO] DRC Checking DONE (/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/64-magic-drc/reports/drc.magic.rpt)
+[INFO] Saving mag view with DRC errors (/home/jaikrishn/Documents/hardware/picorv32_axi4lite_port/phyisical_design/runs/run_3/64-magic-drc/views/soc_top.drc.mag)
+[INFO] Saved

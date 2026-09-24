@@ -1,0 +1,136 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Endpoint: u_cpu (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+     1    0.183414    0.000000    0.000000    0.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.127497    0.063748    0.063748 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.097521    0.040026    0.119109    0.182857 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.041656    0.005568    0.188425 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.529731    0.109890    0.097787    0.286212 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.217746    0.088728    0.374940 ^ u_cpu/clk_i (picorv32_macro)
+     1    0.303579    1.237477    2.102967    2.477906 ^ u_cpu/mem_axi_araddr[13] (picorv32_macro)
+                                                         cpu_araddr[13] (net)
+                      1.308525    0.230352    2.708258 ^ u_ic/m_araddr[13] (interconnect_macro)
+     1    0.200396    0.819130    2.913847    5.622106 ^ u_ic/m_rvalid (interconnect_macro)
+                                                         cpu_rvalid (net)
+                      0.841709    0.107947    5.730053 ^ u_cpu/mem_axi_rvalid (picorv32_macro)
+                                              5.730053   data arrival time
+
+                                 10.000000   10.000000   clock clk (rise edge)
+                                  0.000000   10.000000   clock source latency
+     1    0.180741    0.000000    0.000000   10.000000 ^ clk_i (in)
+                                                         clk_i (net)
+                      0.124148    0.062074   10.062074 ^ clkbuf_0_clk_i/A (sg13g2_buf_16)
+     2    0.092176    0.038794    0.117321   10.179396 ^ clkbuf_0_clk_i/X (sg13g2_buf_16)
+                                                         clknet_0_clk_i (net)
+                      0.040152    0.005099   10.184494 ^ clkbuf_1_0__f_clk_i/A (sg13g2_buf_16)
+     4    0.529731    0.109855    0.097020   10.281514 ^ clkbuf_1_0__f_clk_i/X (sg13g2_buf_16)
+                                                         clknet_1_0__leaf_clk_i (net)
+                      0.217742    0.088744   10.370258 ^ u_cpu/clk_i (picorv32_macro)
+                                 -0.200000   10.170259   clock uncertainty
+                                  0.004681   10.174939   clock reconvergence pessimism
+                                 -2.975980    7.198959   library setup time
+                                              7.198959   data required time
+---------------------------------------------------------------------------------------------
+                                              7.198959   data required time
+                                             -5.730053   data arrival time
+---------------------------------------------------------------------------------------------
+                                              1.468906   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+ANTENNA_7/A                             2.507400    3.157528   -0.650128 (VIOLATED)
+ANTENNA_36/A                            2.507400    3.013290   -0.505890 (VIOLATED)
+ANTENNA_37/A                            2.507400    3.013213   -0.505813 (VIOLATED)
+ANTENNA_8/A                             2.507400    2.985979   -0.478579 (VIOLATED)
+ANTENNA_30/A                            2.507400    2.782794   -0.275394 (VIOLATED)
+ANTENNA_31/A                            2.507400    2.721918   -0.214518 (VIOLATED)
+ANTENNA_27/A                            2.507400    2.604983   -0.097582 (VIOLATED)
+ANTENNA_28/A                            2.507400    2.517204   -0.009804 (VIOLATED)
+ANTENNA_29/A                            2.507400    2.517123   -0.009722 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 31 unannotated drivers.
+ clkload0/Y
+ u_boot_spi/boot_done
+ u_cpu/trap
+ u_ic/m_bresp[0]
+ u_ic/m_bresp[1]
+ u_ic/m_rresp[0]
+ u_ic/m_rresp[1]
+ u_ic/s_arprot[0]
+ u_ic/s_arprot[10]
+ u_ic/s_arprot[11]
+ u_ic/s_arprot[1]
+ u_ic/s_arprot[2]
+ u_ic/s_arprot[3]
+ u_ic/s_arprot[4]
+ u_ic/s_arprot[5]
+ u_ic/s_arprot[6]
+ u_ic/s_arprot[7]
+ u_ic/s_arprot[8]
+ u_ic/s_arprot[9]
+ u_ic/s_awprot[0]
+ u_ic/s_awprot[10]
+ u_ic/s_awprot[11]
+ u_ic/s_awprot[1]
+ u_ic/s_awprot[2]
+ u_ic/s_awprot[3]
+ u_ic/s_awprot[4]
+ u_ic/s_awprot[5]
+ u_ic/s_awprot[6]
+ u_ic/s_awprot[7]
+ u_ic/s_awprot[8]
+ u_ic/s_awprot[9]
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 9
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 4 unconstrained endpoints.
+  u_ram/s_axil_araddr[0]
+  u_ram/s_axil_araddr[1]
+  u_ram/s_axil_awaddr[0]
+  u_ram/s_axil_awaddr[1]

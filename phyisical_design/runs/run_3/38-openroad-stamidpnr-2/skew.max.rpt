@@ -1,0 +1,15 @@
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+Writing metric clock__skew__worst_setup__corner:nom_typ_1p20V_25C: 0.35666284823950267
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Clock clk
+0.485115 source latency u_cpu/clk_i ^
+-0.322713 target latency u_periph0/clk_i ^
+0.200000 clock uncertainty
+-0.005739 CRPR
+--------------
+0.356663 setup skew
+

@@ -1,0 +1,25 @@
+98. Printing statistics.
+
+=== soc_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       59 wires
+     1122 wire bits
+       59 public wires
+     1122 public wire bits
+       15 ports
+      294 port bits
+        7 cells
+        1   boot_spi_macro
+        1   interconnect_macro
+        3   peripherals_macro
+        1   picorv32_macro
+        1   ram_macro
+
+   Area for cell type \picorv32_macro is unknown!
+   Area for cell type \interconnect_macro is unknown!
+   Area for cell type \peripherals_macro is unknown!
+   Area for cell type \boot_spi_macro is unknown!
+   Area for cell type \ram_macro is unknown!
+

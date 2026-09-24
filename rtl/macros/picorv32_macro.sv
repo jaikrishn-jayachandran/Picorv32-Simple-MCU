@@ -65,7 +65,26 @@ module picorv32_macro (
         // Read Data Channel
         .mem_axi_rvalid  (mem_axi_rvalid),
         .mem_axi_rready  (mem_axi_rready),
-        .mem_axi_rdata   (mem_axi_rdata)
+        .mem_axi_rdata   (mem_axi_rdata),
+
+
+        .pcpi_valid      (),          // output from core
+        .pcpi_insn       (),          // output from core
+        .pcpi_rs1        (),          // output from core
+        .pcpi_rs2        (),          // output from core
+        .pcpi_wr         (1'b0),      // input to core
+        .pcpi_rd         (32'b0),     // input to core
+        .pcpi_wait       (1'b0),      // input to core
+        .pcpi_ready      (1'b0),      // input to core
+
+        // Interrupts
+        .irq             (32'b0),     // input to core
+        .eoi             (),          // output from core
+
+        // Execution trace
+        .trace_valid     (),          // output from core
+        .trace_data      ()           // output from core
     );
+
 
 endmodule
