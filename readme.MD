@@ -3,11 +3,31 @@
 Language / Sprache: **[Deutsch](#deutsch)** | **[English](#english)**
 
 ---
+![Projekt-Screenshot](design.png)
 
+![Projekt-Screenshot](macro.png)
+
+## soc_top
+![Projekt-Screenshot](phyisical_design/Bildschirmfoto%20vom%202026-09-24%2020-22-08.png)
+
+## boot_spi
+![Projekt-Screenshot](phyisical_design/macros/boot_spi/Bildschirmfoto%20vom%202026-09-24%2020-18-17.png)
+
+## interconnect
+![Projekt-Screenshot](phyisical_design/macros/interconnect/Bildschirmfoto%20vom%202026-09-24%2020-19-34.png)
+
+## peripherals
+![Projekt-Screenshot](phyisical_design/macros/peripherals/Bildschirmfoto%20vom%202026-09-24%2020-20-07.png)
+
+## picorv32
+![Projekt-Screenshot](phyisical_design/macros/picorv32/Bildschirmfoto%20vom%202026-09-24%2020-20-50.png)
+
+## ram
+![Projekt-Screenshot](phyisical_design/macros/ram/Bildschirmfoto%20vom%202026-09-24%2020-21-20.png)
 <a name="deutsch"></a>
 # Deutsch
 
-![Projekt-Screenshot](design.png)
+
 
 <p align="center">
   <b>RISC-V RV32I · AXI4-Lite · SPI Boot · 4 KiB IHP SRAM · 3× GPIO · Hard-Macro Physical Design</b>
